@@ -1,0 +1,294 @@
+-----------------------------------------------------------
+	RUN - python scripts/00_validate_arff.py 
+-----------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/00_validate_arff.py
+
+PROMISE+ ARFF VALIDATION
+==================================================
+Source: /home/dhrubo_roy/Unofficial Thesis/dataset/Promise+.arff
+Candidate records: 3677
+Parsed records: 3677
+
+Repair summary
+--------------------------------------------------
+Missing-comma repairs: 969
+Punctuation replacements: 50
+Unique records modified: 969
+
+Punctuation details:
+\91: 3
+\92: 39
+\93: 3
+\94: 3
+\95: 1
+\96: 1
+\97: 0
+
+Output files:
+Validated dataset: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff
+Audit report: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/reports/arff_repair_audit.csv
+
+ARFF VALIDATION SUCCESSFUL
+Attributes: 3
+Total records: 3677
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ 
+
+
+------------------------------------------------------------------------
+	RUN - python scripts/01_load_dataset.py
+------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/01_load_dataset.py
+Source: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff
+Rows: 3677
+Columns: 3
+
+Columns and types:
+- ProjectID: object
+- RequirementText: object
+- _class_: object
+
+First five rows:
+ProjectID                                                                         RequirementText _class_
+        1                                  The system shall refresh the display every 60 seconds.      PE
+        1 The system shall provide a history report of changes made to the Activity or Event data       F
+        1   The system shall provide charts for the Activity or Event actual versus assumed time.       F
+        1             The system shall offer the ability to pause and resume the refresh of data.       F
+        1                 The system shall display the local and exercise time in separate clocks       F
+
+
+------------------------------------------------------------------------
+	RUN - python scripts/02_dataset_overview.py
+------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/02_dataset_overview.py
+Rows: 3677
+Columns: 3
+Possible text column (heuristic): RequirementText
+Possible label column (heuristic): _class_
+
+Column overview:
+         column  dtype  non_null  unique
+      ProjectID object      3677      88
+RequirementText object      3677    3580
+        _class_ object      3677      12
+
+Confirm the suggested text/label columns by inspecting the ARFF schema.
+
+------------------------------------------------------------------------
+	RUN - python scripts/03_data_quality.py
+------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/03_data_quality.py
+Rows: 3677
+Exact duplicate rows: 21
+Possible requirement text column: RequirementText
+Blank requirement texts: 0
+Duplicate requirement texts (case/whitespace normalized): 112
+
+         column  missing  missing_pct
+      ProjectID        0          0.0
+RequirementText        0          0.0
+        _class_        0          0.0
+
+
+------------------------------------------------------------------------
+	RUN - python scripts/04_class_distribution.py
+------------------------------------------------------------------------
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/04_class_distribution.py
+Label column: _class_
+
+class  count  percentage
+    F   2258       61.41
+   SE    237        6.45
+   US    212        5.77
+    L    209        5.68
+   PE    163        4.43
+    O    157        4.27
+   SC     95        2.58
+   LF     89        2.42
+   PO     76        2.07
+   MN     75        2.04
+    A     71        1.93
+   FT     35        0.95
+
+------------------------------------------------------------------------
+	RUN - python scripts/05_text_analysis.py
+------------------------------------------------------------------------
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/05_text_analysis.py
+Text column: RequirementText
+
+       character_count  word_count
+count          3677.00     3677.00
+mean            142.85       22.69
+std             101.72       16.18
+min              26.00        3.00
+25%              78.00       13.00
+50%             112.00       18.00
+75%             169.00       27.00
+max            1136.00      208.00
+
+------------------------------------------------------------------------
+	RUN - python scripts/06_duplicate_label_analysis.py
+------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/06_duplicate_label_analysis.py
+
+PROMISE+ Duplicate and Label Analysis
+================================================
+Total records: 3677
+Exact duplicate excess rows: 21
+Rows involved in exact duplicates: 38
+Normalized duplicate excess rows: 113
+Rows involved in repeated texts: 222
+Rows repeated within projects: 44
+Rows repeated across projects: 178
+Distinct texts repeated across projects: 89
+Distinct texts with conflicting labels: 4
+Rows involved in label conflicts: 8
+
+Files saved:
+Tables: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/tables
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/reports/06_duplicate_label_report.txt
+
+Sample label conflicts:
+ occurrences  unique_labels labels                                                                example_text
+           2              2 MN, PO Software Accessibility – all systems and application source code shall b...
+           2              2  O, PE      The product shall be based on web and has to be run from a web server.
+           2              2 SE, US  The system shall confirm all transactions with the customer’s web browser.
+           2              2 LF, US The system shall provide a uniform look and feel between all the web pages.
+
+
+------------------------------------------------------------------------
+	RUN - python scripts/07_generate_eda_report.py
+------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_exploration_phase_1$ python scripts/07_generate_eda_report.py
+
+PROMISE+ PHASE 1 EDA REPORT
+==================================================
+total_records: 3677
+total_columns: 3
+unique_projects: 88
+unique_classes: 12
+unique_requirement_texts: 3580
+missing_values: {'ProjectID': 0, 'RequirementText': 0, '_class_': 0}
+blank_requirement_texts: 0
+majority_class: F
+minority_class: FT
+imbalance_ratio: 64.51
+mean_word_count: 22.69
+median_word_count: 18.0
+max_word_count: 208
+exact_duplicate_excess: 21
+exact_duplicate_involved: 38
+normalized_duplicate_excess: 113
+normalized_duplicate_involved: 222
+cross_project_duplicate_texts: 89
+cross_project_duplicate_rows: 178
+conflicting_label_texts: 4
+conflicting_label_rows: 8
+comma_repair_audit_rows: 1010
+
+Report generated successfully.
+Markdown: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/reports/07_final_eda_report.md
+JSON: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/reports/07_eda_summary.json
+Tables: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/tables
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
