@@ -1,0 +1,16 @@
+Source: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff
+Rows: 3677
+Columns: 3
+
+Columns and types:
+- ProjectID: object
+- RequirementText: object
+- _class_: object
+
+First five rows:
+ProjectID                                                                         RequirementText _class_
+        1                                  The system shall refresh the display every 60 seconds.      PE
+        1 The system shall provide a history report of changes made to the Activity or Event data       F
+        1   The system shall provide charts for the Activity or Event actual versus assumed time.       F
+        1             The system shall offer the ability to pause and resume the refresh of data.       F
+        1                 The system shall display the local and exercise time in separate clocks       F

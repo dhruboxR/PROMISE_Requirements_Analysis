@@ -1,0 +1,15 @@
+PROMISE+ Duplicate and Label Analysis
+================================================
+
+Total records: 3677
+Exact duplicate excess rows: 21
+Rows involved in exact duplicates: 38
+Normalized duplicate excess rows: 113
+Rows involved in repeated texts: 222
+Rows repeated within projects: 44
+Rows repeated across projects: 178
+Distinct texts repeated across projects: 89
+Distinct texts with conflicting labels: 4
+Rows involved in label conflicts: 8
+
+Note: Different labels on identical text may indicate annotation disagreement. They do not necessarily indicate contradictory requirements.

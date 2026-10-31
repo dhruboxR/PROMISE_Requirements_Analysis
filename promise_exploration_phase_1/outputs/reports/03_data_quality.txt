@@ -1,0 +1,10 @@
+Rows: 3677
+Exact duplicate rows: 21
+Possible requirement text column: RequirementText
+Blank requirement texts: 0
+Duplicate requirement texts (case/whitespace normalized): 112
+
+         column  missing  missing_pct
+      ProjectID        0          0.0
+RequirementText        0          0.0
+        _class_        0          0.0

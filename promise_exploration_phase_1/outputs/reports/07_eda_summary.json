@@ -1,0 +1,30 @@
+{
+    "total_records": 3677,
+    "total_columns": 3,
+    "unique_projects": 88,
+    "unique_classes": 12,
+    "unique_requirement_texts": 3580,
+    "missing_values": {
+        "ProjectID": 0,
+        "RequirementText": 0,
+        "_class_": 0
+    },
+    "blank_requirement_texts": 0,
+    "majority_class": "F",
+    "minority_class": "FT",
+    "imbalance_ratio": 64.51,
+    "mean_word_count": 22.69,
+    "median_word_count": 18.0,
+    "max_word_count": 208,
+    "exact_duplicate_excess": 21,
+    "exact_duplicate_involved": 38,
+    "normalized_duplicate_excess": 113,
+    "normalized_duplicate_involved": 222,
+    "cross_project_duplicate_texts": 89,
+    "cross_project_duplicate_rows": 178,
+    "conflicting_label_texts": 4,
+    "conflicting_label_rows": 8,
+    "comma_repair_audit_rows": 1010,
+    "validated_dataset_sha256": "9c836825376dae7913a61ec0844502d8a706ca66a11aebcdd13e6e8cca77a173",
+    "original_dataset_sha256": "9772c11732b93a3b03d96f07bfacaaa552992ea492cb020c98284c930dbf510a"
+}

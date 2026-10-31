@@ -1,0 +1,5 @@
+﻿Records,Labels,Projects,Example
+2,"MN, PO","58, 59",Software Accessibility – all systems and application source code shall be available to or on the systems that execute it. 
+2,"O, PE","46, 67",The product shall be based on web and has to be run from a web server.
+2,"SE, US","46, 67",The system shall confirm all transactions with the customer’s web browser.
+2,"LF, US","46, 67",The system shall provide a uniform look and feel between all the web pages.

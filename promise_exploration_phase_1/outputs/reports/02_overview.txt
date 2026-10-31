@@ -1,0 +1,10 @@
+Rows: 3677
+Columns: 3
+Possible text column (heuristic): RequirementText
+Possible label column (heuristic): _class_
+
+Column overview:
+         column  dtype  non_null  unique
+      ProjectID object      3677      88
+RequirementText object      3677    3580
+        _class_ object      3677      12

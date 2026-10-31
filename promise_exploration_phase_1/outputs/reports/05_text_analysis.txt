@@ -1,0 +1,11 @@
+Text column: RequirementText
+
+       character_count  word_count
+count          3677.00     3677.00
+mean            142.85       22.69
+std             101.72       16.18
+min              26.00        3.00
+25%              78.00       13.00
+50%             112.00       18.00
+75%             169.00       27.00
+max            1136.00      208.00

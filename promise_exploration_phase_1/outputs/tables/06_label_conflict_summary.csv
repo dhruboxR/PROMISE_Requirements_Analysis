@@ -1,0 +1,5 @@
+﻿NormalizedText,occurrences,unique_projects,unique_labels,labels,projects,example_text
+software accessibility – all systems and application source code shall be available to or on the systems that execute it.,2,2,2,"MN, PO","58, 59",Software Accessibility – all systems and application source code shall be available to or on the systems that execute it. 
+the product shall be based on web and has to be run from a web server.,2,2,2,"O, PE","46, 67",The product shall be based on web and has to be run from a web server.
+the system shall confirm all transactions with the customer’s web browser.,2,2,2,"SE, US","46, 67",The system shall confirm all transactions with the customer’s web browser.
+the system shall provide a uniform look and feel between all the web pages.,2,2,2,"LF, US","46, 67",The system shall provide a uniform look and feel between all the web pages.

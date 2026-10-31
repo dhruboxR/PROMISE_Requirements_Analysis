@@ -1,0 +1,4 @@
+column,dtype,non_null,unique
+ProjectID,object,3677,88
+RequirementText,object,3677,3580
+_class_,object,3677,12
