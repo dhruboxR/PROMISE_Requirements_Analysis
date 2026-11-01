@@ -157,12 +157,6 @@ The introduction and literature review are stored in:
 
 Further methodology and experimental documentation will be added as the project develops.
 
-## 9. Repository Status
-
-**Current milestone:** Phase 1, PROMISE+ Dataset Exploration
-
-The initial dataset analysis, validation workflow, figures, statistical summaries, and repair audit have been generated. Potential annotation disagreements are documented for further review.
-
 ---
 
 **Note:** This repository is intended for academic research. Dataset ownership and redistribution permissions remain with their respective rights holders. Any public redistribution should follow the original dataset's applicable licensing and attribution requirements.
