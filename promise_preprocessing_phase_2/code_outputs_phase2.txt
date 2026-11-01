@@ -1,0 +1,348 @@
+-------------------------------------------------------------
+		RUN - python scripts/01_verify_input.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/01_verify_input.py
+
+PROMISE+ PHASE 2: INPUT VERIFICATION
+=============================================
+input_path: /home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff
+sha256: 9c836825376dae7913a61ec0844502d8a706ca66a11aebcdd13e6e8cca77a173
+total_records: 3677
+total_columns: 3
+unique_projects: 88
+unique_classes: 12
+missing_values: {'ProjectID': 0, 'RequirementText': 0, '_class_': 0}
+blank_texts: 0
+phase1_comparison: passed
+
+Input verification successful.
+Report saved: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/01_input_verification.json
+
+
+-------------------------------------------------------------
+		RUN - python scripts/02_normalize_text.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/02_normalize_text.py
+ 
+PROMISE+ PHASE 2: TEXT NORMALIZATION
+==================================================
+stage: Phase 2 - Text Normalization
+generated_utc: 2026-10-31T20:41:03.799768+00:00
+total_records: 3677
+modified_text_records: 1563
+unchanged_text_records: 2114
+unique_original_texts: 3580
+unique_normalized_texts: 3564
+missing_normalized_texts: 0
+blank_normalized_texts: 0
+normalization_operations: ['Unicode NFC', 'Whitespace consolidation', 'Leading and trailing whitespace removal']
+original_text_preserved: True
+labels_preserved: True
+projects_preserved: True
+
+Generated files:
+Normalized dataset: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/cleaned/02_normalized_requirements.csv
+Audit table: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/02_normalization_audit.csv
+Summary report: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/02_normalization_summary.json
+
+Text normalization completed successfully.
+
+-------------------------------------------------------------
+		RUN - python scripts/03_review_duplicates.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/03_review_duplicates.py
+
+PROMISE+ PHASE 2: DUPLICATE REVIEW
+====================================================
+total_records: 3677
+exact_duplicate_excess: 21
+exact_duplicate_involved_rows: 38
+normalized_duplicate_excess: 113
+normalized_duplicate_involved_rows: 222
+unique_duplicate_groups: 109
+within_project_repeated_rows: 44
+cross_project_repeated_groups: 89
+cross_project_repeated_rows: 178
+conflicting_label_groups: 4
+conflicting_label_rows: 8
+records_removed: 0
+original_labels_preserved: True
+duplicate_matching: casefold and whitespace normalization
+
+Label-conflict groups:
+----------------------------------------------------
+Record 1479 | Project 58 | Label MN
+Record 1558 | Project 59 | Label PO
+----------------------------------------------------
+Record 905 | Project 46 | Label O
+Record 2113 | Project 67 | Label PE
+----------------------------------------------------
+Record 913 | Project 46 | Label US
+Record 2108 | Project 67 | Label SE
+----------------------------------------------------
+Record 902 | Project 46 | Label LF
+Record 2124 | Project 67 | Label US
+
+Files saved:
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_exact_duplicates.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_repeated_texts.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_within_project_repeats.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_cross_project_repeats.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_label_conflicts.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/03_duplicate_group_summary.csv
+
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/03_duplicate_review_summary.json
+
+Review completed. No records were removed.
+
+-------------------------------------------------------------
+		RUN - python scripts/04_prepare_labels.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/04_prepare_labels.py
+ 
+PROMISE+ PHASE 2: LABEL PREPARATION
+==================================================
+_class_  LabelID  Count  Percentage
+      F        0   2258       61.41
+      A        1     71        1.93
+      L        2    209        5.68
+     LF        3     89        2.42
+     MN        4     75        2.04
+      O        5    157        4.27
+     PE        6    163        4.43
+     SC        7     95        2.58
+     SE        8    237        6.45
+     US        9    212        5.77
+     FT       10     35        0.95
+     PO       11     76        2.07
+
+Summary:
+total_records: 3677
+unique_labels: 12
+functional_records: 2258
+nonfunctional_records: 1419
+conflicting_label_records: 8
+conflicting_text_groups: 4
+records_removed: 0
+original_labels_preserved: True
+label_mapping: {'F': 0, 'A': 1, 'L': 2, 'LF': 3, 'MN': 4, 'O': 5, 'PE': 6, 'SC': 7, 'SE': 8, 'US': 9, 'FT': 10, 'PO': 11}
+
+Saved files:
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/cleaned/04_labeled_requirements.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables/04_label_mapping.json
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/04_label_preparation.json
+
+Label preparation successful.
+
+-------------------------------------------------------------
+		RUN - python scripts/05_create_splits.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/05_create_splits.py
+
+PROMISE+ LEAKAGE-AWARE SPLITTING
+====================================================
+Total records: 3677
+Connected components: 85
+Largest component: 243
+Target split: {'train': 0.7, 'validation': 0.15, 'test': 0.15}
+
+Split summary:
+     Split  Records  Percentage  Projects  ClassesPresent
+     train     2575       70.03        58              12
+validation      551       14.99        16              12
+      test      551       14.99        14              12
+
+Class distribution:
+Split    train  validation  test
+_class_                         
+A           48          17     6
+F         1524         331   403
+FT          29           3     3
+L          170           4    35
+LF          67          16     6
+MN          34          31    10
+O          111          19    27
+PE         113          37    13
+PO          69           2     5
+SC          76          16     3
+SE         163          45    29
+US         171          30    11
+
+Checks:
+Project overlap: 0
+Duplicate-text overlap: 0
+
+Files saved to:
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/splits
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/tables
+/home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/05_split_report.json
+
+Split generation completed.
+
+-------------------------------------------------------------
+		RUN - python scripts/06_validate_splits.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/06_validate_splits.py
+
+PROMISE+ PHASE 2: SPLIT VALIDATION
+=======================================================
+PASS: Total record count preserved
+PASS: RecordIDs are unique
+PASS: All original RecordIDs included
+PASS: Original record content and labels preserved
+PASS: No missing split assignments
+PASS: train/validation: no project overlap
+PASS: train/validation: no normalized-text overlap
+PASS: train/test: no project overlap
+PASS: train/test: no normalized-text overlap
+PASS: validation/test: no project overlap
+PASS: validation/test: no normalized-text overlap
+PASS: train: all classes represented
+PASS: validation: all classes represented
+PASS: test: all classes represented
+
+Split statistics:
+     Split  Records  Percentage  Projects  Classes  DistributionDistance
+     train     2575       70.03        58       12                0.0317
+validation      551       14.99        16       12                0.0955
+      test      551       14.99        14       12                0.1303
+
+Class distribution:
+     Split Class  Count  Percentage  FullDatasetPercentage
+     train     A     48        1.86                   1.93
+     train     F   1524       59.18                  61.41
+     train    FT     29        1.13                   0.95
+     train     L    170        6.60                   5.68
+     train    LF     67        2.60                   2.42
+     train    MN     34        1.32                   2.04
+     train     O    111        4.31                   4.27
+     train    PE    113        4.39                   4.43
+     train    PO     69        2.68                   2.07
+     train    SC     76        2.95                   2.58
+     train    SE    163        6.33                   6.45
+     train    US    171        6.64                   5.77
+validation     A     17        3.09                   1.93
+validation     F    331       60.07                  61.41
+validation    FT      3        0.54                   0.95
+validation     L      4        0.73                   5.68
+validation    LF     16        2.90                   2.42
+validation    MN     31        5.63                   2.04
+validation     O     19        3.45                   4.27
+validation    PE     37        6.72                   4.43
+validation    PO      2        0.36                   2.07
+validation    SC     16        2.90                   2.58
+validation    SE     45        8.17                   6.45
+validation    US     30        5.44                   5.77
+      test     A      6        1.09                   1.93
+      test     F    403       73.14                  61.41
+      test    FT      3        0.54                   0.95
+      test     L     35        6.35                   5.68
+      test    LF      6        1.09                   2.42
+      test    MN     10        1.81                   2.04
+      test     O     27        4.90                   4.27
+      test    PE     13        2.36                   4.43
+      test    PO      5        0.91                   2.07
+      test    SC      3        0.54                   2.58
+      test    SE     29        5.26                   6.45
+      test    US     11        2.00                   5.77
+
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/06_split_validation.json
+
+All split integrity checks passed.
+
+-------------------------------------------------------------
+		RUN - python scripts/07_optimize_splits.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/07_optimize_splits.py
+
+PROMISE+ PHASE 2: SPLIT OPTIMIZATION
+=======================================================
+Components: 85
+Largest component: 243
+Candidate 1 score: 0.75295
+Candidate 2 score: 0.26588
+
+Candidate comparison:
+     Split  Records  Percentage  Projects  ClassesPresent  DistributionDistance  FunctionalPercentage   Candidate
+     train     2575       70.03        58              12                0.0317                 59.18 Candidate 1
+validation      551       14.99        16              12                0.0955                 60.07 Candidate 1
+      test      551       14.99        14              12                0.1303                 73.14 Candidate 1
+     train     2574       70.00        50              12                0.0128                 61.50 Candidate 2
+validation      553       15.04        19              12                0.0472                 61.48 Candidate 2
+      test      550       14.96        19              12                0.0291                 60.91 Candidate 2
+
+Candidate 2 class counts:
+       train  validation  test
+Class                         
+A         49          11    11
+F       1583         340   335
+FT        20          10     5
+L        165           9    35
+LF        67          12    10
+MN        55           9    11
+O        111          25    21
+PE       113          25    25
+PO        42          24    10
+SC        70          16     9
+SE       163          39    35
+US       136          33    43
+
+Project overlap: 0
+Duplicate-text overlap: 0
+All classes present: Yes
+Candidate 1 files unchanged: Yes
+
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/07_optimization_report.json
+
+-------------------------------------------------------------
+		RUN - python scripts/08_finalize_splits.py
+-------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/08_finalize_splits.py
+
+PROMISE+ PHASE 2: FINAL SPLIT VALIDATION
+=======================================================
+train: 2574 records, 50 projects, 12 classes
+validation: 553 records, 19 projects, 12 classes
+test: 550 records, 19 projects, 12 classes
+
+All original records preserved: PASS
+Project overlap: 0
+Normalized-text overlap: 0
+Class coverage: 12/12 in every split
+
+Final split files frozen successfully.
+Manifest: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/08_final_split_manifest.json
+
+------------------------------------------------------------------------------
+		RUN - python scripts/09_generate_preprocessing_report.py
+------------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_preprocessing_phase_2$ python scripts/09_generate_preprocessing_report.py
+
+PROMISE+ PHASE 2: FINAL PREPROCESSING REPORT
+=======================================================
+Records: 3677
+Selected candidate: Candidate 2
+
+Final split summary:
+     Split  Records  Percentage  Projects  Classes  DistributionDistance
+     train     2574       70.00        50       12                0.0128
+validation      553       15.04        19       12                0.0472
+      test      550       14.96        19       12                0.0291
+
+Integrity checks: PASSED
+
+Markdown report: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/09_final_preprocessing_report.md
+JSON summary: /home/dhrubo_roy/Unofficial Thesis/promise_preprocessing_phase_2/outputs/reports/09_preprocessing_summary.json
+
+Report generation successful.
+
+
