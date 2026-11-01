@@ -53,40 +53,24 @@ The original dataset is preserved in `dataset/Promise+.arff`. A structurally rep
 
 ```text
 PROMISE_Requirements_Analysis/
-│
-├── dataset/
-│   ├── Promise+.arff
-│   └── Lista dos tipos de software.xlsx
-│
-├── Docs/
+├── dataset
+│   ├── Lista dos tipos de software.xlsx
+│   └── Promise+.arff
+├── Docs
 │   └── Thesis_Intro+LiteratureReview.pdf
-│
-├── promise_exploration_phase_1/
-│   ├── scripts/
-│   │   ├── 00_inspect_escapes.py
-│   │   ├── 00_validate_arff.py
-│   │   ├── 01_load_dataset.py
-│   │   ├── 02_dataset_overview.py
-│   │   ├── 03_data_quality.py
-│   │   ├── 04_class_distribution.py
-│   │   ├── 05_text_analysis.py
-│   │   ├── 06_duplicate_label_analysis.py
-│   │   ├── 07_generate_eda_report.py
-│   │   ├── common.py
-│   │   └── dataset_utils.py
-│   │
-│   ├── outputs/
-│   │   ├── figures/
-│   │   ├── reports/
-│   │   ├── tables/
-│   │   └── validated/
-│   │
-│   ├── code_outputs.txt
+├── promise_exploration_phase_1
+│   ├── code_outputs_phase1.txt
+│   ├── outputs
 │   ├── README.md
-│   ├── requirements.txt
-│   └── requirements.lock.txt
-│
-└── README.md
+│   └── scripts
+├── promise_preprocessing_phase_2
+│   ├── code_outputs_phase2.txt
+│   ├── outputs
+│   ├── README.md
+│   └── scripts
+├── README.md
+├── requirements.lock.txt
+└── requirements.txt
 ```
 
 ## 4. Technologies and Libraries
@@ -145,7 +129,7 @@ For an environment matching the recorded package versions, use `requirements.loc
 | Phase | Focus | Status |
 |---|---|---|
 | Phase 1 | Dataset validation and exploratory analysis | Completed |
-| Phase 2 | Dataset preprocessing and splitting | Planned |
+| Phase 2 | Dataset preprocessing and splitting | Completed |
 | Phase 3 | Machine learning model development | Planned |
 | Phase 4 | Model evaluation and comparative analysis | Planned |
 | Phase 5 | Requirements inconsistency investigation | Planned |
