@@ -1,0 +1,21 @@
+{
+    "label_to_id": {
+        "F": 0,
+        "A": 1,
+        "L": 2,
+        "LF": 3,
+        "MN": 4,
+        "O": 5,
+        "PE": 6,
+        "SC": 7,
+        "SE": 8,
+        "US": 9,
+        "FT": 10,
+        "PO": 11
+    },
+    "binary_mapping": {
+        "F": 0,
+        "all_other_classes": 1
+    },
+    "note": "Class IDs are fixed. Original annotations are preserved. Binary mapping assumes all non-F classes represent NFR categories."
+}

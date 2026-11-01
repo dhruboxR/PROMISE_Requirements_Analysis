@@ -1,0 +1,15 @@
+{
+    "input_path": "/home/dhrubo_roy/Unofficial Thesis/promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff",
+    "sha256": "9c836825376dae7913a61ec0844502d8a706ca66a11aebcdd13e6e8cca77a173",
+    "total_records": 3677,
+    "total_columns": 3,
+    "unique_projects": 88,
+    "unique_classes": 12,
+    "missing_values": {
+        "ProjectID": 0,
+        "RequirementText": 0,
+        "_class_": 0
+    },
+    "blank_texts": 0,
+    "phase1_comparison": "passed"
+}

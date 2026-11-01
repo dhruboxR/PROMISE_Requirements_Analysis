@@ -1,0 +1,46 @@
+{
+    "generated_utc": "2026-10-31T20:54:18.801193+00:00",
+    "total_records": 3677,
+    "unique_projects": 88,
+    "unique_classes": 12,
+    "normalization_modified_records": 1563,
+    "normalized_duplicate_excess": 113,
+    "label_conflict_groups": 4,
+    "label_conflict_rows": 8,
+    "selected_candidate": "Candidate 2",
+    "random_seed": 42,
+    "split_summary": [
+        {
+            "Split": "train",
+            "Records": 2574,
+            "Percentage": 70.0,
+            "Projects": 50,
+            "Classes": 12,
+            "DistributionDistance": 0.0128
+        },
+        {
+            "Split": "validation",
+            "Records": 553,
+            "Percentage": 15.04,
+            "Projects": 19,
+            "Classes": 12,
+            "DistributionDistance": 0.0472
+        },
+        {
+            "Split": "test",
+            "Records": 550,
+            "Percentage": 14.96,
+            "Projects": 19,
+            "Classes": 12,
+            "DistributionDistance": 0.0291
+        }
+    ],
+    "master_sha256": "f8b14f89d7b9e1d586b9a786a5d989ebe78356fb9fdb221beaf63012083b3bf5",
+    "final_split_sha256": {
+        "train": "b70937f65cbef65aaaad630267c2d81cb3c6f88eba45e38b2504e7871c3e9f69",
+        "validation": "7613b615adce2d653fa06f181770295778b55d250e7ca00431746c2c4be84e49",
+        "test": "014411167392db6405c9ff61f7cde0aed8629134653cb4714441a68a608fd68b"
+    },
+    "integrity_checks_passed": true,
+    "records_removed": 0
+}

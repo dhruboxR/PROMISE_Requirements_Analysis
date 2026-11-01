@@ -1,0 +1,16 @@
+{
+    "total_records": 3677,
+    "exact_duplicate_excess": 21,
+    "exact_duplicate_involved_rows": 38,
+    "normalized_duplicate_excess": 113,
+    "normalized_duplicate_involved_rows": 222,
+    "unique_duplicate_groups": 109,
+    "within_project_repeated_rows": 44,
+    "cross_project_repeated_groups": 89,
+    "cross_project_repeated_rows": 178,
+    "conflicting_label_groups": 4,
+    "conflicting_label_rows": 8,
+    "records_removed": 0,
+    "original_labels_preserved": true,
+    "duplicate_matching": "casefold and whitespace normalization"
+}

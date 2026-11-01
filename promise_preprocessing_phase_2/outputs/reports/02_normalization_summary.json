@@ -1,0 +1,19 @@
+{
+    "stage": "Phase 2 - Text Normalization",
+    "generated_utc": "2026-10-31T20:41:03.799768+00:00",
+    "total_records": 3677,
+    "modified_text_records": 1563,
+    "unchanged_text_records": 2114,
+    "unique_original_texts": 3580,
+    "unique_normalized_texts": 3564,
+    "missing_normalized_texts": 0,
+    "blank_normalized_texts": 0,
+    "normalization_operations": [
+        "Unicode NFC",
+        "Whitespace consolidation",
+        "Leading and trailing whitespace removal"
+    ],
+    "original_text_preserved": true,
+    "labels_preserved": true,
+    "projects_preserved": true
+}

@@ -1,0 +1,82 @@
+{
+    "seed": 42,
+    "trials": 3000,
+    "selection_score": 0.5179491439606987,
+    "requested_proportions": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "connected_components": 85,
+    "largest_component_size": 243,
+    "split_summary": [
+        {
+            "Split": "train",
+            "Records": 2575,
+            "Percentage": 70.03,
+            "Projects": 58,
+            "ClassesPresent": 12
+        },
+        {
+            "Split": "validation",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 16,
+            "ClassesPresent": 12
+        },
+        {
+            "Split": "test",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 14,
+            "ClassesPresent": 12
+        }
+    ],
+    "project_overlap": false,
+    "duplicate_text_overlap": false,
+    "class_counts": {
+        "train": {
+            "A": 48,
+            "F": 1524,
+            "FT": 29,
+            "L": 170,
+            "LF": 67,
+            "MN": 34,
+            "O": 111,
+            "PE": 113,
+            "PO": 69,
+            "SC": 76,
+            "SE": 163,
+            "US": 171
+        },
+        "validation": {
+            "A": 17,
+            "F": 331,
+            "FT": 3,
+            "L": 4,
+            "LF": 16,
+            "MN": 31,
+            "O": 19,
+            "PE": 37,
+            "PO": 2,
+            "SC": 16,
+            "SE": 45,
+            "US": 30
+        },
+        "test": {
+            "A": 6,
+            "F": 403,
+            "FT": 3,
+            "L": 35,
+            "LF": 6,
+            "MN": 10,
+            "O": 27,
+            "PE": 13,
+            "PO": 5,
+            "SC": 3,
+            "SE": 29,
+            "US": 11
+        }
+    },
+    "limitation": "Connected project/text components constrain achievable split proportions. The chosen split minimizes a heuristic score and is not guaranteed to be globally optimal or fully stratified."
+}

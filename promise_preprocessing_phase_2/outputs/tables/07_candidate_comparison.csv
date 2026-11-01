@@ -1,0 +1,7 @@
+Split,Records,Percentage,Projects,ClassesPresent,DistributionDistance,FunctionalPercentage,Candidate
+train,2575,70.03,58,12,0.0317,59.18,Candidate 1
+validation,551,14.99,16,12,0.0955,60.07,Candidate 1
+test,551,14.99,14,12,0.1303,73.14,Candidate 1
+train,2574,70.0,50,12,0.0128,61.5,Candidate 2
+validation,553,15.04,19,12,0.0472,61.48,Candidate 2
+test,550,14.96,19,12,0.0291,60.91,Candidate 2

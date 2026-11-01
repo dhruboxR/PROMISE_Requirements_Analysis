@@ -1,0 +1,83 @@
+{
+    "seed": 42,
+    "iterations": 20000,
+    "target_proportions": {
+        "train": 0.7,
+        "validation": 0.15,
+        "test": 0.15
+    },
+    "component_count": 85,
+    "largest_component": 243,
+    "candidate1_score": 0.7529468167744668,
+    "candidate2_score": 0.2658775479511907,
+    "objective_improved": true,
+    "candidate1_sha256": {
+        "train": "3059b40c5e8e2a5742d397bd2a5070cba1856a8bbef27e0004bc0a5a41486ff5",
+        "validation": "e6237d3a466c38426b51ba638ae89d4f08bf0f27d1bde0177604f9c24bdf383c",
+        "test": "8d54b97cc85f53187017fac1f7943de1ce462ea0e94a6527ec09e74e4693956a"
+    },
+    "candidate1": [
+        {
+            "Split": "train",
+            "Records": 2575,
+            "Percentage": 70.03,
+            "Projects": 58,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.0317,
+            "FunctionalPercentage": 59.18
+        },
+        {
+            "Split": "validation",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 16,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.0955,
+            "FunctionalPercentage": 60.07
+        },
+        {
+            "Split": "test",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 14,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.1303,
+            "FunctionalPercentage": 73.14
+        }
+    ],
+    "candidate2": [
+        {
+            "Split": "train",
+            "Records": 2574,
+            "Percentage": 70.0,
+            "Projects": 50,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.0128,
+            "FunctionalPercentage": 61.5
+        },
+        {
+            "Split": "validation",
+            "Records": 553,
+            "Percentage": 15.04,
+            "Projects": 19,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.0472,
+            "FunctionalPercentage": 61.48
+        },
+        {
+            "Split": "test",
+            "Records": 550,
+            "Percentage": 14.96,
+            "Projects": 19,
+            "ClassesPresent": 12,
+            "DistributionDistance": 0.0291,
+            "FunctionalPercentage": 60.91
+        }
+    ],
+    "validation": {
+        "project_overlap": 0,
+        "normalized_text_overlap": 0,
+        "all_classes_present": true
+    },
+    "note": "Heuristic optimization, not a proof of global optimality. Split selection must be frozen before model training and test evaluation."
+}

@@ -1,0 +1,4 @@
+Split,Records,Percentage,Projects,ClassesPresent
+train,2575,70.03,58,12
+validation,551,14.99,16,12
+test,551,14.99,14,12

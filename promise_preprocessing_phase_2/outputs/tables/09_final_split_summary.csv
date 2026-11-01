@@ -1,0 +1,4 @@
+Split,Records,Percentage,Projects,Classes,DistributionDistance
+train,2574,70.0,50,12,0.0128
+validation,553,15.04,19,12,0.0472
+test,550,14.96,19,12,0.0291

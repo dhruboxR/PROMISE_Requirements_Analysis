@@ -1,0 +1,53 @@
+{
+    "all_checks_passed": true,
+    "checks": {
+        "Total record count preserved": true,
+        "RecordIDs are unique": true,
+        "All original RecordIDs included": true,
+        "Original record content and labels preserved": true,
+        "No missing split assignments": true,
+        "train/validation: no project overlap": true,
+        "train/validation: no normalized-text overlap": true,
+        "train/test: no project overlap": true,
+        "train/test: no normalized-text overlap": true,
+        "validation/test: no project overlap": true,
+        "validation/test: no normalized-text overlap": true,
+        "train: all classes represented": true,
+        "validation: all classes represented": true,
+        "test: all classes represented": true
+    },
+    "failed_checks": [],
+    "master_sha256": "f8b14f89d7b9e1d586b9a786a5d989ebe78356fb9fdb221beaf63012083b3bf5",
+    "split_sha256": {
+        "train": "3059b40c5e8e2a5742d397bd2a5070cba1856a8bbef27e0004bc0a5a41486ff5",
+        "validation": "e6237d3a466c38426b51ba638ae89d4f08bf0f27d1bde0177604f9c24bdf383c",
+        "test": "8d54b97cc85f53187017fac1f7943de1ce462ea0e94a6527ec09e74e4693956a"
+    },
+    "split_summary": [
+        {
+            "Split": "train",
+            "Records": 2575,
+            "Percentage": 70.03,
+            "Projects": 58,
+            "Classes": 12,
+            "DistributionDistance": 0.0317
+        },
+        {
+            "Split": "validation",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 16,
+            "Classes": 12,
+            "DistributionDistance": 0.0955
+        },
+        {
+            "Split": "test",
+            "Records": 551,
+            "Percentage": 14.99,
+            "Projects": 14,
+            "Classes": 12,
+            "DistributionDistance": 0.1303
+        }
+    ],
+    "distribution_distance_definition": "Total variation distance between split class proportions and overall dataset class proportions. Zero indicates identical distributions."
+}

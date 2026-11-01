@@ -1,0 +1,24 @@
+{
+    "total_records": 3677,
+    "unique_labels": 12,
+    "functional_records": 2258,
+    "nonfunctional_records": 1419,
+    "conflicting_label_records": 8,
+    "conflicting_text_groups": 4,
+    "records_removed": 0,
+    "original_labels_preserved": true,
+    "label_mapping": {
+        "F": 0,
+        "A": 1,
+        "L": 2,
+        "LF": 3,
+        "MN": 4,
+        "O": 5,
+        "PE": 6,
+        "SC": 7,
+        "SE": 8,
+        "US": 9,
+        "FT": 10,
+        "PO": 11
+    }
+}
