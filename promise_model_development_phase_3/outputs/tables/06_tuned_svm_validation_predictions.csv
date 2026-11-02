@@ -1,0 +1,554 @@
+﻿RecordID,ProjectID,RequirementText,_class_,PredictedLabel,Correct
+148,4,All actions that modify an existing dispute case must be recorded in the case history.,L,F,False
+149,4,The Disputes System will provide the user the ability to create or initiate a ticket retrieval request.   As part of ticket retrieval creation process the system must prompt the user to enter all the required information to create the ticket retrieval request.  The ticket retrieval request is a document that is sent to merchant inquiring the validity of a transaction.,F,F,True
+150,4,The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.,F,F,True
+151,4,The Disputes System must allow the users to select disputable transactions (based on the age of the transaction) from a user interface and initiate a dispute (ticket retrieval request or chargeback notification) on the selected transaction.,F,F,True
+152,4,The Disputes System shall provide update access capability for authorized users of the application.,F,F,True
+153,4,The Disputes System must prevent users from accessing any dispute cases that do not belong to their cardholder base.,F,F,True
+154,4,The Disputes System must provide different levels of access with regard to disputes case initiation and follow-up actions.,F,F,True
+155,4,The Disputes System will facilitate direct data entry of a dispute case via a user interface that supports real time responses to the users.,F,F,True
+156,4,The Disputes System must be accessible by both internal and external users.,F,US,False
+157,4,The Disputes System must allow the user to create three unique types of ticket retrieval requests.  The three types of ticket retrieval requests are (1) Request for original receipt (2) Request for a copy of the receipt or (3) Request for a portfolio. A portfolio consists of documentation that would provide proof of a purchase such as the documentation that is received from a car rental agency that is more than a sales receipt.,F,F,True
+158,4,The Disputes System shall provide view access capability for authorized users of the application.,F,F,True
+159,4,The Disputes System must prevent external users from requesting original receipts. Requests for original receipts are restricted to internal users.,F,F,True
+160,4,The Disputes System shall provide the users the ability to view the history of all activities that have occurred on the dispute case.,F,F,True
+161,4,The Disputes System shall allow the user to create or initiate a chargeback request.  The system must prompt the user to enter the required information to initiate a chargeback request. The chargeback request results in a printed chargeback notification that is sent to merchant indicating that their account will be charged back if no proof is provided that the disputed transaction is valid.,F,F,True
+162,4,The Disputes System must provide a confirmation to the user upon the creation of a chargeback request. The confirmation must contain the following information; the dispute case number  the type of chargeback requested (pending or immediate)  and the date that the merchant response is due.,F,F,True
+163,4,The Disputes System shall prevent the creation of duplicate dispute requests 100% of the time.,F,F,True
+164,4,The Disputes System shall accurately provide a list of possible reason codes for a given transaction.  The list of possible reason codes must be derived based on the type of transaction and the industry that the merchant belongs to  according to the business rules defined for the Disputes System.,F,F,True
+165,4,The Disputes System must provide the ability to view existing dispute cases.,F,F,True
+166,4,The Disputes System must provide Search functionality.  The search method must include the ability to search by (1) the dispute case number  (2) the merchant account number  (3) the cardmember account number and (4) the issuer number.  In addition to the above criteria  the search functionality must further allow the user to limit the results of the search by a date range  the type of dispute (ticket retrieval request or chargeback notification)  the case status (open  closed or all) and the dispute reason code.,F,F,True
+167,4,A list of all disputes cases that meet the entered search criteria must be provided to the user.  The list of cases must differentiate the type and/or status of the case by color -coding the line item in the list.  For example all open cases will be yellow and all closed cases will be gray.,F,F,True
+168,4,The Dispute System shall provide the users with the ability to follow up on a dispute case via follow-up actions.  The list of available follow up actions for a given dispute case must be filtered by the status of the case and the access level of the user.,F,F,True
+169,4,The Disputes System shall record the name of the user and the date for any activity that creates or modifies the disputes case in the system.  A detailed history of the actions taken on the case  including the date and the user that performed the action must be maintained for auditing purposes.,F,F,True
+170,4,For any systematic (non-user initiated) action that occurs on a case such as the disputes aging process  a case activity will be generated.  Upon the next logon the user that initiated the dispute case must be notified that a systematic action has occurred on the dispute case.,F,F,True
+171,4,All letter requests must be formatted according to guidelines specified by the Print Letter Utility system.,F,F,True
+172,4,Any disputes cases that have been closed for over 6 months must be purged from the online disputes database.,F,F,True
+173,4,The Disputes System must provide a confirmation to the user upon the creation of ticket retrieval request that contains the following information; the dispute case number  the type of retrieval requested (copy  original or portfolio)  and the date that the merchant response is due.,F,F,True
+174,4,The Disputes application must maintain a detailed history of every action that a user takes on a dispute case.  This ensures a complete audit trail if questions arise later on with regard to a particular dispute case.,L,F,False
+175,4,All business rules specified in the Disputes System shall be in compliance with the Merchant Operating Regulations.,L,O,False
+176,4,The Disputes application must conform to the legal requirements as specified by Regulation E and Regulation Z that govern credit card disputes processing.,L,L,True
+177,4,All business rules specified in the Disputes System shall be in compliance to the guidelines of Regulation E and Regulation Z.,L,F,False
+178,4,The Disputes application shall comply with the corporate standards for user interface creation for internally and externally used applications.,LF,LF,True
+179,4,All screens created as part of the Disputes application must comply with corporate standards for interface creation.,LF,LF,True
+180,4,The list of dispute cases that are displayed after a search is performed must be color coded for easy identification of dispute cases based upon the dispute case status.,US,F,False
+181,4,100% of the cardmember and merchant services representatives shall use the Disputes application regularly after a 2-day training course.,US,F,False
+182,4,100% of merchant services representatives shall be able to successfully perform a follow up action on a dispute case on the first encounter after completing the training course.,US,F,False
+183,4,The maximum wait time for a user navigating from one screen to another within the Disputes application shall be no more than 5 seconds.,PE,PE,True
+184,4,The Disputes application shall support 350 concurrent users without any degradation of performance in the application.,PE,PE,True
+185,4, The Disputes application shall be available 24x7x365  with the exception of the following scheduled maintenance windows.  Monday – Saturday 3:00am to 4:00am EST Sunday 1:00amd to 5:00am EST,O,A,False
+186,4,The Disputes application shall interface with the Statement Database. The Statement Database provides the transaction details to the Disputes System. All transaction details must be obtained from the Statement Database,O,O,True
+187,4,The Disputes application shall interface with the Cardmember Information Database. The Cardmember Information Database provides detailed information with regard to a cardmember. All cardmember detail information must be obtained from the Cardmember Information Database.,O,O,True
+188,4,The Disputes applications shall interface with the Merchant Information Database. The Merchant Information Database provides detailed information with regard to the merchant. All merchant detail information shall be obtained from the Merchant Information Database.,O,O,True
+189,4,100% of cardmember services representatives shall be able to successfully create a dispute case on the first encounter after completing the training course.,US,F,False
+190,4,The Disputes application shall interface with the Cardmember Posting and Billing System.  This will allow the Disputes application to request adjustments to cardmember and merchant’s accounts. All adjustment requests must be sent to the Cardmember Posting and Billing System.,O,O,True
+191,4,The Disputes application must conform to the legal requirements as specified by the Merchant Operating Regulations.,L,L,True
+192,4,The Disputes application shall interface with the Letters application.  This will allow the Disputes application to request letters as part of the dispute initiation and dispute follow up process. All letter requests must be sent to the Print Letter Utility application.,O,F,False
+193,4,All updates to data files or database must be initiated from the Disputes System.,SE,F,False
+194,4,The Disputes application shall manipulate and view business data. Users will not have direct access to data files or databases.,SE,SE,True
+195,4,If a user account is revoked  it can only be re-instantiated by the System Administrator.,SE,SE,True
+196,4,Only the System Administrator shall be able to reset a revoked user logon account,SE,F,False
+197,4,The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user’s access level. The report will be reviewed for auditing purposes.,SE,F,False
+198,4,All authorized users  once authenticated must be able to logon to the Disputes System,SE,F,False
+199,4,The Disputes application shall ensure that only authorized users are allowed to logon to the application.,SE,SE,True
+200,4,Only users with Update access must be able to initiate dispute requests.,SE,SE,True
+201,4,The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests.,SE,SE,True
+202,4,All additions of new users and modifications to user’s access shall be recorded on the User Report.,SE,F,False
+276,6,The product shall update existing conference rooms.,F,O,False
+277,6,The product will notify employees of meeting invitations.,F,O,False
+278,6,The product will record meeting acknowledgements.,F,O,False
+279,6,The product shall assign the organizers contact information to each meeting they create.,F,F,True
+280,6,The product shall have the ability to send meeting reminders to employees.,F,SE,False
+281,6,The product shall record meeting entries.,F,LF,False
+282,6,The product shall ensure that the database’s data corresponds to the data entered by the user.  Each conference room reservation in the system will contain the same information as was entered by the user.,SE,SE,True
+283,6,The product shall be able to display calendar dates and times according to the user’s locale.  90% of survey respondents from each target market country will find that the date and time formatting of the product is correct.,US,US,True
+284,6,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.,SC,US,False
+285,6,The product shall have the ability to receive automatic software updates as new threats emerge. 100% of customers will be able to receive automatic software updates transmitted to the installed product.,SE,SE,True
+286,6,The product and/or dependent databases/filesystems shall remain operational as a result of the input of malicious data.  The product and/or dependent databases/filesystems shall not crash 100% of the time that malicious data is input into the product.,FT,SE,False
+287,6,The product shall prevent the input of malicious data.  The product and/or adjacent hardware/software systems’ data shall remain 100% uncorrupted each time malicious data is input into the product.,SE,SE,True
+288,6,The product will be able to delete conference rooms.,F,F,True
+289,6,Only managers are able to perform search queries for reservations by user.  100% of all search queries for reservations by user shall be from logons of only management logons.,SE,F,False
+290,6,The product must be developed with the J2SE/J2EE programming language libraries,O,O,True
+291,6,The product shall be able to store new room equipment.,F,O,False
+292,6,The product shall send a meeting confirmation to the meeting organizer.,F,F,True
+293,6,The product shall be able to delete room equipment.,F,F,True
+294,6,The product will display an available status for unreserved conference rooms.,F,F,True
+295,6,The product shall ensure that only company employees or external users with company-approved user IDs may have product access.  100% of all logons shall be by either company employees or external users with company-approved user IDs.,SE,SE,True
+296,6,The product shall have an intuitive user interface.,F,US,False
+297,6,The product shall have a customizable Look and Feel.,F,LF,False
+298,6,The product shall be able to send meeting notifications via different kinds of end-user specified methods.,F,F,True
+299,6,The product will allow priviledged users to view meeting schedules in multiple reporting views.,F,F,True
+300,6,The product shall notify building personnel of equipment transport requests.,F,F,True
+301,6,The product will update existing room equipment.,F,O,False
+302,6,The product shall record all the equipment that has been reserved.,F,LF,False
+303,6,The product shall display conference rooms according to search parameters.,F,F,True
+304,6,The product shall display room equipment according to search parameters.,F,F,True
+305,6,The product shall record updated meeting agendas.,F,LF,False
+306,6,The product shall display a map of the company building showing conference room locations.,F,LF,False
+307,6,The product shall record the transportation status of equipment reserved.,F,F,True
+308,6, Each time a conference room is reserved  the conference room schedule shall be updated to reflect the time and date of the reservation.,F,F,True
+309,6,The product shall allow an organizer to invite other employees to meetings.,F,F,True
+310,6,The product shall record different meeting types.,F,US,False
+311,6,The product shall be able to be installed in any operating environment within 2 days.,O,O,True
+312,6,The product shall store new conference rooms.,F,MN,False
+313,6,The product shall be translated into foreign languages other than the target market countries’ languages in future releases.  For each emerging target market  it shall take no more than 5 days to configure the product for that market’s language.,US,PE,False
+314,6,The product shall allow for intuitive searching of available conference rooms.,US,F,False
+315,6,The product shall use a standard navigation menu familiar to most web users.,US,US,True
+316,6,The product shall allow for customization of start page and views preferences.,US,O,False
+317,6,The product shall allow the user to select a chosen language from one of the target market countries.,US,F,False
+318,6,The product shall give users feedback when necessary. 80% of the users surveyed report that the product accurately confirms their actions.,US,US,True
+319,6,The product shall be easy to use. 90% of users will be able to successfully reserve a conference room within 5 minutes of product use.,US,US,True
+320,6,The product shall make the users want to use it. 80% of the users surveyed report they are regularly using the product after the first 2 weeks post-launch.,US,US,True
+321,6,The product shall have a conservative and professional appearance.,LF,LF,True
+322,6,The product’s Look and Feel shall be able to incorporate aspects of the customer’s organization such as logo  branding  and identity,LF,US,False
+323,6,A database management system such as Oracle  DB2  MySql or HSQL will need to be integrated with the product.,O,O,True
+324,6,The product must make use of web/application server technology.  Open source examples include Apache web server  Tomcat  and the JBoss application server.,O,O,True
+325,6,The product will require collaboration with a database management system (DBMS).  The DBMS may be located on the same machine as the product or on a separate machine residing on the same computer network.,O,O,True
+326,6,The product will function alongside server software on any operating system where the Java runtime can be installed.,O,O,True
+327,6,The product must work with most database management systems (DBMS) on the market  whether the DBMS is colocated with the product on the same machine or is located on a different machine on the computer network.,O,O,True
+328,6,The product is expected to integrate with multiple database management systems. The product will operate with Oracle  SQL Server  DB2  MySQL  HSQL  and MS Access.,O,MN,False
+329,6,The product shall conform to the Americans with Disabilities Act.,US,FT,False
+330,6,The response shall be fast enough to avoid interrupting the user’s flow of thought.  90% of tasks shall complete within 5 seconds.  98% of tasks shall complete within 8 seconds.,PE,PE,True
+331,6,An employee will be able to successfully use the product within a few minutes.  After informally navigating the product for less than 15 minutes  users shall be able to successfully setup meetings and reserve conference rooms.,US,PE,False
+332,6,The product shall create an exception log of problems encountered within the product for transmission to our company for analysis and resolution.,FT,PE,False
+333,6,The customer shall be able to easily integrate new building maps with the product throughout the product’s lifecycle.  Integration of new maps with the product shall be possible with little to no support from product support staff.,MN,US,False
+334,6,Every registered user will have access to the product’s support site via the Internet.  70% of registered users shall find a solution to their problem within 5 minutes of using the support site.,US,US,True
+335,6,Maintenance releases will be offered to customers once a year.  The releases shall take no longer than 5 minutes for 80% of the customer base to install.,MN,MN,True
+336,6,Aside from server failure  the software product shall achieve 99.99% up time.,A,A,True
+337,6,The product must be designed using Design Patterns and coding best practices.  90% of maintenance software developers are able to integrate new functionality into the product with 2 working days.,MN,US,False
+338,6,A new user must be able to be added to the system within 10 minutes. 90% of new users are able to log into the system within 10 minutes.,US,US,True
+339,6,The product will be available for licensing as a one-server  two-five servers  or five-or-more servers license.,O,A,False
+340,6,The product shall be available for distribution as a packaged CD.,O,A,False
+341,6,The product must be highly configurable for use with various database management systems for the end users.  80% of end users are able to integrate new database management systems with the product without changing the product’s software code.,MN,O,False
+342,6,The product must be able to interface with various email servers. The product shall be able to send email.,O,O,True
+343,6,The product must be able to interface with various database management systems. The product shall communicate successfully with the database management system on 100% of all transactions.,O,O,True
+344,6,The product must be able to interface with any HTML browser.  The product shall transmit data between the user and the product without problems. The product shall display HTML properly in 80% of all HTML browsers tested (minimum is to test 8 browsers).,O,O,True
+345,6,The product shall be used in office environments.,O,O,True
+346,6,The product shall be expected to operate for at least 5 years for each customer installation.,SC,MN,False
+347,6,The product shall be able to process 10 000 transactions per hour within two years of its launch.  This number will increase to 20 000 by Release 2.,SC,SC,True
+348,6,The product shall be capable of handling up to 1 000 concurrent requests.  This number will increase to 2 000 by Release 2.  The concurrency capacity must be able to handle peak scheduling times such as early morning and late afternoon hours.,SC,SC,True
+349,6,The product shall be available for distribution via the Internet as a binary or ZIP file.,O,A,False
+542,11,The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.,MN,O,False
+543,11,The interface shall be appealing to callers and supervisors. In the interface and usability survey  80% of beta testers must report that the interface is appealing.,LF,F,False
+544,11,The interface shall have a simple look. In the interface and usability survey  90% of beta testers must report that the interface is adequately simple.,LF,US,False
+545,11,The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,SE,True
+546,11,The product shall ensure that only supervisors can enter a caller’s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,SE,True
+547,11,The system must be available for use between 7:00AM and 11:59PM all days of the year.,A,A,True
+548,11,The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.,SE,SE,True
+549,11,On a 112k connection or faster  the system response time for all operations must be no more than 3 seconds 90% of the time.,PE,PE,True
+550,11,On a 56k connection  the system response time for all operations must be no more than 6 seconds 90% of the time.,PE,PE,True
+551,11,The system shall be responsive. At the DePaul TeleServices Center  when a supervisor uses the system to view a callers schedule  the system response time must be no more than 2 seconds 90% of the time and no more than 5 seconds the rest of the time.,PE,PE,True
+552,11,The system shall be easy to learn by callers and supervisors. Callers and supervisors shall learn how to use the system within 10 minutes.,US,US,True
+553,11,The system shall be easy to use by callers and supervisors. Callers and supervisors must be able to accomplish any system task within 2 minutes.,US,US,True
+554,11,The system shall have high availability every day of the year.The system must be available for use between 12:00AM and 6:00PM all days of the year.,A,A,True
+612,15,The product interface should be fast. The response time of the product interface should not exceed 2 seconds 90% of the time. For 10% of the time  the response time should not be more than 10 seconds.not be more than 10 seconds.,PE,PE,True
+613,15,The users should be able to easily use the system to successfully complete their budgets  within the stipulated time for completion. With a week of training prior to product implementation  98% of the users shall complete their budgets within the stipulated time.,US,US,True
+614,15,The intranet pages should display appropriately in all resolutions  from 800x600 and higher. The display of all the pages will be correct in 95% of the resolutions  prior to implementation. The remaining 5% will be corrected within a week of notification of the incorrect display.,LF,US,False
+615,15,The product must comply with the intranet page standards and requirements of ENET Securities. 95% of the product look & feel will be approved by the Architecture group  prior to implementation. The remaining 5% will be corrected and approved within one month of product release.,LF,O,False
+616,15,User access should be limited to the permissions granted to their role(s) Each level in the PCG hierarchy will be assigned a role and users will be assigned to these roles. Access to functionality within RFS system is dependent on the privileges/permission assigned to the role..,SE,SE,True
+617,15,Only authorized user shall access the RFS system. ONLY users that exist in the UAS system  with the RFS system assigned to their role(s)  shall access the RFS system and use it.,SE,SE,True
+618,15,Changes to revenue and expense formulae must be applied to the RFS system  every year  prior to the budgeting process start. Revenue and expense formulae will be updated within one week of their receipt  after which 2 weeks will be allotted to testing of the budget calculations  to be conducted jointly by the project development team and PCG Finance.,MN,PE,False
+619,15,The RFS system should be able to easily interface with the BDW environment  in order to load the data. •	7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process  every year. The data will be as of October month-end. 	Test files (7) shall be loaded up to 5 times throughout the year  from the BDW.,O,F,False
+620,15,98% of the user workstations shall meet the minimum software requirements prior to implementation: Microsoft Internet Explorer 5.0. Microsoft .NET Framework 1.1. Microsoft Internet Explorer Web Controls,O,O,True
+621,15,98% of the user workstations shall meet the minimum hardware requirements prior to implementation. Minimum Hard Disk Space:  400MB.,O,O,True
+622,15,The RFS system should be available 24/7  especially during the budgeting period. The RFS system shall be available 90% of the time all year  and 98% during the budgeting period. 2% of the time  the system will become available within 1 hour of the time that the situation is reported.,A,A,True
+623,15,New branches/complexes/districts/regions and revenue/expense accounts added to the BDW  must be reflected in the RFS system. 100% of the entities (mentioned above) available as of October month-end  will be loaded into the RFS system  prior to the budget start process.,MN,L,False
+672,23,Changes made to the Manage My ID website can be adopted without altering the iOS application.,MN,F,False
+673,23,95% of users will not need to read the user manual to be able to use the application.,US,US,True
+679,25,The system shall provide a way to return to the startup screen.,US,F,False
+680,25,The campus map shall have a pause/resume button. The pause and resume button will allow the user to scroll and select other buildings without being interrupted by the automatic search and announce feature.,LF,F,False
+681,25,The campus map shall provide visual clues regarding what areas have prepared audio and therefore may be selected.,LF,F,False
+682,25,The system shall allow the user to scroll the campus map from the campus map tab.,US,F,False
+683,25,The system shall show a tabbed display (or equivalent functionality) with the campus map on one tab and info on the most recently announced building on the other.,LF,F,False
+705,30,Information transmission should be securely transmitted to server without any changes in information.,SE,SE,True
+706,30,Enable the admin to generate reports which contains all the posts and their corresponding replies.,F,F,True
+707,30,Provide an interface for the admin to approve posts so that posts are not visible without admin approval.,F,F,True
+708,30,Enable a logged in user to up vote and down vote answers.,F,US,False
+709,30,Enable a logged in user to post answers.,F,F,True
+710,30,Be intuitive even to first time users,LF,US,False
+711,30,Enable a user to view questions and their corresponding answers.,F,F,True
+712,30,Enable a registered user to view his profile. Additional information viz. questions asked by him and answers posted by him are also displayed.,F,F,True
+713,30,Enable a registered user to change his password if he forgets his password.,F,F,True
+714,30,Enable new users to register to the tech support system.,F,F,True
+715,30,Authenticate and Login user to the web app.,F,SE,False
+716,30,Enable a logged in user to ask questions.,F,F,True
+745,33,The website is available whenever the users want to use it.,A,US,False
+746,33,The system should have to keep the location where the doughnut will be send.,O,F,False
+747,33,The system should require the user to state time when should the doughnut be delivered.,F,F,True
+748,33,The system should ask the user to key in the pickup date.,F,F,True
+749,33,The system should keep the customer contact number.,F,F,True
+750,33,The system should keep the customer email.,F,F,True
+751,33,The system shall give the user an opportunity for the user to choose the selection of doughnut provided.,F,F,True
+752,33,The system shall allow user to decorate their doughnut.,F,F,True
+753,33,The system shall allow user to choose their preferable topping.,F,F,True
+754,33,The system shall allow user to choose filling that they want.,F,F,True
+755,33,The system should take the customer name.,F,F,True
+783,38,Vendors must take permission from the Administrator for selling their products under the site. Administrator will test product’s quality according to its market price to permit vendor for selling purpose.,F,F,True
+784,38,Consult with the Administrator about the payment details of the customers for the updating of the database.,F,F,True
+785,38,Responsible for contacting the banks for the validation of the a/c number provided by the customer while purchasing and make the transaction from the given a/c.,F,SE,False
+786,38,Keep track of all the payment transactions made by the customers and update the payment information.,F,F,True
+787,38,Responsible for managing stocks of each product items.,F,SE,False
+788,38,Taking permission from the Administrator for the product to be purchased from vendor.,F,F,True
+789,38,Provide feasible solutions to the customers on their complaints and queries.,F,F,True
+790,38,Responsible for informing administrator when any product item’s stock goes under the minimum level.,F,PE,False
+791,38,Keep track of each product item’s stocks for selling purpose.,F,F,True
+792,38,Responsible for properly allocating the selected product according to the customer’s choice and delivering product to the customer.,F,SE,False
+793,38,View the personal details of the customer.,F,SE,False
+794,38,Can consult with the Administrator regarding product’s quality and advertisements.,F,F,True
+795,38,Can only visit the site without registration.,F,SE,False
+796,38,Control the database and keep track of all records of customers and employee details.,F,F,True
+797,38,Can give feedback to the 24X7 Customer Care Service center about their impression for the site and services.,F,F,True
+798,38,The system shall accommodate high number of items and users without any fault.,FT,FT,True
+799,38,System use shall not cause any harm to human users.,SE,SE,True
+800,38,System will use secured database,SE,SE,True
+801,38,Normal users can just read information but they cannot edit or modify anything except their personal and some other information.,SE,SE,True
+802,38,System will have different types of users and every user has access constraints.,SE,SE,True
+803,38,Customer must logout of the site after purchasing products.,F,US,False
+804,38,View the details of all employees and control the whole site.,F,F,True
+805,38,Customers must have a valid login id to enter into the site.,SE,SE,True
+806,38,New users can sign up by creating new ID.,F,F,True
+807,38,Can view all available products and can compare them and make a choice for purchasing products.,F,F,True
+808,38,Can purchase any product through valid credit card.,F,SE,False
+809,38,Contact with the vendors and give permission to sell their product under the site after testing the product’s quality.,F,US,False
+817,42,New and Delete buttons will allow the physician/pharmacist to add a notation to the patient’s file.,F,F,True
+818,42,The text and time/date of a note that has been entered is displayed starting with most recent.,F,F,True
+819,42,A description and time/date of each prescription that has been ordered or given is displayed starting with most recent.,F,F,True
+820,42,Customized information is displayed.,F,F,True
+821,42,Basic Patient information is showed first.,F,F,True
+822,42,Icons will clearly illustrate the feature it represents.,F,US,False
+823,42,Navigation to each selected tab.,F,F,True
+824,42,Each entry is shown in full.,F,F,True
+825,42,The font will be larger enough for easy reading.,F,US,False
+826,42,Selected or specified patient’s information is loaded.,F,F,True
+827,42,Backspace/reset capability is implemented for typing errors.,F,F,True
+828,42,An error message alerts when an invalid patient is entered.,F,F,True
+829,42,A list of available patients is displayed after login.,F,F,True
+830,42,A failed login will alert the physician/pharmacist.,F,SE,False
+831,42,The physician/pharmacist must have a valid user login to access the system.,F,SE,False
+832,42,Return to List is available if the patient loaded is not correct.,F,F,True
+1171,52,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.,PO,SE,False
+1172,52,"System-wide data capacity. The data capacity of the system is limited by transfer methods and technology, as well as archiving capacity on site. The system data capacity is capable of retaining 7 days of data produced by the largest instrument, the last 3 days of which must be available interactively from hard disk or similar medium.",PO,F,False
+1173,52,"The system must allow for fast transmission of rough images every 0.5 sec. This may be assisted through the use of data-loss compression techniques (e.g. JPEG, MPEG, etc).",PO,F,False
+1174,52,"In addition, there is the need for transmission of images matching the original resolution. This high-quality transmission must require less than 20 sec, and can only be assisted with loss-less compression.",PO,PE,False
+1175,52,"Every command must be accepted/rejected within 2 sec and before the corresponding action occurs. (This is different than the ACK/NAK response of the communications protocol - here, the target system must have examined the command and verified its validity.",PO,PE,False
+1176,52,The telescope and instrument software shall contain built-in test (BIT) facilities to verify Gemini 8m Telescopes system and Gemini 8m Telescopes software performances. ,PO,LF,False
+1177,52,Requests of subsystems for status information must be answered within 5 sec and be possible in maintenance level operation.,PO,F,False
+1178,52,Requirements for response times within the user interfaces are given in the User Interface requirements section.,PO,US,False
+1179,52,"Every Gemini 8m Telescopes software module shall have corresponding test specifications to check normal operation of releases, to be used both for acceptance tests and as an on-line test procedure. ",PO,O,False
+1180,52,The Gemini 8m Telescopes control software shall also provide for execution of self-test sequences of the Gemini 8m Telescopes system and subsystems. These shall automatically exercise all subsystems present in a given operational configuration.,PO,F,False
+1181,52,"Storage of data. Data from all instruments and detectors is stored as compressed data, using a standard format. There is a first level of storage within IOCs, to secure data in the event of link failures.",PO,SE,False
+1182,52,"Status display update must be within 4 sec at the local stations (certain functions, such as telescope position, may have tighter constraints). Remote station update response is given in the Requirements for Remote Operations section. ",PO,PE,False
+1183,52,"Data acquisition format. Data is normally acquired as uncompressed data, but may be compressed using a loss-less compression technique for transmission from the Gemini system or across the system LAN. The goal of compression is to minimize bandwidth impact on the LAN and WAN and to save space on removable media.",PO,F,False
+1184,52,Data flow. Data from detectors must be stored in the most effective method permitted by available technology. Astronomical data is often detector readout limited so that disk access and data transfer times are not significant.,PO,SE,False
+1185,52,"For mosaicked, large optical detectors, a full readout of the detector must be done in about 2 or 3 minutes.",PO,L,False
+1186,52,All software bugs should be logged and then fixed as soon as possible after detection. The goal is to have restart conditions occur only on hardware failure. ,A,A,True
+1187,52,"Concurrent data access and display. Since the Gemini system supports monitoring of operation, there must be the capability of providing multiple, simultaneous access to data. Data transfer between the virtual telescope system and attached workstations therefore imposes significant transfer requirements on the LAN. The LAN must support a transfer rate of 20-40 Mbits/second.",PO,F,False
+1188,52,"The syntax of control flow commands is to be consistent across the system, whether accessing workstation software or IOC software.",PO,A,False
+1189,52,"All subsystems must respond to a common set of commands to test operational status, inquiries as to version, perform self-tests.",PO,F,False
+1190,52,"All IOC subsystems must respond to additional common commands for such activities as start, stop, initialize, reset parameters, etc.",PO,F,False
+1191,52,"Fault recovery, exception handling, fail-safe checks, etc. should be used to improve reliability.",A,FT,False
+1192,52,"Handshaking of commands between IOCs must occur within 100-200 msec, signaling acceptance of each command.",PO,PE,False
+1193,52,"For commands allowing delayed replies, timeouts for that reply must also be supported.",PO,F,False
+1194,52,"Peak control information within the system is expected to be 100 TPS. This assumes bridging between communication sections, to isolate traffic in relevant sections only.",PO,F,False
+1195,52,"For focusing and related activities, maximum acceptable detector readout time is about 0.1 sec, though only a portion of the detector may be read during that time.",PO,US,False
+1196,52,"The support structure for communicating commands must be reliable, with a uniform ACK/NAK protocol adopted across all systems. Timeouts must be supported at approximately 500 msec.",PO,L,False
+1590,60,This is no longer the case since everybody agrees upon having a single point of contact per Member State (even though the Member State is organized with several Card Issuing Authorities – up to the Member State to manage its own organisation).,PE,L,False
+1591,60,There will be no restriction in time or place for the use of the software built from the specifications produced under this contract.,PE,PE,True
+1592,60,The system must be able to establish and keep the dialog with the Members systems despite the various technical environments and technologies used on their sites.,PE,F,False
+1593,60,The system will be designed so that background tasks can continue while the user performs foreground tasks.,PE,US,False
+1594,60,The system will be used 24x7 by operators under pressure to produce results rapidly. The system must respond rapidly to user requests irrespective of any background tasks. Such highavailability (24x7) is also required from the Member States systems to ensure acceptable response time (less than 1 minute) to enforcement authorities requests.,PE,PE,True
+1595,60,The system should be able to support other types of message structure to cover f.i. a future driving licence network and correlated activities.,SC,F,False
+1596,60,The system must be maintainable and extensible. SUP-03 The system must be designed so that it can migrate to upgraded hardware or new versions of the operating systems involved.,SC,US,False
+1597,60,The system must be able to migrate to other type of network than the one proposed by TESTA-II.,SC,F,False
+1598,60,Each Member of this network will organise its data about smart card holders with no constraints or recommendations on operating system and/or technology used. The system will be able to dialog with these environments or specify a generic interface to dialog with the Member’s applications.,SC,O,False
+1599,60,The system must be designed and documented with the expectation that its operational lifetime will be many years.,SC,US,False
+1600,60,The system must use the network facilities supplied by the TESTA-II network.],SC,F,False
+1601,60,The algorithms in the software will be based on existing techniques and no research will be required to develop new algorithms under this contract.,SC,O,False
+1602,60,The system is to be designed as a robust and dependable operational system which is tolerant to operator errors and which will recover cleanly from power cuts or other disasters.,SC,F,False
+1603,60,"The system must function reliably, with few or no interruptions in its first operational year and fewer still thereafter.",SC,F,False
+1604,60,The system must give stable and reproducible results.,SC,F,False
+1605,60,The system must make it easy to correct mistakes.,US,US,True
+1606,60,"The system must provide solutions/rules regarding data encoding problems such as supporting different character sets, name truncation rules, name matching in case of misspelling.",SC,F,False
+1607,60,Most of the functionality of the new software shall depend on pre-existing or commercially available software.,SC,F,False
+1608,60,The system must be easy to learn and does not obstruct the thematic understanding of the users.,US,US,True
+1609,60,The system must allow enforcement authorities (through its Card Issuing Authority) to ask for workshop card status (based on workshop card number + issuing Member State code) to the corresponding Card Issuing Authority of the Member State having issued the card.,F,L,False
+1610,60,The system must guide users through an interface based on end user concepts.,US,F,False
+1611,60,The system must allow a member of the network to send requests to a particular or all the other members about possible delivery of a driver’s smart card to a similar person.,F,F,True
+1612,60,The system must allow a member of the network to send a bulk request on all or a large part of its driver’s smart card holders to a particular or all members of the network.,F,F,True
+1613,60,The system must track the workflow between senders and related replies.,F,F,True
+1614,60,"The system must be able, in accordance with the rules on delays for each transaction, to automatically transmit alert messages to senders/replier/administrator when, f.i. a constraint on delay for reply is not fulfilled.",F,F,True
+1615,60,"The system must allow the administrator to extract statistics of use, standard delay of reply by member/period, percentage of unsuccessful transaction,...",F,F,True
+1616,60,The system must provide the management of user rights and permissions.,F,F,True
+1617,60,The system must allow a member to do statistics on messages issued and received from/to his system. FUN-04 The system must provide automatic reply to the sender of the request through the use of a standard interface to the Members systems.,F,F,True
+1618,60,The system must be able to include new members in the network through simple administrative tasks.,F,F,True
+1619,60,The system must be highly automatic to relieve the users of as many repetitive and tedious tasks as possible.,F,US,False
+1620,60,The system must provide at application level a full security and encryption policy compatible with the level of security required in such situation.,F,SE,False
+1621,60,"The system must be such that none of the Member States of the network, including the administrator, re-construct a consolidated European database.",F,L,False
+1622,60,"The system must allow a Member State (through its Card Issuing Authority) to ask for the status of card (lost, stolen,…) to the corresponding Card Issuing Authority of the Member State having issued the card.",F,L,False
+1623,60,"The system must allow a Member State (through its Card Issuing Authority) to send card status modification requests (lost, stolen,…) to the corresponding Card Issuing Authority of the Member State having issued the card.",F,L,False
+1624,60,"The system must be able to define and manage various type of messages already in the driver’s smart card holder like predelivery check, stolen/lost cards, renewals, exchanges and duplicates.",F,F,True
+1625,60,"The system must allow enforcement authorities (through its Card Issuing Authority) to ask for driver’s card status (based on either card number + issuing Member State code or driver’s surname, first names, date of birth and issuing Member State code) to the corresponding Card Issuing Authority of the Member State having issued the card.",F,L,False
+1626,61,Customer log notes shall store the date and comments regarding any correspondence with a parent.,F,F,True
+1627,61,"The software shall support the ability to enter, store, and update parent, child and billing information.",F,O,False
+1628,61,"The Child s record shall contain the following information: Name, Date of birth, Gender, Classroom name, Special needs, Photo, Teacher s comments, Immunization dates.",F,F,True
+1629,61,"The Parent s record shall contain the following information:Name, Address, Home phone, Work phone, Email address, Emergency contact, Name of an authorized pick up.",F,F,True
+1630,61,The Child Notes & Comments Report shall list the children alphabetically by last name and include any notes that are attached to their records.,F,F,True
+1631,61,The Account Activity Report shall list a selected customer s account activity by date.,F,F,True
+1632,61,The Child Enrollment/Withdrawal Report shall list the children alphabetically by last name and whether or not they are registered or withdrawn from the Child Care Center.,F,F,True
+1633,61,An Immunization Due & History Report shall list the children alphabetically by last name and include any remaining immunizations that are required and the dates of previous immunizations.,F,F,True
+1634,61,Each classroom shall only accept a maximum of 20 children.,F,F,True
+1635,61,"When a user edits an account their user ID along with the date, time and a description of the change shall be recorded in the database.",F,F,True
+1636,61,Each student shall only belong to one class.,F,F,True
+1637,61,A password shall be assigned to each user.,SE,SE,True
+1638,61,A waiting list shall store the names and phone numbers of up to 100 potential customers waiting for a classroom opening to enroll their child.,F,F,True
+1639,61,If there is no activity for 10 minutes the user shall be logged off of the system.,SE,F,False
+1640,61,The system shall have a Web based interface that works with Internet Explorer and Netscape Navigator.,F,O,False
+1641,61,The background color of all windows shall be blue.,F,LF,False
+1642,61,The system shall respond to all user requests within 20 seconds.,F,PE,False
+1643,61,Each user shall be required to log on with a unique user name and password before using the system. The password does not need to be unique.,SE,SE,True
+1644,61,The user name shall be the first four charters of the employee s last name followed by the first three characters of their first name.,SE,F,False
+1645,61,The password shall contain 6 to 8 alphanumeric characters.,SE,SE,True
+1646,61,After three unsuccessful attempts to enter a password the user shall be locked out of the system until their password is reset.,SE,SE,True
+1647,61,A new password shall be assigned if a user forgets.,SE,SE,True
+1648,61,A Family Registration Information Report shall list the customer names alphabetically and include their address and home telephone number.,F,F,True
+1649,61,One teacher and one assistant shall be assigned to each class.,F,F,True
+1650,61,A Parent/Child Cross Reference Report shall list the parents alphabetically by last name and include their children s first names.,F,F,True
+1651,61,"When the user logs onto the system on the date of their reminder, they shall receive a popup window displaying their reminder message.",F,F,True
+1652,61,A Daily Classroom & Center Enrollment Report shall alphabetically list the names of children by classroom and indicate if they are present or absent.,F,F,True
+1653,61,A Birthday Lists & Child Age Report shall list the children alphabetically by last name and include their birthday and age.,F,F,True
+1654,61,There shall be two levels of access; one for teachers and assistants and one for administrators.,F,F,True
+1655,61,The teachers and assistants shall only be allowed to enter or edit child comments and child arrival or departure times.,F,F,True
+1656,61,The administrators shall be allowed to enter or edit all data.,F,F,True
+1657,61,Only the administrators shall be allowed to view or print reports.,F,F,True
+1658,61,All employees shall be allowed to use the Daily Reminders.,F,F,True
+1659,61,Users shall only be allowed to set daily reminders for themselves.,F,SE,False
+1660,61,The date of the reminder shall be selected from a calendar.,F,F,True
+1661,61,The user shall be allowed to enter up to a 50 character message for their reminder.,F,F,True
+1662,61,A child s record shall contain the dates that their required immunizations were received.,F,F,True
+1663,61,When a child is within two weeks of a required immunization a message shall be displayed when their teacher logs onto the system.,F,F,True
+1664,61,Only the administrators shall be allowed to view or print invoices.,F,F,True
+1665,61,The Administrators shall be able to enter the type and schedule of required immunizations.,F,F,True
+1666,61,A child s record shall contain the date of their last physical examination.,F,F,True
+1667,61,All invoices shall be available for printing at the end of each month.,F,A,False
+1668,61,Customers shall be billed $10 an hour (per child) for late pick ups. ,F,F,True
+1669,61,Itemized customer invoices showing amount due shall be available for printing.,F,A,False
+1670,61,An account history for each customer shall contain all activity by date.,F,F,True
+1671,61,A Customer Directory Report shall list the customers alphabetically by last name and include their address and phone number.,F,F,True
+1672,61,If more than two children are enrolled a parent shall be billed $157.50 for the first two children plus $45 for each additional child at the end of each month.,F,F,True
+1673,61,If only two children are enrolled a parent shall be billed $157.50 at the end of each month.,F,SE,False
+1674,61,If only a single child is enrolled a parent shall be billed $90 at the end of the each month.,F,US,False
+1675,61,A notification for required immunizations shall be printed on the monthly invoice.,F,F,True
+2877,75,There is procedure to perform short-term negotiation. ,F,F,True
+2878,75,Negotiation is established between selected CDN peers. ,F,F,True
+2879,75,Malicious requests are identified and acted upon. ,F,SE,False
+2880,75,Functional policies are identified and deployed. ,F,F,True
+2881,75,Effective content delivery is ensured through SLA satisfaction. ,F,US,False
+2882,75,"This section describes the logical characteristics of each interface between the intended software product and the users. For user interface design, common GUI standards will be followed along with the presence of keyboard shortcuts, error message display standards etc., and standard buttons and functions (i.e. help) will appear on every screen. Details of the user interface design are intended to be documented in a separate user interface specification. ",US,US,True
+2883,75,Policies are in place to perform renegotiation for problem resolution. ,F,F,True
+2884,75,Administrative policies are deployed for operations in a peering arrangement. ,F,F,True
+2885,75,There are existing policies for long-term peering arrangement. ,F,O,False
+2886,75,"As mentioned earlier, the intended product to exploit existing Web service technologies to leverage existing infrastructures through building an overlay. The communication among software component would be performed through message passing over the IP network. From a technical point of view, TCP/IP will be used as the transport protocol, where each CDN server establishes a TCP connection to the network elements using a well-known port number. Messages can then be sent bi-directionally between the server and network elements. All messages consist of a fixed length-header containing the total data length and a request followed by a reply or an acknowledgement. Interaction among surrogates will be performed using HTTP or FTP.",US,PO,False
+2887,75,Policies identifying the consequences of SLA violation are defined. ,F,L,False
+2888,75,Malicious requests are identified and acted upon. ,F,SE,False
+2889,75,Primary CDN has already acquired sufficient external resources. ,F,PE,False
+2890,75,Mediator works in conjunction with the PA to establish negotiation.,F,F,True
+2891,75,Interaction protocols between PAs are identified. ,F,SE,False
+2892,75,The format for service information description is defined,F,F,True
+2893,75,"The interaction protocol between Web Server-SR, SR-mediator is defined. ",F,O,False
+2894,75,There is an established norm that any resource failure will be reported ,F,O,False
+2895,75,"The interaction protocol between Web Server-SR, SR-mediator is defined. ",F,O,False
+2896,75,Malicious requests are detected and rejected. ,F,SE,False
+2897,75,"Resource provisioning, delegation and reservation policies are in place. ",F,F,True
+2898,75,Both anticipated and unanticipated user requests (traffic) are considered. ,F,F,True
+2899,75,The format of the initiation request is defined.,F,F,True
+2900,75,The format of service requirements is defined. ,F,L,False
+2901,75,"Mediator-SR, mediator-PR, mediator-PA interaction protocols are defined.",F,F,True
+2902,75,Web servers have already replicated necessary content. ,F,US,False
+2981,77,Ability for the user to access e-mail with Blackberry services using BlackBerry device. ,F,US,False
+2982,77,Ability for the data center admin to block or allow e-mail based on multiple message attributes. ,F,F,True
+2983,77,Ability for the data center admin to protect internal e-mail customer identity.,F,F,True
+2984,77,"Ability for the user to access e-mail by secure web or client. (Calendar, Address book, Ability to send and receive).",F,F,True
+2985,77,Ability for the data center admin to protect the reputation of outbound mail gateways. ,F,F,True
+2986,77,Ability for the user to establish TLS encryption with other businesses or customers. ,F,F,True
+2987,77,Ability for the user to encrypt outbound e-mail. ,F,F,True
+2988,77,Ability for the data center admin to provide message hygiene (antispam/antivirus) statistical reports. ,F,F,True
+2989,77,Ability for the data center admin to integrate message hygiene (antispam/antivirus) with LDAP. ,F,F,True
+2990,77,Ability for the data center admin to whitelist/blacklist senders by domain or IP address. ,F,F,True
+2991,77,Ability for the data center admin to recover all messages. ,F,F,True
+2992,77,Ability for the data center admin to provide pre-emptive e-mail virus protection (scanning prior to delivery at the mail server). ,F,F,True
+2993,77,Ability for the data center admin to restore previous backup without service interruption. ,F,F,True
+2994,77,Ability for the data center admin to maintain backup and restore event logs. ,F,F,True
+2995,77,Ability for the data center admin to recover by time. ,F,F,True
+2996,77,Ability for the data center admin to recover by mailbox. ,F,F,True
+2997,77,Ability for the data center admin to recover a specific e-mail message.,F,F,True
+2998,77,Ability for the data center admin to recover at the file level. ,F,F,True
+2999,77,"Ability for the user to access e-mail with non-Blackberry mobile data devices (iPhones, Treos, Pres. Etc.). ",F,F,True
+3000,77,Ability for the user to flag individual e-mails to not be archived.,F,F,True
+3001,77,Ability for the data center admin to provide pre-emptive e-mail content filtering. ,F,F,True
+3002,77,Ability for the agency admin to support other mobile device protocols (ActiveSync).,F,F,True
+3003,77,Ability for the user to provide fax service integrated into e-mail.,F,F,True
+3004,77,Ability for the user to send/receive e-mails within workflow applications.,F,F,True
+3005,77,"Ability for the user to delete, or flag for deletion by system administrators, e-mails that have met their retention, in accordance with s.119.021(2)(c) which requires agencies to “systematically dispose of records no longer needed.” (Note: Deletion means complete removal/elimination of all copies of an email from all portions of the system)”",F,US,False
+3006,77,Ability for the agency admin to provide RSS Feeds. ,F,F,True
+3007,77,Ability for the agency admin to integrate directory services with other complimentary external systems for a unified client experience.,F,F,True
+3008,77,Ability for the user to provide List Server option for internal and external publishing of information (report subscriptions).,F,F,True
+3009,77,Ability for the user to integrate telephone messaging (VOIP) into email and vice/versa.,F,F,True
+3010,77,Ability for the user to use wireless service with GIS.,F,US,False
+3011,77,Ability for the user to access e-mail archive.,F,F,True
+3012,77,Ability for the data center admin to add digital signatures to e-mail.,F,F,True
+3013,77,Ability for the data center admin to retrieve quarantined messages.,F,F,True
+3014,77,Ability for the data center admin to fail-over mail system and clients to alternate site.,F,F,True
+3015,77,Ability for the data center admin to do near-time replication to alternate site.,F,F,True
+3016,77,Ability for the data center admin to do real-time replication to alternate site.,F,F,True
+3017,77,Ability for the agency admin to provide a full audit trail of discovery and review. ,F,F,True
+3018,77,Ability for the agency admin to demonstrate due diligence and maintain markings for privileged and non-responsive search results. ,F,F,True
+3019,77,Ability for the agency admin to catalog responsive e-mail (by case) so that e-mail can be electronically certified as complete to fulfill the production.,F,F,True
+3020,77,Ability for the agency admin to digitally certify search results.,F,F,True
+3021,77,Ability for the agency admin to electronically redact information from archival storage.,F,F,True
+3022,77,Ability for the user to manually archive to server from their client. ,F,F,True
+3023,77,Ability for the user to integrate agency applications into the e-mail and mobile messaging environments.,F,F,True
+3024,77,Ability for the user to access an SMTP bridgehead for agency applications. ,F,F,True
+3025,77,Ability for the user to provide resource reservations integrated into e-mail.,F,F,True
+3026,77,Ability for the user to access mailbox and components via a web browser over a secure (encrypted) connection.,F,SE,False
+3027,77,"Ability for the agency admin to archive based on policy (i.e. e-mail address, OU, group, organization, etc.) ",F,F,True
+3028,77,"Ability for the agency admin to Create, Update and Delete Blackberry accounts.",F,F,True
+3029,77,"Ability for the user (Legal, OIG, etc.) to review and mark discovery search results. ",F,F,True
+3030,77,Ability for the user to embed links to files and websites in e-mails. ,F,F,True
+3031,77,Ability for the user to delegate their permissions to another user. ,F,F,True
+3032,77,Ability for the agency admin to accommodate programmer testing of e-mail functionality embedded in software applications. ,F,F,True
+3033,77,Ability for the user to create reminders and tasks. ,F,F,True
+3034,77,"Ability for the user to schedule resources such as conference rooms, teleconference rooms, etc. ",F,F,True
+3035,77,Ability for the user to create calendars and customize calendar views.,F,F,True
+3036,77,Ability for the agency admin to create and share distribution lists (including the ability to create query based distribution lists from LDAP-like directory services). ,F,F,True
+3037,77,Ability for the user to share contact lists / address book. ,F,F,True
+3038,77,Ability for the user to export contact lists. ,F,F,True
+3039,77,Ability for the agency admin to provision e-mail accounts for their individual agency or organization (including the ability to integrate e-mail account provisioning with LDAP-like directory services).,F,F,True
+3040,77,"Ability for the user to create contact lists, including those imported from other sources. ",F,F,True
+3041,77,Ability for the agency admin to migrate existing public folders into the statewide e-mail system. ,F,F,True
+3042,77,Ability for the user to organize content into personal folders or similar storage mechanism to aid with e-mail retrieval. ,F,US,False
+3043,77,Ability for the user to spell check. ,F,F,True
+3044,77,"Ability for the user to establish rules (auto reply, out of office reply, temporary transfer to another party, move files to inbox folders). ",F,F,True
+3045,77,Ability for the user to customize e-mail messages with word processor like features for formatting of e-mail content. ,F,US,False
+3046,77,Ability for the user to print e-mail messages. ,F,F,True
+3047,77,Ability for the user to forward e-mail and attachments. ,F,F,True
+3048,77,Ability for the user to reply to e-mail and attachments. ,F,F,True
+3049,77,"Ability for the user to send, receive, and delete e-mail and attachments. ",F,F,True
+3050,77,"Ability for the agency admin to create and manage public folders or similar storage mechanism to aid with the collection, organization, and sharing of information with other people in their individual agency or organization. ",F,F,True
+3051,77,"Ability for the user to search for e-mails based on age, size, sender, recipient, subject, key word, attachment content. ",F,F,True
+3052,77,"Ability for the user to share inbox, calendar, and files with users, given permission.",F,F,True
+3053,77,Ability for the agency admin to auto-enforce standard conventions for creating accounts and distribution lists. ,F,F,True
+3054,77,Ability for the agency admin to put discovery search results on legal hold to suspend deletion. ,F,F,True
+3055,77,"Ability for the agency admin to import data from other sources such as PST, NSF files into archiving solution. ",F,F,True
+3056,77,Ability for the agency admin to move older data to tiered storage (lower cost storage) while maintaining accessibility. ,F,F,True
+3057,77,"Ability for the agency admin to support litigation requests by production of responsive e-mail in to a specified location, for read and redaction purposes.",F,F,True
+3058,77,"Ability for the agency admin to perform a ""full text"" search including the header, body and any attachments to the e-mail. ",F,F,True
+3059,77,"Ability for the agency admin to search the ""body"" of the e-mail including the header and all text contained within the e-mail itself. ",F,F,True
+3060,77,Ability for the agency admin to search using Boolean fields.,F,F,True
+3061,77,"Ability for the agency admin to select the e-mail retention period for a specific e-mail (e.g. 1 year, 3 year, or 5 year). ",F,F,True
+3062,77,Ability for the agency admin to capture all sent and received emails into the organization. ,F,F,True
+3063,77,Ability for the agency admin to satisfy legal requests for e-mail discovery and provide printed or digital results.,F,F,True
+3064,77,"Ability for the agency admin to meet Federal regulations for retention (i.e. Sarbanes Oxley, Gramm-Leach-Bliley Act (GLB), HIPAA, etc.) ",F,L,False
+3065,77,"Ability for the agency admin to search the e-mail ""header"" including Date: From, Subject, To, and CC. ",F,F,True
+3066,77,Ability for the agency admin to provide long term retention separate from active e-mail system. ,F,F,True
+3067,77,"Ability for the agency admin to filter archive by sender, recipient, date, subject, content, attachments, keyword, etc. ",F,F,True
+3068,77,"Ability for the agency admin to search archive and forward, print and restore in bulk items from archive. ",F,F,True
+3069,77,Ability for the agency admin to archive at various regularly defined intervals. ,F,F,True
+3070,77,Ability for the agency admin to provide a server based archiving solution. ,F,F,True
+3071,77,Ability for the user to archive at the desktop. ,F,F,True
+3072,77,"Ability for the user to customize their view in the client application (such as adding fields, arranging fields, and ordering emails by fields).",F,F,True
+3073,77,Ability for the agency admin to create generic email accounts/addresses to be accessed by multiple users. ,F,F,True
+3074,77,Ability for the data center admin to control message size limits for e-mail (inbound and outbound). ,F,F,True
+3075,77,Ability for the agency admin to provide individual users the ability to search their portion of the archive repository. ,F,F,True
+3076,78,"Determine the epoch data photometry (with instrumental and reduction errors): G mag (for each CCD and average for the transit), GRP, GBP, GRVS . Gate activation and signal loss due to window cutoff must be taken into account. ",F,US,False
+3077,78,"Compute the astrometric combined data using all previous transits: Compute parallax and proper motion errors, Determine de covariance matrix, Determine estimated errors for the astrometric parameters at the mean epoch.",F,F,True
+3078,78,GOG must provide a way to be run from a command line or a shell script. ,FT,F,False
+3079,78,GOG should be able to run in a cluster or grid environtments ,FT,F,False
+3080,78,GOG must be able to process one complete source processing on 2 CPU seconds.,FT,PE,False
+3081,78,GOG is designed to run on either in a single thread mode on grid environments. ,FT,F,False
+3082,78,"GOG runs on LINUX , UNIX and MAC computers (minimum).GOG results are platform independent ",FT,O,False
+3083,78,GOG will have to generate data of a considerable amount of astrosources whose number could be a significant part of the expected final catalogue (20%). ,FT,F,False
+3084,78,"GOG initialisation module will define the output specification output parameters (spectrum RPBP/RVS, astrometry, Vr, physical parameters and flags) epoch and/or combined number of epochs.",F,F,True
+3085,78,GOG is built as a standalone java aplication that could be invoked from a command line and deployed as a jar file. ,FT,F,False
+3086,78,"The GOG catalogue module must include information on the reduction model: Instrument effects substraction node bias substraction noises PPE residuals noise, Scientific content extraction noise substraction of close sources second FoV contamination noise backgound substraction.",F,F,True
+3087,78,Determine for epoch data the astrometric parameter (with instrumental and reduction errors): transit times and field angles in each CCD mean transit time and field angle for the transit.Gate activation and signal loss due to window cutoff must be taken into account.,F,US,False
+3088,78,"The GOG catalogue module must include information on the universe model: Galaxy model, SkyBackGroung model, Extinction Law model, DMS model.",F,F,True
+3089,78,GOG initialisation Module should be able to read information of the input sources. Options are to use the Universe Model or a provided user sources.,F,US,False
+3090,78,GOG must give the same result for identical input configuration parameters .,F,F,True
+3091,78,GOG I/O Catalogue format is driven by [AD3] . Main Data base format is defined in [AD1].,F,F,True
+3092,78,Instrumental noises: noises that come from observation process such as:on board detection and tracking or observation dead-time reduction noise: noise added to the data when removing instrumental noise.,F,F,True
+3093,78,GOG must consider noise effects. For noise generation those effects should be userselectable (they can be added or not and the values should be given by users).We classify noises in two groups: ,F,US,False
+3094,78,GOG has a source by source processing mechanism ,F,F,True
+3095,78,For source generation GOG has 2 main options available: Universe Model from GaiaSimu or a Object Input Catalogue ,F,F,True
+3096,78,"GOG will be fully integrated in the Gaia Simulator project. That is, it will use as other the other simulators the Gaia Simu library and the Gaia Tools library. ",F,SC,False
+3097,78,"CU2 will be responsible for the design and developing of GOG that will provide Catalogue, Main Database (MDB) and final data.(in the sense of statistically equivalent to the final mission data) data without the use GASS telemetry, GIBIS or the main ESAC database",F,SE,False
+3098,78,"GOG initialisation module must include information on the instrument model: The selected scanning law, Dead time, Noise models (including detection noise)",F,F,True
+3099,79,The system should allow the Construction Junction Staff to create new reports whenever required to satisfy their changing operational and business needs. ,F,F,True
+3100,79,"The application is expected to operate via touch screen user interfaces, and take advantage of that technology to be as fast, efficient, intuitive, and flexible as possible while also minimizing the potential for errors and duplications. It should minimize the use of keyboard and mouse when processing acquisitions, and should allow acquisitions to be completed with few clicks and page switches. ",US,US,True
+3101,79,Donation/acquisition processing - The system must be available during normal Construction Junction operating hours. ,A,A,True
+3102,79,Sales processing - The system must be available during normal Construction Junction operating hours. ,A,A,True
+3103,79,Inventory management - The system must be available beyond normal operating hours to accommodate inventory management operations. ,A,A,True
+3104,79,"The system must be written using industry best practices, and must be built using only Construction Junction approved products and technologies. The system must also be written in such a way that it can be supported by planned Construction Junction staffing levels. ",MN,F,False
+3105,79,"The system should record changes to application entities in the form of „created user/time‟, „modified user/time‟ fields. The system should also record information about various sensitive inventory management operations such as deleting items and changing the price of items. ",SE,F,False
+3106,79,"The functionality provided by the Inventory Management System will be critical to the normal operation of the Construction Junction business. As such, the system should perform with consistently and predictably low response times in order not to impact the performance or the timely execution of the various tasks that need to be conducted by the Construction Junction staff. ",PE,F,False
+3107,79,"The system should be able to generate reports based on the following entities, including reports that correlate them: Inventory items, Inventory departments, Inventory categories, Acquisitions Donors.",F,F,True
+3108,79,The following copyright notice must be displayed in all user interfaces: © 2009 - Construction Junction,L,SE,False
+3109,79,"Access to the application by the Construction Junction staff must require user login. Access to application screens and functions is granted or denied based on the profile and role of the currently logged in user, as detailed in the preceding use-case requirements. ",SE,SE,True
+3110,79,"The application will provide a reporting mechanism that, at a minimum, allows Construction Junction to review and report by inventory, inventory type, donor contact information, and the ability to link inventory to individual that donated it. ",F,F,True
+3111,79,"The system must be available beyond normal operating hours to accommodate website use – Inventory listing, wish list management and online purchases. ",A,A,True
+3112,79,"Pick Up and Decon crews may also initiate the receiving process, entering as much detailed information about the donated items as desired, and generating a donation receipt. They cannot, however, add items to the inventory or complete the acquisition process. A Receiving Associate is required to review all the acquisition information before those actions can take place.",F,F,True
+3113,79,"The system should provide a categorized view of the entire inventory to the Construction Junction staff. Starting at the department level, users can navigate into the inventory item categories and subcategories, all the way down to an individual inventory item.",F,F,True
+3114,79,The system should allow inventory administrators to customize the inventory structure by defining the inventory departments (not to be confused actual retail floor departments known later in this document as stocking locations).,F,F,True
+3115,79,The system should allow inventory administrators to customize the inventory structure by defining the inventory departments and categories. ,F,F,True
+3116,79,Any item in the inventory may be purchased by a Construction Junction customer. The sale of the item is processed by QuickBooks POS and the inventory must be updated accordingly. ,F,F,True
+3117,79,"Items are typically added to the inventory as part of the donation processes. This is called adding an item in donation processing. Alternatively, items can be added during routine inventory maintenance. This is called adding an item in inventory management mode.",F,SC,False
+3118,79,"The system should allow inventory administrators to customize the attributes and details available for each inventory item. Attributes can be defined for each department, and details can be defined for each department and/or category ",F,F,True
+3119,79,The system should assist in the task of pricing a new inventory item by making pricing suggestions to the user when adding to or modifying an item in the inventory. The suggested prices should be calculated based on the original and sale prices of similar items that currently exist or existed in the inventory in the past. ,F,F,True
+3120,79,"Acquisition records for Drop-Off, Pickup and Decon donations are created in the CRM system. Inventory Management users should be able to view all past and current acquisitions. Receiving Associates use this function to locate an expected acquisition when receiving a donation at the loading dock. Pickup and Decon crews may also use this function to initiate the process of receiving items while in the truck, on their way to the receiving dock. ",F,F,True
+3121,79,"Drop Off acquisitions are not typically pre-scheduled as Pick Up and Decon acquisitions except for those submitted through the organizational website. As such, when a donor arrives with an unexpected drop off donation, a new acquisition needs to be able to be created in the CRM system first, at either the customer service desk or at the dock, before it can be viewed in the acquisitions screen.",F,F,True
+3122,79,"A donor in possession of a valid acquisition number can proceed to the receiving dock where the items to be donated will be received and processed, and a donation receipt will be generated. Alternatively, a donor may go directly to the receiving dock, in which case a new acquisition is created by the Receiving Associate before items can be received and processed. ",F,F,True
+3123,79,"The screens used for the acquisition process should simplify and expedite the data entry process, allowing the Receiving Associate to enter only the information needed to generate the donation receipt. Additional attributes needed to complete the item information and effectively add the item to the inventory can be added at a second step, after the receipt has been printed and the donor has been served. The Receiving Associate can print temporary acquisition labels for items that require further processing. ",F,F,True
+3124,79,"The system should allow various management actions to be performed on items existing in the inventory. These include modifying, deleting and splitting an item, and viewing the item‟s details and item history. These actions are only available for Unique and Stock items.",F,F,True
+3426,83,Any torrent result with a rating of less than 1 will not be displayed. ,PE,A,False
+3427,83,Sending the hyperlink to the default browser will take less than 1 second. ,PE,PE,True
+3428,83,Loading the program will take less than 10 seconds. ,PE,PE,True
+3429,83,Any torrent result with 0 seeds will not be displayed. ,PE,F,False
+3430,83,Sorting results should take less than 0.1 seconds.,PE,PE,True
+3431,83,A results page will display 100 results. ,PE,F,False
+3432,83,Any torrent with 0 seeds cannot guarantee to be fully downloaded. ,PE,F,False
+3433,83,The software will use hyperlinks to allow the user to open websites in their default web browser. ,US,F,False
+3434,83,"Our development team must thoroughly investigate each website within our database each month, to ensure that no illegal or harmful content is exposed to our users. ",SE,US,False
+3435,83,"While all safety measures resulting from the site may not be fully identified, a recommendation of a full legal review of the software should be undertaken before the site is available to the public. In doing so, the site will be subject to full indemnification of liability. ",L,A,False
+3436,83,"The system we produce will stay within all the legal requirements on our behalf, as our software is only listing links for video streams and video download, and this is not illegal. Our system will not host any videos. ",L,SE,False
+3437,83,"The user Interface will consist of one main screen, allowing all the functionally to come from this one screen. This allows the user to use the software with ease by not flicking through a number of different screens. In addition to this the user can always see the videos they are looking for. The main screen will be laid out as in Appendix: B Diagram along with the description of the diagram. We decided on this type of interface because we felt that it would be very simple for the user to navigate. From our reports we found that the simpler the interface was, the more people liked it. ",US,US,True
+3438,83,With all these features complied into one screen it will give the software more flexibility and allows for easy and simple usage. This will appeal to both naïve computer users and experienced computer users with a higher selling market. ,US,US,True
+3439,83,Communication standards that will be used through the software will be PHP or other such languages. These will be used to query the different servers that the websites use and will give us back  ,US,US,True
+3440,83,Any torrent with a rating of less than 1 should not be fully trusted; this was one of the main complaints from users in William Josephys ethnographic study.,PE,PE,True
+3441,83,Query times will take no longer than 5 seconds to any website. ,PE,PE,True
+3442,83,Results will be arranged in length/date/alphabetical order by clicking on the column headers. ,F,F,True
+3443,83,If no results are found on a search it will display a message “No results were found for this search.”,F,F,True
+3444,83,There will be page button for the user to navigate the results.,F,F,True
+3445,83,Database of torrent sites can be updated via the internet.,F,F,True
+3446,83,There will be a tick box to allow the user to choose to include torrent searching in the search. ,F,F,True
+3447,83,"Query will retrieve the no. of seed and peers, size of the file, date posted and a link to the webpage itself. ",F,F,True
+3448,83,If no results are found on a search it will display a message “No results were found for this search.” ,F,F,True
+3449,83,Results will be arranged in size/date/alphabetical order by clicking on the column headers. ,F,F,True
+3450,83,Torrent search will share the same search bar with the streaming search. ,F,F,True
+3451,83,Streaming search will share the same search bar with the torrent search. ,F,F,True
+3452,83,Database of video hosting and video linking sites can be updated via the internet. ,F,F,True
+3453,83,There will be a tick box to allow the user to choose to include video host searching in the search.  ,F,F,True
+3454,83,There will be a tick box to allow the user to choose to include video link searching in the search. ,F,F,True
+3455,83,"Query to video hosting sites will retrieve full video name, length, date posted and a link to the video itself. ",F,F,True
+3456,83,There will be page button for the user to navigate the results.  ,F,F,True
+3457,83,"Query to video link sites will retrieve the show’s name, episode name and a link to the webpage itself. ",F,F,True
+3614,88,"Sensor (temperature, humidity, contact sensor, power state) shall have a minimum data acquisition rate of 10 Hz. ",PE,F,False
+3615,88,"Although there are no specific safety requirements, high system reliability is important to insure there are no system failures in carrying out user requests. Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present).",SE,SE,True
+3616,88,Log in to an account shall require entry of an account name and a password.,SE,F,False
+3617,88,"Upon installation, a DigitalHome user account shall be established. The DigitalHome web system shall provide for authentication and information encryption through a recognized reliable and effective security technology, such as Transport Layer Security. ",SE,SE,True
+3618,88,"An environmental sensor or controller device shall have to be within 1000 feet of the master control device, in order to be in communication with the system. ",PE,L,False
+3619,88,"Displays of environmental conditions (temperature, humidity, contact sensors and power switches) shall be updated at least every two seconds.",PE,PE,True
+3620,88,"Each DigitalHome shall contain a master control device (the DH Gateway Device) that connects to the home’s broadband Internet connection, and uses wireless communication to send and receive communication between the DigitalHome system and the home devices and systems. ",F,F,True
+3621,88,"Using wireless communication, sensor values can be read and saved in the home database. ",F,F,True
+3622,88,"The DigitalHome shall be equipped with various environmental controllers and sensors (temperature controller-sensors: thermostats, humidity controller-sensors: humidistats, contact sensors, security sound and light alarms, and power switches). ",F,F,True
+3623,88,"The communication center of the DH system shall be a DH home web server, through which a user shall be able to monitor and control home devices and systems. ",F,F,True
+3624,88,"The DigitalHome System shall allow a web-ready computer, cell phone or PDA to control a home s temperature, humidity, lights, security, and the state of small appliances. ",F,F,True
+3625,88,Controller values can be sent to controllers to change the DH environment.,F,F,True

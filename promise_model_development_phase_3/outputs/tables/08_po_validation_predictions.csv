@@ -1,0 +1,25 @@
+RecordID,ProjectID,RequirementText,_class_,PredictedLabel,Correct
+1171,52,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.,PO,SE,False
+1172,52,"System-wide data capacity. The data capacity of the system is limited by transfer methods and technology, as well as archiving capacity on site. The system data capacity is capable of retaining 7 days of data produced by the largest instrument, the last 3 days of which must be available interactively from hard disk or similar medium.",PO,F,False
+1173,52,"The system must allow for fast transmission of rough images every 0.5 sec. This may be assisted through the use of data-loss compression techniques (e.g. JPEG, MPEG, etc).",PO,F,False
+1174,52,"In addition, there is the need for transmission of images matching the original resolution. This high-quality transmission must require less than 20 sec, and can only be assisted with loss-less compression.",PO,PE,False
+1175,52,"Every command must be accepted/rejected within 2 sec and before the corresponding action occurs. (This is different than the ACK/NAK response of the communications protocol - here, the target system must have examined the command and verified its validity.",PO,PE,False
+1176,52,The telescope and instrument software shall contain built-in test (BIT) facilities to verify Gemini 8m Telescopes system and Gemini 8m Telescopes software performances. ,PO,O,False
+1177,52,Requests of subsystems for status information must be answered within 5 sec and be possible in maintenance level operation.,PO,F,False
+1178,52,Requirements for response times within the user interfaces are given in the User Interface requirements section.,PO,US,False
+1179,52,"Every Gemini 8m Telescopes software module shall have corresponding test specifications to check normal operation of releases, to be used both for acceptance tests and as an on-line test procedure. ",PO,O,False
+1180,52,The Gemini 8m Telescopes control software shall also provide for execution of self-test sequences of the Gemini 8m Telescopes system and subsystems. These shall automatically exercise all subsystems present in a given operational configuration.,PO,F,False
+1181,52,"Storage of data. Data from all instruments and detectors is stored as compressed data, using a standard format. There is a first level of storage within IOCs, to secure data in the event of link failures.",PO,SE,False
+1182,52,"Status display update must be within 4 sec at the local stations (certain functions, such as telescope position, may have tighter constraints). Remote station update response is given in the Requirements for Remote Operations section. ",PO,PE,False
+1183,52,"Data acquisition format. Data is normally acquired as uncompressed data, but may be compressed using a loss-less compression technique for transmission from the Gemini system or across the system LAN. The goal of compression is to minimize bandwidth impact on the LAN and WAN and to save space on removable media.",PO,F,False
+1184,52,Data flow. Data from detectors must be stored in the most effective method permitted by available technology. Astronomical data is often detector readout limited so that disk access and data transfer times are not significant.,PO,SE,False
+1185,52,"For mosaicked, large optical detectors, a full readout of the detector must be done in about 2 or 3 minutes.",PO,L,False
+1187,52,"Concurrent data access and display. Since the Gemini system supports monitoring of operation, there must be the capability of providing multiple, simultaneous access to data. Data transfer between the virtual telescope system and attached workstations therefore imposes significant transfer requirements on the LAN. The LAN must support a transfer rate of 20-40 Mbits/second.",PO,F,False
+1188,52,"The syntax of control flow commands is to be consistent across the system, whether accessing workstation software or IOC software.",PO,F,False
+1189,52,"All subsystems must respond to a common set of commands to test operational status, inquiries as to version, perform self-tests.",PO,F,False
+1190,52,"All IOC subsystems must respond to additional common commands for such activities as start, stop, initialize, reset parameters, etc.",PO,F,False
+1192,52,"Handshaking of commands between IOCs must occur within 100-200 msec, signaling acceptance of each command.",PO,PE,False
+1193,52,"For commands allowing delayed replies, timeouts for that reply must also be supported.",PO,F,False
+1194,52,"Peak control information within the system is expected to be 100 TPS. This assumes bridging between communication sections, to isolate traffic in relevant sections only.",PO,F,False
+1195,52,"For focusing and related activities, maximum acceptable detector readout time is about 0.1 sec, though only a portion of the detector may be read during that time.",PO,F,False
+1196,52,"The support structure for communicating commands must be reliable, with a uniform ACK/NAK protocol adopted across all systems. Timeouts must be supported at approximately 500 msec.",PO,L,False

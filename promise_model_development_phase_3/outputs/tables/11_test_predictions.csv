@@ -1,0 +1,551 @@
+﻿RecordID,ProjectID,RequirementText,_class_,PredictedLabel,Correct
+29,2,The product shall be capable of handling the existing 1000 users. This number is expected to grow 5 times within the next year.,SC,PE,False
+30,2,The system shall allow a real estate agent to query MLS information,F,F,True
+31,2,The product shall be installed by an untrained realtor without recourse to separately-printed instructions.,US,O,False
+32,2,90% of untrained realtors shall be able to install the product on their device without printed instructions,US,US,True
+33,2,Only registered realtors shall be able to access the system.,SE,F,False
+34,2,Every user of the system shall be authenticated and authorized.,SE,SE,True
+35,2,The product shall prevent its data from incorrect data being introduced.,SE,SE,True
+36,2,The user shall be able to get driving directions to a selected property,F,F,True
+37,2,The realtor shall be able to retrieve a map showing property locations for a specified area,F,F,True
+38,2,The system shall display clear property images in the search results,F,F,True
+39,2,The system shall update or create new property listings in the MLS,F,F,True
+40,2,Realtor shall be able to generate a CMA report based on property criteria,F,F,True
+41,2,The system shall be able to call the seller or buyer to schedule an appointment,F,F,True
+42,2,The realtor shall be notified of new client appointments after automatic synchronization with office system,F,F,True
+43,2,The system shall notify the realtor when a seller or buyer responds to an appointment request,F,F,True
+44,2,The product shall allow the user to save the property search results.,F,F,True
+45,2,The product shall be able support 1000 simultaneous users.,SC,PE,False
+46,2,The user shall be able to download appointments and contact information for clients,F,F,True
+47,2,The product shall be able to support multiple remote users,SC,F,False
+48,2,The product is expected to run on Windows CE and Palm operating systems.,PO,PO,True
+49,2,The product shall retain user preferences in the event of a failure.,FT,US,False
+50,2,100% of saved user preferences shall be restored when system comes back online.,FT,F,False
+51,2,The look and feel of the system shall conform to the user interface standards of the smart device.,LF,LF,True
+52,2,The system shall have a professional appearance,LF,F,False
+53,2,The product shall have a consistent color scheme and fonts.,LF,LF,True
+54,2,The system shall be used by realtors with no training.,US,F,False
+55,2,The system shall be intuitive and self explanatory.,US,US,True
+56,2,The product shall be easy for a realtor to learn.,US,US,True
+57,2,The product shall use symbols and words that are naturally understandable by the realtor community.,US,US,True
+58,2,The product shall produce search results in an acceptable time,PE,F,False
+59,2,The user interface shall have standard menus buttons for navigation,LF,US,False
+60,2,The product shall generate a CMA report in an acceptable time.,PE,PE,True
+61,2,The CMA report shall be returned no later 60 seconds after the user has entered the CMA report criteria.,PE,PE,True
+62,2,The product shall synchronize contacts and appointments in an acceptable time.,PE,PE,True
+63,2,The product shall synchronize with the office system every hour.,PE,O,False
+64,2,The product shall be available for use 24 hours per day 365 days  per year,A,A,True
+65,2,Out of 1000 accesses to the system the system is available 999 times.,A,A,True
+66,2,The product shall operate in offline mode whenever internet connection is unavailable.,FT,PE,False
+67,2,The search results shall be returned no later 30 seconds  after the user has entered the search criteria,PE,F,False
+68,2,The product shall allow the user to view previously downloaded search results CMA reports  and appointments.,FT,F,False
+69,3,The system shall allow a Program Administrator or Nursing staff member to remove a student from a clinical lab section.,F,F,True
+70,3,Program Administrators and Nursing Staff Members shall be able to add a student who has registered for a clinical class to a clinical lab section for that class.,F,F,True
+71,3,A clinical lab section shall include the clinical site name  the class  instructor  day and time of the lab.,F,F,True
+72,3,Program Administrators and Nursing Staff Members shall be able to add a new clinical lab section for an existing clinical class into the System.,F,F,True
+73,3,Clinical site information shall include (but not be limited to) the name of the site  contact person  and contact information.,F,F,True
+74,3,Program Administrators and Nursing Staff Members shall be able to add a new clinical site into the system.,F,F,True
+75,3,Classes for a given cohort shall not conflict with regards to the time and day that they are offered.,F,F,True
+76,3,Program Administrators/Nursing Staff Members shall be able to create a new Program of Study.,F,F,True
+77,3,Program Administrators and Nursing Staff Members shall have the ability to specify which classes are required for a Program of Study,F,SE,False
+78,3,A Program of Study shall consist of a program name and listing of required classes (both clinical and non-clinical) that must be completed.,F,F,True
+79,3,A clinical class shall specify the course name  lecture room requirements  clinical site needs  lecture instructor needs  and clinical lab instructor needs.,F,F,True
+80,3,A non-clinical class shall specify the course name  lecture room requirements  and instructor needs.,F,F,True
+81,3,A class shall be either a non-clinical class or a clinical class.,F,F,True
+82,3,Program Administrators and Nursing Staff Members shall be able to add new classes for the nursing department into the system.,F,F,True
+83,3,The system shall allow a Program Administrator/Nursing Staff Member to move a student from one clinical lab section to another clinical lab section corresponding to the same clinical class.,F,F,True
+84,3,Program Administrators and Nursing Staff Members shall be able to add a new cohort to the system  identified by start month and year.,F,F,True
+85,3,The system shall be able to display a report of needed classes for a given quarter for all cohorts of all programs for Program Administrators/Nursing Staff Members’ planning purposes.,F,F,True
+86,3,Program Administrators/Nursing Staff Members shall be able to cancel a clinical lab section only if there are no students registered for that clinical lab section.,F,F,True
+87,3,The system will notify affected parties for routine communication purposes  including but not limited to informing students of upcoming offered classes (timeline) and what their schedule will be/shall be.,F,F,True
+88,3,A staff member shall have the ability to manage the progress of a part time student  which includes modifying their sequence of classes and timeline of classes.,F,F,True
+89,3,Program Administrators and Nursing Staff Members shall be able to add clinical classes or sections to a sequence of classes,F,F,True
+90,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Nursing Student  including student ID  student name phone number e-mail status (full time or part time) and program of study.,F,F,True
+91,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Lab Section  including the clinical site name the department/section for the lab  the class instructor day and time of lab and contact information.,F,F,True
+92,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Clinical Site  including the clinical site name  site contact person  contact information  and address.,F,F,True
+93,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to a Program of Study within the Nursing Department including the Program of study name  and required classes for that Program of Study.,F,F,True
+94,3,Program Administrators/Nursing Staff Members shall have the ability to modify information relating to cohorts including cohort identifier  program of study  preferred sequence of classes and quarters that a cohort will be taking specific classes.,F,SE,False
+95,3,The system will notify affected parties when changes occur affecting specific students  including but not limited to changing a student’s status from full time to part time and moving a student to a different clinical section.,F,F,True
+96,3,The system will notify affected parties when changes occur affecting cohorts  including but not limited to changes to the sequence for a cohort’s program of study and changes to a given week’s schedule (lab cancelled this week due to instructor illness).,F,F,True
+97,3,The system will notify affected parties when changes occur affecting classes  including but not limited to class cancellations  class section detail changes  and changes to class offerings for a given quarter.,F,F,True
+98,3,The system will notify affected parties when changes occur affecting clinicals  including but not limited to clinical section capacity changes  and clinical section cancellations.,F,F,True
+99,3,The system will use the stored e-mail addresses as a primary means of communicating information to affected parties.,F,SE,False
+100,3,The system shall contain contact information (e-mail and phone number) for all people relevant to the system  including (but not limited to) staff members  students  lecture instructors  clinical lab instructors  and clinical site administrators.,F,F,True
+101,3,The system shall be able to display a printable summary of the system log.,F,F,True
+102,3,The system shall be able to display a printable summary for individual nursing students  which will include (but not be limited to) student name  student ID  admission date  classes  credits  GPA  and the cohort that the student is enrolled in.,F,F,True
+103,3,The system shall be able to display a printable summary for individual clinical labs  which will include (but not be limited to) class name  class number  lab section  listing of students enrolled  instructor  day(s)  time  and location.,F,F,True
+104,3,The system shall be able to display a printable summary for individual clinical sites  which will include information on labs being held at that site for the given quarter (Clinical site  general information on labs held at that location  dates and times of all labs held there).,F,F,True
+105,3,The system shall be able to display a printable summary for individual cohorts  which will include the students enlisted  the Program of study  sequence of classes  cohort progress through the program  and timeline of completion.,F,F,True
+106,3,A Program Administrator/Nursing Staff Member shall be able to add a new nursing student to the system.,F,F,True
+107,3,Program Administrators and Nursing Staff Members shall be able to add new classes to a sequence of classes,F,F,True
+108,3,The report of needed classes shall include (but not be limited to) classes to be offered  number of sections needed  number of labs needed  and room types needed.,F,F,True
+109,3,Program Administrators and Nursing Staff Members shall be able to specify the preferred sequence of classes for a given cohort.,F,F,True
+110,3,The system shall able to operate within a business office environment typical of the Nursing Department at DePaul University.,O,PE,False
+111,3,The system shall be expected to manage the nursing program curriculum and class/clinical scheduling for a minimum of 5 years.,SC,MN,False
+112,3,The system shall be capable of processing 100% of nursing students and their classes for the next 10 years.,SC,F,False
+113,3,The system shall cater to 10 simultaneous users from 9am to 5pm.,SC,F,False
+114,3,system shall be able to handle all of the user requests/usage during business hours.,SC,F,False
+115,3,The system shall achieve 95% up time.,A,A,True
+116,3,The system shall be available for use between the hours of 8am and 6pm.,A,A,True
+117,3,The response time of general student management tasks shall take no longer than 5 seconds and the response time of schedule generation shall take no longer than 30 seconds.,PE,PE,True
+118,3,Staff members shall be able to complete a set of tasks in a timely manner.,PE,F,False
+119,3,The verbiage used within the system shall be consistent with Standard English and the terminology of the national Nursing Community.,US,F,False
+120,3,For each class within a sequence for a cohort  Program Administrators and Nursing Staff Members shall be able to specify which quarter that class will be offered.,F,F,True
+121,3,2 out of 3 Program Administrators/Nursing Staff Members shall successfully be able to use the system to manage the scheduling of classes and clinicals.,US,F,False
+122,3,The system shall be intuitive to the Program Administrators/Nursing Staff Members.,US,F,False
+123,3,The number of mistakes noted by the students shall be decreased by 50% in the first year.,US,F,False
+124,3,The system shall help the user avoid making mistakes while scheduling classes and clinicals for the nursing students.,US,F,False
+125,3,All of the users shall be able to use the system after one day of training.,US,US,True
+126,3,The system shall be easy to use by the Program Administrators/Nursing Staff Members.,US,US,True
+127,3,The system shall be used within the specifications defined by the computers used by the Program Administrators/Nursing Staff Members.,O,F,False
+128,3,The system shall operate within the Windows XP Professional operating system.,O,F,False
+129,3,The system shall use symbols and words that are naturally understandable by the user community.,US,US,True
+130,3,The system shall interface with the faculty central server.,O,O,True
+131,3,The system shall interface with CampusConnect’s central server,O,O,True
+132,3,Students added to a cohort shall be eligible for the cohort’s Program of Study.,F,F,True
+133,3,Program Administrators and Nursing Staff Members shall be able to add a single student to a cohort,F,F,True
+134,3,Program Administrators and Nursing Staff Members shall be able to add a listing of students to a cohort.,F,F,True
+135,3,The system shall use the organization’s standard virus protection software to help monitor threats to itself.,SE,F,False
+136,3,The system shall be built such that it is as secure as possible from malicious interference.,SE,F,False
+137,3,The system shall protect private information in accordance with the organization’s information policy.,SE,SE,True
+138,3,The system shall have basic data integrity checking to reduce the possibility of incorrect or invalid data being introduced.,SE,SE,True
+139,3,A cohort shall be associated to one Program of Study offered by the department.,F,F,True
+140,3,Only authorized users shall have access to the portion of the system that interfaces with CampusConnect.,SE,SE,True
+141,3,Dr Susan Poslusny and Dr Julie Donalek are the only people who shall have access to students’ personal information.,SE,SE,True
+142,3,Only authorized users shall have access to students’ personal information.,SE,SE,True
+143,3,Program Administrators/Nursing Staff Members are the only people who shall have access to clinical site details.,SE,SE,True
+144,3,Only authorized users shall have access to clinical site information.,SE,SE,True
+145,3,We must be able to interface with any HTML browser.,O,O,True
+146,3,Fit Criterion: Dr Susan Poslusny and Karen Sysol are the only people who shall have access to the final class section scheduling for the system that interfaces with CampusConnect.,SE,SE,True
+147,3,The system shall interface with the student master server.,O,O,True
+465,9,If the leads score falls within the medium average then it will be set for manual verification by an Enrollment Coordinator through the eleads system.,F,F,True
+466,9,If the leads score falls within the low average then it will be returned to the supplying vendor,F,F,True
+467,9,The leads washing functionality will compile both contact and academic scoring information for a total score.,F,F,True
+468,9,The leads washing functionality will use the parameters supplied by corporate and schools to score part of the lead.,F,F,True
+469,9,The leads washing functionality will return the lead data supplied to the vendor along with the reason of rejection.,F,F,True
+470,9,The leads washing functionality shall receive a period list of available reps from the enterprise system.,F,F,True
+471,9,The leads washing functionality will verify the users authentication and rights to make parameter updates.,F,F,True
+472,9,The leads washing functionality will store any potential lead duplicates returned by the enterprise system.,F,F,True
+473,9,Prior to submitting the lead to the enterprise system the leads washing functionality will assign the lead to an admissions rep.,F,F,True
+474,9,If the leads score falls within the high average score then it will be process by the ARA functionality.,F,F,True
+475,9,The leads washing functionality will have an interface in which lead data parameters can be maintained.,F,F,True
+476,9,The leads washing functionality will insert all leads captured by the web service.,F,F,True
+477,9,No lead evaluation will complete in a time period longer than 25 seconds for 97% of all leads processed.,PE,PE,True
+478,9,If a lead is scored to the high range the system will supply the lead data and score to the enterprise system.,F,F,True
+479,9,Vendor will submit a credit validation record to be applied to the enterprise billing system.,F,F,True
+480,9,The vendor will verify the invalid lead.,F,F,True
+481,9,Washing parameters will be updated during scheduled maintenance hours.,MN,F,False
+482,9,Defect reports will be available to technical units on a 24x7 basis.,A,A,True
+483,9,The washing process must use a non binding  neutral data format  such as xml  when receiving and processing lead data.,O,F,False
+484,9,The lead washing process will operate within the established physical web service structure.,O,O,True
+485,9,The process must fit within the processing time conditions set forth by the Auto Rep Assignment process in which a lead is assigned within 3 minutes of the total life cycle.,PE,PE,True
+486,9,For leads that process longer than 25 seconds the system will record the event and duration,PE,PE,True
+487,9,Total lead cycle time must be completed in 5 minutes for 90% of lead volume between the business hours of 8AM CST to 8PM CST; then 3 minutes for 99% of lead volume during off business hours.,PE,A,False
+488,9,The leads washing functionality will validate all leads received by the web service for valid data,F,F,True
+577,13,The WCS system shall be available at all times as long as IBM’s internal intranet W3 is accessible. The WCS system will be available 95% of the time IBM’s internal intranet W3 is available.,A,A,True
+578,13,The system shall only be accessed by authorized Corporate Community Grants (CCR) employees. Users must be authenticated using their IBM intranet user name and password.,SE,SE,True
+579,13,All changes  updates  and additions to the WCS system shall be updated in the WCS Developer and WCS User Guides. Every change must be reflected in WCS system documentation,MN,MN,True
+580,13,The WCS system must run queries to the WCS databases once again (on a specified day) to update the available data available to CCR users. Queries must be made to external databases for data refresh once a week.,MN,F,False
+581,13,The Brio portion of the WCS system must be able to export files in spreadsheet form (Microsoft Excel and Lotus 1-2-3 formats).  Brio will provide buttons in the user interface that produce/export reports in .xls or .123 file formats.,O,F,False
+582,13,The WCS system shall be run in a Windows environment. The WCS shall be accessed by users through the Internet on an IBM computer running a Windows 2000 or above operating system.,O,O,True
+583,13,The WCS system shall not allow automatic logins by any user. Cookies containing WCS login information about a user will not be stored on a user’s computer.,SE,SE,True
+584,13,The WCS system shall have the ability to connect other designated WCS databases currently not included in the system.,SC,SE,False
+585,13,The WCS system shall use appropriate nomenclature and terminology as defined by the Corporate Community Grants organization. All interfaces and reports will undergo usability tests by CCR users.,US,O,False
+586,13,The WCS system shall have the ability to include data for regions outside the United States and be accessed by users outside of the United States if approved by CCR management.,SC,F,False
+587,13,A user shall be able to use the system without instruction after a short amount of time. After one use a user should understand and remember 90% of the system usage and navigation.,US,US,True
+588,13,Reports must be easy to generate. Reports must be generated within one button click and exported within one button click (after selecting the report),US,US,True
+589,13,The interface shall be easy to use. 90% of users should be able to successfully use the system to generate a report on their first use. The interface should adhere to IBM usability standards.,US,US,True
+590,13,The system must use a point and click interface. 100% of all selection and navigation functionality must be able to be activated/selected by either a mouse or a keyboard,US,F,False
+591,13,The interface must summarize the data in a fashion that’s appealing to CCR management. Every report type must have at least one high level summary shown in the results dashboard/interface,LF,F,False
+592,13,The system interface will use CCR nomenclature. The system must use the same nomenclature used in the existing WCS system and reports,LF,US,False
+593,13,The system shall be displayable on any work computer a CCR user may have. The system interface shall be formatted to display at 800 by 600 pixel resolution.,LF,F,False
+594,13,The system shall use IBM and CCR branding standards. The interface must have one IBM logo and one CCR logo.,LF,F,False
+595,13,All CCR users shall receive training before the WCS system is deployed. One training session will be held for 100% of CCR users before system deployment (based on a CCR user being available),US,US,True
+624,16,The system shall have a help system that offers tips and explanation for each screen and each item on the screens upon demand.,US,F,False
+625,16,The system search feature should support the use of regular expressions in search.,F,F,True
+626,16,The system shall allow a text search that users may use to find mail messages.,F,F,True
+627,16,The system shall display and embed in each message a date/timestamp of when the message was sent.,F,F,True
+628,16,The system shall use a text-based interface to display a listing of available mail.,LF,F,False
+629,16,The system shall operate on Unix and Windows operating systems.,PO,O,False
+630,16,The system shall support the ability to perform a send only operation.,F,F,True
+631,16,The system shall be evoked by typing “pine” into a command or shell prompt.,O,F,False
+632,16,The system shall support the ability to perform a receive only operation.,F,F,True
+633,16,The system shall support the ability to perform a send and receive operation.,F,F,True
+634,16,The system shall use the SMTP mail protocol.,O,F,False
+635,17,The system shall provide an option to withdraw money.,F,F,True
+636,17,The system shall query the user for the amount of money.,F,F,True
+637,17,The system shall query the user for the account type.,F,F,True
+638,17,The system shall validate the amount is a multiple of $20.,F,F,True
+639,17,The system shall debit the user’s account upon withdrawal of funds.,F,F,True
+640,17,The system shall be able to issue a specific amount of money to the user.,F,F,True
+641,17,The system shall validate the amount is available in the user’s account before releasing funds to the user.,F,F,True
+642,18,A meeting scheduler system will inform the “potential meeting participant” of the meeting.,F,F,True
+643,18,The meeting scheduler system may be able to include an agenda for a meeting proposal.,F,F,True
+644,18,A meeting scheduler system will temporarily reserve the “time slots” for the proposed meeting.,F,F,True
+645,18,The meeting scheduler system may be able to include a list of required equipment for a meeting proposal.,F,F,True
+646,18,The meeting scheduler system may suggest a “virtual meeting” for available “time slots” if no location is available or feasible for the meeting.,F,F,True
+647,18,The meeting scheduler system may (optionally) automatically propose another meeting if current meeting is canceled by an important participant.,F,F,True
+648,18,The meeting scheduler shall be accessed from the Web.,O,F,False
+649,18,The meeting scheduler system shall reschedule a meeting to support conflict resolutions.,F,F,True
+650,18,The meeting scheduler system shall cancel a meeting due to canceling of an important participant.,F,F,True
+651,18,The meeting scheduler system shall be able to select a participant as an important participant.,F,F,True
+652,18,The meeting scheduler system may provide the “meeting initiator” a summary of the scan of “potential meeting participants” showing available “time slots” and schedule conflicts as a means of informing the “meeting initiator” of the overall results of the system.,F,F,True
+668,21,Programmers and application developers will have access to source code to address bugs or system enhancements as deemed necessary. Network Administrator and DBA support is also required to maintain a 24x7 system uptime.,A,MN,False
+669,21,System security and access levels are provided in the online system. There are varying levels of system access and functional authority. Each student’s access is limited to his/her own registration records. Only authorized system administrator(s) has access to all student registration records.,SE,SE,True
+670,21,The online registration system is “self-service style” system that shall initially address the student registration needs.,F,F,True
+671,22,All data entry forms for the application should match their Microsoft Excel hardcopy counterparts as closely as possible. Hardcopies of these forms were provided to the design team during the second requirements interview.,O,F,False
+674,24,The application should be connected to the Internet.,A,US,False
+675,24,The application should be connected to the GPS device.,A,US,False
+676,24,The application should be easy to extend. The code should be written in a way that it favors implementation of new functions.,MN,US,False
+677,24,Test environments should be built for the application to allow testing of the applications different functions.,MN,US,False
+678,24,The application should be portable with iOS and Android.,PO,PO,True
+684,26,It should generate a report about registered complaint to the admin and response report to the user who has submitted his queries.,F,F,True
+685,26,The system should maintain correct schedules of labs and the documentation of all the lab equipment.,F,F,True
+698,28,The system will support mobile users in some way.,PO,F,False
+699,28,The system will fully function in major browsers.,PO,F,False
+764,35,The system will develop a security system that will reduce to the minimum the possibility of corruption from systems and/or humans.,SE,SE,True
+765,35,The Web interface should be compatible with standards in order to be usable via all major Web browsers in a wide variety of environments.,PO,L,False
+766,35,Everyone (stakeholders and guests) can have access to the system and the catalogue. Every client must have secure and private access to his/her data. The  and the service man can have access to every part of the system. All these accesses (except the “guest tour” access) require identification through ID and password.,SE,SE,True
+767,35,The system should need to be entirely self-supporting since the users would be using it only to register courses.,US,F,False
+768,35,The system should be able to manage all the information incoming from the database and the catalogue.,O,F,False
+769,35,The product is Web based therefore it will be used in any environment that allows Web access.,PO,O,False
+770,35,The logo and the current basic design of registration system should be displayed. The system should be attractive according to the clients. The design and the color should make users feel comfortable when using the system instead of flashing useless colors on the screen. The design should also reflect the seriousness of the environment.,LF,US,False
+771,35,For the system to successfully operate the registration system should be integrated with other IT services and the portal.,O,F,False
+772,36,The Operational Interface shall have a Mean Time Between Failures of no less than 7 days.,FT,FT,True
+773,36,The system shall be available 99.5% of the time.,A,A,True
+774,36,The software system needs a robust security mechanism in place so that unauthorized users are not allowed access to parts of the system.,SE,SE,True
+775,36,Each user shall either be trusted or not trusted.,SE,F,False
+776,36,All source code and development related documents shall be controlled under a version control system.,MN,MN,True
+777,36,All source code shall adhere to an agreed upon and well-defined set of coding standards for each development language used.,MN,F,False
+778,36,Since the software must run on several popular hardware platforms and the goal is to achieve a reasonable level of platform independence.,PO,O,False
+810,39,The system should require the user to state time when should the doughnut be delivered,F,F,True
+1324,57,"When a user selects the View/Standard Error menu option, the HATS-GUI shall display the standard error screen showing all outputs written to the standard error stream since the most recent clearing of this data. The viewing of errors is detailed in Section 3.2.3.",F,F,True
+1325,57,"When a user selects the View/Standard Output menu option, the HATS-GUI shall display the standard error screen showing all outputs written to the standard output stream since the most recent clearing of this data.",F,F,True
+1326,57,"The HATS-GUI shall allow the user to continue working while transformations are taking place. Thus a user shall be able to edit files, view output, and transmit other problems to HATS-SML while waiting for HATS-SML to generate output.",F,F,True
+1327,57,The HATS-GUI shall allow the user to execute a script file. A script file shall contain a linear sequence of HATS-SML programs. The HATS-GUI shall begin with the first command and execute the commands sequentially until either an error occurs or all commands in the script file have been executed.,F,F,True
+1328,57,"When both an SDT and a pretty-printed text display corresponding to a single transformed target file are open, highlighting and cursor location motion shall be mirrored in the two windows. Thus, when a displayed node is selected in the SDT display, the corresponding text in the prettyprint window is highlighted. When the user scrolls to the end of the pretty-printed text display, the display of the SDT should also scroll to the corresponding displayed nodes.",F,F,True
+1329,57,"When viewing an SDT, selecting nodes shall result in the highlight of all displayed nodes in the smallest well-formed tree of the selected nodes.",F,F,True
+1330,57,"When the system displays a navigation window, the user shall be able to select a current SDT location by clicking the mouse cursor in the navigation window. The center of the displayed graph will be the displayed node closest to the mouse cursor when the mouse is clicked.",F,F,True
+1331,57,"The user shall be able to resize windows dynamically. When displayed graph windows are resized, the HATS-GUI shall respond by utilizing the space available.",F,F,True
+1332,57,The display of an SDT shall also result in the display of text from leaf nodes in a text display area.,F,F,True
+1333,57,"When a user selects the View/Text menu option, the HATS-GUI shall prompt a user to select a pretty-printed text file in the current application. The viewing of text outputs is detailed in Section 3.2.3.",F,F,True
+1334,57,The system shall be implemented in the Java 1.3 programming language.,SE,PE,False
+1335,57,"When a user selects the View/SDT menu option, the HATS-GUI shall prompt the user to select an SDT file in the current application. The file list shall include SDTs in the application. The viewing of outputs is detailed in Section 3.2.3.",F,F,True
+1336,57,"When a user selects the Application/Delete menu item, the HATS-GUI shall prompt the user to confirm the deletion operation. If the user confirms, all files in the application directory shall be deleted and the application directory itself shall be deleted. No application is currently selected at the end of this operation.",F,F,True
+1337,57,"When a user selects the Run/Execute Transforms menu option, the HATS-GUI shall execute the ApplyTransformations HATS-SML programs as described in Appendix D. This process is further described in Section 3.2.3.",F,F,True
+1338,57,"When a user selects the Run/Parse Program menu option, the HATS-GUI shall parse the selected transformation language program by using the ParseTlp HATS-SML programs as described in Appendix D. If no target program is selected, the HATS-GUI shall first prompt the user to select a transformation language program.",F,F,True
+1339,57,"When a user selects the Run/Parse Target menu option, the HATS-GUI shall parse the selected target program by using the ParseTarget HATS-SML programs as described in Appendix D. If no target program is selected, the HATS-GUI shall first prompt the user to select a target program.",F,F,True
+1340,57,"When a user selects the Run/Generate Parser menu option, the HATS-GUI shall generate the parser using the MakeParser HATS-SML program as described in Appendix D.",F,F,True
+1341,57,"When a user selects the Configure menu options, the HATS-GUI shall provide a list of elements in the application configuration, allow the user to select an element, then prompt the user for a value for the configuration element.",F,F,True
+1342,57,"When deleting an application directory, if the application directory contains a subdirectory, the system shall confirm the deletion of the subdirectory with the user before continuing. If the user does not confirm the deletion of the subdirectory, the application director shall not be deleted.",F,US,False
+1343,57,"The text displayed in the text display area shall correspond to the concatenation of the node labels (separated by spaces) of the leaf nodes of the displayed graph (in-order traversal, left to right). If a leaf displayed node corresponds to a non-terminal SDT node, the label in the text window shall be surrounded by pointed brackets (<>). For example, if a non-terminal TERM appears in a leaf node, its text representation shall be <TERM>. Appendix G gives an example of the display of text associated with an SDT.",F,F,True
+1344,57,"When a user selects the Application/Save As menu item, the HATS-GUI shall prompt the user for a new application name. The HATS-GUI shall create a new directory at the same level as the currently selected application. All files in the application directory, including all subdirectories, shall be copied to the new directory, and the new directory shall become the currently selected application.",F,F,True
+1345,57,"When a user selects the Application/Save menu item, the HATS-GUI shall save all application configuration information to nonvolatile storage.",F,F,True
+1346,57,"When a user selects the Application/Close menu item, the HATS-GUI shall close the currently selected application. No application is currently selected at the end of this operation. If changes have been made to the configuration but have not been saved, the user shall be prompted to save the configuration. If the user agrees, the configuration shall be saved. If the user does not agree, the configuration shall not be saved.",F,F,True
+1347,57,"When a user selects the Application/Select menu item, the HATS-GUI shall display a list of directory names in the current working directory, allow a user to navigate the directory structure, and allow a user to select a previously created application. This application becomes the currently selected application.",F,F,True
+1348,57,"When a user selects the File/Exit menu option, the HATS-GUI shall request the host operating system to kill all currently active HATS-SML processes started by the HATS-GUI and halt the HATS-GUI process. If changes have been made to the configuration but have not been saved, the user shall be prompted to save the configuration. If the user agrees, the configuration shall be saved. If the user does not agree, the configuration shall not be saved.",F,F,True
+1349,57,"When a user selects the Run/Pretty-print menu option, the HATS-GUI shall execute the Prettyprint HATS-SML programs as described in Appendix D.",F,F,True
+1350,57,The HATS-GUI shall provide for the copying of text from the text display area to a system buffer available for pasting into other applications (such as an editor).,F,F,True
+1351,57,The user shall be able to view multiple SDTs simultaneously.,F,F,True
+1352,57,The user shall be able to expand displayed nodes (provided it is possible to expand the selected nodes). The HATS-GUI shall change the graph display by adding the descendant nodes to the displayed graph (thus changing the expandable nodes to internal nodes).,F,F,True
+1353,57,"When a user selects the File/Edit menu item, the HATS-GUI shall request that the operating system start a process and load that process with the editor specified by the application configuration. The name of a selected file shall be passed to the editor as a command line argument. The editor started by the HATS-GUI shall be the editor associated with the file in the application configuration, or if there is no editor associated with the file, then the editor associated with the file type of the file in the application configuration. If no editor is associated with either the file or the file type, then the default editor shall be used. If no default editor has been selected, then the HATS-GUI shall present a list of the configured editors and allow the user to select an editor. If no editors have been configured, then the HATS-GUI shall inform the user that an editor must be configured before starting an editor.",F,F,True
+1354,57,"The GUI shall run on Windows 2000, Sun Solaris 8, and Linux operating systems without modification of the Java code.",SE,O,False
+1355,57,The user shall not be required to log in or authenticate his/her identity when using the system.,SE,SE,True
+1356,57,"One algorithm for displaying an SDT has been implemented and found to be unacceptable:Draw SDT into large virtual window with a smaller viewing area, Zoom in on portions of the tree;",PE,F,False
+1357,57,The complexity of the scrolling algorithms for text and displayed graphs shall not exceed O(n2) for n displayed nodes.,PE,F,False
+1358,57,The complexity of the tree search algorithm shall not exceed O(n2) for n nodes.,PE,F,False
+1359,57,The complexity of the text search algorithm shall not exceed O(n2) for n nodes.,PE,F,False
+1360,57,"The HATS-GUI shall allow a user to navigate through the display of an SDT with 10,000 nodes so that scrolling a screen width with any portion of the SDT displayed takes less than 3 seconds.",PE,PE,True
+1361,57,The HATS-GUI shall allow a user to request transformations while HATS-SML is performing transformations or parsing.,PE,F,False
+1362,57,"The HATS-GUI shall display 1,000,000 node SDTs in the same amount of time, plus or minus two seconds, as it takes to display a 10,000 node SDT.",PE,PE,True
+1363,57,"The HATS-GUI shall display and SDT with 10,000 nodes in five seconds or less.",PE,PE,True
+1364,57,"When searching for text patterns, search begins at the location of the keyboard cursor and continues left-to-right, top-to-bottom until the end of the text is encountered. When the end of the text is encountered, search will continue from the start of the text until arriving back at the starting location.",F,F,True
+1365,57,"The HATS-GUI shall provide the user the capability to search the text display for text sub-strings. The search criteria are described in Appendix F. The user shall be prompted to enter a text string describing a string pattern. The HATS-GUI shall search the text for a matching pattern. When a match is found, the HATS-GUI shall highlight the matching text and center the display on the left-most element of the matching text. The keyboard cursor shall be set to this location. If no matches are found, the HATS-GUI shall display a message stating “No Match Found.”",F,F,True
+1366,57,"Windows for pretty-printed text shall allow for scrolling left, right, up, and down if the text is too large to display in the window.",F,F,True
+1367,57,Selected pretty-printed text shall be displayed in a separate window.,F,F,True
+1368,57,The user shall be able to select pretty-printed text files to display.,F,F,True
+1369,57,"The formatting of the displayed pretty-printed text shall be faithful to the formatting represented in the pretty-printed text file. No additional white space shall be inserted, and a fixed width font shall be used to display the text.",F,F,True
+1370,57,"SDT displays shall provide the user with the option to refresh the display. When a display is refreshed, the current display is erased, the SDT file is read, and a new SDT display is generated. The new SDT display shall approximate the previous SDT display by expanding the SDT to the same number of nodes, if this is possible.",F,F,True
+1371,57,"SDT displays shall also provide the user with a view of text associated with the leaves of the displayed sub-tree. This text shall be copy-and-pasteable in the host operating system. Thus, text displayed in a HATS-GUI window can be pasted into other applications such as text editors that may be running concurrently with the HATS-GUI.",F,US,False
+1372,57,The HATS-GUI shall provide the function to fully expand a sub-tree regardless of the node expansion level in the application configuration.,F,F,True
+1373,57,The HATS-GUI shall allow the user to expand the SDT by a predetermined number of node levels. The number of levels expanded is set in the application configuration.,F,F,True
+1374,57,"After issuing the unhide instruction, a user shall be able to issue a rehide instruction that reverses the unhide instruction. All displayed nodes hidden before the most recent unhide instruction shall become hidden.",F,F,True
+1375,57,The user shall be able to issue an unhide instruction that reverses the hide instruction for all displayed nodes.,F,F,True
+1376,57,"The user shall be able to hide a set of selected displayed nodes. The HATS-GUI shall change the display by removing the selected nodes from the display and changing the parent and descendant nodes of the removed nodes to nodes with hidden descendants and parents, respectively.",F,F,True
+1377,57,The user shall be able to collapse displayed nodes. The HATS-GUI shall change the displayed graph by removing all descendants of the selected displayed nodes (thus changing the internal nodes to non-expandable leaf nodes).,F,F,True
+1378,57,The user shall be able to display more than one SDT at a time. Each SDT shall be displayed in a separate window.,F,F,True
+1379,57,"When a user selects the File/Delete menu item, the HATS-GUI shall prompt the user to confirm the deletion operation. If the user confirms, the currently selected file shall be deleted. No file shall be currently selected at the end of this operation.",F,F,True
+1380,57,"Prior to starting the execution of a script file, the display screens for the standard error and the standard output shall be cleared.",F,F,True
+1381,57,"When a user selects the File/Select menu item, the HATS-GUI shall provide the user with a list of files in the currently open application and allow the user to select a file. This file becomes the currently selected file. If no application is currently open, the HATS-GUI will prompt the user to select and open an application, then prompt the user to select a file.",F,F,True
+1382,57,The Configure/File Associations menu item shall provide an interface for associating files in an application. File associations are shown in Table 6.,F,F,True
+1383,57,"The HATS-GUI shall allow the user to select the shapes for types of displayed nodes in a displayed graph. At a minimum, the system shall provide two shapes, rectangles and ellipses, for displayed nodes.",F,F,True
+1384,57,"The HATS-GUI shall allow the user to select the colors for types of displayed nodes in a displayed graph. At a minimum, the system shall provide eight colors (red, yellow, white, black, green, blue, orange, and violet) for displayed nodes.",F,F,True
+1385,57,The HATS-GUI shall allow the user to specify the number of levels of nodes to expand during SDT viewing.,F,F,True
+1386,57,The Configure/Node Display menu item shall provide an interface for configuring the display of nodes.,F,F,True
+1387,57,The Configure/Editors menu item shall provide an interface for the user to enter editor configuration information. This information shall be used when editors are started as processes.,F,F,True
+1388,57,The Application/Delete menu item shall provide an interface for deleting an application and all the files in the application directory. The HATS-GUI shall prompt the user to confirm deletion prior to completing this action.,F,F,True
+1389,57,The Application/Save-as menu item shall provide an interface for saving an application and its associated files under a different name.,F,F,True
+1390,57,The Application/Save menu item shall provide an interface for saving application configuration information.,F,F,True
+1391,57,The Application/Close menu item shall provide an interface for closing an application.,F,F,True
+1392,57,The Application/Select menu item shall provide an interface for selecting and opening an application.,F,F,True
+1393,57,The File/Exit menu item shall provide an interface for exiting the HATS-GUI.,F,F,True
+1394,57,The File/Delete menu item shall provide an interface for deleting a selected file. The HATS-GUI shall prompt the user to confirm deletion prior to completing this action.,F,F,True
+1395,57,The File/Save-as menu item shall provide an interface for saving a previously selected file under a different name.,F,F,True
+1396,57,The File/Edit menu item shall provide an interface for starting an editor as an external process. The editor shall be started according to information in the application configuration.,F,F,True
+1397,57,The File/Select menu item shall provide an interface for selecting files within the currently open application.,F,F,True
+1398,57,The View menu shall contain items related to viewing HATS-SML output.,F,F,True
+1399,57,The Run menu shall contain items related to executing the HATS-SML programs.,F,F,True
+1400,57,The Configure menu shall contain items related to modifying the configuration of the application.,F,F,True
+1401,57,The Application menu shall contain items related to manipulating entire applications.,F,LF,False
+1402,57,The File menu shall contain menu items related to manipulating individual files and for closing the HATS-GUI application.,F,F,True
+1403,57,Output pretty-printed text files and SDTs shall only be displayed when the user requests.,F,F,True
+1404,57,"For any operation where the user is prompted to select from a list, the user shall be able to cancel the operation.",F,F,True
+1405,57,"Any operation requiring the user to supply a file name shall allow the user either to select the files from a list derived from files in the currently open application or to key in a file name, a relative path name, or a complete path name.",F,F,True
+1406,57,"When a user selects the File/Save As menu item, the HATS-GUI shall prompt the user to enter a new name. A new file shall be created in the currently open application with the newly entered file name. The contents of the selected file shall be written into the new file, and the new file shall become the currently selected file.",F,F,True
+1407,57,The Configure/HATS-SML menu item shall provide an interface for the user to enter implementation-dependent information for starting HATS-SML processes.,F,F,True
+1408,57,The Run/Generate Parser menu item shall provide an interface for generating a parser program.,F,F,True
+1409,57,"When collecting generated output files from HATS-SML, the HATS-GUI shall overwrite any file whose name is generated automatically. For example, given a transformation language program X.tlp, the file X.tlp.parsed is generated when the parser is executed. If X.tlp.parsed existed prior to executing the parser, it shall be overwritten without prompting the user.",F,F,True
+1410,57,The Run/Parse Program menu item shall provide an interface for selecting and parsing transformation language programs.,F,F,True
+1411,57,The Run/Parse Target menu item shall provide an interface for selecting and parsing target programs.,F,F,True
+1412,57,The keyboard cursor shall be set to the location of the mouse cursor when the pointing device is clicked.,F,F,True
+1413,57,Each display window shall have a keyboard cursor to track the current location in the display.,F,F,True
+1414,57,"Each active display window shall have a mouse cursor, which indicates the location of the pointing device in the window.",F,F,True
+1415,57,Display windows opened by the system shall have buttons for closing the windows.,F,F,True
+1416,57,The system shall open a new window when the user selects to display output.,F,F,True
+1417,57,"The HATS-GUI shall display output written to the standard output and standard error streams in a tab-selectable window. Text in this window shall be cleared prior to executing individual HATSSML programs, unless the programs are contained in a program script. In the case of a script, the window contents shall be cleared prior to executing the script. Refer to section 3.2.3.2 for a discussion of the execution of script files.",F,F,True
+1418,57,"The HATS-GUI shall suggest a file name for the user whenever it prompts the user to enter a file name. The HATS-GUI shall suggest the same file name for files copied to a different directory. The HATS-GUI shall suggest a file name with a sequentially numbered extension for files copied to the same directory. For example, if NatLang.txt exists, a suggested file name would be NatLang.txt.2.",F,F,True
+1419,57,There shall be exactly one file describing the interpretation of function symbols associated with an application. This file shall be written in ML and have the file extension .lib.,F,F,True
+1420,57,There shall be exactly one file describing the grammar of inputs associated with an application. It shall have the file extension .grm.,F,F,True
+1421,57,There shall be exactly one file describing the lexical specification of inputs associated with an application. It shall have the file extension .spec.,F,F,True
+1422,57,The directory in which application files are stored shall be named with the application name.,F,F,True
+1423,57,The keyboard cursor shall be movable by the arrow keys.,F,F,True
+1424,57,"The HATS-GUI shall allow a user to create an application minimally consisting of a lexical specification file, a grammar file, a user-defined functions file, and application configuration information. The user shall be able to name this application.",F,F,True
+1425,57,All files associated with a given application shall be stored in one directory.,F,F,True
+1426,57,The Run/Pretty-print menu item shall provide an interface for selecting SDTs and pretty-print style files and formatting the SDT according to the style.,F,F,True
+1427,57,"The View/SDT menu item shall provide an interface for viewing, navigating through, and searching SDTs output from the execution of transformation programs.",F,F,True
+1428,57,The View/Text menu item shall provide an interface for viewing and searching pretty-printed text.,F,F,True
+1429,57,The View/Standard Error menu item shall provide an interface for viewing error strings collected from HATS-SML.,F,F,True
+1430,57,The Run/Execute Transforms menu item shall provide an interface for selecting and executing transformation language programs.,F,F,True
+1431,57,The View/Select Text menu item shall provide an interface for selecting pretty-printed text or text strings associated with SDT displays.,F,F,True
+1432,57,The View/Copy Text menu item shall provide an interface for copying selected text into an operating system buffer.,F,F,True
+1433,57,"The HATS-GUI shall interface with HATS-SML (version 2.0) in order to parse transformation language programs, execute transformation language programs, and create output SDTs, error messages, pretty-printed text, and parsed transformation language programs. The interface shall consist of starting HATS-SML programs and passing command line arguments and capturing data written to the standard output and standard error streams of the HATS-SML processes. The HATS-SML programs and their command line arguments are described in Appendix D.",F,F,True
+1434,57,"The GUI shall allow the user to create, modify, copy, or delete applications or files regardless of the current status of HATS-SML.",F,F,True
+1435,57,"If the HATS-GUI attempts to start a HATS-SML program and fails, the HATS-GUI shall notify the user by displaying the following message: “Unable to start HATS-SML.” The HATS-GUI shall provide any other details related to the failure that are available from the Host OS. Examples of information available from an operating system include indications that a specified file does ot exist, that a file cannot be opened due to file protection violations, or that errors occurred during I/O operations.",F,F,True
+1436,57,The View/Standard Output menu item shall provide an interface for viewing debugging information collected from HATS-SML.,F,F,True
+2044,66,The system shall use the current corporate standard Microsoft SQL Server database engine. ,L,F,False
+2045,66,Data uploading and management will likely be done as infrequently as once a year. This fact greatly limits the complexity of the user interface and the learning curve needed for completing this task.,L,F,False
+2046,66,Database Design: The database structure should be as complete as possible during the design stage but there should be a room for modification without a large overhaul during later phases. ,L,F,False
+2047,66,"Public users: Eventual release of the database system to the general public will add university and agency researchers who would appear similar in training to the primary users, but also would add clients with the entire range of training and interests. These users would have access to the public data without need for authentication.",L,SE,False
+2048,66,"Research users: Non-ARS scientists, engineers, and support staff who require ARS watershed data for research purposes. These would have similar characteristics and needs as ARS users, but because of the agency-level confidentiality issues, could not access the password-protected sensitive data. ",L,SE,False
+2049,66,"Data operations manager: Staff, probably at OCIO, responsible for data archiving and maintenance, requiring read/write/modify privileges to all data in the system. This includes the role commonly thought of as a Database Administrator (DBA). ",L,F,False
+2050,66,Watershed uploaders: Staff in the watersheds who have responsibility to upload local data requiring write access to space allocated to their specific watershed. ,L,F,False
+2051,66,"System operator: Staff at OCIO responsible for maintaining executable code, requiring full access to all aspects of the system. ",L,SE,False
+2052,66,"The system will use, where appropriate, the standard hardware and data communications resources provided by the ARS OCIO at the ARS George Washington Carver Center in Beltsville, MD. This includes, but is not limited to, the general Ethernet network/T1 connection at the server/hosting site, network servers, and network management tools. ",L,O,False
+2053,66,"Private Network - The system requires a “back-end” private network environment in order to ensure that end-user operations (on the front-end) are not impeded by database backups, index propagations, or other large back-end data transfers. ",L,SE,False
+2054,66,"The system shall be in compliance with all Accessibility, Web Design, and Security policies applicable. ",L,SE,False
+2055,66,"ARS users: ARS scientists, engineers, and support staff who require ARS watershed data for research purposes. These would likely be conversant with the general characteristics of the data content, and to a lesser extent have abilities manipulating views of the data using database tools such as envisioned for this database system. These users will need user/password authentication to enable user settings management and to have access to data protected through the confidentiality agreements among agencies participating in CEAP. ",L,SE,False
+2056,66,"As part of standard operating procedures, a testing plan will be documented during the Design phase. The testing plan will be based on user roles, modules or use cases, required tasks and expected outcomes.",L,F,False
+2057,66,"Relational Database Management System - As the primary data storage mechanism for the corporate standard relational database management system, Microsoft SQL Server will be required to support system functionality. ",L,F,False
+2058,66,An online hierarchical and cross-linked help system in HTML will describe and illustrate all system functions. ,L,SC,False
+2059,66,An online form will enable users to request help. Frequently asked questions will be screened for the FAQ pages.,L,F,False
+2060,66,"The user s guide (or user manual) will contain sufficient information and instructions required to access and use the data system. It will include: Overview of the system features and architecture, Instructions for accessing the system, Samples of screens, where appropriate.  ",L,F,False
+2061,66,Backup Software – Data and application backups will be managed through fully supported backup software solutions. ,L,SE,False
+2062,66,"HTTP and GIS Server Applications – As the Web will be the primary delivery protocol for the application, HTTP and related GIS server applications will be required to support system functionality. ",L,MN,False
+2063,66,"Web Browsers and Browser Plug-ins – In support of External Interface requirements, commonly supported web browsers will be used to implement a thin-client architecture. The use of Browser plug-ins will be judiciously restricted on an as-needed basis. ",L,O,False
+2064,66,"Email Services– As a secondary delivery protocol for alerts, data, and other information from the system, email server applications will be required to support system functionality.",L,F,False
+2065,66,"The system will use, where appropriate, the standard software resources provided by the ARS OCIO. This includes, but is not limited to, MS ASP/Java Scripts, C++/C# , MS SQL server and IIS, or the use of PHP/Perl, JB scripts, C++/C#, MySQL server, and Apache server. ",L,SE,False
+2066,66,The system will make data available in standardized data formats such as tab-delimited text for use on users’ client systems including local installations of ARC GIS software or other off-line software applications.,L,F,False
+2067,66,"The user interface will be simple and consistent, using terminology commonly understood by the intended users of the system. The system will have a simple interface, consistent with industry standard interfaces, to eliminate the need for user training of infrequent users. The STEWARDS team will evaluate the user interface of similar systems and apply appropriately. For additional details see Appendix E. User testing will be used to ensure the user interface is clear (simple, commonly understood vocabulary, intuitive to use without training), complete (users can perform all functions from the interface), and consistent (buttons and wording are the same throughout the system).",L,US,False
+2068,66,"No extra hardware interfaces are needed. The system will use the standard hardware and data communications resources provided by the ARS OCIO at the ARS George Washington Carver Center in Beltsville, MD. This includes, but is not limited to, the general Ethernet network/T1 connection at the server/hosting site, network servers, and network management tools. This system will include a warning message when a low transmission speed is detected, and a non-graphical interface option will be available.  ",L,O,False
+2069,66,"The system will use the communications resources provided by the ARS OCIO. This includes, but is not limited to, HTTP protocol for communication with the web browser and the web server and TCP/IP network protocol with HTTP protocol. ",L,O,False
+2070,66,"Load Balancing - Application Servers and Database servers must be load balanced at the application level to ensure maximum stability and availability. Specific scenarios, such as fail-over versus session-managed load balancing need to be addressed in the functional requirements specification. ",L,PE,False
+2071,66,"A tutorial will provide a quick start, a walk-thru of major system features, and further reference source for the complete system features. ",L,F,False
+2072,66,"Near-line Storage – All User and Application data as well as software installation and configuration files must be fully backed up week-nightly. Further, secure, off-site storage will be performed on a weekly basis with 24-hour retrieval times. ",L,SE,False
+2073,66,"The system will use the standard software resources provided by the ARS OCIO. This includes, but is not limited to, MS ASP/Java Scripts, C++/C# , MS SQL server and IIS, or the use of PHP/Perl, JB scripts, C++/C#, MySQL server, and Apache server. ",L,SE,False
+2074,66,Implement a database of STEWARDS metadata elements. The database will provide browse and query functionality.,L,F,False
+2075,66,Online Storage - The system needs to be able to store hundreds of megabytes of data on demand. The potential for needing Gigabytes of data storage capacity is also in the realm of possibilities. Further requirements gathering is needed to get real-world estimates of such data storage needs. ,L,F,False
+2076,66,"Establish a database in support of CEAP that will house the collective data assembled or generated during research activities. The database will support a variety of data types and formats, including but not limited to: spatial data - vector, raster, imagery, and tabular; tabular data – static and time-series; spreadsheets; documents; reports; photographs; and URL links. ",F,F,True
+2077,66,"The use of agricultural models (SWAT, AnnAGNPS) is a core element of the CEAP effort. Several modeling-related database topics will need to be addressed: 1. Maintenance and reporting of uncertainty or error in measured data, in spatial components of GIS data, and in modeling output. Reporting of uncertainty may take place on an individual sample basis, on a method or procedural basis, or on an entire database. 2. Models will require specific input data and will generate output data during the calibration and validation phases, sensitivity analyses, and exploratory scenarios. The current scope of the STEWARDS system is to provide measured data for input to the model and for comparison to output. ",F,F,True
+2078,66,View entire universe of watersheds from top-level screen for selection and Design tools to navigate the individual watershed sites and their data. ,F,F,True
+2079,66,"View watershed descriptive data and Summary descriptions of research watersheds, stations, and instruments that are useful in describing the research activities should be accessible. This information would not be considered ‘formal’ metadata. ",F,F,True
+2080,66,"Provide access to the data via browsing of sites, stations, and instruments; allow for simple queries to individual datasets; provide a metadata search tool to query dataset parameters; and allow for downloading of datasets (full or partial). ",F,F,True
+2081,66,"Users may wish to examine time-series data, e.g. stream discharge data, over a user-specified time frame in order to select only those data desired for download. Charting tools in association with the query engine are desirable. ",F,F,True
+2082,66,"Provide access to CEAP-related reports, tables, and project documents.",F,F,True
+2083,66,Agricultural research data are inherently spatial in nature. STEWARDS will provide web-based geographic information tools to allow site-specific data to be viewed within their spatial context. These tools will provide browse and query functionality and support links to download spatial data and their associated tabular data.,F,F,True
+2084,66,Develop and maintain a metadata database that provides browse and query access to formal descriptions of the database elements. Provide tools for database contributors to create and upload metadata compatible with the STEWARDS metadata database. ,F,O,False
+2085,66,"Develop search tools that query watershed, station, and instrument metadata across the STEWARDS database. Metadata query tools will support query by location, theme, and keyword.",F,O,False
+2086,66,"The System shall operate with the following Web browsers: Microsoft Internet Explorer versions 5.0 and 6.0, Netscape Communicator version 4.7, Netscape versions 6 and 7, and FireFox. ",O,O,True
+2087,66,The System shall operate on Certified and Accredited servers running the current corporate approved versions of operating systems as appropriate. ,O,F,False
+2088,66,"The Data Management portion of the system shall permit user access from the corporate Intranet and, if a user is authorized for outside access through the corporate firewall, from an Internet connection at the user’s home. ",O,SE,False
+2089,66,"Much of the initial effort in CEAP will focus on the use of agricultural models (e.g. SWAT, AnnAGNPS) in the CEAP watersheds. Users will be able to examine the data used in the modeling effort, visualize the results in their spatial context, and download the model input data and results.  ",F,F,True
+2090,66,The application codes generated during prototyping may not run properly when re-hosting the data system to a non-Windows OS or transferring the data system to another location.,PO,F,False
+2091,66,"Implement a web-based browse-and-query tool for searching STEWARDS metadata. Queries by location, theme, and keyword will be supported. A likely scenario involves a web-based wizard which allows users to specify particular querying parameters and then save them for reference later such that time-based comparisons are facilitated with minimal user training. ",L,F,False
+2092,66,"Implement a metadata input tool that supports creating and editing of metadata in the chosen format. The metadata tool will allow for local and web-based input and editing. A likely scenario involves a web-based wizard which allows users to specify particulars of a data set, and then save those answers and relate them to a particular project, so that these selections can be re-used in future uploading operations. ",L,F,False
+2093,66,The Data Research and Reporting portion of the system shall provide public access to reviewed and approved data sets.  ,O,F,False
+2094,66,"Adopt a metadata standard that is compliant with Federal regulations. The current Federal standards for spatial data are the Content Standard for Digital Geospatial Metadata (version 2.0), (http://www.fgdc.gov/metadata/contstan.html), FGDC-STD-001-1998. There are some indications that the Federal government may implement the ISO 19115 geographic information/metadata standard in the future. If this occurs, the CEAP database team will evaluate conversion of metadata. ",L,F,False
+2095,66,"The fourth consideration for security requirements is availability. The system must be available to the intended audience 24 hours per day, 7 days a week with, 99% availability and a tolerance of -5% (not less than 50% of working hours in any week). For this system, availability will be concerned with the reliability of the software and network components. Intentional “denial of service attacks” is not foreseen as a significant concern. ",A,A,True
+2096,66,Confidentiality security requirements describe the need to protect the data appropriately. STEWARDS will use the user classes described in section 2.3 above to define boundaries of information sharing to ensure confidentiality as appropriate. Any data that should be viewed by a restricted audience must be protected with appropriate security features. ,SE,SE,True
+2097,66,"The integrity of STEWARDS data will be critical to its success as a product. Scientific research and publications will be based on the data obtained through the system. Therefore, extensive data validation and review will be performed both before data are uploaded to the system and as part of the upload process. The system will need policy and procedures protecting the data from intentional or unintentional modifications, and to ensure accurate data are made available. ",SE,SE,True
+2098,66,"STEWARDS will have reasonable controls consistent with ARS OCIO practices, in compliance with agency, Dept and Govt regulations. STEWARDS security requirements will have four primary components. They are authentication, confidentiality, integrity, and availability.",SE,SE,True
+2099,66,"Data on the server should be protected from power loss but data in transit from server to requester could be lost. Given that these data will also remain on the watershed site system, rather than expend resources to prevent this loss, such failures will be monitored and the uploading process will be repeated. ",SE,O,False
+2100,66,Loading speed: The data system shall load as quickly as comparable productivity tools on whatever environment it is running in. ,PE,F,False
+2101,66,"Response time: The data system shall show no visible deterioration in response time as the number of persons increases. Response times seen by end users for querying metadata should be on the order of a few seconds or less. Response times seen by end users for retrieving the actual images may take much longer, anywhere from a few minutes to several hours. If the user requests a large image with a short response time, it is acceptable for the ARS data system to advise the user that the target response time cannot be met. In that case, the person would be referred to an alternate method of getting the data.",PE,PE,True
+2102,66,This database will be built for a particular system and may not be portable but results to queries will be portable between many environments. ,PO,O,False
+2103,66,"STEWARDS will follow industry best practices for authentication, using single-sign-on systems like Microsoft Active Directory to perform authentication. Authentication addresses security requirements to ensure those using system are who they say they are. This is of greatest concern when data are being changed or updated. This is primarily done through userids and passwords. ",SE,SE,True
+2742,73,"The external users need to be able to click on an area and obtain data for the surrounding area, such as lapsed quantities, historical use, and adjacent permits. Need to support decision-making on the applicant s part, especially when their request does not meet the MFL requirements. ",F,F,True
+2743,73,"Make the following property appraiser data available so you can improve the ability to project service area populations in inter-Census years in several ways: Provide a more discreet and up-to-date count of housing units in a utility service area, Help determine when a DRI is completed, Match commercial properties by the connection data provided by utilities, Use lot sizes, where available, to determine its role in household water use compared to other variables in research projects, There may be other data of use as well (wells, pools, etc). ",F,F,True
+2744,73,Update interval protocols for updating different data types. ,F,F,True
+2745,73,"Populate missing data in the database, especially permits and pumpage reports. ",F,SE,False
+2746,73,"A web application is preferred. If ArcMap, has to be able to run in Citrix ArcView. ",F,F,True
+2747,73,The tools the system will use to access the data need to be better than what is available now. ,F,SE,False
+2748,73,The data has to be accurate.,F,F,True
+2749,73,"Data to support requirements must exist in the database, and be readily available. ",F,F,True
+2750,73,Get compilable versions of code stored in SourceSafe.  ,F,F,True
+2751,73,Be consistent in naming and terminology conventions. ,F,US,False
+2752,73,The results from queries need to be consistent and reliable over time. ,F,F,True
+2753,73,Need to establish response rates if it will be on a web page.,PE,US,False
+2754,73,"Create a consistent grid to analyze data through time, including population, water use, etc).",F,F,True
+2755,73,Provide the ability to obtain data necessary to determine and access the population estimates for an area or on a permit-by-permit basis. Needs to accommodate how it is determined now and how it will be determined under the SWUCA 2 rules. This would include: Seasonal residential report based on AHCA hospital report (determine seasonal populations). ,F,F,True
+2756,73,Report compliance on a permit (not wells). Crop reports on permits (not wells) (I think this was a requirement to report this data some how at a well level). ,F,F,True
+2757,73,"Capture crop report data and link it with the corresponding use quantities, so you can observe changing crop patterns, see where land has shifted out of crops, and track water use per planted acre per crop to see patterns in water use by geography. The accumulation (or depletion) of credits by geographic area could point out potential problems in permitting in specific geographic areas. It may point to soil type or local cultural practice problems. Link to requirement JY4/SR7, the report of water credits used and earned. ",F,SC,False
+2758,73,"Need tool to be able to estimate water use (now being done in SAS). To do this estimate, you need to be able to query the water use data with various variables, such as time period, use types, withdrawal type (groundwater or surfacewater), and geographic areas. Once the initial query is complete, you need to be able to refine the resulting data set. An example is when you select active permits in a time period. If a permit expired inside of the time period, the refine tool would help determine if that permit would or would not be a part of the result set, perhaps by determining at what point in the time line it expired.",F,F,True
+2759,73,"Use GIS layers to analyze how salt-water intrusion is affecting water quality, etc. Layer would need to be updated either quarterly or annually. ",F,F,True
+2760,73,"Ability to provide external customers a means to query and view application information and locations by entering spatial, temporal, or data specific information. Current applications satisfying the criteria would be viewed immediately; future applications would be e-mailed. ",F,F,True
+2761,73,Compare the population reported to the Bureau of Economic and Business Research (BEBR) report. ,F,F,True
+2762,73,Calculate water quality trends by geographic area. ,F,F,True
+2763,73,"Link between Water Use Permits (WUP), Environmental Resource Permits (ERP), and Well Construction Permits. One use would be as a means of notifying appropriate District staff when pertinent land use changes. (i.e. want to know if an ERP is issued or applied for a subdivision where permit has been issued for a farm.)",F,US,False
+2764,73,The ability to access crop report information spatially and temporally.,F,SE,False
+2765,73,"Provide access to population data in system that are aggregated to appropriate geographic areas (services areas, counties, etc.). ",F,F,True
+2766,73,"Ability to add estimated quantities for unmetered permits, which is found in the Water Estimates Database. ",F,F,True
+2767,73,"If toolbars are written, must be in .dll format. ",F,L,False
+2768,73,"Access well construction data for domestic wells using locational data, such as GPS or section, township, and range. ",F,F,True
+2769,73,Consider the ease of deployment of application. ,F,US,False
+2770,73,Ability to customize queries. ,US,SC,False
+2771,73,Need technical documentation for maintainability. ,F,F,True
+2772,73,"Use system to publish a chart or graph that compares the MFL to a running average of AFL s. This should reflect how the AFL s are moving along the MFL line and indicate how different resources impact the MFL. The resources to include are pumpage, new projects, and rainfall. It will probably be run on a monthly basis.",F,F,True
+2773,73,Reasonable refresh rates. ,PE,F,False
+2774,73,"Application must fit into statutory time frames for evaluating permitting applications, so there must be a quick turn-around time. ",PE,L,False
+2775,73,"Has to manage the metadata, and metadata has to be FGDC compliant. ",US,F,False
+2776,73,Need training material for in-house training. TW35 Need to be able to save (or download) the results of queries into an outside system. ,US,F,False
+2777,73,Need on-line help and training. ,US,F,False
+2778,73,"System has to have the flexibility to handle different scenarios, or ""what-if"" questions, or 1-10,2-10, and 5-10 drought events. ",US,F,False
+2779,73,Clear hours of availability need to be established. ,US,F,False
+2780,73,Have a decision tree for the help desk personnel that will receive questions. ,US,F,False
+2781,73,Could have wizards to help users perform tasks. ,US,F,False
+2782,73,Clear documentation that lends to the defensibility of system for when permits are denied or modified. ,US,F,False
+2783,73,The data has to be available in real time. ,US,F,False
+2784,73,Need to receive job-specific training and support. ,US,F,False
+2785,73,The same datasets need to be used by all departments or sections of the District. ,US,O,False
+2786,73,"A process needs to be established so corrections to the source data sets can be initiated, i.e. when errors are discovered when running models. ",US,F,False
+2787,73,System has to be user-friendly. ,US,US,True
+2788,73,Develop and make readily accessible metadata for the data (i.e. need to know the time frames when the data is considered to be good),US,F,False
+2789,73,Have consistent way to report on permit status and withdrawal status. ,US,F,False
+2790,73,"The value you enter should be the actual data value, not any code number associated with it. ",US,F,False
+2791,73,Hire a metadata librarian to manage data associated with the Water Use Tracking project. ,US,F,False
+2792,73,Support consistency in decision-making among various users. ,US,F,False
+2793,73,Replicate the DB2 data daily in Oracle. ,US,F,False
+2794,73,Need quick access to currently published information to base decisions on. ,US,F,False
+2795,73,Follow District programming standards.,F,F,True
+2796,73,System should be written in map.net – either VB or C#. ,F,F,True
+2797,73,Do not join features based on the shape column. ,F,F,True
+2798,73,Follow District change management standards. ,F,F,True
+2799,73,"Can extend the current District architecture, i.e. Oracle Spatial, if needed. ",F,F,True
+2800,73,"Minimum lake levels - The proposed MFL is achieved when the long-term P50 is at or above the MFL and the long-term P10 is at or above the High Minimum Lake Level for five consecutive years. Once in compliance, MFL is not met when the long-term P50 is below the MFL for two or more consecutive years or the long-term P10 is below the High Minimum Lake Levels for two or more consecutive years. ",F,F,True
+2801,73,"Need to know what aquifer is being pumped from. There are permitting constraints in ETB MIA that no additional water from the Floridan Aquifer can be pumped, but it is allowed from Intermediate aquifer. ",F,SE,False
+2802,73,Minimum aquifer level - The saltwater intrusion MFL is met when the moving 10-year AFL is at or above the MFL for five consecutive years. The MFL is not met when the 10-year moving AFL in the reference wells is below the MFL for two consecutive years. ,F,F,True
+2803,73,"Track ownership of wells or permits over the life of the withdrawal point so the relocated quantities can be traced from owner to owner. Quantities that are relocated will have certain restrictions placed on them, as well as any quantities that remain on the original permit. For permits that have multiple withdrawal points, we need the ability to track ownership of specific withdrawal points over time. ",F,F,True
+2804,73,Report the Reservation from use amounts allocated to certain participants.,F,F,True
+2805,73,"Be able to determine the availability of alternative use supplies, such as reclaimed water and desalination. ",F,F,True
+2806,73,"Supply the Regulatory requirements of MFL data: What water levels are in relationship to MFL so you know who has to mitigate or how much excess flow there is, Need the historic and current levels so applicant knows how much to mitigate or what is available. ",F,F,True
+2807,73,Report on competing applications (including ones that are in modification or expiring). ,F,F,True
+2808,73,Report compliance on a permit (not wells). Crop reports on permits (not wells). ,F,F,True
+2809,73,Should allow comparison to adjacent districts GIS layers to permit GIS layer to access adjacent data.,F,F,True
+2810,73,Report on the permit duration (To track expiration dates for those looking for someone to compete with).,F,F,True
+2811,73,"Report on how much water was made available through the District s water resource development projects. Elements of the report should be: Source of benefit (aquifer or surface water), The locations of the alternative sources, What permits are using the quantities generated by the projects, and what project they are getting the water from. ",F,F,True
+2812,73,"For mitigation of MFL impacts, report on the improvement percentage amount, where it was located, the cost, how the decrease was obtained and what impacts it had.",F,F,True
+2813,73,"Report on any water use amounts sold or given from one permit to another permit, especially reclaimed water (reclaimed water can be taken away, depending on the contract. It is kind-of-like “leasing” the water, but can be taken away).",F,F,True
+2814,73,"Create layer that includes ""cones of depression"" for the MFL information, which will indicate the area of influence to an MFL. ",F,F,True
+2815,73,Identify when a standby permit is reactivated due to the loss of alternative quantities. ,F,A,False
+2816,73,Mark those permits that have a land use change so the quantities can be relocated to the public supply utility. ,F,F,True
+2817,73,Report on the permits that have been relocated by a permit holder. ,F,F,True
+2818,73,Heat map for water quality. Add the District WUPnet sentinel wells on this map - those are the District wells that have been in existence the longest time and we have the best data with. So if we bring them up in an area we know we have reliable data. ,F,F,True
+2819,73,"Create heat map indicating who was over-pumping, who was not over-pumping, or who was using their water credits. ",F,F,True
+2820,73,"View the spatial impact of a person s application with other active applications on-line so the applicant or evaluator has a visual of who else is available to compete for quantities with. Also include application and permit data on-line, either with scanned documents or access to database. The historical data should also be available, but viewing restrictions for certain legal documents has to be followed. Be able to query by geographic area or permit number. ",F,F,True
+2821,73,"Conservation (defined as a beneficial reduction of water use resulting in: modification of water use practices, reduction of unaccounted-for losses, or installation and maintenance of low volume water use systems, processes, fixtures, or devices.",F,SC,False
+2822,73,"Track and measure alternative source projects: Surface water or stormwater projects, Reclaimed water (reuse water), Augmented surface water (reservoirs, harvesting of high flows (floodwaters), ASR (Aquifer storage recovery), Desalination. ",F,F,True
+2823,73,"Track and report on the history of permitted data, such as use type, irrigated acres, and pumpage (one use would be to know whether expired permits have had quantities reallocated). ",F,F,True
+2824,73,"Report on the history of irrigation water conserving credits, including the balance, how much earned, and how much used, and drought quantities. Know who uses them and who has accumulated them, and be able to report on an individual basis, by a geographic area, or aggregate the data. ",F,F,True
+2825,73,"Track the movement of lapsed quantities in an area, including: Which permit and well obtained the lapsed quantities, Where the lapsed quantities are located, Why the quantities are lapsed (i.e. expired, cancelled, retired), What MFL zone the lapsed quantities are in. ",F,F,True
+2826,73,Track the relocation of active water use within the SWUCA.,F,F,True
+2827,73,"Track the movement of lapsed quantities in an area, including: Which permit and well obtained the lapsed quantities, Where the lapsed quantities are located, Why the quantities are lapsed (i.e. expired, cancelled, retired), What MFL zone the lapsed quantities are in. ",F,F,True
+2828,73,"Minimum flows on the upper Peace River - The MFL is met when the MFL s are at or above the established MFL for three consecutive years. Once the MFL has been considered met, if it is followed by two years where the MFL is not met within a rolling ten-year period, then the AFL shall be considered below the MFL. A determination of whether AFL s are meeting the established MFL is made at each one of the established minimums (Bartow, Ft. Meade and Zolfo Springs). ",F,F,True
+2829,73,"Track the impact that water use has to the set MFL levels. In particular, compare the affects of the new or modified use to the actual flow and level of the water body or aquifer to make sure the actual level will not go below the MFL level. Types of things to check are: New applications, renewals, or modifications, Relocated uses, Change of use type, Lapsed quantities, Retired permits (some are lapsed - some are not).",F,F,True
+2830,73,"Have a heat map that shows permit information for specific time periods. You should be able to input a geographic area (whether by county, department, or entire District area), select the time period(s) you want, and select one of two views: permits issued or active permits in that time period, and produce the map show the locations. On a high-level view, you need to be able to see the locations with the predominate use type reflected on the map itself, and include a graph or chart showing the total number of permits, predominate use shown by %, and the time period involved. If you click on it, bring up the permit details, such as name, permit number, issue date, expire date, use type, wuca, and average quantities. ",F,F,True
+2831,73,"Be able to look at permitted quantities, actual quantities (pumpage), and the resources it uses (Water Management DB)",F,F,True
+2832,73,"Ability for public utilities and internal staff to find existing permits in or near their service area so they can spatially see what water is available, or may become available, when they plan for their future growth and water resources. They will need to view the use type (interested mainly in agricultural and mining), owned acres, and the current permittee s contact information. ",F,F,True
+2833,73,"Need a protocol to assess how the actual flow and levels (AFL) compare to the established minimum flows and levels (MFL), including general trending information and whether waterbody-specific criteria are being met. There are 3 major provisions to track: ",F,O,False
+2834,73,"Obtain report of those out of compliance of permit conditions by over-pumping their allowable quantities. Show how much over pumping is done, and have option to select by time period or by area. Need to break down to a permit-by-permit basis, but also show the whole thing on a map. ",F,F,True
+2835,73,"Track permittees not submitting conditional/pumpage reports, and generate a map showing their locations. ",F,F,True
+2836,73,Track pumpage oddities. Two examples are: A. Permittees that have consistent pumpage readings even when some of the data is missing. Use this information to predict whether they are in compliance in spite of the missing data. B. Permittees that enter zero on their pumpage reports.,F,F,True
+2837,73,"Identify what lakes are stressed, when they became stressed, and if/when they came off stressed list. ",F,F,True
+2838,73,Create layer that shows the Developments of Regional Impacts (DRI) and their status. This layer will be plugged into the new model for population projections and water supply demand projections. ,F,F,True
+2839,73,"Track aquifer level changes, lake level changes, rainfall level changes, and stream flow changes by area over time (i.e. monthly). ",F,F,True
+2840,73,Support extraction or reporting of data for ad-hoc geographic areas by using spatial queries such as graphics or polygon buffering. The ability to aggregate the data must be there and any type of polygon should be able to be used. ,F,F,True
+2841,73,Know how much water has been permitted and how much has been used based on land use over time. ,F,F,True
+2842,73,"Identify different types of water use, such as groundwater, surface water, and re-use. ",F,US,False
+2843,73,Show the intensity of water use in a geographic area on a color-coded map. ,F,F,True
+2844,73,"Automate some of the requests that Jim Whalen receives. The majority of request are related to permitted and pumpage quantities, both at the permit level and well level. They are usually sorted temporally or geographically.",F,F,True
+2845,73,"Generate monthly reports for Board Packet that shows the difference in quantities permitted every month for specified geographic areas (i.e., counties, MIA, etc.). ",F,F,True
+2846,73,"Select water use based on predominant use, use types, and regions they fall in. The predominant use would be agricultural, industrial, mining & dewatering, public supply, and recreational. Each predominate use is further broken down into more detailed categories, such as melons or citrus for the agricultural predominate use. This needs historical data for trend analysis.",F,F,True
+2847,73,Establish relationships between inputs (i.e. rainfall) and pumpage data. (Note: In response to one of Kurt s comments regarding the amount of pumping in areas in relationship to amount of rainfall and irrigation system efficiency.) ,F,F,True
+2848,73,"Provide the ability for applicants or District staff to compare the percentage a permit is over-pumping, based on use type, against the regional average for the same use type. The region would be the area that fell within the buffer distance entered, and the time of interest would also be entered. ",F,F,True
+2849,73,Analyze permits using a soils type GIS layer. Have a second soils layer based on the soil types indicated on the permittees compliance to conditions.,F,F,True
+2850,73,"Identify when the District or another governmental agency purchases land, a link should be available to show if there is a permit on that area so it can be retired. ",F,US,False
+2851,73,"Select water use data temporally or with geographic overlays, which can be from another layer or graphics on the page. Also be able to place it in an Excel spreadsheet. ",F,F,True
+2852,73,"Ability to pull a well package that provides a view of water use at a particular time that is then plugged into models used to generate water use amounts. The data would include wells, land elevation, aquifer, and total and cased depths. ",F,SC,False
+2853,73,"The ability to associate permitted quantities, pumpage quantities, and use code data at the well level. ",F,F,True
+2854,73,Need to know how water use changes when land use changes. ,F,F,True
+2855,73,Need historical data for Water Use Permits including their spatial representations (polygons) ,F,F,True
+2856,73,"Must be able to track trends in land use and water use changes. These include several means by which a proposed new withdrawal that impacts an MFL waterbody can achieve a ""Net Benefit,"" including the provisions for relocated, lapsed, and water withdrawal credits",F,F,True
+2857,73,Ability to track water use over time and negotiate reasonable new water use based on water use pumpage trends.,F,F,True
+2858,73,Track by withdrawal source – what aquifer or USGS water body are general and Individual permits pumping from. ,F,F,True
+2859,73,"Have map be able to show quantity of pumpage. Hover over or click a point in the map and see the average rolling 12, peak month, and max month compared to the pumpage of the well. Also get the cumulative quantities for an area you enter manually. ",F,F,True
+2860,73,Track changes in land use and how it affects water availability. ,F,F,True
+3626,89,"A campaign has the following components: Name, Pieces of content, Schedule, User/Group Permissions",F,F,True
+3627,89,"A schedule is a mapping of times to publishing actions. It may contain any actions a publisher can perform, and these actions are performed at the associated time.",F,F,True
+3628,89,"A piece of content may take the following forms: Text, Image, Audio, Video",F,US,False
+3629,89,Mashbot will allow for the association of Mashbot accounts with external service accounts. ,F,F,True
+3630,89,Mashbot will provide an interface for authenticating a user account to an external service account,F,F,True
+3631,89,Mashbot will provide a standardized method of interacting with external service accounts,F,F,True
+3632,89,The system encrypts data over a direct connection between the web client and the server. ,SE,O,False
+3633,89,The system allows for the backup of the data system to local or remote non-volatile storage systems. Incremental backups should not create outages and full backups do not interfere with user interaction for more than 10 minutes. ,SE,A,False
+3634,89,The system allows only valid users to log into the system. A valid user is one which has not been disabled or deleted and exists on the system. ,SE,SE,True
+3635,89,The format uses SMTP protocol. The actual messages are provided by Mashbot.,MN,F,False
+3636,89,"To log onto the system, a user provides their valid username and password.",SE,SE,True
+3637,89,The system uses the configured authentication module. The authentication method is configurable by the System Administrator. ,SE,F,False
+3638,89,The system allows the System Administrator to configure a timeout after which a user is automatically logged out of Mashbot. ,SE,F,False
+3639,89,The external email system is to provide a messaging service from Mashbot to the Mashbot users.,MN,F,False
+3640,89,The input is generated automatically by the Mashbot system using settings configurable by the System Administrator.,MN,F,False
+3641,89,"The output is in the form of an e-mail to an e-mail account, but it does not return any sort of message to Mashbot.",MN,F,False
+3642,89,The system only allows users to change their own passwords.,F,SE,False
+3643,89,The system is configurable to e-mail warnings about multiple failed login attempts from the same user. These warnings are sent to the System Administrator. Other security risks of this type are the responsibility of the System Administrator.,SE,SE,True
+3644,89,Individual passwords can be reset. ,F,F,True
+3645,89,New user accounts can be created.,F,F,True
+3646,89,It is possible to disable all accounts except for the System Administrator account.,F,F,True
+3647,89,"The system categorizes users on the basis of roles and privileges. Within these roles, the system also categorizes users based on the roles that they have within individual products. These are referred to as user account roles. Mashbot Campaigns supports the following account roles: Contributor, Approver, Publisher",F,F,True
+3648,89,The system gives users the ability to reset their password. ,F,SE,False
+3649,89,Roles reflect actions that can be performed by a user. ,F,F,True
+3650,89,Roles can be assigned to a user account for individual products. ,F,F,True
+3651,89,"Contributors may create new content, import existing content into the system, edit content, and delete it. They may also submit these actions for approval. ",F,F,True
+3652,89,Approvers can approve actions performed by contributors,F,F,True
+3653,89,Publishers may schedule or immediately initiate actions put forth by contributors and those approved by approvers. ,F,F,True
+3654,89,The system may contain any number of user accounts. ,F,F,True
+3655,89,A user may possess more than one role,F,PE,False
+3656,89,User Account Modification The system allows users to modify their accounts once created.,F,F,True
+3657,89,"The system requires that a user have logged in before modifications can be made. The following user account information is modifiable by all user types: Password, Email Address Priority, Name",F,SE,False
+3658,89,User Account Deactivation The system allows user accounts to be deactivated.,F,F,True
+3659,89,The system denies user who have been deactivated from accessing the system.,F,F,True
+3660,89,"If an account has any history associated with it, it can only be deactivated and not deleted. ",F,SE,False
+3661,89,"If an account has no history associated with it, it can be deleted from the system.",F,F,True
+3662,89,A disable account can be undisabled,F,F,True
+3663,89,"Certain pieces of information are required to create new accounts. The following information is required for any new user account: Username, Password, Name, Email Address, Group Membership, User Account Type",F,SE,False
