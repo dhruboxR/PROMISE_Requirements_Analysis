@@ -1,0 +1,2 @@
+Model,Partition,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+Tuned TF-IDF + Logistic Regression,test,0.68,0.34647133806453484,0.5291217943849523,0.34647133806453484,0.37547920677457075,0.6378052178297601

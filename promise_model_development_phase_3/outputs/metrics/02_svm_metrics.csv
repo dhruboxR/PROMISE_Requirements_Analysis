@@ -1,0 +1,2 @@
+Model,Partition,accuracy,balanced_accuracy,macro_precision,macro_recall,macro_f1,weighted_f1
+TF-IDF + Linear SVM,validation,0.6075949367088608,0.4169092318357024,0.3454635786846579,0.41690923183570233,0.3569695450295098,0.6078053416763791
