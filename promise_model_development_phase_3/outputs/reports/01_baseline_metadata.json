@@ -1,0 +1,22 @@
+{
+    "task": "12-class requirements classification",
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "text_column": "NormalizedText",
+    "label_column": "_class_",
+    "tfidf_fit_partition": "train",
+    "evaluation_partition": "validation",
+    "class_weight": "balanced",
+    "sklearn_version": "1.9.1",
+    "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "test_partition_used": false,
+    "validation_metrics": {
+        "accuracy": 0.5641952983725136,
+        "balanced_accuracy": 0.4120776581805994,
+        "macro_precision": 0.34233259386317266,
+        "macro_recall": 0.4120776581805994,
+        "macro_f1": 0.3435443359544586,
+        "weighted_f1": 0.578149236531724
+    }
+}

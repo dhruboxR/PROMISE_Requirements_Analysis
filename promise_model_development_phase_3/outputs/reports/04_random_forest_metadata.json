@@ -1,0 +1,24 @@
+{
+    "model": "TF-IDF + Random Forest",
+    "task": "12-class requirements classification",
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "n_estimators": 300,
+    "max_features": "sqrt",
+    "min_samples_leaf": 1,
+    "class_weight": "balanced",
+    "tfidf_fit_partition": "train",
+    "evaluation_partition": "validation",
+    "scikit_learn_version": "1.9.1",
+    "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "test_partition_used": false,
+    "validation_metrics": {
+        "accuracy": 0.5207956600361664,
+        "balanced_accuracy": 0.30605499756235055,
+        "macro_precision": 0.27050336817720155,
+        "macro_recall": 0.3060549975623505,
+        "macro_f1": 0.26396586257675775,
+        "weighted_f1": 0.5184752358889283
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "model": "TF-IDF + Multinomial Naive Bayes",
+    "task": "12-class requirements classification",
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "tfidf_fit_partition": "train",
+    "evaluation_partition": "validation",
+    "alpha": 1.0,
+    "scikit_learn_version": "1.9.1",
+    "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "test_partition_used": false,
+    "validation_metrics": {
+        "accuracy": 0.6166365280289331,
+        "balanced_accuracy": 0.08666666666666667,
+        "macro_precision": 0.13466183574879229,
+        "macro_recall": 0.08666666666666667,
+        "macro_f1": 0.06993790962400827,
+        "weighted_f1": 0.47218065467483644
+    }
+}

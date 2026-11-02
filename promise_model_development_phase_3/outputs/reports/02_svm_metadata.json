@@ -1,0 +1,22 @@
+{
+    "model": "TF-IDF + Linear SVM",
+    "task": "12-class requirements classification",
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "tfidf_fit_partition": "train",
+    "evaluation_partition": "validation",
+    "class_weight": "balanced",
+    "C": 1.0,
+    "scikit_learn_version": "1.9.1",
+    "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "test_partition_used": false,
+    "validation_metrics": {
+        "accuracy": 0.6075949367088608,
+        "balanced_accuracy": 0.4169092318357024,
+        "macro_precision": 0.3454635786846579,
+        "macro_recall": 0.41690923183570233,
+        "macro_f1": 0.3569695450295098,
+        "weighted_f1": 0.6078053416763791
+    }
+}

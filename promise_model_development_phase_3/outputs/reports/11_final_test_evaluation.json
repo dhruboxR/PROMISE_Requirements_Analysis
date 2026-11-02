@@ -1,0 +1,122 @@
+{
+  "experiment": "Final independent test evaluation",
+  "timestamp_utc": "2026-11-02T20:46:55.846719+00:00",
+  "model": "Tuned TF-IDF + Logistic Regression",
+  "model_sha256": "b0a5b0336024fda54304f7a4a0ac060da3c2eff88ab6c19e5cf5a1bedb28cfcb",
+  "manifest_sha256": "2880affa4cef5f71cc844bccf244ba037d5fb4af1a74152a9c6a65dd39fa4fe1",
+  "test_sha256": "014411167392db6405c9ff61f7cde0aed8629134653cb4714441a68a608fd68b",
+  "selected_hyperparameters": {
+    "C": 10.0,
+    "class_weight": "balanced",
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 1
+  },
+  "model_selection": "validation macro-F1",
+  "training_records": 2574,
+  "validation_records": 553,
+  "test_records": 550,
+  "test_projects": 19,
+  "test_classes": 12,
+  "seed": 42,
+  "sklearn_version": "1.9.1",
+  "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+  "integrity_checks": "passed",
+  "metrics": {
+    "accuracy": 0.68,
+    "balanced_accuracy": 0.34647133806453484,
+    "macro_precision": 0.5291217943849523,
+    "macro_recall": 0.34647133806453484,
+    "macro_f1": 0.37547920677457075,
+    "weighted_f1": 0.6378052178297601
+  },
+  "per_class_results": [
+    {
+      "Class": "F",
+      "Precision": 0.7644110275689223,
+      "Recall": 0.9104477611940298,
+      "F1": 0.8310626702997275,
+      "Support": 335
+    },
+    {
+      "Class": "A",
+      "Precision": 0.7272727272727273,
+      "Recall": 0.7272727272727273,
+      "F1": 0.7272727272727273,
+      "Support": 11
+    },
+    {
+      "Class": "L",
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "Support": 35
+    },
+    {
+      "Class": "LF",
+      "Precision": 0.6666666666666666,
+      "Recall": 0.2,
+      "F1": 0.3076923076923077,
+      "Support": 10
+    },
+    {
+      "Class": "MN",
+      "Precision": 0.4,
+      "Recall": 0.18181818181818182,
+      "F1": 0.25,
+      "Support": 11
+    },
+    {
+      "Class": "O",
+      "Precision": 0.28,
+      "Recall": 0.3333333333333333,
+      "F1": 0.30434782608695654,
+      "Support": 21
+    },
+    {
+      "Class": "PE",
+      "Precision": 0.6111111111111112,
+      "Recall": 0.44,
+      "F1": 0.5116279069767442,
+      "Support": 25
+    },
+    {
+      "Class": "SC",
+      "Precision": 0.0,
+      "Recall": 0.0,
+      "F1": 0.0,
+      "Support": 9
+    },
+    {
+      "Class": "SE",
+      "Precision": 0.5,
+      "Recall": 0.6857142857142857,
+      "F1": 0.5783132530120482,
+      "Support": 35
+    },
+    {
+      "Class": "US",
+      "Precision": 0.4,
+      "Recall": 0.27906976744186046,
+      "F1": 0.3287671232876712,
+      "Support": 43
+    },
+    {
+      "Class": "FT",
+      "Precision": 1.0,
+      "Recall": 0.2,
+      "F1": 0.3333333333333333,
+      "Support": 5
+    },
+    {
+      "Class": "PO",
+      "Precision": 1.0,
+      "Recall": 0.2,
+      "F1": 0.3333333333333333,
+      "Support": 10
+    }
+  ],
+  "annotation_conflicts_pending": 4
+}

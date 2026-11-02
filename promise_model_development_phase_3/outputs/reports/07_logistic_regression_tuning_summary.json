@@ -1,0 +1,33 @@
+{
+    "experiment": "Logistic Regression hyperparameter tuning",
+    "selection_metric": "validation_macro_f1",
+    "total_configurations": 24,
+    "best_configuration": {
+        "Configuration": 23,
+        "C": 10.0,
+        "class_weight": "balanced",
+        "ngram_range": "(1, 2)",
+        "min_df": 1,
+        "accuracy": 0.6690777576853526,
+        "balanced_accuracy": 0.4130762946204123,
+        "macro_precision": 0.4573200139203089,
+        "macro_recall": 0.4130762946204123,
+        "macro_f1": 0.38939153220200345,
+        "weighted_f1": 0.6505332505042891
+    },
+    "best_validation_metrics": {
+        "accuracy": 0.6690777576853526,
+        "balanced_accuracy": 0.4130762946204123,
+        "macro_precision": 0.4573200139203089,
+        "macro_recall": 0.4130762946204123,
+        "macro_f1": 0.38939153220200345,
+        "weighted_f1": 0.6505332505042891
+    },
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "scikit_learn_version": "1.9.1",
+    "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+    "elapsed_seconds": 95.52,
+    "test_partition_used": false
+}

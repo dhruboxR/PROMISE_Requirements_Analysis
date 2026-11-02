@@ -1,0 +1,32 @@
+{
+    "experiment": "Linear SVM hyperparameter tuning",
+    "selection_metric": "validation_macro_f1",
+    "total_configurations": 24,
+    "best_configuration": {
+        "Configuration": 15,
+        "C": 1.0,
+        "class_weight": "balanced",
+        "ngram_range": "(1, 2)",
+        "min_df": 1,
+        "accuracy": 0.6564195298372514,
+        "balanced_accuracy": 0.4129343777137895,
+        "macro_precision": 0.39280255001895586,
+        "macro_recall": 0.4129343777137895,
+        "macro_f1": 0.37664896474145215,
+        "weighted_f1": 0.6423248387955081
+    },
+    "best_validation_metrics": {
+        "accuracy": 0.6564195298372514,
+        "balanced_accuracy": 0.4129343777137895,
+        "macro_precision": 0.39280255001895586,
+        "macro_recall": 0.4129343777137895,
+        "macro_f1": 0.37664896474145215,
+        "weighted_f1": 0.6423248387955081
+    },
+    "training_records": 2574,
+    "validation_records": 553,
+    "random_seed": 42,
+    "scikit_learn_version": "1.9.1",
+    "elapsed_seconds": 4.01,
+    "test_partition_used": false
+}

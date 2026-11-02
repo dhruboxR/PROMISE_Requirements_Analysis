@@ -1,0 +1,17 @@
+{
+    "experiment": "Phase 3 baseline comparison",
+    "evaluation_partition": "validation",
+    "selection_metric": "macro_f1",
+    "best_baseline": "TF-IDF + Linear SVM",
+    "best_macro_f1": 0.3569695450295098,
+    "best_accuracy": 0.6075949367088608,
+    "models_compared": 5,
+    "test_partition_used": false,
+    "weak_svm_classes": [
+        "PO",
+        "FT",
+        "L",
+        "SC",
+        "MN"
+    ]
+}
