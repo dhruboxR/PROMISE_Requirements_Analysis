@@ -1,0 +1,15 @@
+{
+  "experiment": "Phase 4 feature weight tuning",
+  "development_records": 3127,
+  "connected_groups": 66,
+  "cv_folds": 3,
+  "configurations": 6,
+  "selection_metric": "mean_macro_f1",
+  "best_configuration": {
+    "C": 10.0,
+    "word_weight": 1.0,
+    "character_weight": 1.0,
+    "mean_macro_f1": 0.28157510581640044
+  },
+  "original_test_used": false
+}

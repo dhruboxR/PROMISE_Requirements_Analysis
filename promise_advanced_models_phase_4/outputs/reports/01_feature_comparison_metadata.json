@@ -1,0 +1,34 @@
+{
+  "phase": 4,
+  "experiment": "Group-aware feature comparison",
+  "development_records": 3127,
+  "connected_groups": 66,
+  "folds": [
+    {
+      "fold": 1,
+      "train_size": 2159,
+      "validation_size": 968,
+      "validation_classes": 12,
+      "missing_validation_classes": []
+    },
+    {
+      "fold": 2,
+      "train_size": 2024,
+      "validation_size": 1103,
+      "validation_classes": 12,
+      "missing_validation_classes": []
+    },
+    {
+      "fold": 3,
+      "train_size": 2071,
+      "validation_size": 1056,
+      "validation_classes": 12,
+      "missing_validation_classes": []
+    }
+  ],
+  "random_seed": 42,
+  "selection_metric": "mean_macro_f1",
+  "original_test_used": false,
+  "scikit_learn_version": "1.9.1",
+  "python_version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]"
+}

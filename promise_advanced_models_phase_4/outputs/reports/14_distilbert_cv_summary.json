@@ -1,0 +1,42 @@
+{
+  "accuracy": {
+    "mean": 0.617159343788166,
+    "std": 0.014208903154359676
+  },
+  "balanced_accuracy": {
+    "mean": 0.2792706860492464,
+    "std": 0.0073988258215353314
+  },
+  "macro_precision": {
+    "mean": 0.2376835226787468,
+    "std": 0.025554762344383065
+  },
+  "macro_recall": {
+    "mean": 0.2792706860492464,
+    "std": 0.0073988258215353314
+  },
+  "macro_f1": {
+    "mean": 0.24422985264533678,
+    "std": 0.013831997071620953
+  },
+  "weighted_f1": {
+    "mean": 0.5810792010422502,
+    "std": 0.040361506293209476
+  },
+  "out_of_fold": {
+    "accuracy": 0.6165653981451871,
+    "macro_f1": 0.24620501547479157,
+    "balanced_accuracy": 0.2583781438068316,
+    "records": 3127
+  },
+  "configuration": {
+    "model": "distilbert-base-uncased",
+    "folds": 3,
+    "epochs": 6,
+    "seed": 42,
+    "max_length": 128,
+    "grouping": "Experiment 01 connected groups",
+    "held_out_fold_used_for_selection": false,
+    "original_test_accessed": false
+  }
+}

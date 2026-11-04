@@ -1,0 +1,23 @@
+{
+  "experiment": "03 DistilBERT",
+  "model": "distilbert-base-uncased",
+  "seed": 42,
+  "training_records": 2574,
+  "validation_records": 553,
+  "test_partition_used": false,
+  "metrics": {
+    "model": "distilbert-base-uncased",
+    "partition": "validation",
+    "eval_loss": 1.518968939781189,
+    "eval_accuracy": 0.5569620253164557,
+    "eval_balanced_accuracy": 0.2228406615171321,
+    "eval_macro_precision": 0.23036686828383293,
+    "eval_macro_recall": 0.2228406615171321,
+    "eval_macro_f1": 0.18870325908141036,
+    "eval_weighted_f1": 0.5387734117155001,
+    "eval_runtime": 1.2902,
+    "eval_samples_per_second": 428.623,
+    "eval_steps_per_second": 107.737,
+    "epoch": 3.0
+  }
+}

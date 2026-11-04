@@ -1,0 +1,35 @@
+{
+  "model": "roberta-base",
+  "experiment": "class-weighted cross entropy",
+  "class_weights": {
+    "F": 0.5,
+    "A": 2.6237561405308836,
+    "L": 1.429813969598424,
+    "LF": 2.2437998087057136,
+    "MN": 2.476510440716212,
+    "O": 1.743251383782724,
+    "PE": 1.727755508462906,
+    "SC": 2.195191882155513,
+    "SE": 1.4385590907036203,
+    "US": 1.5748966305100565,
+    "FT": 3.0,
+    "PO": 2.833980533772672
+  },
+  "epochs": 4,
+  "learning_rate": 2e-05,
+  "selection_metric": "validation_macro_f1",
+  "test_partition_used": false,
+  "validation_results": {
+    "eval_loss": 2.008469581604004,
+    "eval_accuracy": 0.5244122965641953,
+    "eval_balanced_accuracy": 0.3376286621874857,
+    "eval_macro_precision": 0.2882116983835112,
+    "eval_macro_recall": 0.3376286621874857,
+    "eval_macro_f1": 0.2965734354384705,
+    "eval_weighted_f1": 0.5513678193101862,
+    "eval_runtime": 1.4318,
+    "eval_samples_per_second": 386.236,
+    "eval_steps_per_second": 97.083,
+    "epoch": 4.0
+  }
+}

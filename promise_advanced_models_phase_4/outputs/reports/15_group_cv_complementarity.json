@@ -1,0 +1,30 @@
+{
+  "experiment": 15,
+  "development_records": 3127,
+  "folds": 3,
+  "overlap": {
+    "Both correct": 1691,
+    "Only LR correct": 260,
+    "Only DistilBERT correct": 237,
+    "Both wrong": 939
+  },
+  "prediction_disagreements": 829,
+  "oracle_accuracy_upper_bound": 0.6997121842021107,
+  "models": [
+    {
+      "Model": "Logistic Regression",
+      "accuracy": 0.6239206907579149,
+      "balanced_accuracy": 0.26370773270599307,
+      "macro_f1": 0.2768464223716935,
+      "weighted_f1": 0.5868007212032996
+    },
+    {
+      "Model": "Weighted DistilBERT",
+      "accuracy": 0.6165653981451871,
+      "balanced_accuracy": 0.2583781438068316,
+      "macro_f1": 0.24620501547479157,
+      "weighted_f1": 0.5838245747034775
+    }
+  ],
+  "original_test_accessed": false
+}

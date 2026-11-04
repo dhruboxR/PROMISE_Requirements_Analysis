@@ -1,0 +1,35 @@
+{
+  "experiment": 19,
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "max_length": 128,
+  "classifier": "LogisticRegression",
+  "classifier_C": 10.0,
+  "class_weight": null,
+  "seed": 42,
+  "fold_summary": {
+    "accuracy": {
+      "mean": 0.6283830641367937,
+      "std": 0.04700773237316266
+    },
+    "balanced_accuracy": {
+      "mean": 0.26466757413937175,
+      "std": 0.02925088734607334
+    },
+    "macro_f1": {
+      "mean": 0.26210162997726394,
+      "std": 0.03121256016516614
+    },
+    "weighted_f1": {
+      "mean": 0.5869173100911262,
+      "std": 0.05839740941939928
+    }
+  },
+  "oof": {
+    "accuracy": 0.6264790534058203,
+    "balanced_accuracy": 0.2484383474363362,
+    "macro_f1": 0.2619015626628283,
+    "weighted_f1": 0.5875383640351661
+  },
+  "original_test_accessed": false
+}

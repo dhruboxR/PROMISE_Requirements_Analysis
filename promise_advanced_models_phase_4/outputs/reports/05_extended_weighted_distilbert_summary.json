@@ -1,0 +1,35 @@
+{
+  "model": "distilbert-base-uncased",
+  "experiment": "class-weighted cross entropy",
+  "class_weights": {
+    "F": 0.5,
+    "A": 2.6237561405308836,
+    "L": 1.429813969598424,
+    "LF": 2.2437998087057136,
+    "MN": 2.476510440716212,
+    "O": 1.743251383782724,
+    "PE": 1.727755508462906,
+    "SC": 2.195191882155513,
+    "SE": 1.4385590907036203,
+    "US": 1.5748966305100565,
+    "FT": 3.0,
+    "PO": 2.833980533772672
+  },
+  "epochs": 6,
+  "learning_rate": 2e-05,
+  "selection_metric": "validation_macro_f1",
+  "test_partition_used": false,
+  "validation_results": {
+    "eval_loss": 2.151935577392578,
+    "eval_accuracy": 0.5678119349005425,
+    "eval_balanced_accuracy": 0.37580578598960956,
+    "eval_macro_precision": 0.2896497429013332,
+    "eval_macro_recall": 0.37580578598960956,
+    "eval_macro_f1": 0.3174307388693818,
+    "eval_weighted_f1": 0.571488946974988,
+    "eval_runtime": 0.8353,
+    "eval_samples_per_second": 662.057,
+    "eval_steps_per_second": 166.412,
+    "epoch": 6.0
+  }
+}
