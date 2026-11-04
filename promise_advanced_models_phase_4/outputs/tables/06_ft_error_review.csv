@@ -1,0 +1,11 @@
+﻿RecordID,ProjectID,RequirementText,_class_,PredictedLabel,Correct
+286,6,The product and/or dependent databases/filesystems shall remain operational as a result of the input of malicious data.  The product and/or dependent databases/filesystems shall not crash 100% of the time that malicious data is input into the product.,FT,A,False
+332,6,The product shall create an exception log of problems encountered within the product for transmission to our company for analysis and resolution.,FT,F,False
+798,38,The system shall accommodate high number of items and users without any fault.,FT,A,False
+3078,78,GOG must provide a way to be run from a command line or a shell script. ,FT,F,False
+3079,78,GOG should be able to run in a cluster or grid environtments ,FT,F,False
+3080,78,GOG must be able to process one complete source processing on 2 CPU seconds.,FT,PE,False
+3081,78,GOG is designed to run on either in a single thread mode on grid environments. ,FT,PE,False
+3082,78,"GOG runs on LINUX , UNIX and MAC computers (minimum).GOG results are platform independent ",FT,O,False
+3083,78,GOG will have to generate data of a considerable amount of astrosources whose number could be a significant part of the expected final catalogue (20%). ,FT,F,False
+3085,78,GOG is built as a standalone java aplication that could be invoked from a command line and deployed as a jar file. ,FT,O,False

@@ -1,0 +1,5 @@
+Category,Count
+Both correct,1691
+Only LR correct,260
+Only DistilBERT correct,237
+Both wrong,939

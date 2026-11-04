@@ -1,0 +1,9 @@
+Category,Count
+All three correct,231
+Only LR correct,76
+Only DistilBERT correct,21
+Only RoBERTa correct,14
+LR + DistilBERT correct,40
+LR + RoBERTa correct,23
+DistilBERT + RoBERTa correct,22
+All three wrong,126

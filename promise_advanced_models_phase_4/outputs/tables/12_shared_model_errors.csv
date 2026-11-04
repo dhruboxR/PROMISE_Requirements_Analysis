@@ -1,0 +1,127 @@
+﻿RecordID,ProjectID,_class_,LR_Prediction,DistilBERT_Prediction,RoBERTa_Prediction,RequirementText
+148,4,L,F,F,F,All actions that modify an existing dispute case must be recorded in the case history.
+174,4,L,F,F,F,The Disputes application must maintain a detailed history of every action that a user takes on a dispute case.  This ensures a complete audit trail if questions arise later on with regard to a particular dispute case.
+180,4,US,F,F,F,The list of dispute cases that are displayed after a search is performed must be color coded for easy identification of dispute cases based upon the dispute case status.
+189,4,US,F,F,F,100% of cardmember services representatives shall be able to successfully create a dispute case on the first encounter after completing the training course.
+192,4,O,F,F,F,The Disputes application shall interface with the Letters application.  This will allow the Disputes application to request letters as part of the dispute initiation and dispute follow up process. All letter requests must be sent to the Print Letter Utility application.
+197,4,SE,F,F,F,The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user’s access level. The report will be reviewed for auditing purposes.
+198,4,SE,F,F,F,All authorized users  once authenticated must be able to logon to the Disputes System
+276,6,F,O,O,US,The product shall update existing conference rooms.
+284,6,SC,US,US,US,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.
+285,6,SE,MN,US,MN,The product shall have the ability to receive automatic software updates as new threats emerge. 100% of customers will be able to receive automatic software updates transmitted to the installed product.
+286,6,FT,SE,A,SE,The product and/or dependent databases/filesystems shall remain operational as a result of the input of malicious data.  The product and/or dependent databases/filesystems shall not crash 100% of the time that malicious data is input into the product.
+296,6,F,LF,US,US,The product shall have an intuitive user interface.
+297,6,F,LF,LF,LF,The product shall have a customizable Look and Feel.
+301,6,F,O,O,O,The product will update existing room equipment.
+305,6,F,LF,MN,SC,The product shall record updated meeting agendas.
+310,6,F,LF,LF,US,The product shall record different meeting types.
+312,6,F,MN,O,US,The product shall store new conference rooms.
+313,6,US,PE,MN,MN,The product shall be translated into foreign languages other than the target market countries’ languages in future releases.  For each emerging target market  it shall take no more than 5 days to configure the product for that market’s language.
+317,6,US,F,F,F,The product shall allow the user to select a chosen language from one of the target market countries.
+322,6,LF,US,US,US,The product’s Look and Feel shall be able to incorporate aspects of the customer’s organization such as logo  branding  and identity
+332,6,FT,LF,F,O,The product shall create an exception log of problems encountered within the product for transmission to our company for analysis and resolution.
+333,6,MN,US,US,US,The customer shall be able to easily integrate new building maps with the product throughout the product’s lifecycle.  Integration of new maps with the product shall be possible with little to no support from product support staff.
+337,6,MN,US,US,PE,The product must be designed using Design Patterns and coding best practices.  90% of maintenance software developers are able to integrate new functionality into the product with 2 working days.
+338,6,US,PE,PE,PE,A new user must be able to be added to the system within 10 minutes. 90% of new users are able to log into the system within 10 minutes.
+341,6,MN,O,US,US,The product must be highly configurable for use with various database management systems for the end users.  80% of end users are able to integrate new database management systems with the product without changing the product’s software code.
+346,6,SC,MN,A,MN,The product shall be expected to operate for at least 5 years for each customer installation.
+542,11,MN,O,O,O,The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.
+543,11,LF,F,US,US,The interface shall be appealing to callers and supervisors. In the interface and usability survey  80% of beta testers must report that the interface is appealing.
+544,11,LF,US,US,US,The interface shall have a simple look. In the interface and usability survey  90% of beta testers must report that the interface is adequately simple.
+614,15,LF,US,US,US,The intranet pages should display appropriately in all resolutions  from 800x600 and higher. The display of all the pages will be correct in 95% of the resolutions  prior to implementation. The remaining 5% will be corrected within a week of notification of the incorrect display.
+618,15,MN,PE,F,LF,Changes to revenue and expense formulae must be applied to the RFS system  every year  prior to the budgeting process start. Revenue and expense formulae will be updated within one week of their receipt  after which 2 weeks will be allotted to testing of the budget calculations  to be conducted jointly by the project development team and PCG Finance.
+619,15,O,F,F,PE,The RFS system should be able to easily interface with the BDW environment  in order to load the data. •	7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process  every year. The data will be as of October month-end. 	Test files (7) shall be loaded up to 5 times throughout the year  from the BDW.
+623,15,MN,O,SC,SC,New branches/complexes/districts/regions and revenue/expense accounts added to the BDW  must be reflected in the RFS system. 100% of the entities (mentioned above) available as of October month-end  will be loaded into the RFS system  prior to the budget start process.
+679,25,US,F,F,F,The system shall provide a way to return to the startup screen.
+680,25,LF,F,F,F,The campus map shall have a pause/resume button. The pause and resume button will allow the user to scroll and select other buildings without being interrupted by the automatic search and announce feature.
+681,25,LF,F,F,F,The campus map shall provide visual clues regarding what areas have prepared audio and therefore may be selected.
+682,25,US,F,F,F,The system shall allow the user to scroll the campus map from the campus map tab.
+683,25,LF,F,F,F,The system shall show a tabbed display (or equivalent functionality) with the campus map on one tab and info on the most recently announced building on the other.
+710,30,LF,US,US,US,Be intuitive even to first time users
+713,30,F,SE,SE,SE,Enable a registered user to change his password if he forgets his password.
+745,33,A,US,US,MN,The website is available whenever the users want to use it.
+746,33,O,F,F,F,The system should have to keep the location where the doughnut will be send.
+792,38,F,SE,L,US,Responsible for properly allocating the selected product according to the customer’s choice and delivering product to the customer.
+793,38,F,SE,US,US,View the personal details of the customer.
+795,38,F,SE,SE,SE,Can only visit the site without registration.
+809,38,F,US,O,LF,Contact with the vendors and give permission to sell their product under the site after testing the product’s quality.
+822,42,F,US,US,US,Icons will clearly illustrate the feature it represents.
+825,42,F,US,US,US,The font will be larger enough for easy reading.
+830,42,F,SE,SE,SE,A failed login will alert the physician/pharmacist.
+1171,52,PO,SE,O,LF,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.
+1172,52,PO,F,SC,SC,"System-wide data capacity. The data capacity of the system is limited by transfer methods and technology, as well as archiving capacity on site. The system data capacity is capable of retaining 7 days of data produced by the largest instrument, the last 3 days of which must be available interactively from hard disk or similar medium."
+1173,52,PO,F,F,PE,"The system must allow for fast transmission of rough images every 0.5 sec. This may be assisted through the use of data-loss compression techniques (e.g. JPEG, MPEG, etc)."
+1174,52,PO,PE,PE,PE,"In addition, there is the need for transmission of images matching the original resolution. This high-quality transmission must require less than 20 sec, and can only be assisted with loss-less compression."
+1175,52,PO,PE,PE,PE,"Every command must be accepted/rejected within 2 sec and before the corresponding action occurs. (This is different than the ACK/NAK response of the communications protocol - here, the target system must have examined the command and verified its validity."
+1176,52,PO,O,O,O,The telescope and instrument software shall contain built-in test (BIT) facilities to verify Gemini 8m Telescopes system and Gemini 8m Telescopes software performances. 
+1177,52,PO,F,PE,PE,Requests of subsystems for status information must be answered within 5 sec and be possible in maintenance level operation.
+1178,52,PO,US,F,PE,Requirements for response times within the user interfaces are given in the User Interface requirements section.
+1179,52,PO,O,O,O,"Every Gemini 8m Telescopes software module shall have corresponding test specifications to check normal operation of releases, to be used both for acceptance tests and as an on-line test procedure. "
+1180,52,PO,F,O,O,The Gemini 8m Telescopes control software shall also provide for execution of self-test sequences of the Gemini 8m Telescopes system and subsystems. These shall automatically exercise all subsystems present in a given operational configuration.
+1181,52,PO,SE,SE,SC,"Storage of data. Data from all instruments and detectors is stored as compressed data, using a standard format. There is a first level of storage within IOCs, to secure data in the event of link failures."
+1182,52,PO,PE,F,PE,"Status display update must be within 4 sec at the local stations (certain functions, such as telescope position, may have tighter constraints). Remote station update response is given in the Requirements for Remote Operations section. "
+1184,52,PO,SE,PE,PE,Data flow. Data from detectors must be stored in the most effective method permitted by available technology. Astronomical data is often detector readout limited so that disk access and data transfer times are not significant.
+1185,52,PO,L,PE,PE,"For mosaicked, large optical detectors, a full readout of the detector must be done in about 2 or 3 minutes."
+1187,52,PO,F,PE,PE,"Concurrent data access and display. Since the Gemini system supports monitoring of operation, there must be the capability of providing multiple, simultaneous access to data. Data transfer between the virtual telescope system and attached workstations therefore imposes significant transfer requirements on the LAN. The LAN must support a transfer rate of 20-40 Mbits/second."
+1188,52,PO,F,O,O,"The syntax of control flow commands is to be consistent across the system, whether accessing workstation software or IOC software."
+1189,52,PO,F,F,F,"All subsystems must respond to a common set of commands to test operational status, inquiries as to version, perform self-tests."
+1190,52,PO,F,F,F,"All IOC subsystems must respond to additional common commands for such activities as start, stop, initialize, reset parameters, etc."
+1191,52,A,F,PE,F,"Fault recovery, exception handling, fail-safe checks, etc. should be used to improve reliability."
+1192,52,PO,PE,L,PE,"Handshaking of commands between IOCs must occur within 100-200 msec, signaling acceptance of each command."
+1193,52,PO,F,F,F,"For commands allowing delayed replies, timeouts for that reply must also be supported."
+1194,52,PO,F,PE,PE,"Peak control information within the system is expected to be 100 TPS. This assumes bridging between communication sections, to isolate traffic in relevant sections only."
+1195,52,PO,F,PE,PE,"For focusing and related activities, maximum acceptable detector readout time is about 0.1 sec, though only a portion of the detector may be read during that time."
+1590,60,PE,L,L,L,This is no longer the case since everybody agrees upon having a single point of contact per Member State (even though the Member State is organized with several Card Issuing Authorities – up to the Member State to manage its own organisation).
+1592,60,PE,F,F,US,The system must be able to establish and keep the dialog with the Members systems despite the various technical environments and technologies used on their sites.
+1593,60,PE,US,F,F,The system will be designed so that background tasks can continue while the user performs foreground tasks.
+1595,60,SC,F,F,F,The system should be able to support other types of message structure to cover f.i. a future driving licence network and correlated activities.
+1596,60,SC,US,O,O,The system must be maintainable and extensible. SUP-03 The system must be designed so that it can migrate to upgraded hardware or new versions of the operating systems involved.
+1597,60,SC,F,F,PO,The system must be able to migrate to other type of network than the one proposed by TESTA-II.
+1598,60,SC,O,F,F,Each Member of this network will organise its data about smart card holders with no constraints or recommendations on operating system and/or technology used. The system will be able to dialog with these environments or specify a generic interface to dialog with the Member’s applications.
+1599,60,SC,US,O,O,The system must be designed and documented with the expectation that its operational lifetime will be many years.
+1600,60,SC,F,F,O,The system must use the network facilities supplied by the TESTA-II network.]
+1601,60,SC,O,O,O,The algorithms in the software will be based on existing techniques and no research will be required to develop new algorithms under this contract.
+1602,60,SC,F,PE,A,The system is to be designed as a robust and dependable operational system which is tolerant to operator errors and which will recover cleanly from power cuts or other disasters.
+1603,60,SC,F,A,A,"The system must function reliably, with few or no interruptions in its first operational year and fewer still thereafter."
+1604,60,SC,F,F,O,The system must give stable and reproducible results.
+1606,60,SC,F,F,F,"The system must provide solutions/rules regarding data encoding problems such as supporting different character sets, name truncation rules, name matching in case of misspelling."
+1607,60,SC,F,PE,MN,Most of the functionality of the new software shall depend on pre-existing or commercially available software.
+1610,60,US,F,F,F,The system must guide users through an interface based on end user concepts.
+1619,60,F,US,US,US,The system must be highly automatic to relieve the users of as many repetitive and tedious tasks as possible.
+1621,60,F,L,L,SE,"The system must be such that none of the Member States of the network, including the administrator, re-construct a consolidated European database."
+1640,61,F,O,O,O,The system shall have a Web based interface that works with Internet Explorer and Netscape Navigator.
+1642,61,F,PE,PE,PE,The system shall respond to all user requests within 20 seconds.
+1644,61,SE,F,F,F,The user name shall be the first four charters of the employee s last name followed by the first three characters of their first name.
+1667,61,F,A,MN,O,All invoices shall be available for printing at the end of each month.
+1673,61,F,SE,SE,SC,If only two children are enrolled a parent shall be billed $157.50 at the end of each month.
+2881,75,F,US,US,US,Effective content delivery is ensured through SLA satisfaction. 
+2891,75,F,SE,O,O,Interaction protocols between PAs are identified. 
+2893,75,F,O,O,O,"The interaction protocol between Web Server-SR, SR-mediator is defined. "
+2895,75,F,O,O,O,"The interaction protocol between Web Server-SR, SR-mediator is defined. "
+2896,75,F,SE,SE,SE,Malicious requests are detected and rejected. 
+2900,75,F,L,L,L,The format of service requirements is defined. 
+2902,75,F,US,SC,O,Web servers have already replicated necessary content. 
+2981,77,F,US,US,US,Ability for the user to access e-mail with Blackberry services using BlackBerry device. 
+3010,77,F,US,US,US,Ability for the user to use wireless service with GIS.
+3026,77,F,SE,SE,SE,Ability for the user to access mailbox and components via a web browser over a secure (encrypted) connection.
+3042,77,F,US,US,US,Ability for the user to organize content into personal folders or similar storage mechanism to aid with e-mail retrieval. 
+3045,77,F,US,US,US,Ability for the user to customize e-mail messages with word processor like features for formatting of e-mail content. 
+3078,78,FT,F,F,O,GOG must provide a way to be run from a command line or a shell script. 
+3079,78,FT,F,F,F,GOG should be able to run in a cluster or grid environtments 
+3080,78,FT,PE,PE,PE,GOG must be able to process one complete source processing on 2 CPU seconds.
+3081,78,FT,F,PE,O,GOG is designed to run on either in a single thread mode on grid environments. 
+3082,78,FT,O,O,PO,"GOG runs on LINUX , UNIX and MAC computers (minimum).GOG results are platform independent "
+3083,78,FT,F,F,O,GOG will have to generate data of a considerable amount of astrosources whose number could be a significant part of the expected final catalogue (20%). 
+3085,78,FT,F,O,O,GOG is built as a standalone java aplication that could be invoked from a command line and deployed as a jar file. 
+3096,78,F,SC,O,O,"GOG will be fully integrated in the Gaia Simulator project. That is, it will use as other the other simulators the Gaia Simu library and the Gaia Tools library. "
+3097,78,F,SE,O,O,"CU2 will be responsible for the design and developing of GOG that will provide Catalogue, Main Database (MDB) and final data.(in the sense of statistically equivalent to the final mission data) data without the use GASS telemetry, GIBIS or the main ESAC database"
+3104,79,MN,F,F,O,"The system must be written using industry best practices, and must be built using only Construction Junction approved products and technologies. The system must also be written in such a way that it can be supported by planned Construction Junction staffing levels. "
+3105,79,SE,F,F,SC,"The system should record changes to application entities in the form of „created user/time‟, „modified user/time‟ fields. The system should also record information about various sensitive inventory management operations such as deleting items and changing the price of items. "
+3108,79,L,SE,LF,LF,The following copyright notice must be displayed in all user interfaces: © 2009 - Construction Junction
+3117,79,F,SC,SC,SC,"Items are typically added to the inventory as part of the donation processes. This is called adding an item in donation processing. Alternatively, items can be added during routine inventory maintenance. This is called adding an item in inventory management mode."
+3429,83,PE,F,F,SE,Any torrent result with 0 seeds will not be displayed. 
+3431,83,PE,F,F,F,A results page will display 100 results. 
+3432,83,PE,F,SE,SE,Any torrent with 0 seeds cannot guarantee to be fully downloaded. 
+3435,83,L,SE,SE,SE,"While all safety measures resulting from the site may not be fully identified, a recommendation of a full legal review of the software should be undertaken before the site is available to the public. In doing so, the site will be subject to full indemnification of liability. "
+3436,83,L,SE,SE,SE,"The system we produce will stay within all the legal requirements on our behalf, as our software is only listing links for video streams and video download, and this is not illegal. Our system will not host any videos. "
+3614,88,PE,F,F,F,"Sensor (temperature, humidity, contact sensor, power state) shall have a minimum data acquisition rate of 10 Hz. "
