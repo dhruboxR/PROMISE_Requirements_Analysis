@@ -1,0 +1,2 @@
+model,partition,eval_loss,eval_accuracy,eval_balanced_accuracy,eval_macro_precision,eval_macro_recall,eval_macro_f1,eval_weighted_f1,eval_runtime,eval_samples_per_second,eval_steps_per_second,epoch
+distilbert-base-uncased,validation,1.518968939781189,0.5569620253164557,0.2228406615171321,0.23036686828383293,0.2228406615171321,0.18870325908141036,0.5387734117155001,1.2902,428.623,107.737,3.0

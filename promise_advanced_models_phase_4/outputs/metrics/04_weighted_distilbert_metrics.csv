@@ -1,0 +1,2 @@
+Model,Partition,eval_loss,eval_accuracy,eval_balanced_accuracy,eval_macro_precision,eval_macro_recall,eval_macro_f1,eval_weighted_f1,eval_runtime,eval_samples_per_second,eval_steps_per_second,epoch
+Class-weighted DistilBERT,validation,2.00632643699646,0.5985533453887885,0.3211461142343495,0.2544139699403153,0.3211461142343495,0.27345144615474165,0.5822489013088585,0.8249,670.358,168.499,3.0
