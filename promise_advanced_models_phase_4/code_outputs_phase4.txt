@@ -1,0 +1,1452 @@
+-------------------------------------------------------------------------------------
+        RUN - python scripts/01_group_aware_feature_comparison.py
+-------------------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/01_group_aware_feature_comparison.py
+
+PROMISE+ PHASE 4: FEATURE COMPARISON
+=================================================================
+Development records: 3127
+Classes: 12
+Connected groups: 66
+Fold 1: train=2159, validation=968, missing validation classes=[]
+Fold 2: train=2024, validation=1103, missing validation classes=[]
+Fold 3: train=2071, validation=1056, missing validation classes=[]
+
+MODEL: Linear SVM | FEATURES: word
+Fold 1 | Accuracy=0.6157 | Macro-F1=0.2602
+Fold 2 | Accuracy=0.5848 | Macro-F1=0.2302
+Fold 3 | Accuracy=0.5928 | Macro-F1=0.2820
+
+MODEL: Linear SVM | FEATURES: word+character
+Fold 1 | Accuracy=0.6353 | Macro-F1=0.2886
+Fold 2 | Accuracy=0.5784 | Macro-F1=0.2331
+Fold 3 | Accuracy=0.6174 | Macro-F1=0.3082
+
+MODEL: Logistic Regression | FEATURES: word
+Fold 1 | Accuracy=0.6302 | Macro-F1=0.2649
+Fold 2 | Accuracy=0.5984 | Macro-F1=0.2436
+Fold 3 | Accuracy=0.6193 | Macro-F1=0.2811
+
+MODEL: Logistic Regression | FEATURES: word+character
+Fold 1 | Accuracy=0.6550 | Macro-F1=0.2890
+Fold 2 | Accuracy=0.5848 | Macro-F1=0.2359
+Fold 3 | Accuracy=0.6364 | Macro-F1=0.3198
+
+=================================================================
+CROSS-VALIDATION COMPARISON
+=================================================================
+              model       features  mean_accuracy  std_accuracy  mean_macro_f1  std_macro_f1  mean_balanced_accuracy  mean_weighted_f1
+Logistic Regression word+character         0.6254        0.0364         0.2816        0.0424            0.2827            0.5878
+         Linear SVM word+character         0.6104        0.0291         0.2766        0.0390            0.2923            0.5830
+Logistic Regression           word         0.6160        0.0162         0.2632        0.0188            0.2568            0.5741
+         Linear SVM           word         0.5978        0.0161         0.2575        0.0260            0.2673            0.5704
+
+Saved experiment results.
+Original 550-record test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/02_tune_feature_weights.py
+-------------------------------------------------------------------------------------
+
+(.venv) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/02_tune_feature_weights.py
+
+PHASE 4: FEATURE WEIGHT TUNING
+============================================================
+Development records: 3127
+Connected groups: 66
+Total configurations: 6
+CV folds: 3
+
+Configuration 1/6 | C=1.0 | Character weight=0.5
+Fold 1 | Accuracy=0.5661 | Macro-F1=0.2642
+Fold 2 | Accuracy=0.5494 | Macro-F1=0.2299
+Fold 3 | Accuracy=0.5691 | Macro-F1=0.2913
+
+Configuration 2/6 | C=1.0 | Character weight=1.0
+Fold 1 | Accuracy=0.6095 | Macro-F1=0.2782
+Fold 2 | Accuracy=0.5440 | Macro-F1=0.2335
+Fold 3 | Accuracy=0.5928 | Macro-F1=0.3103
+
+Configuration 3/6 | C=1.0 | Character weight=2.0
+Fold 1 | Accuracy=0.6291 | Macro-F1=0.2817
+Fold 2 | Accuracy=0.5467 | Macro-F1=0.2216
+Fold 3 | Accuracy=0.6098 | Macro-F1=0.3132
+
+Configuration 4/6 | C=10.0 | Character weight=0.5
+Fold 1 | Accuracy=0.6498 | Macro-F1=0.2774
+Fold 2 | Accuracy=0.5975 | Macro-F1=0.2712
+Fold 3 | Accuracy=0.6354 | Macro-F1=0.2959
+
+Configuration 5/6 | C=10.0 | Character weight=1.0
+Fold 1 | Accuracy=0.6550 | Macro-F1=0.2890
+Fold 2 | Accuracy=0.5848 | Macro-F1=0.2359
+Fold 3 | Accuracy=0.6364 | Macro-F1=0.3198
+
+Configuration 6/6 | C=10.0 | Character weight=2.0
+Fold 1 | Accuracy=0.6436 | Macro-F1=0.2755
+Fold 2 | Accuracy=0.5739 | Macro-F1=0.2195
+Fold 3 | Accuracy=0.6345 | Macro-F1=0.3132
+
+============================================================
+FEATURE WEIGHT TUNING COMPARISON
+============================================================
+ configuration    C  word_weight  character_weight  mean_accuracy  std_accuracy  mean_macro_f1  std_macro_f1  mean_balanced_accuracy  mean_weighted_f1
+             5 10.0          1.0               1.0         0.6254        0.0364         0.2816        0.0424             0.2827            0.5878
+             4 10.0          1.0               0.5         0.6276        0.0270         0.2815        0.0128             0.2760            0.5870
+             2  1.0          1.0               1.0         0.5821        0.0341         0.2740        0.0386             0.2957            0.5728
+             3  1.0          1.0               2.0         0.5952        0.0431         0.2722        0.0466             0.2886            0.5783
+             6 10.0          1.0               2.0         0.6173        0.0379         0.2694        0.0471             0.2746            0.5818
+             1  1.0          1.0               0.5         0.5616        0.0106         0.2618        0.0308             0.2844            0.5574
+
+Best configuration:
+C: 10.0
+Character weight: 1.0
+Mean macro-F1: 0.2816
+
+Experiment 02 completed.
+Original test partition was not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/03_train_distilbert.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/03_train_distilbert.py
+
+PHASE 4: DISTILBERT FINE-TUNING
+============================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Training records: 2574
+Validation records: 553
+Classes: 12
+config.json: 100%|█████████████████████████████████████████████████████████████| 483/483 [00:00<00:00, 2.59MB/s]
+tokenizer_config.json: 100%|██████████████████████████████████████████████████| 48.0/48.0 [00:00<00:00, 258kB/s]
+vocab.txt: 100%|█████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 1.37MB/s]
+tokenizer.json: 100%|█████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 833kB/s]
+model.safetensors: downloading bytes: ██████████████████████████████████████████████████████|  250MB, 1.37MB/s  
+model.safetensors: reconstructing file: 100%|██████████████████████████████████████|  268MB /  268MB, 11.8MB/s  
+Loading weights: 100%|██████████████████████████████████████████████████████| 100/100 [00:00<00:00, 7497.73it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+classifier.bias         | MISSING    | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Beginning training...
+{'loss': '16.14', 'grad_norm': '33.52', 'learning_rate': '1.921e-05', 'epoch': '0.1243'}                        
+{'loss': '11.74', 'grad_norm': '25.48', 'learning_rate': '1.839e-05', 'epoch': '0.2486'}                        
+{'loss': '12.18', 'grad_norm': '20.92', 'learning_rate': '1.756e-05', 'epoch': '0.373'}                         
+{'loss': '11.34', 'grad_norm': '26.96', 'learning_rate': '1.673e-05', 'epoch': '0.4973'}                        
+{'loss': '11.15', 'grad_norm': '34.71', 'learning_rate': '1.59e-05', 'epoch': '0.6216'}                         
+{'loss': '11.11', 'grad_norm': '31.6', 'learning_rate': '1.507e-05', 'epoch': '0.7459'}                         
+{'loss': '9.641', 'grad_norm': '49.26', 'learning_rate': '1.424e-05', 'epoch': '0.8702'}                        
+{'loss': '9.839', 'grad_norm': '49', 'learning_rate': '1.342e-05', 'epoch': '0.9946'}                           
+{'eval_loss': '1.403', 'eval_accuracy': '0.6166', 'eval_balanced_accuracy': '0.122', 'eval_macro_precision': '0.09592', 'eval_macro_recall': '0.122', 'eval_macro_f1': '0.1042', 'eval_weighted_f1': '0.4912', 'eval_runtime': '0.8876', 'eval_samples_per_second': '623', 'eval_steps_per_second': '156.6', 'epoch': '1'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.57it/s]
+{'loss': '9.102', 'grad_norm': '58.37', 'learning_rate': '1.259e-05', 'epoch': '1.118'}                         
+{'loss': '8.738', 'grad_norm': '43.68', 'learning_rate': '1.176e-05', 'epoch': '1.242'}                         
+{'loss': '9.24', 'grad_norm': '53.05', 'learning_rate': '1.093e-05', 'epoch': '1.367'}                          
+{'loss': '8.868', 'grad_norm': '68.49', 'learning_rate': '1.01e-05', 'epoch': '1.491'}                          
+{'loss': '8.491', 'grad_norm': '48.15', 'learning_rate': '9.275e-06', 'epoch': '1.615'}                         
+{'loss': '7.252', 'grad_norm': '101.1', 'learning_rate': '8.447e-06', 'epoch': '1.74'}                          
+{'loss': '6.859', 'grad_norm': '44.02', 'learning_rate': '7.619e-06', 'epoch': '1.864'}                         
+{'loss': '6.848', 'grad_norm': '26.58', 'learning_rate': '6.791e-06', 'epoch': '1.988'}                         
+{'eval_loss': '1.502', 'eval_accuracy': '0.5678', 'eval_balanced_accuracy': '0.2168', 'eval_macro_precision': '0.2368', 'eval_macro_recall': '0.2168', 'eval_macro_f1': '0.172', 'eval_weighted_f1': '0.5389', 'eval_runtime': '0.9379', 'eval_samples_per_second': '589.6', 'eval_steps_per_second': '148.2', 'epoch': '2'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.58it/s]
+{'loss': '7.49', 'grad_norm': '35.88', 'learning_rate': '5.963e-06', 'epoch': '2.112'}                          
+{'loss': '6.451', 'grad_norm': '125.2', 'learning_rate': '5.135e-06', 'epoch': '2.236'}                         
+{'loss': '6.162', 'grad_norm': '36.8', 'learning_rate': '4.306e-06', 'epoch': '2.361'}                          
+{'loss': '6.127', 'grad_norm': '29.47', 'learning_rate': '3.478e-06', 'epoch': '2.485'}                         
+{'loss': '6.121', 'grad_norm': '47.2', 'learning_rate': '2.65e-06', 'epoch': '2.609'}                           
+{'loss': '6.059', 'grad_norm': '44.63', 'learning_rate': '1.822e-06', 'epoch': '2.733'}                         
+{'loss': '6.049', 'grad_norm': '37.22', 'learning_rate': '9.938e-07', 'epoch': '2.858'}                         
+{'loss': '6.293', 'grad_norm': '69.78', 'learning_rate': '1.656e-07', 'epoch': '2.982'}                         
+{'eval_loss': '1.519', 'eval_accuracy': '0.557', 'eval_balanced_accuracy': '0.2228', 'eval_macro_precision': '0.2304', 'eval_macro_recall': '0.2228', 'eval_macro_f1': '0.1887', 'eval_weighted_f1': '0.5388', 'eval_runtime': '0.9752', 'eval_samples_per_second': '567.1', 'eval_steps_per_second': '142.5', 'epoch': '3'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.51it/s]
+{'train_runtime': '116.4', 'train_samples_per_second': '66.35', 'train_steps_per_second': '4.15', 'train_loss': '8.723', 'epoch': '3'}
+100%|█████████████████████████████████████████████████████████████████████████| 483/483 [01:56<00:00,  4.14it/s]
+
+Evaluating selected checkpoint...
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:01<00:00, 108.78it/s]
+
+FINAL VALIDATION METRICS
+eval_loss: 1.5190
+eval_accuracy: 0.5570
+eval_balanced_accuracy: 0.2228
+eval_macro_precision: 0.2304
+eval_macro_recall: 0.2228
+eval_macro_f1: 0.1887
+eval_weighted_f1: 0.5388
+eval_runtime: 1.2902
+eval_samples_per_second: 428.6230
+eval_steps_per_second: 107.7370
+epoch: 3.0000
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:01<00:00, 110.30it/s]
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.17s/it]
+
+Saved model: /home/dhrubo_roy/Unofficial Thesis/promise_advanced_models_phase_4/outputs/models/03_distilbert/best_model
+Training completed.
+Original test partition was not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/04_train_weighted_distilbert.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/04_train_weighted_distilbert.py
+
+PHASE 4: WEIGHTED DISTILBERT
+============================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Training records: 2574
+Validation records: 553
+
+TRAINING CLASS WEIGHTS
+  F: count=1583, weight=0.5000
+  A: count=  49, weight=2.6238
+  L: count= 165, weight=1.4298
+ LF: count=  67, weight=2.2438
+ MN: count=  55, weight=2.4765
+  O: count= 111, weight=1.7433
+ PE: count= 113, weight=1.7278
+ SC: count=  70, weight=2.1952
+ SE: count= 163, weight=1.4386
+ US: count= 136, weight=1.5749
+ FT: count=  20, weight=3.0000
+ PO: count=  42, weight=2.8340
+Loading weights: 100%|██████████████████████████████████████████████████████| 100/100 [00:00<00:00, 3873.64it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Beginning weighted training...
+{'loss': '2.379', 'grad_norm': '3.204', 'learning_rate': '1.921e-05', 'epoch': '0.1243'}                        
+{'loss': '2.138', 'grad_norm': '3.483', 'learning_rate': '1.839e-05', 'epoch': '0.2486'}                        
+{'loss': '2.27', 'grad_norm': '4.28', 'learning_rate': '1.756e-05', 'epoch': '0.373'}                           
+{'loss': '2.036', 'grad_norm': '4.541', 'learning_rate': '1.673e-05', 'epoch': '0.4973'}                        
+{'loss': '2.13', 'grad_norm': '4.392', 'learning_rate': '1.59e-05', 'epoch': '0.6216'}                          
+{'loss': '2.129', 'grad_norm': '5.693', 'learning_rate': '1.507e-05', 'epoch': '0.7459'}                        
+{'loss': '1.781', 'grad_norm': '4.516', 'learning_rate': '1.424e-05', 'epoch': '0.8702'}                        
+{'loss': '1.908', 'grad_norm': '6.094', 'learning_rate': '1.342e-05', 'epoch': '0.9946'}                        
+{'eval_loss': '2.192', 'eval_accuracy': '0.6311', 'eval_balanced_accuracy': '0.2216', 'eval_macro_precision': '0.2545', 'eval_macro_recall': '0.2216', 'eval_macro_f1': '0.1901', 'eval_weighted_f1': '0.5695', 'eval_runtime': '0.8486', 'eval_samples_per_second': '651.7', 'eval_steps_per_second': '163.8', 'epoch': '1'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.05it/s]
+{'loss': '1.725', 'grad_norm': '5.746', 'learning_rate': '1.259e-05', 'epoch': '1.118'}                         
+{'loss': '1.65', 'grad_norm': '7.857', 'learning_rate': '1.176e-05', 'epoch': '1.242'}                          
+{'loss': '1.764', 'grad_norm': '6.377', 'learning_rate': '1.093e-05', 'epoch': '1.367'}                         
+{'loss': '1.634', 'grad_norm': '8.272', 'learning_rate': '1.01e-05', 'epoch': '1.491'}                          
+{'loss': '1.48', 'grad_norm': '8.355', 'learning_rate': '9.275e-06', 'epoch': '1.615'}                          
+{'loss': '1.237', 'grad_norm': '12.85', 'learning_rate': '8.447e-06', 'epoch': '1.74'}                          
+{'loss': '1.247', 'grad_norm': '5.171', 'learning_rate': '7.619e-06', 'epoch': '1.864'}                         
+{'loss': '1.274', 'grad_norm': '5.489', 'learning_rate': '6.791e-06', 'epoch': '1.988'}                         
+{'eval_loss': '2.062', 'eval_accuracy': '0.5877', 'eval_balanced_accuracy': '0.2764', 'eval_macro_precision': '0.2346', 'eval_macro_recall': '0.2764', 'eval_macro_f1': '0.235', 'eval_weighted_f1': '0.5697', 'eval_runtime': '0.8706', 'eval_samples_per_second': '635.2', 'eval_steps_per_second': '159.7', 'epoch': '2'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.83it/s]
+{'loss': '1.435', 'grad_norm': '5.572', 'learning_rate': '5.963e-06', 'epoch': '2.112'}                         
+{'loss': '1.143', 'grad_norm': '8.034', 'learning_rate': '5.135e-06', 'epoch': '2.236'}                         
+{'loss': '1.081', 'grad_norm': '5.922', 'learning_rate': '4.306e-06', 'epoch': '2.361'}                         
+{'loss': '1.175', 'grad_norm': '7.766', 'learning_rate': '3.478e-06', 'epoch': '2.485'}                         
+{'loss': '1.163', 'grad_norm': '10.02', 'learning_rate': '2.65e-06', 'epoch': '2.609'}                          
+{'loss': '1.18', 'grad_norm': '4.314', 'learning_rate': '1.822e-06', 'epoch': '2.733'}                          
+{'loss': '1.1', 'grad_norm': '5.887', 'learning_rate': '9.938e-07', 'epoch': '2.858'}                           
+{'loss': '1.104', 'grad_norm': '7.708', 'learning_rate': '1.656e-07', 'epoch': '2.982'}                         
+{'eval_loss': '2.006', 'eval_accuracy': '0.5986', 'eval_balanced_accuracy': '0.3211', 'eval_macro_precision': '0.2544', 'eval_macro_recall': '0.3211', 'eval_macro_f1': '0.2735', 'eval_weighted_f1': '0.5822', 'eval_runtime': '0.8275', 'eval_samples_per_second': '668.3', 'eval_steps_per_second': '168', 'epoch': '3'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.46it/s]
+{'train_runtime': '107.9', 'train_samples_per_second': '71.57', 'train_steps_per_second': '4.477', 'train_loss':'1.592', 'epoch': '3'}
+100%|█████████████████████████████████████████████████████████████████████████| 483/483 [01:48<00:00,  4.47it/s]
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:00<00:00, 173.76it/s]
+
+WEIGHTED DISTILBERT VALIDATION METRICS
+eval_loss: 2.0063
+eval_accuracy: 0.5986
+eval_balanced_accuracy: 0.3211
+eval_macro_precision: 0.2544
+eval_macro_recall: 0.3211
+eval_macro_f1: 0.2735
+eval_weighted_f1: 0.5822
+eval_runtime: 0.8249
+eval_samples_per_second: 670.3580
+eval_steps_per_second: 168.4990
+epoch: 3.0000
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:00<00:00, 167.64it/s]
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.43it/s]
+
+Saved model: /home/dhrubo_roy/Unofficial Thesis/promise_advanced_models_phase_4/outputs/models/04_weighted_distilbert/best_model
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/05_extended_weighted_distilbert.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/05_extended_weighted_distilbert.py
+
+PHASE 4: WEIGHTED DISTILBERT
+============================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Training records: 2574
+Validation records: 553
+
+TRAINING CLASS WEIGHTS
+  F: count=1583, weight=0.5000
+  A: count=  49, weight=2.6238
+  L: count= 165, weight=1.4298
+ LF: count=  67, weight=2.2438
+ MN: count=  55, weight=2.4765
+  O: count= 111, weight=1.7433
+ PE: count= 113, weight=1.7278
+ SC: count=  70, weight=2.1952
+ SE: count= 163, weight=1.4386
+ US: count= 136, weight=1.5749
+ FT: count=  20, weight=3.0000
+ PO: count=  42, weight=2.8340
+Loading weights: 100%|██████████████████████████████████████████████████████| 100/100 [00:00<00:00, 3735.41it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_transform.bias    | UNEXPECTED | 
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+classifier.bias         | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Beginning weighted training...
+{'loss': '2.378', 'grad_norm': '3.2', 'learning_rate': '1.961e-05', 'epoch': '0.1243'}                          
+{'loss': '2.136', 'grad_norm': '3.49', 'learning_rate': '1.919e-05', 'epoch': '0.2486'}                         
+{'loss': '2.267', 'grad_norm': '4.324', 'learning_rate': '1.878e-05', 'epoch': '0.373'}                         
+{'loss': '2.029', 'grad_norm': '4.606', 'learning_rate': '1.836e-05', 'epoch': '0.4973'}                        
+{'loss': '2.113', 'grad_norm': '4.367', 'learning_rate': '1.795e-05', 'epoch': '0.6216'}                        
+{'loss': '2.104', 'grad_norm': '6.072', 'learning_rate': '1.754e-05', 'epoch': '0.7459'}                        
+{'loss': '1.747', 'grad_norm': '4.69', 'learning_rate': '1.712e-05', 'epoch': '0.8702'}                         
+{'loss': '1.86', 'grad_norm': '6.662', 'learning_rate': '1.671e-05', 'epoch': '0.9946'}                         
+{'eval_loss': '2.177', 'eval_accuracy': '0.5967', 'eval_balanced_accuracy': '0.2494', 'eval_macro_precision': '0.2786', 'eval_macro_recall': '0.2494', 'eval_macro_f1': '0.2068', 'eval_weighted_f1': '0.5656', 'eval_runtime': '0.9819', 'eval_samples_per_second': '563.2', 'eval_steps_per_second': '141.6', 'epoch': '1'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.02it/s]
+{'loss': '1.657', 'grad_norm': '6.247', 'learning_rate': '1.629e-05', 'epoch': '1.118'}                         
+{'loss': '1.568', 'grad_norm': 'inf', 'learning_rate': '1.588e-05', 'epoch': '1.242'}                           
+{'loss': '1.673', 'grad_norm': '6.388', 'learning_rate': '1.547e-05', 'epoch': '1.367'}                         
+{'loss': '1.544', 'grad_norm': '8.336', 'learning_rate': '1.505e-05', 'epoch': '1.491'}                         
+{'loss': '1.386', 'grad_norm': '9.005', 'learning_rate': '1.464e-05', 'epoch': '1.615'}                         
+{'loss': '1.13', 'grad_norm': '12.19', 'learning_rate': '1.422e-05', 'epoch': '1.74'}                           
+{'loss': '1.162', 'grad_norm': '4.751', 'learning_rate': '1.381e-05', 'epoch': '1.864'}                         
+{'loss': '1.178', 'grad_norm': '5.572', 'learning_rate': '1.34e-05', 'epoch': '1.988'}                          
+{'eval_loss': '2.051', 'eval_accuracy': '0.5877', 'eval_balanced_accuracy': '0.3014', 'eval_macro_precision': '0.252', 'eval_macro_recall': '0.3014', 'eval_macro_f1': '0.2583', 'eval_weighted_f1': '0.5719', 'eval_runtime': '0.8192', 'eval_samples_per_second': '675.1', 'eval_steps_per_second': '169.7', 'epoch': '2'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.02it/s]
+{'loss': '1.265', 'grad_norm': '4.41', 'learning_rate': '1.298e-05', 'epoch': '2.112'}                          
+{'loss': '0.9795', 'grad_norm': '6.111', 'learning_rate': '1.257e-05', 'epoch': '2.236'}                        
+{'loss': '0.8853', 'grad_norm': '4.775', 'learning_rate': '1.215e-05', 'epoch': '2.361'}                        
+{'loss': '0.9719', 'grad_norm': '6.882', 'learning_rate': '1.174e-05', 'epoch': '2.485'}                        
+{'loss': '1.02', 'grad_norm': '11.41', 'learning_rate': '1.133e-05', 'epoch': '2.609'}                          
+{'loss': '0.9601', 'grad_norm': '4.006', 'learning_rate': '1.091e-05', 'epoch': '2.733'}                        
+{'loss': '0.8713', 'grad_norm': '6.331', 'learning_rate': '1.05e-05', 'epoch': '2.858'}                         
+{'loss': '0.8273', 'grad_norm': '7.981', 'learning_rate': '1.008e-05', 'epoch': '2.982'}                        
+{'eval_loss': '2.087', 'eval_accuracy': '0.5479', 'eval_balanced_accuracy': '0.3222', 'eval_macro_precision': '0.2707', 'eval_macro_recall': '0.3222', 'eval_macro_f1': '0.2776', 'eval_weighted_f1': '0.5504', 'eval_runtime': '0.8385', 'eval_samples_per_second': '659.5', 'eval_steps_per_second': '165.8', 'epoch': '3'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.39it/s]
+{'loss': '0.8201', 'grad_norm': '5.655', 'learning_rate': '9.669e-06', 'epoch': '3.106'}                        
+{'loss': '0.7991', 'grad_norm': '4.213', 'learning_rate': '9.255e-06', 'epoch': '3.23'}                         
+{'loss': '0.7531', 'grad_norm': '12.5', 'learning_rate': '8.841e-06', 'epoch': '3.354'}                         
+{'loss': '0.8126', 'grad_norm': '8.44', 'learning_rate': '8.427e-06', 'epoch': '3.479'}                         
+{'loss': '0.6133', 'grad_norm': '8.168', 'learning_rate': '8.012e-06', 'epoch': '3.603'}                        
+{'loss': '0.6851', 'grad_norm': '8.581', 'learning_rate': '7.598e-06', 'epoch': '3.727'}                        
+{'loss': '0.6307', 'grad_norm': '5.193', 'learning_rate': '7.184e-06', 'epoch': '3.852'}                        
+{'loss': '0.6493', 'grad_norm': '10.27', 'learning_rate': '6.77e-06', 'epoch': '3.976'}                         
+{'eval_loss': '2.052', 'eval_accuracy': '0.5407', 'eval_balanced_accuracy': '0.3681', 'eval_macro_precision': '0.2782', 'eval_macro_recall': '0.3681', 'eval_macro_f1': '0.3051', 'eval_weighted_f1': '0.5502', 'eval_runtime': '0.8559', 'eval_samples_per_second': '646.1', 'eval_steps_per_second': '162.4', 'epoch': '4'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.47it/s]
+{'loss': '0.5006', 'grad_norm': '5.133', 'learning_rate': '6.356e-06', 'epoch': '4.099'}                        
+{'loss': '0.6696', 'grad_norm': '11.14', 'learning_rate': '5.942e-06', 'epoch': '4.224'}                        
+{'loss': '0.5365', 'grad_norm': '6.889', 'learning_rate': '5.528e-06', 'epoch': '4.348'}                        
+{'loss': '0.4843', 'grad_norm': '5.684', 'learning_rate': '5.114e-06', 'epoch': '4.472'}                        
+{'loss': '0.4719', 'grad_norm': '12.07', 'learning_rate': '4.7e-06', 'epoch': '4.597'}                          
+{'loss': '0.6574', 'grad_norm': '3.807', 'learning_rate': '4.286e-06', 'epoch': '4.721'}                        
+{'loss': '0.5701', 'grad_norm': '4.546', 'learning_rate': '3.872e-06', 'epoch': '4.845'}                        
+{'loss': '0.5099', 'grad_norm': '8.109', 'learning_rate': '3.458e-06', 'epoch': '4.97'}                         
+{'eval_loss': '2.178', 'eval_accuracy': '0.5533', 'eval_balanced_accuracy': '0.3584', 'eval_macro_precision': '0.2824', 'eval_macro_recall': '0.3584', 'eval_macro_f1': '0.3031', 'eval_weighted_f1': '0.56', 'eval_runtime': '0.8307', 'eval_samples_per_second': '665.7', 'eval_steps_per_second': '167.3', 'epoch': '5'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.32it/s]
+{'loss': '0.4555', 'grad_norm': '11.2', 'learning_rate': '3.043e-06', 'epoch': '5.093'}                         
+{'loss': '0.3197', 'grad_norm': '1.97', 'learning_rate': '2.629e-06', 'epoch': '5.218'}                         
+{'loss': '0.4485', 'grad_norm': '6.692', 'learning_rate': '2.215e-06', 'epoch': '5.342'}                        
+{'loss': '0.5044', 'grad_norm': '6.513', 'learning_rate': '1.801e-06', 'epoch': '5.466'}                        
+{'loss': '0.4271', 'grad_norm': '13.49', 'learning_rate': '1.387e-06', 'epoch': '5.591'}                        
+{'loss': '0.5392', 'grad_norm': '11.43', 'learning_rate': '9.731e-07', 'epoch': '5.715'}                        
+{'loss': '0.464', 'grad_norm': '20.29', 'learning_rate': '5.59e-07', 'epoch': '5.839'}                          
+{'loss': '0.4251', 'grad_norm': '2.618', 'learning_rate': '1.449e-07', 'epoch': '5.963'}                        
+{'eval_loss': '2.152', 'eval_accuracy': '0.5678', 'eval_balanced_accuracy': '0.3758', 'eval_macro_precision': '0.2896', 'eval_macro_recall': '0.3758', 'eval_macro_f1': '0.3174', 'eval_weighted_f1': '0.5715', 'eval_runtime': '0.8536', 'eval_samples_per_second': '647.8', 'eval_steps_per_second': '162.8', 'epoch': '6'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.38it/s]
+{'train_runtime': '215.3', 'train_samples_per_second': '71.73', 'train_steps_per_second': '4.486', 'train_loss':'1.027', 'epoch': '6'}
+100%|█████████████████████████████████████████████████████████████████████████| 966/966 [03:35<00:00,  4.48it/s]
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:00<00:00, 167.76it/s]
+
+WEIGHTED DISTILBERT VALIDATION METRICS
+eval_loss: 2.1519
+eval_accuracy: 0.5678
+eval_balanced_accuracy: 0.3758
+eval_macro_precision: 0.2896
+eval_macro_recall: 0.3758
+eval_macro_f1: 0.3174
+eval_weighted_f1: 0.5715
+eval_runtime: 0.8353
+eval_samples_per_second: 662.0570
+eval_steps_per_second: 166.4120
+epoch: 6.0000
+100%|████████████████████████████████████████████████████████████████████████| 139/139 [00:00<00:00, 165.21it/s]
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.23it/s]
+
+Saved model: /home/dhrubo_roy/Unofficial Thesis/promise_advanced_models_phase_4/outputs/models/05_extended_weighted_distilbert/best_model
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/06_analyze_transformer_errors.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/06_analyze_transformer_errors.py
+
+EXTENDED DISTILBERT ERROR ANALYSIS
+=================================================================
+
+PREDICTION DISTRIBUTION
+PredictedLabel
+F     283
+US     75
+SE     51
+PE     43
+O      43
+L      17
+A      14
+SC     10
+LF      9
+MN      8
+
+PER-CLASS SUMMARY
+Class  Total  Correct   Recall  Projects
+    F    340      228 0.670588        14
+    A     11        9 0.818182         6
+    L      9        4 0.444444         3
+   LF     12        2 0.166667         6
+   MN      9        1 0.111111         5
+    O     25       12 0.480000         4
+   PE     25       15 0.600000         8
+   SC     16        1 0.062500         2
+   SE     39       25 0.641026        10
+   US     33       17 0.515152        10
+   FT     10        0 0.000000         3
+   PO     24        0 0.000000         1
+
+ACTUAL FT: PREDICTED LABELS
+PredictedLabel
+F     4
+A     2
+PE    2
+O     2
+
+FT VALIDATION PROJECTS
+ProjectID
+78    7
+6     2
+38    1
+
+ACTUAL PO: PREDICTED LABELS
+PredictedLabel
+PE    10
+F      6
+O      5
+SC     1
+SE     1
+L      1
+
+PO VALIDATION PROJECTS
+ProjectID
+52    24
+
+PROJECT PERFORMANCE
+ProjectID  Records  Correct  Accuracy
+       77       95       55  0.578947
+        6       74       40  0.540541
+        4       55       38  0.690909
+       61       50       37  0.740000
+       60       36       17  0.472222
+       83       32       20  0.625000
+       38       27       15  0.555556
+       75       26        5  0.192308
+       79       26       21  0.807692
+       52       26        1  0.038462
+       78       23       10  0.434783
+       42       16       12  0.750000
+       11       13        7  0.538462
+       30       12       10  0.833333
+       15       12        5  0.416667
+
+Diagnostic files saved.
+No test data accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/07_train_weighted_roberta.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/07_train_weighted_roberta.py
+
+PHASE 4: WEIGHTED ROBERTA
+============================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Training records: 2574
+Validation records: 553
+
+TRAINING CLASS WEIGHTS
+  F: count=1583, weight=0.5000
+  A: count=  49, weight=2.6238
+  L: count= 165, weight=1.4298
+ LF: count=  67, weight=2.2438
+ MN: count=  55, weight=2.4765
+  O: count= 111, weight=1.7433
+ PE: count= 113, weight=1.7278
+ SC: count=  70, weight=2.1952
+ SE: count= 163, weight=1.4386
+ US: count= 136, weight=1.5749
+ FT: count=  20, weight=3.0000
+ PO: count=  42, weight=2.8340
+config.json: 100%|█████████████████████████████████████████████████████████████| 481/481 [00:00<00:00, 2.23MB/s]
+tokenizer_config.json: 100%|██████████████████████████████████████████████████| 25.0/25.0 [00:00<00:00, 137kB/s]
+vocab.json: 100%|████████████████████████████████████████████████████████████| 899k/899k [00:00<00:00, 2.19MB/s]
+merges.txt: 100%|████████████████████████████████████████████████████████████| 456k/456k [00:00<00:00, 1.72MB/s]
+tokenizer.json: 100%|██████████████████████████████████████████████████████| 1.36M/1.36M [00:01<00:00, 1.20MB/s]
+model.safetensors: downloading bytes: ██████████████████████████████████████████████████████|  335MB, 1.77MB/s  
+model.safetensors: reconstructing file: 100%|██████████████████████████████████████|  499MB /  499MB, 4.87MB/s  
+Loading weights: 100%|██████████████████████████████████████████████████████| 197/197 [00:00<00:00, 4455.26it/s]
+[transformers] RobertaForSequenceClassification LOAD REPORT from: roberta-base
+Key                        | Status     | 
+---------------------------+------------+-
+lm_head.layer_norm.weight  | UNEXPECTED | 
+lm_head.dense.weight       | UNEXPECTED | 
+lm_head.bias               | UNEXPECTED | 
+lm_head.dense.bias         | UNEXPECTED | 
+lm_head.layer_norm.bias    | UNEXPECTED | 
+classifier.dense.weight    | MISSING    | 
+classifier.out_proj.bias   | MISSING    | 
+classifier.dense.bias      | MISSING    | 
+classifier.out_proj.weight | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Beginning weighted training...
+{'loss': '2.345', 'grad_norm': '5.107', 'learning_rate': '1.941e-05', 'epoch': '0.1243'}                        
+{'loss': '2.133', 'grad_norm': '7.293', 'learning_rate': '1.879e-05', 'epoch': '0.2486'}                        
+{'loss': '2.234', 'grad_norm': '10.35', 'learning_rate': '1.817e-05', 'epoch': '0.373'}                         
+{'loss': '1.92', 'grad_norm': '13.39', 'learning_rate': '1.755e-05', 'epoch': '0.4973'}                         
+{'loss': '1.911', 'grad_norm': '11.85', 'learning_rate': '1.693e-05', 'epoch': '0.6216'}                        
+{'loss': '1.884', 'grad_norm': '19.72', 'learning_rate': '1.63e-05', 'epoch': '0.7459'}                         
+{'loss': '1.51', 'grad_norm': '14.43', 'learning_rate': '1.568e-05', 'epoch': '0.8702'}                         
+{'loss': '1.621', 'grad_norm': '13.21', 'learning_rate': '1.506e-05', 'epoch': '0.9946'}                        
+{'eval_loss': '2.001', 'eval_accuracy': '0.5425', 'eval_balanced_accuracy': '0.3415', 'eval_macro_precision': '0.252', 'eval_macro_recall': '0.3415', 'eval_macro_f1': '0.2642', 'eval_weighted_f1': '0.5503', 'eval_runtime': '1.492', 'eval_samples_per_second': '370.5', 'eval_steps_per_second': '93.13', 'epoch': '1'}
+Writing model shards: 100%|███████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.62it/s]
+{'loss': '1.427', 'grad_norm': '12.85', 'learning_rate': '1.444e-05', 'epoch': '1.118'}                         
+{'loss': '1.322', 'grad_norm': '18.14', 'learning_rate': '1.382e-05', 'epoch': '1.242'}                                           
+{'loss': '1.399', 'grad_norm': '40.75', 'learning_rate': '1.32e-05', 'epoch': '1.367'}                                            
+{'loss': '1.374', 'grad_norm': '29.31', 'learning_rate': '1.258e-05', 'epoch': '1.491'}                                           
+{'loss': '1.136', 'grad_norm': '28.2', 'learning_rate': '1.196e-05', 'epoch': '1.615'}                                            
+{'loss': '0.9249', 'grad_norm': '40.24', 'learning_rate': '1.134e-05', 'epoch': '1.74'}                                           
+{'loss': '1.047', 'grad_norm': '15.69', 'learning_rate': '1.071e-05', 'epoch': '1.864'}                                           
+{'loss': '1.068', 'grad_norm': '17.31', 'learning_rate': '1.009e-05', 'epoch': '1.988'}                                           
+{'eval_loss': '2.028', 'eval_accuracy': '0.5389', 'eval_balanced_accuracy': '0.3499', 'eval_macro_precision': '0.2582', 'eval_macro_recall': '0.3499', 'eval_macro_f1': '0.2811', 'eval_weighted_f1': '0.5527', 'eval_runtime': '1.458', 'eval_samples_per_second': '379.2', 'eval_steps_per_second': '95.31', 'epoch': '2'}
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.78it/s]
+{'loss': '1.057', 'grad_norm': '13.75', 'learning_rate': '9.472e-06', 'epoch': '2.112'}                                           
+{'loss': '0.8636', 'grad_norm': '31.73', 'learning_rate': '8.851e-06', 'epoch': '2.236'}                                          
+{'loss': '0.7158', 'grad_norm': '17.88', 'learning_rate': '8.23e-06', 'epoch': '2.361'}                                           
+{'loss': '0.8146', 'grad_norm': '21.54', 'learning_rate': '7.609e-06', 'epoch': '2.485'}                                          
+{'loss': '0.8014', 'grad_norm': '18.78', 'learning_rate': '6.988e-06', 'epoch': '2.609'}                                          
+{'loss': '0.8381', 'grad_norm': '12.36', 'learning_rate': '6.366e-06', 'epoch': '2.733'}                                          
+{'loss': '0.7387', 'grad_norm': '10.65', 'learning_rate': '5.745e-06', 'epoch': '2.858'}                                          
+{'loss': '0.6752', 'grad_norm': '25.53', 'learning_rate': '5.124e-06', 'epoch': '2.982'}                                          
+{'eval_loss': '2.008', 'eval_accuracy': '0.5244', 'eval_balanced_accuracy': '0.3376', 'eval_macro_precision': '0.2882', 'eval_macro_recall': '0.3376', 'eval_macro_f1': '0.2966', 'eval_weighted_f1': '0.5514', 'eval_runtime': '1.46', 'eval_samples_per_second': '378.8', 'eval_steps_per_second': '95.22', 'epoch': '3'}
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.82it/s]
+{'loss': '0.6858', 'grad_norm': '31.57', 'learning_rate': '4.503e-06', 'epoch': '3.106'}                                          
+{'loss': '0.6303', 'grad_norm': '20.79', 'learning_rate': '3.882e-06', 'epoch': '3.23'}                                           
+{'loss': '0.6913', 'grad_norm': '23.39', 'learning_rate': '3.261e-06', 'epoch': '3.354'}                                          
+{'loss': '0.6443', 'grad_norm': '15.55', 'learning_rate': '2.64e-06', 'epoch': '3.479'}                                           
+{'loss': '0.5013', 'grad_norm': '23.11', 'learning_rate': '2.019e-06', 'epoch': '3.603'}                                          
+{'loss': '0.58', 'grad_norm': '12.41', 'learning_rate': '1.398e-06', 'epoch': '3.727'}                                            
+{'loss': '0.5441', 'grad_norm': '30.79', 'learning_rate': '7.764e-07', 'epoch': '3.852'}                                          
+{'loss': '0.6206', 'grad_norm': '17.07', 'learning_rate': '1.553e-07', 'epoch': '3.976'}                                          
+{'eval_loss': '2.105', 'eval_accuracy': '0.5353', 'eval_balanced_accuracy': '0.3382', 'eval_macro_precision': '0.2835', 'eval_macro_recall': '0.3382', 'eval_macro_f1': '0.2937', 'eval_weighted_f1': '0.5559', 'eval_runtime': '1.408', 'eval_samples_per_second': '392.8', 'eval_steps_per_second': '98.74', 'epoch': '4'}
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.30it/s]
+{'train_runtime': '468.8', 'train_samples_per_second': '21.96', 'train_steps_per_second': '1.374', 'train_loss': '1.143', 'epoch':'4'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 644/644 [07:49<00:00,  1.37it/s]
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 139/139 [00:01<00:00, 97.93it/s]
+
+WEIGHTED ROBERTA VALIDATION METRICS
+eval_loss: 2.0085
+eval_accuracy: 0.5244
+eval_balanced_accuracy: 0.3376
+eval_macro_precision: 0.2882
+eval_macro_recall: 0.3376
+eval_macro_f1: 0.2966
+eval_weighted_f1: 0.5514
+eval_runtime: 1.4318
+eval_samples_per_second: 386.2360
+eval_steps_per_second: 97.0830
+epoch: 4.0000
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 139/139 [00:01<00:00, 99.85it/s]
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.11it/s]
+
+Saved model: /home/dhrubo_roy/Unofficial Thesis/promise_advanced_models_phase_4/outputs/models/07_weighted_roberta/best_model
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/08_model_complementarity.py
+-------------------------------------------------------------------------------------
+
+MODEL COMPLEMENTARITY ANALYSIS
+=======================================================
+Both correct: 253
+Only DistilBERT correct: 61
+Only RoBERTa correct: 37
+Both wrong: 202
+
+Total records: 553
+Prediction disagreements: 161
+Oracle accuracy upper bound: 0.6347
+
+Saved: outputs/tables/08_model_complementarity.csv
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/09_three_model_complementarity.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/09_three_model_complementarity.py
+Logistic Regression using NormalizedText: accuracy=0.669078
+Phase 3 validation accuracy verified.
+
+THREE-MODEL COMPLEMENTARITY ANALYSIS
+=================================================================
+LR           Accuracy: 0.6691 Macro-F1: 0.3894
+DistilBERT   Accuracy: 0.5678 Macro-F1: 0.3174
+RoBERTa      Accuracy: 0.5244 Macro-F1: 0.2966
+
+CORRECTNESS OVERLAP
+-----------------------------------------------------------------
+All three correct                  :  231
+Only LR correct                    :   76
+Only DistilBERT correct            :   21
+Only RoBERTa correct               :   14
+LR + DistilBERT correct            :   40
+LR + RoBERTa correct               :   23
+DistilBERT + RoBERTa correct       :   22
+All three wrong                    :  126
+
+ORACLE ANALYSIS
+-----------------------------------------------------------------
+Records: 553
+At least one model correct: 427
+All models wrong: 126
+Oracle accuracy upper bound: 0.7722
+
+DIFFICULT CLASS ANALYSIS
+-----------------------------------------------------------------
+FT: total=10, LR=1, DistilBERT=0, RoBERTa=0
+PO: total=24, LR=0, DistilBERT=0, RoBERTa=2
+SC: total=16, LR=2, DistilBERT=1, RoBERTa=0
+MN: total=9, LR=1, DistilBERT=1, RoBERTa=0
+LF: total=12, LR=3, DistilBERT=2, RoBERTa=3
+
+Results saved successfully.
+No model retraining performed.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/10_three_model_majority_voting.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/10_three_model_majority_voting.py
+
+EXPERIMENT 10: THREE-MODEL MAJORITY VOTING
+===========================================================================
+              Model  accuracy  balanced_accuracy  macro_f1  weighted_f1
+Logistic Regression    0.6691             0.4131    0.3894       0.6505
+         DistilBERT    0.5678             0.3758    0.3174       0.5715
+            RoBERTa    0.5244             0.3376    0.2966       0.5514
+    Majority Voting    0.6166             0.3829    0.3449       0.6092
+
+All-three-disagree cases: 52
+
+ENSEMBLE PER-CLASS REPORT
+              precision    recall  f1-score   support
+
+           F       0.81      0.74      0.78       340
+           A       0.69      0.82      0.75        11
+           L       0.25      0.33      0.29         9
+          LF       0.27      0.25      0.26        12
+          MN       0.00      0.00      0.00         9
+           O       0.28      0.44      0.34        25
+          PE       0.42      0.60      0.49        25
+          SC       0.17      0.06      0.09        16
+          SE       0.48      0.64      0.55        39
+          US       0.31      0.61      0.41        33
+          FT       1.00      0.10      0.18        10
+          PO       0.00      0.00      0.00        24
+
+    accuracy                           0.62       553
+   macro avg       0.39      0.38      0.34       553
+weighted avg       0.63      0.62      0.61       553
+
+
+Results saved successfully.
+No test partition accessed.python scripts/10_three_model_majority_voting.py
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/11_analyze_voting_errors.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/11_analyze_voting_errors.py
+
+EXPERIMENT 11: VOTING ERROR ANALYSIS
+============================================================
+Predictions changed from LR: 99
+Changes that corrected LR: 22
+Changes that damaged LR: 51
+Changes where both were wrong: 26
+
+NET CORRECT-PREDICTION CHANGE: -29
+
+CHANGES BY ACTUAL CLASS
+_class_  Changed  Improved  Damaged  NetGain
+      A        1         1        0        1
+      F       55        15       35      -20
+     FT        1         0        0        0
+      L        2         1        0        1
+     LF        1         0        0        0
+     MN        3         0        1       -1
+      O        8         1        7       -6
+     PE        5         1        2       -1
+     PO        9         0        0        0
+     SC        5         0        1       -1
+     SE        6         2        4       -2
+     US        3         1        1        0
+
+Analysis completed.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/12_shared_error_analysis.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/12_shared_error_analysis.py
+
+EXPERIMENT 12: SHARED ERROR ANALYSIS
+=================================================================
+Total validation records: 553
+All three models wrong: 126
+
+SHARED ERRORS BY TRUE CLASS
+Class  SharedErrors
+    F            36
+   PO            22
+   SC            14
+   FT             9
+   US             8
+   LF             8
+   MN             7
+   PE             7
+    L             5
+   SE             5
+    O             3
+    A             2
+
+SHARED ERRORS BY PROJECT
+ProjectID  SharedErrors  Total  SharedErrorRate
+       52            23     26         0.884615
+        6            19     74         0.256757
+       60            18     36         0.500000
+       78             9     23         0.391304
+       75             7     26         0.269231
+        4             7     55         0.127273
+       25             5      5         1.000000
+       83             5     32         0.156250
+       61             5     50         0.100000
+       77             5     95         0.052632
+       15             4     12         0.333333
+       79             4     26         0.153846
+       38             4     27         0.148148
+       11             3     13         0.230769
+       42             3     16         0.187500
+
+SAMPLE SHARED ERRORS
+
+Record: 148
+Project: 4
+Actual: L
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: All actions that modify an existing dispute case must be recorded in the case history.
+
+Record: 174
+Project: 4
+Actual: L
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: The Disputes application must maintain a detailed history of every action that a user takes on a dispute case.  This ensuresa complete audit trail if questions arise later on with regard to a particular dispute case.
+
+Record: 180
+Project: 4
+Actual: US
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: The list of dispute cases that are displayed after a search is performed must be color coded for easy identification of dispute cases based upon the dispute case status.
+
+Record: 189
+Project: 4
+Actual: US
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: 100% of cardmember services representatives shall be able to successfully create a dispute case on the first encounter aftercompleting the training course.
+
+Record: 192
+Project: 4
+Actual: O
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: The Disputes application shall interface with the Letters application.  This will allow the Disputes application to request letters as part of the dispute initiation and dispute follow up process. All letter requests must be sent to the Print Letter Utility application.
+
+Record: 197
+Project: 4
+Actual: SE
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user’s access level. The report will be reviewed for auditing purposes.
+
+Record: 198
+Project: 4
+Actual: SE
+LR: F
+DistilBERT: F
+RoBERTa: F
+Text: All authorized users  once authenticated must be able to logon to the Disputes System
+
+Record: 276
+Project: 6
+Actual: F
+LR: O
+DistilBERT: O
+RoBERTa: US
+Text: The product shall update existing conference rooms.
+
+Record: 284
+Project: 6
+Actual: SC
+LR: US
+DistilBERT: US
+RoBERTa: US
+Text: The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each targetmarket country will find that the language of the product is acceptable.
+
+Record: 285
+Project: 6
+Actual: SE
+LR: MN
+DistilBERT: US
+RoBERTa: MN
+Text: The product shall have the ability to receive automatic software updates as new threats emerge. 100% of customers will be able to receive automatic software updates transmitted to the installed product.
+
+Files saved successfully.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/13_cross_project_similarity.py
+-------------------------------------------------------------------------------------
+
+EXPERIMENT 13: CROSS-PROJECT SIMILARITY
+=================================================================
+
+CLASS: PO
+Validation requirements: 24
+Nearest example has matching label: 0
+Mean nearest similarity: 0.1559
+Mean same-class similarity: 0.0703
+
+Nearest training labels:
+NearestTrainingClass
+F     10
+PE     4
+SE     4
+O      2
+A      1
+MN     1
+FT     1
+L      1
+
+CLASS: FT
+Validation requirements: 10
+Nearest example has matching label: 1
+Mean nearest similarity: 0.2253
+Mean same-class similarity: 0.0843
+
+Nearest training labels:
+NearestTrainingClass
+O     5
+F     2
+A     1
+SE    1
+FT    1
+
+CLASS: SC
+Validation requirements: 16
+Nearest example has matching label: 2
+Mean nearest similarity: 0.2117
+Mean same-class similarity: 0.124
+
+Nearest training labels:
+NearestTrainingClass
+F     7
+US    2
+SC    2
+MN    1
+PO    1
+O     1
+SE    1
+PE    1
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_advanced_models_phase_4/outputs/tables/13_cross_project_similarity.csv
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/14_group_aware_distilbert_cv.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/14_group_aware_distilbert_cv.py
+
+PHASE 4: GROUP-AWARE DISTILBERT CV
+=================================================================
+GPU: NVIDIA GeForce RTX 4050 Laptop GPU
+Development records: 3127
+Connected groups: 66
+Classes: 12
+
+=================================================================
+FOLD 1 / 3
+=================================================================
+Training records: 2159
+Held-out records: 968
+
+Class weights:
+  F: 0.5000
+  A: 2.6333
+  L: 1.2966
+ LF: 2.1682
+ MN: 2.8992
+  O: 1.7555
+ PE: 1.6253
+ SC: 1.9361
+ SE: 1.4126
+ US: 1.6026
+ FT: 3.0000
+ PO: 2.6010
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 100/100 [00:00<00:00, 3939.83it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Training...
+{'loss': '2.268', 'grad_norm': '5.499', 'learning_rate': '1.879e-05', 'epoch': '0.3704'}                                          
+{'loss': '2.158', 'grad_norm': '6.102', 'learning_rate': '1.756e-05', 'epoch': '0.7407'}                                          
+{'loss': '1.765', 'grad_norm': '6.638', 'learning_rate': '1.632e-05', 'epoch': '1.111'}                                           
+{'loss': '1.54', 'grad_norm': '5.967', 'learning_rate': '1.509e-05', 'epoch': '1.481'}                                            
+{'loss': '1.391', 'grad_norm': '7.755', 'learning_rate': '1.385e-05', 'epoch': '1.852'}                                           
+{'loss': '1.159', 'grad_norm': '6.057', 'learning_rate': '1.262e-05', 'epoch': '2.222'}                                           
+{'loss': '0.9776', 'grad_norm': '7.712', 'learning_rate': '1.138e-05', 'epoch': '2.593'}                                          
+{'loss': '0.9741', 'grad_norm': '6.799', 'learning_rate': '1.015e-05', 'epoch': '2.963'}                                          
+{'loss': '0.824', 'grad_norm': '8.327', 'learning_rate': '8.914e-06', 'epoch': '3.333'}                                           
+{'loss': '0.7092', 'grad_norm': '7.332', 'learning_rate': '7.679e-06', 'epoch': '3.704'}                                          
+{'loss': '0.6249', 'grad_norm': '3.068', 'learning_rate': '6.444e-06', 'epoch': '4.074'}                                          
+{'loss': '0.5969', 'grad_norm': '7.837', 'learning_rate': '5.21e-06', 'epoch': '4.444'}                                           
+{'loss': '0.5116', 'grad_norm': '6.737', 'learning_rate': '3.975e-06', 'epoch': '4.815'}                                          
+{'loss': '0.4939', 'grad_norm': '6.089', 'learning_rate': '2.741e-06', 'epoch': '5.185'}                                          
+{'loss': '0.4552', 'grad_norm': '3.031', 'learning_rate': '1.506e-06', 'epoch': '5.556'}                                          
+{'loss': '0.4505', 'grad_norm': '5.283', 'learning_rate': '2.716e-07', 'epoch': '5.926'}                                          
+{'train_runtime': '157.6', 'train_samples_per_second': '82.21', 'train_steps_per_second': '5.14', 'train_loss': '1.049', 'epoch': '6'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 810/810 [02:37<00:00,  5.14it/s]
+
+Evaluating held-out fold...
+100%|██████████████████████████████████████████████████████████████████████████████████████████| 242/242 [00:01<00:00, 193.08it/s]
+
+FOLD RESULTS
+accuracy: 0.6302
+balanced_accuracy: 0.2771
+macro_precision: 0.2083
+macro_recall: 0.2771
+macro_f1: 0.2291
+weighted_f1: 0.6052
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.16it/s]
+
+=================================================================
+FOLD 2 / 3
+=================================================================
+Training records: 2024
+Held-out records: 1103
+
+Class weights:
+  F: 0.5000
+  A: 2.6325
+  L: 3.0000
+ LF: 2.6002
+ MN: 2.4285
+  O: 1.7358
+ PE: 1.7082
+ SC: 1.9354
+ SE: 1.4122
+ US: 1.3779
+ FT: 3.0000
+ PO: 2.9903
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 100/100 [00:00<00:00, 4431.76it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Training...
+{'loss': '2.283', 'grad_norm': '4.049', 'learning_rate': '1.871e-05', 'epoch': '0.3953'}                                          
+{'loss': '2.03', 'grad_norm': '5.715', 'learning_rate': '1.74e-05', 'epoch': '0.7905'}                                            
+{'loss': '1.918', 'grad_norm': '6.196', 'learning_rate': '1.609e-05', 'epoch': '1.182'}                                           
+{'loss': '1.714', 'grad_norm': '5.372', 'learning_rate': '1.478e-05', 'epoch': '1.577'}                                           
+{'loss': '1.677', 'grad_norm': '6.8', 'learning_rate': '1.346e-05', 'epoch': '1.972'}                                             
+{'loss': '1.426', 'grad_norm': '6.791', 'learning_rate': '1.215e-05', 'epoch': '2.364'}                                           
+{'loss': '1.244', 'grad_norm': '6.89', 'learning_rate': '1.084e-05', 'epoch': '2.759'}                                            
+{'loss': '1.034', 'grad_norm': '8.149', 'learning_rate': '9.528e-06', 'epoch': '3.15'}                                            
+{'loss': '1.019', 'grad_norm': '12.88', 'learning_rate': '8.215e-06', 'epoch': '3.545'}                                           
+{'loss': '1.033', 'grad_norm': '7.824', 'learning_rate': '6.903e-06', 'epoch': '3.941'}                                           
+{'loss': '0.8205', 'grad_norm': '5.238', 'learning_rate': '5.591e-06', 'epoch': '4.332'}                                          
+{'loss': '0.7747', 'grad_norm': '4.927', 'learning_rate': '4.278e-06', 'epoch': '4.727'}                                          
+{'loss': '0.8117', 'grad_norm': '9.214', 'learning_rate': '2.966e-06', 'epoch': '5.119'}                                          
+{'loss': '0.716', 'grad_norm': '11.56', 'learning_rate': '1.654e-06', 'epoch': '5.514'}                                           
+{'loss': '0.6724', 'grad_norm': '7.243', 'learning_rate': '3.412e-07', 'epoch': '5.909'}                                          
+{'train_runtime': '147', 'train_samples_per_second': '82.63', 'train_steps_per_second': '5.185', 'train_loss': '1.269', 'epoch': '6'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 762/762 [02:26<00:00,  5.18it/s]
+
+Evaluating held-out fold...
+100%|██████████████████████████████████████████████████████████████████████████████████████████| 276/276 [00:01<00:00, 190.09it/s]
+
+FOLD RESULTS
+accuracy: 0.6020
+balanced_accuracy: 0.2875
+macro_precision: 0.2546
+macro_recall: 0.2875
+macro_f1: 0.2474
+weighted_f1: 0.5345
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.37it/s]
+
+=================================================================
+FOLD 3 / 3
+=================================================================
+Training records: 2071
+Held-out records: 1056
+
+Class weights:
+  F: 0.5000
+  A: 2.6134
+  L: 1.2867
+ LF: 2.1703
+ MN: 2.3857
+  O: 1.7423
+ PE: 1.8959
+ SC: 3.0000
+ SE: 1.4725
+ US: 1.8034
+ FT: 3.0000
+ PO: 2.1338
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 100/100 [00:00<00:00, 9701.40it/s]
+[transformers] DistilBertForSequenceClassification LOAD REPORT from: distilbert-base-uncased
+Key                     | Status     | 
+------------------------+------------+-
+vocab_layer_norm.weight | UNEXPECTED | 
+vocab_layer_norm.bias   | UNEXPECTED | 
+vocab_projector.bias    | UNEXPECTED | 
+vocab_transform.weight  | UNEXPECTED | 
+vocab_transform.bias    | UNEXPECTED | 
+classifier.weight       | MISSING    | 
+pre_classifier.bias     | MISSING    | 
+pre_classifier.weight   | MISSING    | 
+classifier.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:   can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:      those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+
+Training...
+{'loss': '2.296', 'grad_norm': '3.542', 'learning_rate': '1.874e-05', 'epoch': '0.3861'}                                          
+{'loss': '2.089', 'grad_norm': '5.365', 'learning_rate': '1.746e-05', 'epoch': '0.7722'}                                          
+{'loss': '1.747', 'grad_norm': '3.305', 'learning_rate': '1.618e-05', 'epoch': '1.154'}                                           
+{'loss': '1.654', 'grad_norm': '8.615', 'learning_rate': '1.49e-05', 'epoch': '1.541'}                                            
+{'loss': '1.373', 'grad_norm': '6.004', 'learning_rate': '1.362e-05', 'epoch': '1.927'}                                           
+{'loss': '1.087', 'grad_norm': '5.783', 'learning_rate': '1.233e-05', 'epoch': '2.309'}                                           
+{'loss': '1.095', 'grad_norm': '9.065', 'learning_rate': '1.105e-05', 'epoch': '2.695'}                                           
+{'loss': '1.007', 'grad_norm': '6.455', 'learning_rate': '9.769e-06', 'epoch': '3.077'}                                           
+{'loss': '0.7738', 'grad_norm': '9.623', 'learning_rate': '8.487e-06', 'epoch': '3.463'}                                          
+{'loss': '0.864', 'grad_norm': '8.076', 'learning_rate': '7.205e-06', 'epoch': '3.849'}                                           
+{'loss': '0.6628', 'grad_norm': '13.76', 'learning_rate': '5.923e-06', 'epoch': '4.232'}                                          
+{'loss': '0.6946', 'grad_norm': '12.43', 'learning_rate': '4.641e-06', 'epoch': '4.618'}                                          
+{'loss': '0.6639', 'grad_norm': '0.8233', 'learning_rate': '3.359e-06', 'epoch': '5'}                                             
+{'loss': '0.6054', 'grad_norm': '3.09', 'learning_rate': '2.077e-06', 'epoch': '5.386'}                                           
+{'loss': '0.5191', 'grad_norm': '5.928', 'learning_rate': '7.949e-07', 'epoch': '5.772'}                                          
+{'train_runtime': '167.9', 'train_samples_per_second': '74.02', 'train_steps_per_second': '4.646', 'train_loss': '1.12', 'epoch': '6'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████| 780/780 [02:47<00:00,  4.65it/s]
+
+Evaluating held-out fold...
+100%|██████████████████████████████████████████████████████████████████████████████████████████| 264/264 [00:01<00:00, 180.58it/s]
+
+FOLD RESULTS
+accuracy: 0.6193
+balanced_accuracy: 0.2732
+macro_precision: 0.2502
+macro_recall: 0.2732
+macro_f1: 0.2562
+weighted_f1: 0.6035
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.79it/s]
+
+THREE-FOLD CROSS-VALIDATION SUMMARY
+=================================================================
+accuracy               mean=0.6172  std=0.0142
+balanced_accuracy      mean=0.2793  std=0.0074
+macro_precision        mean=0.2377  std=0.0256
+macro_recall           mean=0.2793  std=0.0074
+macro_f1               mean=0.2442  std=0.0138
+weighted_f1            mean=0.5811  std=0.0404
+
+OUT-OF-FOLD AGGREGATE
+OOF accuracy: 0.6166
+OOF macro-F1: 0.2462
+OOF balanced accuracy: 0.2584
+
+Experiment 14 completed.
+Original test partition was not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/15_group_cv_model_complementarity.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/15_group_cv_model_complementarity.py
+
+EXPERIMENT 15: GROUP-AWARE MODEL COMPARISON
+=================================================================
+Development records: 3127
+Connected groups: 66
+Cross-validation folds: 3
+
+FOLD 1
+Training records: 2159
+Held-out records: 968
+LR accuracy=0.6550 | macro-F1=0.2890
+
+FOLD 2
+Training records: 2024
+Held-out records: 1103
+LR accuracy=0.5848 | macro-F1=0.2359
+
+FOLD 3
+Training records: 2071
+Held-out records: 1056
+LR accuracy=0.6364 | macro-F1=0.3198
+
+=================================================================
+CROSS-VALIDATION MODEL COMPLEMENTARITY
+=================================================================
+Both correct                : 1691
+Only LR correct             : 260
+Only DistilBERT correct     : 237
+Both wrong                  : 939
+
+Prediction disagreements: 829
+At least one model correct: 2188
+Oracle accuracy upper bound: 0.6997
+
+OVERALL OUT-OF-FOLD METRICS
+Logistic Regression    Accuracy=0.6239 Macro-F1=0.2768 Balanced=0.2637
+Weighted DistilBERT    Accuracy=0.6166 Macro-F1=0.2462 Balanced=0.2584
+
+DIFFICULT CLASS COMPARISON
+PO  | total=66   | LR correct=0    | Distil correct=2   
+FT  | total=30   | LR correct=2    | Distil correct=0   
+SC  | total=86   | LR correct=2    | Distil correct=2   
+MN  | total=64   | LR correct=3    | Distil correct=2   
+LF  | total=79   | LR correct=11   | Distil correct=2   
+
+Experiment 15 completed successfully.
+Original test partition was not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/16_group_cv_error_analysis.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/16_group_cv_error_analysis.py
+
+EXPERIMENT 16: GROUP-AWARE ERROR ANALYSIS
+=================================================================
+
+ERRORS BY CLASS
+Actual  Total  BothWrong  LROnly  DistilOnly  SharedErrorRate
+    PO     66         64       0           2         0.969697
+    SC     86         83       1           1         0.965116
+     L    174        166       3           1         0.954023
+    MN     64         60       2           1         0.937500
+    FT     30         28       2           0         0.933333
+    LF     79         68       9           0         0.860759
+     O    136         87       9          20         0.639706
+    US    169         86      19          22         0.508876
+     A     60         29      11           5         0.483333
+    PE    138         64      10          18         0.463768
+    SE    202         55      13          29         0.272277
+     F   1923        149     181         138         0.077483
+
+TOP 15 PROJECTS BY SHARED ERRORS
+ProjectID_lr  Total  BothWrong  LROnly  DistilOnly  SharedErrorRate
+          82    243        153       8           3         0.629630
+          80     54         54       0           0         1.000000
+          49    118         53      16          14         0.449153
+          59     52         48       0           2         0.923077
+           8     92         45       5          11         0.489130
+          76     78         43       6          18         0.551282
+          86     45         39       0           0         0.866667
+          67    113         39       2           3         0.345133
+          58    101         34       5          18         0.336634
+          52     26         26       0           0         1.000000
+          60     36         22       0           2         0.611111
+          63    187         22      21          10         0.117647
+           6     74         19       8          10         0.256757
+          50     55         18       8           6         0.327273
+          74     16         16       0           0         1.000000
+
+ERRORS BY FOLD
+ Fold_lr  Total  BothWrong  LROnly  DistilOnly
+       1    968        265      93          69
+       2   1103        374      65          84
+       3   1056        300     102          84
+
+Experiment 16 completed.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/17_semantic_embedding_logistic_cv.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/17_semantic_embedding_logistic_cv.py
+
+EXPERIMENT 17: SEMANTIC EMBEDDING CLASSIFICATION
+=================================================================
+Development requirements: 3127
+Connected groups: 66
+Model: sentence-transformers/all-MiniLM-L6-v2
+Device: cuda
+config.json: 100%|███████████████████████████████████████████████████████████████████████████████| 612/612 [00:00<00:00, 2.79MB/s]
+tokenizer_config.json: 100%|█████████████████████████████████████████████████████████████████████| 350/350 [00:00<00:00, 2.02MB/s]
+vocab.txt: 100%|███████████████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 1.13MB/s]
+tokenizer.json: 100%|██████████████████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 2.04MB/s]
+special_tokens_map.json: 100%|████████████████████████████████████████████████████████████████████| 112/112 [00:00<00:00, 495kB/s]
+model.safetensors: downloading bytes: ████████████████████████████████████████████████████████████████████████| 85.0MB, 2.27MB/s  
+model.safetensors: reconstructing file: 100%|████████████████████████████████████████████████████████| 90.9MB / 90.9MB, 6.51MB/s  
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 8332.30it/s]
+
+Generating semantic embeddings...
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+Embedding shape: (3127, 384)
+
+FOLD 1
+Training: 2159
+Validation: 968
+Accuracy: 0.5775 | Macro-F1: 0.2668 | Balanced: 0.3232
+
+FOLD 2
+Training: 2024
+Validation: 1103
+Accuracy: 0.3626 | Macro-F1: 0.2289 | Balanced: 0.2944
+
+FOLD 3
+Training: 2071
+Validation: 1056
+Accuracy: 0.4697 | Macro-F1: 0.2714 | Balanced: 0.3476
+
+THREE-FOLD SUMMARY
+=================================================================
+accuracy             mean=0.4699 std=0.1074
+balanced_accuracy    mean=0.3217 std=0.0266
+macro_f1             mean=0.2557 std=0.0233
+weighted_f1          mean=0.5050 std=0.0944
+
+OUT-OF-FOLD AGGREGATE
+accuracy: 0.4653
+balanced_accuracy: 0.3035
+macro_f1: 0.2604
+weighted_f1: 0.5038
+
+Experiment 17 completed.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - python scripts/19_unweighted_semantic_embedding_cv.py
+-------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_advanced_models_phase_4$ python scripts/19_unweighted_semantic_embedding_cv.py
+
+EXPERIMENT 19: SEMANTIC EMBEDDING CLASSIFICATION
+=================================================================
+Development requirements: 3127
+Connected groups: 66
+Model: sentence-transformers/all-MiniLM-L6-v2
+Device: cuda
+Loading weights: 100%|████████████████████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 5647.45it/s]
+
+Generating semantic embeddings...
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+Embedding shape: (3127, 384)
+
+FOLD 1
+Training: 2159
+Validation: 968
+Accuracy: 0.6684 | Macro-F1: 0.2345 | Balanced: 0.2370
+
+FOLD 2
+Training: 2024
+Validation: 1103
+Accuracy: 0.5766 | Macro-F1: 0.2558 | Balanced: 0.2618
+
+FOLD 3
+Training: 2071
+Validation: 1056
+Accuracy: 0.6402 | Macro-F1: 0.2960 | Balanced: 0.2953
+
+THREE-FOLD SUMMARY
+=================================================================
+accuracy             mean=0.6284 std=0.0470
+balanced_accuracy    mean=0.2647 std=0.0293
+macro_f1             mean=0.2621 std=0.0312
+weighted_f1          mean=0.5869 std=0.0584
+
+OUT-OF-FOLD AGGREGATE
+accuracy: 0.6265
+balanced_accuracy: 0.2484
+macro_f1: 0.2619
+weighted_f1: 0.5875
+
+Experiment 19 completed.
+Original test partition not accessed.
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
+
+-------------------------------------------------------------------------------------
+        RUN - 
+-------------------------------------------------------------------------------------
+
