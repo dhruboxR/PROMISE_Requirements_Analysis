@@ -1,0 +1,554 @@
+--------------------------------------------------------------------------------
+        RUN - python scripts/01_verify_phase5_baseline.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/01_verify_phase5_baseline.py
+
+PHASE 5: EXPERIMENT 01
+BASELINE AND FOLD VERIFICATION
+=================================================================
+Development records: 3127
+Classes: 12
+Connected groups: 66
+Fold 1: train=2159, held_out=968
+Fold 2: train=2024, held_out=1103
+Fold 3: train=2071, held_out=1056
+
+Phase 4 fold alignment: VERIFIED
+
+PHASE 4 LOGISTIC REGRESSION BASELINE
+=================================================================
+accuracy            mean=0.6254 std=0.0364
+macro_f1            mean=0.2816 std=0.0424
+balanced_accuracy   mean=0.2827 std=0.0228
+weighted_f1         mean=0.5878 std=0.0590
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/tables/01_fixed_fold_assignments.csv
+Saved: outputs/reports/01_baseline_manifest.json
+
+EXPERIMENT 01 COMPLETED
+Original test partition was not accessed.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/02_hybrid_tfidf_minilm_cv.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/02_hybrid_tfidf_minilm_cv.py
+
+PHASE 5: EXPERIMENT 02
+HYBRID TF-IDF + MINILM
+=================================================================
+Requirements: 3127
+Connected groups: 66
+Classes: 12
+Phase 5 fold alignment: VERIFIED
+
+Embedding device: cuda
+Loading frozen MiniLM...
+Loading weights: 100%|███████████████████████████████████████████| 103/103 [00:00<00:00, 5608.89it/s]
+
+Generating embeddings...
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+
+=================================================================
+FOLD 1 / 3
+=================================================================
+Train: 2159
+Held out: 968
+TF-IDF baseline    Accuracy=0.6550 Macro-F1=0.2890 Balanced=0.2957
+Hybrid 0.5         Accuracy=0.6674 Macro-F1=0.2929 Balanced=0.3169
+Hybrid 1.0         Accuracy=0.6674 Macro-F1=0.3041 Balanced=0.3321
+
+=================================================================
+FOLD 2 / 3
+=================================================================
+Train: 2024
+Held out: 1103
+TF-IDF baseline    Accuracy=0.5848 Macro-F1=0.2359 Balanced=0.2563
+Hybrid 0.5         Accuracy=0.5884 Macro-F1=0.2700 Balanced=0.2851
+Hybrid 1.0         Accuracy=0.5748 Macro-F1=0.2754 Balanced=0.2883
+
+=================================================================
+FOLD 3 / 3
+=================================================================
+Train: 2071
+Held out: 1056
+TF-IDF baseline    Accuracy=0.6364 Macro-F1=0.3198 Balanced=0.2960
+Hybrid 0.5         Accuracy=0.6600 Macro-F1=0.3581 Balanced=0.3551
+Hybrid 1.0         Accuracy=0.6468 Macro-F1=0.3629 Balanced=0.3804
+
+THREE-FOLD COMPARISON
+=================================================================
+  Configuration  SemanticWeight  mean_accuracy  std_accuracy  mean_macro_f1  std_macro_f1  mean_balanced_accuracy  mean_weighted_f1
+     Hybrid 1.0             1.0         0.6296        0.0486         0.3141        0.0446                  0.3336            0.6059
+     Hybrid 0.5             0.5         0.6386        0.0436         0.3070        0.0457                  0.3190            0.6035
+TF-IDF baseline             0.0         0.6254        0.0364         0.2816        0.0424                  0.2827            0.5878
+
+Experiment 02 completed.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/03_hybrid_error_analysis.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/03_hybrid_error_analysis.py
+
+PHASE 5: EXPERIMENT 03
+HYBRID CLASS-LEVEL AND ERROR ANALYSIS
+=================================================================
+
+PER-CLASS F1 COMPARISON
+-----------------------------------------------------------------
+Class  TF-IDF baseline_F1  Hybrid 0.5_F1  Hybrid 1.0_F1  Hybrid1_F1_Gain
+    A              0.5049         0.6207         0.6379           0.1331
+   PE              0.4358         0.4692         0.5036           0.0678
+   PO              0.0000         0.0482         0.0667           0.0667
+    L              0.0617         0.0696         0.1250           0.0633
+   US              0.3742         0.4398         0.4217           0.0475
+   SE              0.5303         0.5877         0.5720           0.0417
+   LF              0.2178         0.2136         0.2435           0.0257
+   FT              0.1081         0.1000         0.1224           0.0143
+   MN              0.0522         0.0702         0.0650           0.0129
+    F              0.7835         0.7904         0.7892           0.0057
+   SC              0.0323         0.0163         0.0296          -0.0026
+    O              0.2214         0.2357         0.2013          -0.0200
+
+BASELINE VS HYBRID 1.0
+-----------------------------------------------------------------
+Both correct: 1792
+Corrected by hybrid: 171
+Damaged by hybrid: 159
+Both wrong: 1005
+Net correct gain: 12
+
+FOLD-LEVEL COMPARISON
+-----------------------------------------------------------------
+
+Fold 1:
+Baseline accuracy: 0.655
+Hybrid accuracy: 0.6674
+Corrected: 53
+Damaged: 41
+
+Fold 2:
+Baseline accuracy: 0.5848
+Hybrid accuracy: 0.5748
+Corrected: 46
+Damaged: 57
+
+Fold 3:
+Baseline accuracy: 0.6364
+Hybrid accuracy: 0.6468
+Corrected: 72
+Damaged: 61
+
+OOF PERFORMANCE CHECK
+-----------------------------------------------------------------
+TF-IDF baseline: accuracy=0.6239, macro-F1=0.2768, balanced=0.2637
+Hybrid 0.5: accuracy=0.6370, macro-F1=0.3051, balanced=0.2985
+Hybrid 1.0: accuracy=0.6278, macro-F1=0.3148, balanced=0.3127
+
+Experiment 03 completed.
+No model training or test access.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/04_difficult_class_analysis.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/04_difficult_class_analysis.py
+
+PHASE 5: EXPERIMENT 04
+DIFFICULT-CLASS ERROR INVESTIGATION
+=================================================================
+
+CLASS: O
+-----------------------------------------------------------------
+Actual requirements: 136
+Projects: 23
+Baseline correct: 29
+Hybrid correct: 30
+Corrected by hybrid: 5
+Damaged by hybrid: 4
+
+BaselinePrediction:
+BaselinePrediction
+F     70
+O     29
+MN     9
+PO     6
+PE     5
+US     5
+A      5
+SE     2
+
+HybridPrediction:
+HybridPrediction
+F     60
+O     30
+MN    12
+PO     7
+PE     7
+US     7
+A      4
+SC     3
+
+PROJECT-LEVEL PERFORMANCE:
+ProjectID  Records  BaselineCorrect  HybridCorrect Class  HybridRecall
+       56       24                1              2     O      0.083333
+       84       17                1              2     O      0.117647
+       74       16                0              0     O      0.000000
+        6       15               11             11     O      0.733333
+        5       10                3              3     O      0.300000
+        8        9                3              2     O      0.222222
+        4        6                1              0     O      0.000000
+       64        6                0              0     O      0.000000
+       69        6                0              0     O      0.000000
+       63        5                4              4     O      0.800000
+
+CLASS: SC
+-----------------------------------------------------------------
+Actual requirements: 86
+Projects: 9
+Baseline correct: 2
+Hybrid correct: 2
+Corrected by hybrid: 1
+Damaged by hybrid: 1
+
+BaselinePrediction:
+BaselinePrediction
+F     55
+O     11
+PE     8
+MN     6
+SC     2
+SE     2
+US     1
+L      1
+
+HybridPrediction:
+HybridPrediction
+F     52
+PE     8
+O      7
+MN     6
+US     4
+SE     4
+SC     2
+FT     1
+
+PROJECT-LEVEL PERFORMANCE:
+ProjectID  Records  BaselineCorrect  HybridCorrect Class  HybridRecall
+       80       54                0              0    SC      0.000000
+       60       12                0              0    SC      0.000000
+       58        4                0              0    SC      0.000000
+        6        4                2              1    SC      0.250000
+        8        4                0              0    SC      0.000000
+        5        3                0              1    SC      0.333333
+       59        3                0              0    SC      0.000000
+       12        1                0              0    SC      0.000000
+       48        1                0              0    SC      0.000000
+
+CLASS: PO
+-----------------------------------------------------------------
+Actual requirements: 66
+Projects: 7
+Baseline correct: 0
+Hybrid correct: 3
+Corrected by hybrid: 3
+Damaged by hybrid: 0
+
+BaselinePrediction:
+BaselinePrediction
+F     37
+O     10
+PE     5
+SE     4
+MN     3
+US     3
+SC     2
+L      1
+
+HybridPrediction:
+HybridPrediction
+F     27
+O     19
+PE    11
+SC     3
+PO     3
+US     1
+A      1
+SE     1
+
+PROJECT-LEVEL PERFORMANCE:
+ProjectID  Records  BaselineCorrect  HybridCorrect Class  HybridRecall
+       59       34                0              2    PO      0.058824
+       52       24                0              1    PO      0.041667
+       45        2                0              0    PO      0.000000
+       50        2                0              0    PO      0.000000
+       51        2                0              0    PO      0.000000
+       34        1                0              0    PO      0.000000
+       48        1                0              0    PO      0.000000
+
+Saved analysis tables.
+Experiment 04 completed.
+No model training or test access.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/05_minority_training_coverage.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/05_minority_training_coverage.py
+
+PHASE 5: EXPERIMENT 05
+MINORITY-CLASS TRAINING COVERAGE
+=================================================================
+
+FOLD 1
+-----------------------------------------------------------------
+
+Class O
+Training examples: 90
+Training projects: 15
+Validation examples: 46
+Validation projects: 8
+Top training projects:
+ProjectID
+56    24
+6     15
+5     10
+8      9
+64     6
+
+Class SC
+Training examples: 74
+Training projects: 8
+Validation examples: 12
+Validation projects: 1
+Top training projects:
+ProjectID
+80    54
+58     4
+6      4
+8      4
+59     3
+
+Class PO
+Training examples: 41
+Training projects: 5
+Validation examples: 25
+Validation projects: 2
+Top training projects:
+ProjectID
+59    34
+45     2
+50     2
+51     2
+48     1
+
+FOLD 2
+-----------------------------------------------------------------
+
+Class O
+Training examples: 92
+Training projects: 18
+Validation examples: 44
+Validation projects: 5
+Top training projects:
+ProjectID
+84    17
+74    16
+5     10
+8      9
+4      6
+
+Class SC
+Training examples: 74
+Training projects: 5
+Validation examples: 12
+Validation projects: 4
+Top training projects:
+ProjectID
+80    54
+60    12
+8      4
+5      3
+12     1
+
+Class PO
+Training examples: 31
+Training projects: 5
+Validation examples: 35
+Validation projects: 2
+Top training projects:
+ProjectID
+52    24
+45     2
+50     2
+51     2
+34     1
+
+FOLD 3
+-----------------------------------------------------------------
+
+Class O
+Training examples: 90
+Training projects: 13
+Validation examples: 46
+Validation projects: 10
+Top training projects:
+ProjectID
+56    24
+84    17
+74    16
+6     15
+4      6
+
+Class SC
+Training examples: 24
+Training projects: 5
+Validation examples: 62
+Validation projects: 4
+Top training projects:
+ProjectID
+60    12
+58     4
+6      4
+59     3
+48     1
+
+Class PO
+Training examples: 60
+Training projects: 4
+Validation examples: 6
+Validation projects: 3
+Top training projects:
+ProjectID
+59    34
+52    24
+34     1
+48     1
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/tables/05_minority_training_coverage.csv
+Experiment 05 completed.
+Original test partition not accessed.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/06_hybrid_class_weight_cv.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/06_hybrid_class_weight_cv.py
+
+PHASE 5: EXPERIMENT 06
+HYBRID CLASS-WEIGHT COMPARISON
+=================================================================
+Development records: 3127
+Connected groups: 66
+Fold assignments: VERIFIED
+
+Device: cuda
+Loading weights: 100%|███████████████████████████████| 103/103 [00:00<00:00, 5076.18it/s]
+Generating frozen MiniLM embeddings...
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+
+FOLD 1
+-----------------------------------------------------------------
+none       accuracy=0.6942 macro-F1=0.2772 balanced=0.2775
+tempered   accuracy=0.6890 macro-F1=0.3000 balanced=0.3099
+balanced   accuracy=0.6674 macro-F1=0.3041 balanced=0.3321
+
+FOLD 2
+-----------------------------------------------------------------
+none       accuracy=0.6174 macro-F1=0.2711 balanced=0.2548
+tempered   accuracy=0.6047 macro-F1=0.2766 balanced=0.2747
+balanced   accuracy=0.5748 macro-F1=0.2754 balanced=0.2883
+
+FOLD 3
+-----------------------------------------------------------------
+none       accuracy=0.6828 macro-F1=0.3464 balanced=0.3288
+tempered   accuracy=0.6714 macro-F1=0.3834 balanced=0.3747
+balanced   accuracy=0.6468 macro-F1=0.3629 balanced=0.3804
+
+Balanced configuration reproduction: VERIFIED
+
+THREE-FOLD SUMMARY
+=================================================================
+Configuration  mean_accuracy  mean_macro_f1  std_macro_f1  mean_balanced_accuracy  mean_weighted_f1  mean_recall_O  mean_recall_SC  mean_recall_PO
+     tempered         0.6551         0.3200        0.0561                  0.3198   0.6116         0.2292          0.0332          0.0229
+     balanced         0.6296         0.3141        0.0446                  0.3336   0.6059         0.2220          0.0332          0.0324
+         none         0.6648         0.2983        0.0418                  0.2870   0.6056         0.1993          0.0278          0.0133
+
+Experiment 06 completed.
+Original test partition not accessed.
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/07_class_weight_error_analysis.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/07_class_weight_error_analysis.py
+
+PHASE 5: EXPERIMENT 07
+CLASS-WEIGHT ERROR ANALYSIS
+=================================================================
+
+CONFIGURATION: none
+-----------------------------------------------------------------
+Accuracy: 0.6633
+Macro-F1: 0.2874
+Balanced accuracy: 0.2569
+
+CONFIGURATION: tempered
+-----------------------------------------------------------------
+Accuracy: 0.6533
+Macro-F1: 0.3114
+Balanced accuracy: 0.29
+
+CONFIGURATION: balanced
+-----------------------------------------------------------------
+Accuracy: 0.6278
+Macro-F1: 0.3148
+Balanced accuracy: 0.3127
+
+PER-CLASS F1 COMPARISON
+=================================================================
+Class  none_F1  tempered_F1  balanced_F1  Tempered_vs_Balanced_F1
+    F   0.8004       0.8010       0.7892                   0.0118
+    A   0.4545       0.5347       0.6379                  -0.1033
+    L   0.0849       0.0917       0.1250                  -0.0333
+   LF   0.1875       0.2243       0.2435                  -0.0192
+   MN   0.0465       0.0755       0.0650                   0.0104
+    O   0.2379       0.2403       0.2013                   0.0390
+   PE   0.4758       0.4962       0.5036                  -0.0074
+   SC   0.0177       0.0320       0.0296                   0.0024
+   SE   0.5959       0.5907       0.5720                   0.0187
+   US   0.4621       0.4482       0.4217                   0.0265
+   FT   0.0588       0.1538       0.1224                   0.0314
+   PO   0.0270       0.0488       0.0667                  -0.0179
+
+TEMPERED VS BALANCED
+=================================================================
+Both correct: 1922
+Correct only by tempered: 121
+Correct only by balanced: 41
+Both incorrect: 1043
+
+Experiment 07 completed.
+Original test partition not accessed.
+
+
