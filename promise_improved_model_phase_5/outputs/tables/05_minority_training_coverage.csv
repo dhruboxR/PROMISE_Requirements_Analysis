@@ -1,0 +1,10 @@
+Fold,Class,TrainExamples,TrainProjects,ValidationExamples,ValidationProjects
+1,O,90,15,46,8
+1,SC,74,8,12,1
+1,PO,41,5,25,2
+2,O,92,18,44,5
+2,SC,74,5,12,4
+2,PO,31,5,35,2
+3,O,90,13,46,10
+3,SC,24,5,62,4
+3,PO,60,4,6,3
