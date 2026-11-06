@@ -1,0 +1,52 @@
+{
+  "experiment": 6,
+  "feature_representation": "TF-IDF + frozen MiniLM",
+  "semantic_weight": 1.0,
+  "classifier": "Logistic Regression",
+  "C": 10.0,
+  "weight_modes": [
+    "none",
+    "tempered",
+    "balanced"
+  ],
+  "seed": 42,
+  "fold_count": 3,
+  "balanced_reproduction": "verified",
+  "original_test_accessed": false,
+  "development_results_are_exploratory": true,
+  "summary": [
+    {
+      "Configuration": "tempered",
+      "mean_accuracy": 0.6550551723865207,
+      "mean_macro_f1": 0.32003390467151266,
+      "std_macro_f1": 0.056146607927200956,
+      "mean_balanced_accuracy": 0.31976134583063914,
+      "mean_weighted_f1": 0.6116373552644054,
+      "mean_recall_O": 0.22924901185770752,
+      "mean_recall_SC": 0.033154121863799284,
+      "mean_recall_PO": 0.022857142857142857
+    },
+    {
+      "Configuration": "balanced",
+      "mean_accuracy": 0.629643895270183,
+      "mean_macro_f1": 0.3141222482760752,
+      "std_macro_f1": 0.044634784918798465,
+      "mean_balanced_accuracy": 0.3336002031366701,
+      "mean_weighted_f1": 0.6058562324589638,
+      "mean_recall_O": 0.22200263504611328,
+      "mean_recall_SC": 0.033154121863799284,
+      "mean_recall_PO": 0.03238095238095238
+    },
+    {
+      "Configuration": "none",
+      "mean_accuracy": 0.6647956997236854,
+      "mean_macro_f1": 0.29825308103221126,
+      "std_macro_f1": 0.04182931082921,
+      "mean_balanced_accuracy": 0.2870180337522416,
+      "mean_weighted_f1": 0.6056366276075303,
+      "mean_recall_O": 0.19927536231884058,
+      "mean_recall_SC": 0.027777777777777776,
+      "mean_recall_PO": 0.013333333333333334
+    }
+  ]
+}

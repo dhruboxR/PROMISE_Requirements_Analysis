@@ -1,0 +1,50 @@
+{
+  "phase": 5,
+  "experiment": 2,
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "embedding_dimensions": 384,
+  "embedding_max_length": 128,
+  "lexical_features": "word and character TF-IDF",
+  "classifier": "balanced Logistic Regression C=10",
+  "semantic_weights": [
+    0.5,
+    1.0
+  ],
+  "seed": 42,
+  "connected_groups": 66,
+  "fold_count": 3,
+  "original_test_accessed": false,
+  "evaluation_note": "Development folds have been examined in previous phases; these results are exploratory.",
+  "summary": [
+    {
+      "Configuration": "Hybrid 1.0",
+      "SemanticWeight": 1.0,
+      "mean_accuracy": 0.629643895270183,
+      "std_accuracy": 0.04860093807081917,
+      "mean_macro_f1": 0.3141222482760752,
+      "std_macro_f1": 0.044634784918798465,
+      "mean_balanced_accuracy": 0.3336002031366701,
+      "mean_weighted_f1": 0.6058562324589638
+    },
+    {
+      "Configuration": "Hybrid 0.5",
+      "SemanticWeight": 0.5,
+      "mean_accuracy": 0.6385961787578247,
+      "std_accuracy": 0.04362893171845872,
+      "mean_macro_f1": 0.3070240796308254,
+      "std_macro_f1": 0.04571774231066522,
+      "mean_balanced_accuracy": 0.3190128761280277,
+      "mean_weighted_f1": 0.6034622717221563
+    },
+    {
+      "Configuration": "TF-IDF baseline",
+      "SemanticWeight": 0.0,
+      "mean_accuracy": 0.6253637087931986,
+      "std_accuracy": 0.03636486084927935,
+      "mean_macro_f1": 0.28157510581640044,
+      "std_macro_f1": 0.042430281173662175,
+      "mean_balanced_accuracy": 0.2826688185384812,
+      "mean_weighted_f1": 0.5877553001725454
+    }
+  ]
+}

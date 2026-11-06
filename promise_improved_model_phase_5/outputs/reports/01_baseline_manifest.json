@@ -1,0 +1,65 @@
+{
+  "phase": 5,
+  "experiment": 1,
+  "seed": 42,
+  "records": 3127,
+  "classes": [
+    "F",
+    "A",
+    "L",
+    "LF",
+    "MN",
+    "O",
+    "PE",
+    "SC",
+    "SE",
+    "US",
+    "FT",
+    "PO"
+  ],
+  "connected_groups": 66,
+  "folds": [
+    {
+      "fold": 1,
+      "train_records": 2159,
+      "held_out_records": 968,
+      "train_projects": 46,
+      "held_out_projects": 23
+    },
+    {
+      "fold": 2,
+      "train_records": 2024,
+      "held_out_records": 1103,
+      "train_projects": 45,
+      "held_out_projects": 24
+    },
+    {
+      "fold": 3,
+      "train_records": 2071,
+      "held_out_records": 1056,
+      "train_projects": 47,
+      "held_out_projects": 22
+    }
+  ],
+  "phase4_fold_alignment": "verified",
+  "source_script_sha256": "f001d9771b1838dbc856eb56e2bd84e514d9b6b86018fb087fbadef9922e1e38",
+  "baseline": {
+    "accuracy": {
+      "mean": 0.6253637087931986,
+      "std": 0.03636486084927934
+    },
+    "macro_f1": {
+      "mean": 0.28157510581640044,
+      "std": 0.04243028117366218
+    },
+    "balanced_accuracy": {
+      "mean": 0.2826688185384812,
+      "std": 0.022834268858235657
+    },
+    "weighted_f1": {
+      "mean": 0.5877553001725454,
+      "std": 0.05897539049417997
+    }
+  },
+  "test_partition_accessed": false
+}
