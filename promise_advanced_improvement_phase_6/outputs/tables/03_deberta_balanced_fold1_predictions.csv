@@ -1,0 +1,969 @@
+RecordID,ProjectID,_class_,NormalizedText,Fold,PredictedLabel,Correct
+1,1,PE,The system shall refresh the display every 60 seconds.,1,PE,True
+2,1,F,The system shall provide a history report of changes made to the Activity or Event data,1,F,True
+3,1,F,The system shall provide charts for the Activity or Event actual versus assumed time.,1,F,True
+4,1,F,The system shall offer the ability to pause and resume the refresh of data.,1,F,True
+5,1,F,The system shall display the local and exercise time in separate clocks,1,F,True
+6,1,F,The system shall filter data by: Venues and Key Events.,1,F,True
+7,1,F,The system shall offer a display of all the Events in the exercise.,1,F,True
+8,1,F,The system shall allow modification of the display.,1,F,True
+9,1,F,The system shall link Events back to either the Sync Matrix 1.0 or the Exercise Managment Tool 1.0 applications for modifications.,1,F,True
+10,1,F,The system shall display data from the Sync Matrix 1.0 and Exercise Management Tool 1.0 applications,1,F,True
+11,1,F,The system shall color code events according to their variance from current time.,1,F,True
+12,1,F,The bottom 3/4 of the table will hold events that occur according to its relevance to current time.,1,F,True
+13,1,F,The top 1/4 of the table will hold events that are to occur sequentially.,1,F,True
+14,1,F,The table side of the display shall be split into 2 regions: sequential and temporal.,1,F,True
+15,1,F,The system shall allow a user to define the time segments,1,F,True
+16,1,F,The display shall have two regions: left 2/3 of the display is graphical right 1/3 of the display is a data table,1,PE,False
+17,1,F,The data displayed in both the nodes within the graph and the rows in the table are MSEL Summary data,1,F,True
+18,1,LF,The application shall match the color of the schema set forth by Department of Homeland Security,1,L,False
+19,1,US,If projected the data must be readable. On a 10x10 projection screen 90% of viewers must be able to read Event / Activity data from a viewing distance of 30,1,PE,False
+20,1,US,If projected the data must be understandable. On a 10x10 projection screen 90% of viewers must be able to determine that Events or Activities are occuring in current time from a viewing distance of 100,1,PE,False
+21,1,SE,The product shall ensure that it can only be accessed by authorized users. The product will be able to distinguish between authorized and unauthorized users in all access attempts,1,F,False
+22,1,A,The product shall be available during normal business hours. As long as the user has access to the client PC the system will be available 99% of the time during the first six months of operation.,1,PE,False
+23,1,PE,The product shall respond fast to keep up-to-date data in the display.,1,PE,True
+24,1,F,The system shall have a MDI form that allows for the viewing of the graph and the data table.,1,F,True
+25,1,F,The system shall display Events in a vertical table by time.,1,F,True
+26,1,F,The system shall display the Events in a graph by time.,1,F,True
+27,1,F,The system shall display Events or Activities.,1,F,True
+28,1,US,The product shall be intuitive and self-explanatory. 90% of new users shall be able to start the display of Events or Activities within 90 minutes of using the product.,1,PE,False
+489,10,F,For each shot the product shall mark the shot as a hit or miss on the defensive grid of the defensive player.,1,F,True
+490,10,F,For each shot the product shall notify the players whether the shot was a hit or miss.,1,F,True
+491,10,F,For each shot the product shall examine the defensive grid of the defensive player to determine whether the shot was a hit or miss.,1,F,True
+492,10,F,For each turn the product shall allow the offensive player to define a shot.,1,F,True
+493,10,F,The product shall prevent the player from overlapping ships on their grid.,1,F,True
+494,10,F,The product shall maintain the status of each player for a turn either offensive or defensive.,1,F,True
+495,10,F,For each turn the product shall identify one player as offensive status and one player as defensive status.,1,F,True
+496,10,F,When both players have positioned their 5 ships on their defensive grids the product shall define the status of each player for the first turn.,1,F,True
+497,10,F,For each shot the product shall mark the shot as a hit or miss on the offensive grid of the offensive player.,1,F,True
+498,10,F,The product shall allow the player to position ships diagonally on their grid,1,F,True
+499,10,F,At the start of each turn the product shall notify each player of his or her status.,1,F,True
+500,10,F,When the hit results in sinking a ship the product shall notify the players that the ship was sunk.,1,F,True
+501,10,F,If the shot was marked as a miss the product shall change the status of the offensive player to defensive,1,F,True
+502,10,F,When the hit results in sinking a ship the product shall indicate the type of ship sunk on the defensive grid of the defensive player.,1,F,True
+503,10,F,When the hit results in sinking a ship the product shall mark the ship as sunk on the offensive grid of the offensive player.,1,F,True
+504,10,F,If the shot was marked as a hit the product shall allow the offensive player to define a shot.,1,F,True
+505,10,F,If the shot was marked as a miss the product shall change the status of the defensive player to offensive,1,F,True
+506,10,F,The product shall continue to assign turns until the game is ended.,1,F,True
+507,10,F,The product shall end a game when a hit by the offensive player results in sinking the last of the defensive player’s ships which had not been previously marked as sunk.,1,F,True
+508,10,F,The product shall allow a player to end a game at any time during the game.,1,F,True
+509,10,F,When a game is ended the product shall notify the players that the game is ended.,1,F,True
+510,10,F,The notification of the game ending will include the reason the game is ended (i.e. a player has won the game or a player has ended the game).,1,F,True
+511,10,F,When a game is ended the product shall allow each player to remove himself or herself from the list of players.,1,F,True
+512,10,F,The product shall allow the player to position ships vertically on their grid.,1,F,True
+513,10,F,When the hit results in sinking a ship the product shall mark the ship as sunk on the defensive grid of the defensive player.,1,F,True
+514,10,F,The product shall allow a player to position ships horizontally on their grid.,1,F,True
+515,10,F,When a game is ended the product shall allow each player to identify himself or herself as an available player in the list of players.,1,F,True
+516,10,F,The product shall prevent a player from viewing the offensive or defensive grids of the other player.,1,F,True
+517,10,F,Once a game is initiated the product shall allow each player to position their 5 ships on their respective defensive grids.,1,F,True
+518,10,LF,The product shall simulate the look of ships at sea.,1,PE,False
+519,10,LF,The product shall display the grids within a circle as a view from a periscope.,1,F,False
+520,10,LF,The product shall display each type of ship in a grid using an image of the specific type of ship.,1,F,False
+521,10,LF,When the offensive player takes a shot the product shall simulate the sound of a ship at sea.,1,F,False
+522,10,LF,When a shot is marked as a miss the product shall simulate the sound of a shot missing its target.,1,F,False
+523,10,LF,When a shot is marked as a hit the product shall simulate the sound of a shot hitting its target.,1,F,False
+524,10,LF,When a ship is sunk the product shall simulate the sound of a sinking ship.,1,F,False
+525,10,A,The product shall be available 24 hours per day seven days per week.,1,PE,False
+526,10,PE,The product shall able to handle a large number of games simultaneously.,1,PE,True
+527,10,PE,The product shall protect the identity of the players. The product shall provide players no access to information that might reveal the identity of another player.,1,F,False
+528,10,US,The product shall be intuitive and self-explanatory. Nine out ten users shall be able to successfully complete a game with no training.,1,US,True
+529,10,PE,The response time shall be fast enough to maintain the flow of the game. The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.,1,PE,True
+530,10,SE,The product shall provide players no access to information that might reveal the identity of another player,1,F,False
+531,10,F,Once a game is initiated the product shall display an offensive grid to each player.,1,F,True
+532,10,F,Once a game is initiated the product shall display a defensive grid to each player,1,F,True
+533,10,F,The product shall allow a player to initiate a game by selecting another available player from the list of players.,1,F,True
+534,10,US,The product shall be available to players who understand English Spanish and French. The product shall allow the user to select the language upon accessing the product.,1,PE,False
+535,10,F,The product shall make inactive players unavailable for selection from the list of players.,1,F,True
+536,10,F,The product shall remove players who have been inactive for 24 hours from the list of players.,1,F,True
+537,10,F,Once a game has been initiated the product shall make the players assigned to the game unavailable for selection from the list of players.,1,F,True
+538,10,F,The product shall allow a user to identify himself or herself as a player.,1,F,True
+539,10,F,The product shall maintain a list of players.,1,F,True
+540,10,PE,The response time shall be fast enough to maintain the flow of the game. The response time shall be no more than 2 seconds for 95% of responses and no more than 4% for the remaining responses.,1,PE,True
+541,10,F,The product shall allow a user to remove himself or herself from the list of players at any time.,1,F,True
+596,14,MN,New System version releases shall be released at the beginning of each NFL season.,1,PE,False
+597,14,MN,Application updates shall occur between 3AM and 6 AM CST on Wednesday morning during the middle of the NFL season.,1,PE,False
+598,14,O,A secondary database will be used to store historical statistics and data.,1,F,False
+599,14,O,A primary database will be used to store cached data for active users.,1,F,False
+600,14,A,The application shall have a downtime of at most 10 minutes per year.,1,PE,False
+601,14,PE,The application shall be able to complete every user transaction within one fourth of a second of receiving the request over the network.,1,PE,True
+602,14,US,The application shall ask the user to confirm dropping a player or trading a player before performing the action.,1,F,False
+603,14,O,The application shall run on a web application server.,1,PE,False
+604,14,US,Users shall be able to reach the ‘add’ ‘drop’ and ‘trade player’ pages with one click from the team owner’s page.,1,F,False
+605,14,US,A new user shall be able to navigate through the league and team pages within 30 seconds of reaching the start-up page.,1,PE,False
+606,14,LF,The message board shall contain the 5 most recently posted messages on the league page. The messages will contain up to the first 150 characters of the message.,1,F,False
+607,14,LF,Each page shall contain a similar format with action items in one location and navigation buttons in a different location.,1,PE,False
+608,14,LF,Each page shall contain a navigation menu which shows the index into which the current page is contained.,1,F,False
+609,14,SE,The Commissioner will be the only authorized user per league to adjust league settings.,1,F,False
+610,14,SE,Each team owner will need to use a username and password in order to be authenticated to reach the team owner’s page,1,F,False
+611,14,US,Users shall be able to view at least 25 NFL player statistics and points on each page.,1,F,False
+756,34,SE,The system’s back-end servers shall only be accessible to authenticated administrators.,1,F,False
+757,34,SE,The system use SSL (secured socket layer) in all transactions that include any confidential customer information.,1,F,False
+758,34,SE,The system must automatically log out all customers after a period of inactivity.,1,F,False
+759,34,SE,The system should not leave any cookies on the customer’s computer containing the user’s password.,1,F,False
+760,34,SE,Sensitive data will be encrypted before being sent over insecure connections like the internet.,1,PE,False
+761,34,O,The system provides storage of all databases on redundant computers with automatic switchover.,1,PE,False
+762,34,FT,The reliability of the overall program depends on the reliability of the separate components. The main pillar of reliability of the system is the backup of the database which is continuously maintained and updated to reflect the most recent changes.,1,US,False
+763,34,PO,An end-user may use this system on any OS; either it is Windows or Linux.,1,PE,False
+779,37,SE,Every user of the software is provided a unique login ID and a password which is stored in the database hashed by SHA2 algorithm.,1,F,False
+780,37,A,The software is available for use from the supermarket opening time to the closing time.,1,PE,False
+781,37,PE,High level of performance requires high speed network and high level of connectivity.,1,PE,True
+782,37,O,The available server must be reliable and the network connectivity in the supermarket should be proper for smooth flow of all operations and data.,1,PE,False
+875,46,F,The system shall allow user to select available promotion.,1,F,True
+876,46,F,The system shall display all the available promotions to the user.,1,F,True
+877,46,F,The system shall allow user to view detailed sitemap.,1,F,True
+878,46,F,The system shall notify the use about the financing request.,1,F,True
+879,46,F,The system shall allow user to select the financing option.,1,F,True
+880,46,F,The system shall display all the available financing options.,1,F,True
+881,46,F,The system shall enable the user to enter their reviews and ratings.,1,F,True
+882,46,F,The system shall display the current tracking information about the order.,1,F,True
+883,46,F,The system shall allow user to cancel the order.,1,F,True
+884,46,F,The system shall allow user to select the order to be changed.,1,F,True
+885,46,F,The system shall display the orders that are eligible to change.,1,F,True
+886,46,F,The system shall allow user to select the payment method for order.,1,F,True
+887,46,F,The system shall display available payment methods for payment.,1,F,True
+888,46,F,The system shall display tax information for the order.,1,F,True
+889,46,F,The system shall calculate tax for the order.,1,F,True
+890,46,F,The system shall allow user to confirm the purchase.,1,F,True
+891,46,F,The system shall notify the user about any changes made to the order.,1,F,True
+892,46,F,The system shall enable user to enter the payment information.,1,F,True
+893,46,PE,The product shall take initial load time depending on internet connection strength which also depends on the media from which the product is run.,1,PE,True
+894,46,US,The system shall provide a digital image for each product in the product catalog.,1,F,False
+895,46,F,The system shall allow user to enter the order information for tracking.,1,F,True
+896,46,SE,The system’s back-end databases shall be encrypted.,1,F,False
+897,46,SE,The system’s back-end servers shall never display a customer’s password. The customer’s password may be reset but never shown.,1,F,False
+898,46,SE,The customer’s web browser shall never display a customer’s credit card number after retrieving from the database. It shall always be shown with just the last 4 digits of the credit card number.,1,F,False
+899,46,SE,The customer’s web browser shall never display a customer’s password. It shall always be echoed with special characters representing typed characters.,1,F,False
+900,46,SE,The system shall not leave any cookies on the customer’s computer containing any of the user’s confidential information.,1,F,False
+901,46,SE,The system shall not leave any cookies on the customer’s computer containing the user’s password.,1,F,False
+902,46,LF,The system shall provide a uniform look and feel between all the web pages.,1,PE,False
+903,46,SE,The system shall automatically log out all customers after a period of inactivity.,1,SE,True
+904,46,PE,The performance shall depend upon hardware components of the client/customer.,1,PE,True
+905,46,O,The product shall be based on web and has to be run from a web server.,1,PE,False
+906,46,A,The system shall provide a contractual agreement with an internet service provider who can provide 99.999% availability through their network facilities onto the internet.,1,F,False
+907,46,A,The system shall provide a contractual agreement with an internet service provider for T3 access with 99.9999% availability.,1,PE,False
+908,46,US,The system shall provide multi language support.,1,PE,False
+909,46,US,The system shall provide handicap access.,1,F,False
+910,46,US,The system shall provide use of icons and toolbars.,1,PE,False
+911,46,SE,The system shall use secure sockets in all transactions that include any confidential customer information.,1,F,False
+912,46,F,The system shall display tentative duration for shipping.,1,PE,False
+913,46,US,The system shall confirm all transactions with the customer’s web browser.,1,F,False
+914,46,F,The system shall enable user to select the shipping method during payment process.,1,F,True
+915,46,F,The system shall allow user to create profile and set his credential.,1,F,True
+916,46,F,The system shall notify the user when no matching product is found on the search.,1,F,True
+917,46,F,The system shall enable user to navigate between the search results.,1,F,True
+918,46,F,The system shall display only 10 matching result on the current screen.,1,PE,False
+919,46,F,The system shall display all the matching products based on the search.,1,F,True
+920,46,F,The system shall enable user to enter the search text on the screen.,1,F,True
+921,46,F,The system shall display detailed product categorization to the user.,1,F,True
+922,46,F,The system shall authenticate user credentials to view the profile.,1,F,True
+923,46,F,The system shall provide browsing options to see product details.,1,F,True
+924,46,F,The system shall display the shipping charges.,1,F,True
+925,46,F,The system shall allow user to confirm the completion of current configuration.,1,F,True
+926,46,F,The system shall notify the user about any conflict in the current configuration.,1,F,True
+927,46,F,The system shall enable user to add one or more component to the configuration.,1,F,True
+928,46,F,The system shall display all the available components of the product to configure.,1,F,True
+929,46,F,The system shall allow user to select the product to configure.,1,F,True
+930,46,F,The system shall display all the products that can be configured.,1,F,True
+931,46,F,The system shall display detailed information of the selected products.,1,F,True
+932,46,F,The system shall allow user to update the profile information.,1,F,True
+933,46,F,The system shall enable user to select multiple options on the screen to search.,1,F,True
+934,46,F,The system shall allow user to select the order from the order history.,1,F,True
+935,46,F,The system shall display different shipping options provided by shipping department.,1,F,True
+936,46,F,The system shall display both the active and completed order history in the customer profile.,1,F,True
+937,46,F,The system shall provide shopping cart during online purchase.,1,PE,False
+938,46,F,The system shall optionally allow user to print the invoice.,1,F,True
+939,46,F,The system shall display detailed invoice for current order once it is confirmed.,1,F,True
+940,46,F,The system shall send an order confirmation to the user through email.,1,F,True
+941,46,F,The system shall maintain customer email information as a required part of customer profile.,1,F,True
+942,46,F,The system shall display the FAQ’s upon request.,1,F,True
+943,46,F,The system shall allow user to add/remove products in the shopping cart.,1,F,True
+944,46,F,The system shall allow user to enter the contact number for support personnel to call.,1,F,True
+945,46,F,The system shall display the customer support contact numbers on the screen.,1,F,True
+946,46,F,The system shall allow user to enter the customer and product information for the support.,1,F,True
+947,46,F,The system shall allow user to select the support type he wants.,1,F,True
+948,46,F,The system shall allow user to register for newsletters and surveys in the profile.,1,F,True
+949,46,F,The system shall display the most frequently searched items by the user in the profile.,1,F,True
+950,46,F,The system shall display the detailed information about the selected order.,1,F,True
+951,46,F,The system shall display the online help upon request.,1,F,True
+1197,53,F,"When the current temperature value exceeds the current temperature setting by a pre -defined amount, the THEMAS system shall activate the appropriate heating or cooling unit.",1,F,True
+1198,53,F,The THEMAS shall provide the ability for the supervisor to select between two different types of reports: 1) the operational history of the THEMAS system for the past twelve months and 2) a statistical summary for any selected month.,1,F,True
+1199,53,F,The THEMAS system shall provide the supervisor a mechanism to change the temperature setting of any of the thermostats in the system.,1,F,True
+1200,53,F,"For each event that is generated, the THEMAS system shall identify each event and generate the appropriate event data.",1,F,True
+1201,53,F,"There are two events that shall result in an alarm condition: 1) an invalid temperature value is reported from a thermostat, or 2) the reported temperature has exceeded the defined limits. This process shall determine which alarm event is to be generated.",1,F,True
+1202,53,F,"Once a request to turn on or off a heating or cooling unit, the THEMAS system shall provide the necessary control signal for the unit. This control signal shall also provide an indication of the unit’s status at the requesting thermostat.",1,PE,False
+1203,53,F,The THEMAS system shall control the heating and cooling units that are designated as part of the THEMAS system.,1,F,True
+1204,53,F,The THEMAS system shall control each of the heating and cooling units that are defined for the system. The THEMAS system shall limit the number of heating or cooling units t hat may be running simultaneously.,1,PE,False
+1205,53,F,The THEMAS system shall determine wh en a reported temperature or a changed temperature setting exceeds the limits set by the overtemperature values. Temperatures that exceed the overtemperature limits shall be reported as such. Temperatures that do not exceed these limits shall be output for subsequent processing.,1,F,True
+1206,53,F,"When a request for a heating unit or cooling to be turned is denied, an event shall be generated and the THEMAS system shall record that event. The information in these events will be used for creating statistical reports.",1,F,True
+1207,53,F,"When the THEMAS system is initialized, it shall first turn off all the heating and cooling units. Then, it shall check all the thermostats and determine if any thermostat’s settings require a heating or cooling unit to be turned on back on.",1,PE,False
+1208,53,F,The THEMAS system shall only respond to temperatures that are within a reasonable value.,1,PE,False
+1209,53,F,The THEMAS system shall ensure the temperature reported by a given thermostat shall not exceed a maximum deviation value of 3 degrees Fahrenheit.,1,PE,False
+1210,53,F,The trigger value is used in combination with the current temperature to determine when a heating or cooling unit shall be turned on or off.,1,F,True
+1211,53,F,There shall be a maximum number of heating or cooling units that can be on at any given time. This procedure loads the maximum number of concurrently running units allowed.,1,PE,False
+1212,53,F,Each thermostat shall have a unique identifier by which that thermostat is identified in the THEMAS system. This procedure will load these definitions into the THEMAS software.,1,F,True
+1213,53,F,The definitions of the individual heating and cooling systems reside in an initialization file. The system shall read this file and the definitions shall be derived from the initialization data in the file.,1,F,True
+1214,53,F,The THEMAS system shall control the heating and cooling units that are defined as part of the THEMAS system.,1,F,True
+1215,53,F,The THEMAS system shall only respond to temperatures from the thermostats that are within the specified valid range.,1,PE,False
+2009,65,F,"The Framework API should expose at least the following functionality to client processes: Create, delete and modify Entities and Entity groups; Create, delete and modify relationships between Entities; List and access Entities with an API similar to that of a standard file system API; Execute queries for the retrieval of Entities using different criteria.",1,F,True
+2010,65,US,"GUIs associated with the Framework SHOULD be designed such that an user with basic understanding of the Windows 2000/XP operating systems would instinctively be able to interact with them. Therefore, most GUIs MAY need to closely mimic popular Windows applications.",1,PE,False
+2011,65,PE,"At this stage of the development, the Framework MAY only operate in single user mode, with no networking capabilities.",1,PE,True
+2012,65,PE,The Framework Shell SHOULD NOT utilize more than 40 megabytes of RAM.,1,PE,True
+2013,65,SE,The Framework MUST guard against malicious scripts on remote websites from accessing its information. The Framework MUST guard against unintended corruption of information by the user himself.,1,F,False
+2014,65,L,"All proprietary trademarks, product names and/or logos used on this document are trademarks of their respective owners.",1,PE,False
+2015,65,FT,All components associated with Project ZNIX should conform to the following standards: Windows 2000 Logo Requirements [WWW05].,1,F,False
+2016,65,FT,At this stage of development Project ZNIX requires no communication interfaces.,1,PE,False
+2017,65,FT,The online help system should be compiled utilizing as much of non-technical terms as possible. Care SHOULD be taken not to produce an exhaustive user documentation as that would defeat the main purpose of the system as expressed in the introduction to section 2. A comprehensive Developer’s Guide MAY be compiled to facilitate 3rd party ZNIX-aware applications.,1,PE,False
+2018,65,FT,"A GUI capable of browsing the information managed by the Framework, similar to that of the Windows Explorer SHOULD be available to the user. The GUI MUST also be capable of allowing the user to specify relationships between disparate Entities as he see fit.",1,F,False
+2019,65,FT,Provisions SHOULD be made so that at least the following 3rd party applications can take advantage of the Framework for the specified types of information.,1,L,False
+2020,65,F,"Therefore, some residue MUST be left on the data store to indicate that a portion of data has been archived. For example, assume all information relating to a “Person” Entity named John is archived to a CD-ROM. When the user subsequently looks for John, the Framework SHOULD NOT declare that such an Entity was not found. Rather, it SHOULD inform the user that the Entity has been archived (and OPTIONALLY, if he wishes to proceed, to remount the relevant storage device).",1,F,True
+2021,65,FT,"Any coding conventions to be used during implementation MUST be documented before the beginning of the phase, and strictly adhered to during the phase.",1,F,False
+2022,65,FT,"Project ZNIX SHOULD be available to its potential users in source and binary from, and free of charge. The project MAY be hosted on a popular Open Source distribution website such that the Open Source community is aware of (and contribute to) its existence. The website for distributing the project SHALL include provisions for the users to make comments on the product as well as to compile a wish-list of features.",1,PE,False
+2023,65,FT,ZNIX Framework will be licensed under GNU Library General Public License (LGPL) [WWW03]. The browser and any other tool released alongside the Framework will be licensed under GNU Public License (GPL) [WWW04].,1,PE,False
+2024,65,FT,"The system SHALL conform to ISO 10646 (Unicode UTF-8) and OPTIONALLY ISO 10646-1 (Unicode UTF-16) standards for character set encoding. [WWW06] Additionally, design of the system MAY yield a new set of standards that ZNIXaware client processes MAY need to conform to.",1,F,False
+2025,65,F,"Often, the user may want to archive portions of the information-store to removable storage media (the term storage media covers only CD-ROMs and USB Pen Drives at this point). However, this SHOULD not mean that such portions would be “forgotten” by the Framework.",1,PE,False
+2026,65,FT,Mean Time between Failure (MTBF): The mean time between failures (MTBF) SHALL exceed 3 months.,1,PE,False
+2027,65,F,The document is automatically saved to disk in a manner that reflects the relationships it has to other Entities. The user may in the future fetch this document by following the relationship paths that he had created.,1,F,True
+2028,65,F,"The user MUST be able to view the information in the central store in a hierarchical manner that makes sense to him. Section 3.1.1 describes how this hierarchy is built up. The Framework SHOULD include a browser that is capable of displaying this hierarchy in a UI similar to that of the Windows Explorer. The browser MAY OPTIONALLY be integrated directly in to Windows Explorer, rather than being a standalone application. This browser MAY integrate the GUI described in section 3.1.1.5 as well.",1,PE,False
+2029,65,F,The Framework MUST be capable of capturing information form the software tools specified in Table 3.9.3-A. The data captured SHOULD be stored in a centralized data store. The Framework MAY decide whether the information should be stored as Entities or Associates. The data capturing and archiving mechanisms MAY resemble the following.,1,F,True
+2030,65,F,"User SHOULD be able to modify, add, delete or group these Entities by navigating to a virtual folder (e.g. /People/).",1,F,True
+2031,65,F,The email is intercepted before it is dispatched to the SMTP server.,1,PE,False
+2032,65,F,An Associate is created to contain the message body.,1,F,True
+2033,65,F,The recipient name(s) are used to create (if required) Entities under the “People” category. The Associate is then linked to each Entity.,1,F,True
+2034,65,F,The email is fetched from the POP3 server.,1,F,True
+2035,65,F,"The Address Book is used to create Entities under the category “People” (Category names are user definable. However, a certain set of categories like People, Email etc. MAY need to always be present).",1,F,True
+2036,65,F,"The sender’s name is used to create Entities, under the category “People”. The Associate is then linked to this Entity.",1,F,True
+2037,65,F,User SHOULD be able to specify when he is to start a research project; i.e. when the web sites he visits subsequently are to be permanently stored.,1,F,True
+2038,65,F,The project name specified by the user spawns a new Entity in the Framework.,1,F,True
+2039,65,F,An associate is created as an archive and is linked to this Entity.,1,F,True
+2040,65,F,The user after editing a document in a word-processor invokes a special GUI supplied by the Framework.,1,PE,False
+2041,65,F,The GUI allows him to draw arrows to and from (a symbol representing) the current document to any Entity creating relationships between the document and the relevant Entities.,1,F,True
+2042,65,F,An Associate is created to contain the message body.,1,F,True
+2043,65,F,The user may optionally specify a descriptive name for the document.,1,F,True
+2104,67,SE,The system shall automatically log out all customers after a period of inactivity.,1,SE,True
+2105,67,PE,The product shall take initial load time depending on internet connection strength which also depends on the media from which the product is run.,1,PE,True
+2106,67,PE,The performance shall depend upon hardware components of the client/customer.,1,PE,True
+2107,67,SE,The system shall use secure sockets in all transactions that include any confidential customer information.,1,F,False
+2108,67,SE,The system shall confirm all transactions with the customer’s web browser.,1,F,False
+2109,67,SE,The system’s back-end servers shall never display a customer’s password. The customer’s password may be reset but never shown.,1,F,False
+2110,67,SE,The system shall not leave any cookies on the customer’s computer containing any of the user’s confidential information.,1,F,False
+2111,67,SE,The customer’s web browser shall never display a customer’s password. It shall always be echoed with special characters representing typed characters.,1,F,False
+2112,67,SE,The customer’s web browser shall never display a customer’s credit card number after retrieving from the database. It shall always be shown with just the last 4 digits of the credit card number.,1,F,False
+2113,67,PE,The product shall be based on web and has to be run from a web server.,1,PE,True
+2114,67,SE,The system shall not leave any cookies on the customer’s computer containing the user’s password.,1,F,False
+2115,67,A,The system shall provide a contractual agreement with an internet service provider who can provide 99.999% availability through their network facilities onto the internet.,1,F,False
+2116,67,F,The system shall display all the available promotions to the user.,1,F,True
+2117,67,A,The system shall provide RAID V Disk Stripping on all database storage disks.,1,PE,False
+2118,67,A,The system shall provide for replication of databases to off-site storage locations.,1,F,False
+2119,67,A,The system shall provide storage of all databases on redundant computers with automatic switchover.,1,PE,False
+2120,67,US,The system shall provide multi language support.,1,PE,False
+2121,67,US,The system shall provide handicap access.,1,F,False
+2122,67,US,The system shall provide use of icons and toolbars.,1,PE,False
+2123,67,US,The system shall provide a digital image for each product in the product catalog.,1,F,False
+2124,67,US,The system shall provide a uniform look and feel between all the web pages.,1,PE,False
+2125,67,F,The system shall enable user to enter the payment information.,1,F,True
+2126,67,F,The system shall allow user to confirm the purchase.,1,F,True
+2127,67,F,The system shall allow user to select available promotion.,1,F,True
+2128,67,SE,The system’s back-end servers shall only be accessible to authenticated administrators.,1,F,False
+2129,67,A,The system shall provide a contractual agreement with an internet service provider for T3 access with 99.9999% availability.,1,PE,False
+2130,67,SE,The system’s back-end databases shall be encrypted.,1,F,False
+2131,67,MN,"The user interface for the software shall be compatible to any browser such as Internet Explorer, Mozilla or Netscape Navigator by which user can access to the system.",1,PE,False
+2132,67,MN,The source code developed for this system shall be maintained in configuration management tool.,1,F,False
+2133,67,MN,The e-store system shall use the HTTP protocol for communication over the internet and for the intranet communication will be through TCP/IP protocol suite.,1,PE,False
+2134,67,MN,The system shall be verisign like software which shall allow the users to complete secured transaction. This usually shall be the third party software system which is widely used for internet transaction.,1,F,False
+2135,67,MN,The e-store system shall communicate with export regulation system to validate export regulations.,1,L,False
+2136,67,MN,The e-store system shall communicate with external Tax system to calculate tax.,1,F,False
+2137,67,MN,The e-store system shall communicate with shipping system for tracking orders and updating of shipping methods.,1,F,False
+2138,67,MN,The e-store system shall communicate with Sales system for order management.,1,F,False
+2139,67,MN,The e-store system shall communicate with CRM system to provide support.,1,PE,False
+2140,67,MN,The e-store system shall communicate to credit management system for handling financing options.,1,F,False
+2141,67,MN,"The e-store system shall communicate with billPay system to identify available payment methods , validate the payments and process payment.",1,F,False
+2142,67,MN,"The e-store shall communicate with the content manager to get the product specifications, offerings and promotions.",1,F,False
+2143,67,MN,The e-store system shall communicate with the Configurator to identify all the available components to configure the product.,1,F,False
+2144,67,MN,"Since the application must run over the internet, all the hardware shall require to connect internet will be hardware interface for the system. As for e.g. Modem, WAN – LAN, Ethernet Cross-Cable.",1,PE,False
+2145,67,MN,"The user interface shall be implemented using any tool or software package like Java Applet, MS Front Page, EJB etc.",1,PE,False
+2146,67,F,The system shall allow user to view detailed sitemap.,1,F,True
+2147,67,MN,There shall be logical address of the system in IPv4 format.,1,F,False
+2148,67,MN,The Port number used will be 80.,1,F,False
+2149,67,MN,The protocol used shall be HTTP.,1,F,False
+2150,67,MN,"There are many types of interfaces as such supported by the E-Store software system namely; User Interface, Software Interface and Hardware Interface.",1,PE,False
+2151,67,MN,"To implement online user help, link and search fields shall be provided.",1,F,False
+2152,67,MN,It shall provide specific guidelines to a user for using the E-Store system and within the system.,1,F,False
+2153,67,MN,"As the product is E-store, On-line help system becomes a critical component of the system which shall provide –",1,PE,False
+2154,67,MN,A general knowledge of basic computer skills is required to use the product,1,PE,False
+2155,67,MN,Response time for loading the product should take no longer than five minutes.,1,PE,False
+2156,67,MN,The computers must be equipped with web browsers such as Internet explorer.,1,PE,False
+2157,67,MN,The system shall be built using a standard web page development tool that conforms to either IBM’s CUA standards or Microsoft’s GUI standards.,1,PE,False
+2158,67,L,"E-store should display the disclaimers, copyright, word mark, trademark and product warranties of the Marvel electronics and home entertainment.",1,F,False
+2159,67,F,The system shall notify the use about the financing request.,1,F,True
+2160,67,MN,The product must be stored in such a way that allows the client easy access to it.,1,PE,False
+2161,67,F,The system shall display all the available financing options.,1,F,True
+2162,67,F,"The system shall provide online help, FAQ’s customer support, and sitemap options for customer support.",1,PE,False
+2163,67,F,The system shall allow user to register for newsletters and surveys in the profile.,1,F,True
+2164,67,F,The system shall display the most frequently searched items by the user in the profile.,1,F,True
+2165,67,F,The system shall display the detailed information about the selected order.,1,F,True
+2166,67,F,The system shall allow user to select the order from the order history.,1,F,True
+2167,67,F,The system shall display both the active and completed order history in the customer profile.,1,F,True
+2168,67,F,The system shall allow user to update the profile information.,1,F,True
+2169,67,F,The system shall authenticate user credentials to view the profile.,1,F,True
+2170,67,F,The system shall allow user to create profile and set his credential.,1,F,True
+2171,67,F,The system shall notify the user when no matching product is found on the search.,1,F,True
+2172,67,F,The system shall enable user to navigate between the search results.,1,F,True
+2173,67,F,The system shall display only 10 matching result on the current screen.,1,PE,False
+2174,67,F,The system shall display all the matching products based on the search,1,F,True
+2175,67,F,The system shall enable user to select multiple options on the screen to search.,1,F,True
+2176,67,F,The system shall enable user to enter the search text on the screen.,1,F,True
+2177,67,F,The system shall display detailed product categorization to the user.,1,F,True
+2178,67,F,The system shall provide browsing options to see product details.,1,F,True
+2179,67,F,The system shall display detailed information of the selected products.,1,F,True
+2180,67,F,The system shall allow user to confirm the completion of current configuration,1,F,True
+2181,67,F,The system shall allow user to update the configuration to resolve conflict in the current configuration.,1,F,True
+2182,67,F,The system shall notify the user about any conflict in the current configuration.,1,F,True
+2183,67,F,The system shall display all the available components of the product to configure,1,F,True
+2184,67,F,The system shall allow user to select the product to configure.,1,F,True
+2185,67,F,The system shall display all the products that can be configured.,1,F,True
+2186,67,F,The system shall allow user to select the financing option.,1,F,True
+2187,67,F,The system shall allow user to select the support type he wants.,1,F,True
+2188,67,F,The system shall allow user to enter the customer and product information for the support.,1,F,True
+2189,67,F,The system shall enable user to add one or more component to the configuration.,1,F,True
+2190,67,F,The system shall allow user to enter the contact number for support personnel to call.,1,F,True
+2191,67,F,The system shall display the customer support contact numbers on the screen.,1,F,True
+2192,67,F,"The system shall display the reviews and ratings of each product, when it is selected.",1,F,True
+2193,67,F,The system shall enable the user to enter their reviews and ratings.,1,F,True
+2194,67,F,"The system shall allow user to change shipping, payment method.",1,F,True
+2195,67,F,The system shall allow user to cancel the order,1,F,True
+2196,67,F,The system shall allow user to select the order to be changed.,1,F,True
+2197,67,F,The system shall display the orders that are eligible to change.,1,F,True
+2198,67,F,The system shall allow user to select the payment method for order.,1,F,True
+2199,67,F,The system shall display available payment methods for payment.,1,F,True
+2200,67,F,The system shall display tax information for the order.,1,F,True
+2201,67,F,The system shall calculate tax for the order.,1,F,True
+2202,67,F,The system shall display the current tracking information about the order.,1,F,True
+2203,67,F,The system shall notify the user about any changes made to the order.,1,F,True
+2204,67,F,The system shall display tentative duration for shipping.,1,PE,False
+2205,67,F,The system shall allow user to enter the order information for tracking.,1,F,True
+2206,67,F,The system shall maintain customer email information as a required part of customer profile.,1,F,True
+2207,67,F,The system shall send an order confirmation to the user through email.,1,F,True
+2208,67,F,The system shall display detailed invoice for current order once it is confirmed.,1,F,True
+2209,67,F,The system shall optionally allow user to print the invoice.,1,F,True
+2210,67,F,The system shall display the FAQ’s upon request.,1,F,True
+2211,67,F,The system shall allow user to add/remove products in the shopping cart.,1,F,True
+2212,67,F,The system shall display different shipping options provided by shipping department.,1,F,True
+2213,67,F,The system shall enable user to select the shipping method during payment process.,1,F,True
+2214,67,F,The system shall display the shipping charges.,1,F,True
+2215,67,F,The system shall provide shopping cart during online purchase.,1,PE,False
+2216,67,F,The system shall display the online help upon request.,1,F,True
+2217,68,F,If supervised by an RBC it shall be possible to command an emergency stop to all trains in a particular area or to a specific train,1,F,True
+2218,68,F,Operation of the train trip shall be indicated on the DMI.,1,F,True
+2219,68,F,It shall be possible to command an immediate train stop.,1,F,True
+2220,68,F,It shall be possible to command a conditional emergency stop. If the train has already passed the location for the emergency stop the command shall be ignored,1,F,True
+2221,68,F,When a train has received an emergency stop ETCS shall command the emergency brake.,1,F,True
+2222,68,F,The emergency stop shall be indicated to the driver on the DMI.,1,F,True
+2223,68,F,Route unsuitability shall be indicated on the DMI.,1,F,True
+2224,68,F,The driver shall be able to override the function when the train is stationary.,1,F,True
+2225,68,F,After overriding this function the movement authority shall be re-established.,1,L,False
+2226,68,F,When a traction unit passes a stop-signal the emergency brake shall be triggered.,1,SE,False
+2227,68,F,The ETCS trainborne equipment shall transmit its own train identification to the RBC.,1,F,True
+2228,68,F,When the traction unit is stationary the driver shall be required to acknowledge the train trip condition. This acknowledgement will release the emergency brake.,1,F,True
+2229,68,F,After the acknowledgement the driver shall be able to continue the movement,1,F,True
+2230,68,F,After the acknowledgement the train shall be able to be driven backwards for a certain distance defined by national value,1,L,False
+2231,68,F,The train running number shall consist of a maximum of 8 numeric digits.,1,F,True
+2232,68,F,"Geographical position of the train n demand, the position of the front end of the train at the time of the demand shall be indicated on the DMI. This shall be possible while the train is moving or stationary.",1,F,True
+2233,68,F,The ETCS on-board shall be capable of receiving information about pantograph and power supply from the trackside.,1,F,True
+2234,68,F,The ETCS trainborne equipment shall indicate on the DMI the information regarding pantograph and power supply.,1,F,True
+2235,68,F,The information regarding lowering and raising of the pantograph and opening/closing of the circuit breaker shall be provided separately and in combinations.,1,F,True
+2236,68,F,The ETCS on-board shall be capable of receiving information regarding air tightness from the trackside.,1,F,True
+2237,68,F,The emergency brake shall be applied until the traction unit is stationary.,1,PE,False
+2238,68,F,The train shall be capable of receiving any track-to-train information intended and relevant for this train including movement authority.,1,L,False
+2239,68,F,Information received shall not influence the traction unit(s) with in-operative cabs.,1,F,True
+2240,68,F,A special indication shall be shown on the DMI.,1,F,True
+2241,68,F,It shall be possible to send plain text messages from track to train.,1,F,True
+2242,68,F,The roll away/reverse movement intervention shall be indicated on the DMI.,1,F,True
+2243,68,F,"When the traction unit has come to a standstill, the driver shall be able to release the emergency brake.",1,PE,False
+2244,68,F,After releasing the emergency brake ETCS will provide the supervision appertaining when roll away protection was initiated,1,F,True
+2245,68,F,When using more than one traction unit this function shall be disabled in all but the leading traction unit.,1,PE,False
+2246,68,F,"All data entered, received or indicated to the driver shall be recorded onboard. All data shall be related to UTC (Universal Time Corrected) and a reference point.",1,F,True
+2247,68,F,Information shall be recorded to an accuracy which enables a clear view of the functioning of ETCS and way the traction unit has been driven.,1,PE,False
+2248,68,F,Standardised output interfaces shall enable transmission of information recorded to other media for investigation,1,F,True
+2249,68,F,"The retention period for the recorded data will be different and two levels are foreseen: Data to enable investigation of accidents need only be stored for at least 24 hours, and shall be very detailed, Operational data to enable assessment of driver performance shall be stored for at least one week.",1,PE,False
+2250,68,F,"The following information shall be recorded: any transition of Level and of operational status, The driver’s confirmation of transition to shunting shall be recorded, train supervision data and information received from national train control systems, actual speed, full service brake intervention, emergency brake intervention, applying the train trip function, selection of the override control, override of the route suitability function, isolation of on board ETCS equipment, Data entered, recieved or indicated to the driver",1,F,True
+2251,68,F,It shall be possible to use multiple traction units without isolating the ETCS trainborne equipment on traction unit(s) with an in-operative cab.,1,PE,False
+2252,68,F,The train trip function (4.6.12.) shall be suppressed in traction unit(s) with in-operative cabs.,1,F,True
+2253,68,F,It shall be possible to use tandem traction units without isolating the ETCS trainborne equipment on the tandem traction unit.,1,PE,False
+2254,68,F,The train trip function (4.6.12.) shall be suppressed on the tandem traction unit.,1,F,True
+2255,68,F,The driver shall enter the driver ID,1,F,True
+2256,68,F,It shall be possible to drive the train backwards in a supervised way (speed and distance) according to information received from trackside,1,F,True
+2257,68,F,The train speed shall be at or below a speed specified by a national value.,1,F,True
+2258,68,F,The driver shall select an override control according to the permission received.,1,F,True
+2259,68,F,The override control shall be protected against inadvertent operation.,1,F,True
+2260,68,F,"When the train passes the stop signal, the train trip function shall be suppressed.",1,F,True
+2261,68,F,Actual speed shall still be shown on the DMI.,1,PE,False
+2262,68,F,The supervised speed shall not be shown on the DMI.,1,F,True
+2263,68,F,"When the plain text message appears on the DMI, the driver shall be alerted.",1,F,True
+2264,68,F,"The following definitions shall apply for the ETCS application levels:Level 0 - ETCS active for limited train control function; trackside not fitted with any train control system or fitted with a train control system for which no STM is available onboard, Level 1 - Basic track to train information via intermittent transmission media, e.g. balises. This information can be supported by infill, transmitted via balise, loop or radio. Level 2 - Basic track to train and train to track information via continuous transmission media, i.e. radio. The train detection is provided by trackside, Level 3: Same as level 2 except that train integrity is provided by onboard and therefore trackside. train detection is optional, Level STM (Specific Transmission Module): Track to train information provided by national system. Onboard functions provided by national system (STM) in co-operation with onboard ETCS.",1,PE,False
+2265,68,F,The character set used shall support different languages.,1,F,True
+2266,68,F,It shall be possible to implement one or more of the ETCS application levels on a line.,1,F,True
+2267,68,F,"Trains equipped for ERTMS/ETCS application level 3 shall be able to run on lines equipped with ERTMS/ETCS application level 3, 2, 1 and 0, trains equipped for ERTMS/ETCS application level 2 shall be able to run on lines equipped with ERTMS/ETCS application level 2, 1 and 0 and trains equipped for ERTMS/ETCS application level 1 shall be able to run on lines equipped with ERTMS/ETCS application level 1 and 0.",1,PE,False
+2268,68,F,The current application level shall be indicated on the DMI.,1,F,True
+2269,68,F,"The driver shall acknowledge the level transitions, if requested from trackside. If the driver does not acknowledge after the transition the brake shall be applied. If the driver acknowledges afterwards, the brake can be released.",1,F,True
+2270,68,F,ETCS shall be compatible with existing national systems listed in the CCS TSI such that it does not interfere with the national systems and is not interfered with by the national systems.,1,F,True
+2271,68,F,"The ETCS trainborne equipment shall be capable of supervising the following operational states: Full Supervision operation, Partial Supervision operation, National operation (STM), Tandem operation, Multiple operation, Shunting operation, Stand By operation, Reversing operation.",1,PE,False
+2272,68,F,Any transition which occurs while the train is moving shall in principle occur automatically.,1,F,True
+2273,68,F,"Transitions which occur while the train is stationary, shall be initiated automatically or manually as appropriate.",1,SE,False
+2274,68,F,"If, as a result of an automatic transition, except for transitions to and from National Operation (STM), the responsibility for the driver increases, the ETCS shall seek an acknowledgement from the driver, whether the train is stationary or not.",1,F,True
+2275,68,F,"For transitions to and from National Operation (STM) the ETCS shall request, an acknowledgement by the driver.",1,F,True
+2276,68,F,"In case the transition has to be acknowledged and the driver fails to acknowledge as required, the ETCS shall initiate a brake application.",1,F,True
+2277,68,F,During the transition period between two operational states (including two different national operations) the supervision provided shall at least ensure the same protection provided by the least restrictive state.,1,L,False
+2278,68,F,"If an ETCS equipped train passes a level transition to a line fitted with more than one level, the onboard shall switch to the highest level, according to the priority given by trackside, for which it is equipped.",1,PE,False
+2279,68,F,"If an ETCS equipped train passes a level transition to one or more levels for which it is not equipped, ETCS shall initiate a brake application.",1,F,True
+2280,68,F,The current operational status shall be indicated to the driver on the DMI.,1,F,True
+2281,68,F,The ETCS on-board shall be capable of receiving National values from the trackside to adapt to National requirements.,1,PE,False
+2282,68,F,National values shall be applicable to a defined area.,1,L,False
+2283,68,F,Once received onboard the national values shall remain valid even if the onboard equipment is switched off.,1,F,True
+2284,68,F,"If the on-board has no valid national values for the current location, default values shall be used by the onboard equipment.",1,F,True
+2285,68,F,"Default values shall be harmonised values, permanently stored in all ERTMS/ETCS on board equipment.",1,F,True
+2286,68,F,"The trainborne equipment shall apply the emergency brake after a distance, defined by a national value, is travelled by the train.",1,F,True
+2287,68,F,ETCS is required to be functional to a maximum train speed of 500 km/h.,1,PE,False
+2288,68,F,The onboard equipment shall display plain text messages as received.,1,PE,False
+2289,68,F,If the supervision is performed by a RBC it shall be possible to prevent movements of a traction unit in its area if not authorised by the RBC.,1,F,True
+2290,68,F,ETCS shall provide the driver with information to allow him to drive the train safely.,1,F,True
+2291,68,F,It shall be possible to send fixed text messages from track to train,1,F,True
+2292,68,F,Fixed text messages shall be provided in the language selected by the driver.,1,PE,False
+2293,68,F,"It shall be possible to send information regarding the inhibition of the following different types of brake(M): Regenerative brake, Eddy current brake, Magnetic shoe brake.",1,F,True
+2294,68,F,Information shall be shown on the DMI,1,F,True
+2295,68,F,The ETCS on-board shall be capable of sending to the trackside train integrity information detected by a system outside ETCS .,1,F,True
+2296,68,F,The driver shall be able to confirm the train integrity to the RBC manually. The confirmation requires the train to be stationary.,1,F,True
+2297,68,F,"The on board shall be capable of sending train data to the trackside after confirmation by the driver, or when entering the RBC area",1,F,True
+2298,68,F,"The following train data shall be sent from the on board to the trackside: Train running number, STM ready for use, train gauge, Max. axle load, status of air tight system, type of el. power accepted, international train category, max. train speed, train length.",1,PE,False
+2299,68,F,It shall be possible to revoke a Movement Authority that has already been issued to a train in a co-operative way between RBC and train.,1,L,False
+2300,68,F,"The co-operative revocation of the MA shall be possible to a new target location, proposed from RBC.",1,L,False
+2301,68,F,The new target location shall be checked for acceptance by the on board.,1,F,True
+2302,68,F,If a train cannot stop at the proposed new target location it shall reject the request and keep the old target location.,1,F,True
+2303,68,F,The Reversing function shall only be possible in one active cab which is not closed at any time during the procedure.,1,PE,False
+2304,68,F,Reversing shall be possible as defined by a value given with the MA,1,L,False
+2305,68,F,The driver shall be able to use the Reversing function without needing to re-confirm the train data.,1,F,True
+2306,68,F,Reversing shall be supervised to a distance and speed set as National Values,1,F,True
+2307,68,F,The distance supervised can be extended from the trackside.,1,PE,False
+2308,68,F,Once the train starts reversing the MA shall be cancelled.,1,PE,False
+2309,68,F,The train shall be able to automatically pass from one RBC area to another without driver intervention.,1,F,True
+2310,68,F,If the train is equipped with two operational radios there shall be no performance penalty as a result of a transition from one RBC to another (train spacing and train speed).,1,PE,False
+2311,68,F,"If the train is equipped with only one operational radio, passing from one RBC to another shall still be possible but might result in a performance penalty.",1,PE,False
+2312,68,F,ETCS shall be able to supervise train and shunting movements.,1,F,True
+2313,68,F,To protect a traction unit from roll away and unwanted reverse movements the trainborne equipment shall monitor the direction of movement in relation to the permitted direction.,1,F,True
+2314,68,F,It shall be possible to prevent a train from entering a route for which it does not meet the required criteria.,1,F,True
+2315,68,F,The driver shall be able to release an ETCS emergency brake application when stationary.,1,F,True
+2316,68,F,"When the ETCS trainborne equipment is isolated, the system shall not show any ETCS information other than the fact that the system is isolated.",1,F,True
+2317,68,F,Isolation of the ETCS trainborne equipment shall disconnect the ETCS trainborne equipment from the vehicle braking system.,1,F,True
+2318,68,F,The ETCS trainborne equipment shall be capable of receiving information from the national train control systems by means of the STM.,1,F,True
+2319,68,F,The DMI shall display or be compatible with information from national train control systems. This may mean displaying the information shown by the national system.,1,F,True
+2320,68,F,Unfitted operation shall be possible if ordered by trackside,1,PE,False
+2321,68,F,Unfitted operation shall be possible if selected by the driver at start up,1,PE,False
+2322,68,F,The on board shall supervise the train against a ceiling speed,1,F,True
+2323,68,F,The ceiling speed value for the unfitted operation is determined by the lower value out of Maximum train speed and National value for unfitted operation.,1,F,True
+2324,68,F,The onboard shall be capable to switch to another ETCS status when transmitted from trackside,1,F,True
+2325,68,F,The ETCS on-board shall be capable of receiving track description from the trackside.,1,F,True
+2326,68,F,It shall be possible to send information on adhesion conditions from trackside.,1,F,True
+2327,68,F,"It shall also be possible, to allow the driver to change the adhesion conditions; in this case information from trackside has priority.",1,F,True
+2328,68,F,The trackside shall be able to send information for the calculation of speed profiles.,1,F,True
+2329,68,F,"If track data at least to the location where the relevant movement authority ends are not available on-board, the movement authority shall be rejected.",1,L,False
+2330,68,F,Track to train transmission shall provide the capability to send different speed profiles for specific train categories.,1,F,True
+2331,68,F,"The ETCS trainborne equipment shall supervise the end of movement authority, if this information is available on-board.",1,F,True
+2332,68,F,The target distance to be displayed on the DMI shall be based on the most restrictive braking curve.,1,F,True
+2333,68,F,"Together with the movement authority, the on board shall be able to receive one or more time-out(s) for certain sections of the movement authority, and shorten the movement authority accordingly when a time out expires.",1,F,True
+2334,68,F,"Using train data and infrastructure data, braking curves shall be calculated taking into account the target information but not the location of vehicles occupying the track.",1,F,True
+2335,68,F,The ceiling speed level for the movement authority shall be defined as data National Value.,1,L,False
+2336,68,F,"Before entering an occupied track, a driver acknowledgement shall be requested .",1,F,True
+2337,68,F,The ETCS trainborne equipment shall be capable of being isolated.,1,F,True
+2338,68,F,The train shall be supervised according to train speed data available.,1,F,True
+2339,68,F,"The trainborne equipment shall remain in Full Supervision until the trainborne equipment is not active any longer, when Shunting is selected or when Partial Supervision information is received.",1,F,True
+2340,68,F,It shall be possible for the trackside to ask a driver for confirmation about the occupancy of the track ahead before sending a Full Supervision movement authority.,1,L,False
+2341,68,F,"If decided by a national value, the driver may release the ETCS emergency brake when the actual speed is below the permitted speed.",1,F,True
+2342,68,F,"An ETCS equipped traction unit shall be capable of being moved in Shunting without train data, track data or movement authority.",1,F,True
+2343,68,F,Transfer to Shunting on driver’s selection shall only be possible when stationary.,1,F,True
+2344,68,F,To prevent unauthorised use of the function permission shall be obtained from the RBC if the train is operating under the control of the RBC.,1,F,True
+2345,68,F,Permission received shall be indicated to the driver.,1,F,True
+2346,68,F,"It shall be possible to manually select Shunting from Stand By operation, Full Supervision operation or Partial Supervision operation",1,F,True
+2347,68,F,Automatic transfer to Shunting may be from Full Supervision operation and Partial Supervision operation status at any speed lower than or equal to the supervised shunting speed based on trackside information.,1,F,True
+2348,68,F,"Before authomatic transition to Shunting, ETCS shall request confirmation from the driver.",1,F,True
+2349,68,F,ETCS shall supervise Shunting operation to a permitted national speed value.,1,F,True
+2350,68,F,"It shall be possible to apply the train trip function, if the shunting movement passes a signal showing ""danger for shunting"".",1,F,True
+2351,68,F,Exit from Shunting shall only be possible when the train is stationary.,1,F,True
+2352,68,F,Exit from Shunting shall take place when the driver selects exit from shunting.,1,F,True
+2353,68,F,"Partial Supervision shall be selected either by the Driver, or by information received from track-to-train transmission.",1,F,True
+2354,68,F,If acknowledgement is specifiedthe driver shall acknowledge transfer from Full Supervision to Partial Supervision within 5 seconds .,1,F,True
+2355,68,F,Partial Supervision shall be indicated on the DMI.,1,F,True
+2356,68,F,In Partial Supervision the train shall be supervised according to train speed and distance data available.,1,F,True
+2357,68,F,The train shall have the capability of being supervised to a ceiling speed.,1,F,True
+2358,68,F,This ceiling speed shall not be shown continually on the DMI but may be shown momentarily when selected by the driver.,1,PE,False
+2359,68,F,"The train shall leave Partial Supervision when the trainborne equipment is not operative any longer, when Shunting is selected or when Full Supervision is available.",1,F,True
+2360,68,F,It shall be possible to order a train trip when passing a stop signal.,1,F,True
+2361,68,F,Transferring to Full Supervision shall occur automatically when a movement authority and all other necessary information is received through track-to-train transmission.,1,F,True
+2362,68,F,Full Supervision shall provide supervision of speed and distance.,1,F,True
+2363,68,F,"The train shall, as a minimum, be supervised to a ceiling speed; the supervised speed shall not be shown on the DMI unless selected by the driver.",1,F,True
+2364,68,F,The supervised Shunting speed shall be indicated to the driver on request,1,F,True
+2365,68,F,"On request of the RBC, the driver shall have the possibility to confirm that the track ahead of him until the end of the on sight section is clear",1,F,True
+2366,68,F,It shall be possible to define certain locations (e.g. tunnels) where speed increase is related to the front of the train.,1,F,True
+2367,68,F,The braking curves shall ensure that the train complies with its speed requirements.,1,PE,False
+2368,68,F,Where failure to apply the full service brake is detected the emergency brake shall stop the train in rear of the danger point.,1,PE,False
+2369,68,F,"The release speed shall be calculated on board, based on either: safety distance and overlap, accuracy of odometry, deceleration performance of the train, etc or given from the trackside.",1,PE,False
+2370,68,F,The release speed given from the trackside shall take priority over the release speed calculated on board,1,F,True
+2371,68,F,The release speed shall be indicated on the DMI.,1,F,True
+2372,68,F,If the release speed is calculated on board it shall ensure that the train will stop before reaching the danger point,1,F,True
+2373,68,F,"When the train is stationary or after a certain time (e.g. the time for ""route releasing"" of the overlap, the release speed calculation shall be based on the distance to the danger point (if calculated on-board). The condition for this change shall be defined for each target as infrastructure data.",1,F,True
+2374,68,F,Each railway shall have the possibility of allowing a different release speed for every signal.,1,F,True
+2375,68,F,The ETCS trainborne equipment shall be able to determine the location of the entire train.,1,F,True
+2376,68,F,"On lines fitted with RBC, the ETCS trainborne equipment shall be able to transmit the location of the entire train to the RBC.",1,F,True
+2377,68,F,The train location calculation shall take into account error of odometry.,1,F,True
+2378,68,F,Actual speed shall be indicated on the DMI,1,PE,False
+2379,68,F,"There shall be no discrepancy between the speed shown to the driver and the speed used for supervision of movement authorities and speed limits, function (4.3.7.).",1,F,True
+2380,68,F,The indication provided shall enable the driver to drive at the permitted speed without receiving a warning and without intervention of ETCS.,1,F,True
+2381,68,F,The driver shall know the distance to the next point defining the indicated braking curve and the permitted speed allowed. This shall be shown to the driver in a way that is understandable and logical.,1,PE,False
+2382,68,F,Visual and acoustic warnings to the driver about possible intervention from ETCS shall be given to enable the driver to react and avoid intervention.,1,F,True
+2383,68,F,A train shall be supervised to its static and dynamic train speed profiles.,1,F,True
+2384,68,F,"Within the braking curve area, a warning shall be given to the driver to enable him to react and avoid intervention from ETCS equipment at least 5 sec. before the intervention.",1,PE,False
+2385,68,F,The target distance shall not be shown on the DMI unless selected by the driver.,1,F,True
+2386,68,F,"If the train or the shunting movement exceeds the permitted ceiling speed by a certain harmonised margin, the trainborne equipment shall execute a brake intervention until the actual speed does not exceed permitted speed; then the driver shall be able to release the brake",1,PE,False
+2387,68,F,When changing to a higher speed level the rear end of the train shall respect the static train speed profile.,1,PE,False
+2388,68,F,"When changing to a lower speed level, the front end of the train shall respect the dynamic train speed profile.",1,PE,False
+2389,68,F,"The driver shall have the possibility to select the language, this does not concern non pre-defined texts sent from the trackside.",1,F,True
+2390,68,F,"Based on all relevant data, the ETCS shall calculate an emergency braking curve and a service braking curve",1,F,True
+2391,68,F,This static train speed profile shall also respect maximum line speed and track speed and special speed levels for special classes of trains.,1,F,True
+2392,68,F,The ETCS trainborne equipment calculates the static train speed profile on the basis of infrastructure data and train data.,1,F,True
+2393,68,F,It shall be possible to permit/inhibit the service brake intervention by trackside,1,F,True
+2394,68,F,"At Start Up, the on board equipment shall perform an automatic self-test.",1,PE,False
+2395,68,F,The test shall require no action on the part of the driver.,1,F,True
+2396,68,F,The DMI shall indicate the result of the self-test.,1,F,True
+2397,68,F,Train data shall be entered before the on-board ETCS equipment allows train movement.,1,F,True
+2398,68,F,The driver shall be able to select Train Data Entry on the DMI.,1,F,True
+2399,68,F,ETCS shall calculate the permitted speed for the train for all locations of the authorised movement.,1,F,True
+2400,68,F,Train data may be entered automatically from a railway management system or from train memory.,1,F,True
+2401,68,F,Entering or overwriting data manually by the driver shall be possible but only when stationary.,1,F,True
+2402,68,F,Current train data shall be stored (except at transition to shunting) in the ETCS equipment until the traction unit is not operative.,1,F,True
+2403,68,F,Stored train data shall be offered to the driver to be confirmed when Data Entry starts.,1,F,True
+2404,68,F,"The system for Train Data Entry shall provide for the input of other data required by STMs connected to ETCS. This may require additional items, not required for ETCS, to be entered.",1,F,True
+2405,68,F,The entry of driver identification and the selection of the language shall be possible.,1,F,True
+2406,68,F,ETCS shall collect all relevant information concerning train and line speed.,1,F,True
+2407,68,F,The change of driver identification during a journey or a Train Running Number shall be possible,1,F,True
+2408,68,F,"Following successful completion of Train Data Entry, the driver shall be able to perform shunting movements or train movements.",1,F,True
+2409,68,F,"The following data may be entered manually by the driver or from train memory (M), or provided by external sources (O): Driver identification, Train identification (train number) STM ready for use, Data required for brake calculation, Maximum train speed, Train length, Status of air tight system, Type of electric power accepted, Data additional required for STM (if any), International train category, Train gauge, Maximum axle load of the train with a resolution of 0,5 t.",1,F,True
+2410,68,F,If the onboard fails to contact the RBC when awakening the driver shall be asked to enter the RBC contact details.,1,F,True
+2411,68,F,The driver shall be able to consult train data when the train is stationary or moving.,1,F,True
+2681,72,F,"A freely available wiki should provide a simple markup language that actors can use to style their input, as well as link to other pages in the wiki. More importantly, having the wiki inside Moodle reduces confusion and allows for the integration of notifications and logins.",1,PE,False
+2682,72,F,"Currently, there is no system that allows actors to receive SMS or email notifications of changes to Moodle pages (such as assignments or announcements).",1,F,True
+2683,72,F,"A freely available blog engine should provide all modern blog functionality, such as tagging, drafting, and comments. These blogs should share authentication and notification with Moodle.",1,F,True
+2684,72,F,The system must provide a blog engine.,1,F,True
+2685,72,F,The system must provide both e-mail and SMS notifications for pages.,1,F,True
+2686,72,F,The system must provide a wiki where actors can collaboratively create networks of documents.,1,F,True
+2687,72,F,The system should display grade information to the appropriate actor.,1,F,True
+2688,72,F,"The system should maintain a history of grades for a particular assignment if the course administrator changes them. This way, another actor can review the grade information if their score on an assignment has changed and they wish to dispute it. Course administrators can also track how they have changed a score over time using the timestamps associated with each change to the gradebook.",1,F,True
+2689,72,F,The system should maintain a grade history.,1,F,True
+2690,72,F,"The system should display grade information such as the grade for each assignment, averages, and overall grade to the actor to whom the grades belong. No other actor should be able to view another’s grades except an actor in the role of course administrator for the course to which the grades belong.",1,F,True
+2691,72,F,Course administrators should be able to post grades for an assignment based on the ratio of points earned to points possible. The course administrator should also be able to attach feedback in the form of text or an attachment (as described above). Time stamps should be attached to the last time the grade was modified so that actors may examine when particular grades were submitted and how an actor in the role of student has improved or lessened his performance in the course.,1,F,True
+2692,72,F,"For this requirement, page refers to any distinct page (e.g., an assignment, a wiki page, a forum post, etc.). When a page is created, the actor in the role of course administrator should be able to toggle whether notifications are turned on. By default, they should be turned on for announcements. If notifications are turned off, actors in the capacity of student should be able to subscribe to notifications.",1,F,True
+2693,72,F,"The social, collaborative components of Moodle are not very robust. There are better, freelyavailable solutions which should be integrated into Moodle to provide the best functionality possible for all actors without having to use 3rd party services.",1,US,False
+2694,72,F,"Students should be able to select in their preferences whether notifications are sent to their mobile telephone (via SMS) or e-mail account. They should also be able to manage their notification subscriptions (for example, remove themselves from notifications).",1,F,True
+2695,72,US,"A system will be considered to meet this requirement if it has a single administrative interface rather than individual links for editing each page. Furthermore, this interface must allow administrators to easily change themes and other setting that affect page layout across the entire courseware system.",1,PE,False
+2696,72,F,"Back-up requirements will need to be determined, based on individual components of the system. The system should be backed up with a frequency that ensures system and course data is protected. Since assignments will be submitted via the system, it should be backed up on a nightly basis, with options for weekly, off-site backup when necessary.",1,PE,False
+2697,72,F,The system must have the ability and capacity to restore back-up data within six hours so that the system is never offline for an inordinate period of time.,1,PE,False
+2698,72,F,"The system should be available 24 hours a day, 7 days a week.",1,PE,False
+2699,72,F,"This statement provides a general sense of system availability. It is not intended to demand the system maintain reliability, or to require the system to be highly available. It should not exclude maintenance windows, or scheduled downtime. It is only intended to convey the expectation that our customers should have access to the system during off-hours as well as business hours. 99% up-time should be considered sufficient to meet this requirement.",1,PE,False
+2700,72,F,Users must have easy access to help while interacting with the system. Adequate user documentation should be provided to minimize the number of calls to the Help Desk about problems with the system. Modifications should be reported via the main page to inform actors of unexpected changes. This electronic documentation should be supplemented with phone and on-site support provided by the Office of Information Services.,1,US,False
+2701,72,F,"System administrators must have access to comprehensive, searchable documentation.",1,PE,False
+2702,72,F,A comprehensive database of maintenance tasks and help files should be compiled to make the courseware system easier to maintain from an IT staff point-of-view. Search results should be displayed based on relevance.,1,US,False
+2703,72,F,"This documentation must cover all procedures necessary for regular maintenance with links to additional information, all common errors, and links or documentation for advanced troubleshooting.",1,US,False
+2704,72,F,The system must be maintainable without substantial modification.,1,PE,False
+2705,72,F,"Due to limited staff in the Office of Information Services, it is important that the system be mostly self-sustaining. This will reduce the number of FTE hours spent maintaining the system and simplify maintenance tasks.",1,PE,False
+2706,72,US,"Although any courseware solution may be composed of diverse systems, applications, and processes, the underlying architecture should be transparent to the administrators. The system should be configurable from a single source at a central administrative position, and should provide a central, easy-to-use interface that will allow administrators to configure the user interface and features in a way that reduces page clutter.",1,US,True
+2707,72,PE,The system should support at least 1000 concurrent users.,1,PE,True
+2708,72,PE,"This statement provides a general sense of reliability when the system is under load. It is important that a substantial number of actors be able to access the system at the same time, since a courseware system is important to the courses that employ it. The times when the system will be under the most stress are likely during midterm and finals weeks. Therefore, it must be able to handle at least 1,000 concurrent users.",1,PE,True
+2709,72,F,The system must be backed up on a configurable schedule.,1,PE,False
+2710,72,F,The system must allow actors in the capacity of course administrator to post grades associated with assignments for a particular actor in the capacity of student. Actors in the role of professor may want to optionally grade assignments online since they are being submitted electronically by actors in the role of student.,1,F,True
+2711,72,F,A course administrator must be able to grade an assignment.,1,F,True
+2712,72,F,The system must display a search box on every page after an actor has logged in.,1,F,True
+2713,72,F,"Actors should be able to search from any page. If the actor is hierarchically outside of a particular course, each of his or her courses should be searched and results should be grouped by course. If the actor is hierarchically inside of a course, that course should be searched with an option to search all courses.",1,F,True
+2714,72,F,"One of the fundamental tasks of the system is to allow actors to upload and manage files on certain pages of the system. These might include assignment submission pages, forum pages, wiki pages, and announcement pages. An actor in the role of course administrator should be able to optionally upload multiple files where he or she finds that such as feature would be useful—such as on a devoted project page.",1,F,True
+2715,72,F,"For this requirement, page refers to any distinct upload point (e.g., an assignment, a wiki page, a forum post, etc.).",1,F,True
+2716,72,F,The system must allow for multiple file upload to be configured on a per-page basis.,1,F,True
+2717,72,F,"Actors in the capacity of course administrator or professor should be able to enable multiple file uploads on a page of his or her choosing. For collaborative projects, it becomes important for actors to be able to upload more than one file to a given page, especially in the case of an assignment submission where the assignment might include multiple parts. Such a construct should be offered to the actor during a page’s creation and editing stages.",1,F,True
+2718,72,F,The system must be able to capture and organize voice clips that can be used where appropriate.,1,F,True
+2719,72,F,One of the shortcomings of the current courseware system is that the foreign language department is unable to capture and track voice clips—recorded by students—for oral homework over the course of a student’s education.,1,PE,False
+2720,72,F,The system must allow actors to organize their voice clips into a portfolio.,1,F,True
+2721,72,F,"Equal and finite drive space needs to be allotted to each actor in the role of professor or administrator to allow for the storing of voice clips recorded and submitted by all actors in the roles of students. Actors in the role of professor or system administrator should be allowed to partition this space for actors in the roles of students. This can be done one of two ways: 1) the actor can be allowed to preview the voice clip before it is archived and determine whether or not he or she would like that clip to be archived, or 2) a newly created voice clip can be automatically archived. The first option would allow the actor to throw out an audio clip that is deemed to be unsuitable or inappropriate for an assignment without having to take it out of an archive of voice clips. The actor should have the option to have the voice clip be archived after a preview has taken place. The second option would automatically archive a voice clip once submitted but would require that the actor interact with the archived file. Thus, if the actor chooses to delete the file, it would need to be deleted from the archive of voice clips.",1,F,True
+2722,72,F,Maintaining an archive of voice clips makes it possible for comparisons to be made between clips to determine whether an actor is improving his or her language skills over multiple courses. The actor should be able to optionally attach one of his or her archived items to any page where uploads are permitted.,1,F,True
+2723,72,F,The term archive used above may also be referred to as a portfolio.,1,F,True
+2724,72,F,The system must allow actors to download their voice clips in a flexible format.,1,F,True
+2725,72,F,"Voice clips should be optionally downloadable in a format such as MPEG Audio (mp3) format, since it is widely supported across different web browsers and operating systems. Voice clips should be downloadable for archival purposes or for the purpose of presenting them to other actors.",1,PE,False
+2726,72,F,The system must store audio clips in a format conducive to speech.,1,F,True
+2727,72,F,The system must be able to capture and manage files where appropriate.,1,F,True
+2728,72,F,The system must allow actors to delete recorded clips.,1,F,True
+2729,72,F,"In addition, the search page described above might allow for the possibility of searching the world wide web using a standard search engine such as Google.",1,PE,False
+2730,72,F,"Second, a single page should be dedicated specifically to the task of searching the course management system. In addition to the basic search field, this page should allow an actor to filter out certain results (such as forum posts or grades, etc.) and search specific sections (or components) of the course management system. Results should appear in categories (e.g., Assignments, Wiki Pages, Forum Posts, etc.) based on relevance. In this case, relevance is determined by results that having the highest number terms matching the search terms. When the actor clicks a search result link, they should be taken to the page corresponding to the search result.",1,PE,False
+2731,72,F,"First, it should be present in the form of a search box and a “Search” button on the top or bottom of every page. More information on this topic is given in sub-section 3.4.2 below.",1,PE,False
+2732,72,F,"Actors should be able to search for pages at the course level, since most actors will be searching for material in a given course. The search feature should be present in two ways.",1,PE,False
+2733,72,F,Voice clips should be stored in a format optimized for speech since this feature is meant to catalog voice recordings. Recordings should only be converted to MPEG Audio (mp3) format when they are being downloaded; a separate viewer should be provided in a cross-platform language for listening to clips in Moodle.,1,PE,False
+2734,72,F,"Moodle can be difficult to navigate and requires too many clicks to be efficiently used. Too many steps to complete basic actions—such as submitting an assignment—lead to frustration on the part of the actor. A search utility enables actors to find what they are looking for quickly in addition to having a hierarchical approach to finding functions of the course management system. For this requirement, page refers to any distinct page, such as an assignment, a wiki page, or a forum post.",1,PE,False
+2735,72,F,An actor must be able to search through pages in a course.,1,F,True
+2736,72,F,"Actors in the course administrator role may not feel the need to provide web feeds for every page in their course. During the creation and editing of a page, that actor should be able to toggle web feed availability.",1,F,True
+2737,72,F,The system must allow web feeds to be turned on or off on a per-page basis.,1,PE,False
+2738,72,F,"If actors are unable to be notified in some way of new content in Moodle, they are unable to efficiently keep track of a course’s current affairs. For this requirement, page refers to any distinct block (e.g., assignments, wikis, forum threads, etc.).",1,F,True
+2739,72,F,"The system must be able to display web feeds, such as RSS 2.0 feeds, for all pages of the course management system where elements such as forum posts, assignment postings, announcements, wiki alterations and other blocks of information that an actor may view are added. Actors in the role of course administrators should have the ability to determine which of these components have feeds and to whom these feeds should pertain.",1,F,True
+2740,72,F,"Since voice clips should be stored in a portfolio for each actor during his or her existence in the course management system, he or she should be able to examine his or her portfolio to select and delete clips if he or she chooses to. This allows him or her to manage archived voice clips and to create a cohesive portfolio that actors in the role of professor can use to judge improvement over time.",1,PE,False
+2741,72,F,The system must be able to use search functionality as a way to navigate Moodle pages instead of using hierarchical links.,1,F,True
+2861,74,O,Submit a CAISO market schedule for any test energy.,1,F,False
+2862,74,O,Black Start units may be tested and/or assessed for the ability to Complete such number of successive starts within such period of time as may be specified in the Black Start section of the unit’s RMR or Interim Black Start contract. Its ability to produce the range of reactive power resources required by its voltage support section of the unit’s RMR or Interim Black Start contract.,1,PE,False
+2863,74,O,Black Start units may be tested and/or assessed for the ability to selfprovide start-up power for the period of time it takes to complete the startup process at the generating station and to switch to the applicable transmission path and synchronize to the grid.,1,PE,False
+2864,74,O,The CAISO annually requests Black Start tests from at least one third of all RMR and Interim Black Start units.,1,PE,False
+2865,74,O,The CAISO shall have the sole right to determine when the operation of Black Start Generating Unit is required to respond to conditions on the CAISO Controlled Grid.,1,F,False
+2866,74,O,"The CAISO shall from time to time undertake performance tests, with or without prior notification.",1,F,False
+2867,74,O,The minimum run time duration (the generation time after being synchronized to the grid) of a Black Start test is 10 minutes.,1,PE,False
+2868,74,O,All Black Start Generating Units must satisfy technical requirements specified by the CAISO.,1,F,False
+2869,74,O,"The Black Start Test should include key operating aids used in Black Starts such as telephone communications and SCADA, if applicable.",1,PE,False
+2870,74,O,The Black Start unit must be capable of starting and energizing the applicable transmission path without assistance from the electrical system.,1,PE,False
+2871,74,O,"The following start-up/synchronizing time limits shall apply to the Black Start testing units: Hydroelectric generating units or combustion gas turbines - within 30 minutes of the initiation of the Black Start process, Industrial gas turbines - within 60 minutes of the initiation of the Black Start process, Hot, steam-driven turbines, within 2.5 hours of the initiation of the Black Start process. If the certified Black Start facility is in another reliability coordinator area or is comprised of an unspecified technology then specific start time limits are negotiated. These times include ICU start-up, normal start-up of the unit, plus switching time for the actual synchronizing of the unit.",1,PE,False
+2872,74,O,Adequate transmission capacity shall be available to connect the Black Start facility to the source providing station services to other specified generating stations.,1,PE,False
+2873,74,O,The Black Start unit must be equipped with governors that are capable of operating in an isochronous mode.,1,PE,False
+2874,74,O,The Black Start unit must have the ability to maintain voltage within emergency voltage limits over a range of loading from no external load to full external load in accordance with NERC reliability standards.,1,PE,False
+2875,74,O,"Testing records shall include the dates of the tests, the duration of the tests, and an indication of whether the tests met the requirements of this Black Start Testing section.",1,F,False
+2876,74,O,"The owner or operator of any Voluntary Black Start unit that desires a Black Start generating unit status with the CAISO Balancing Authority shall: Demonstrate at least every five years, through simulation or testing, that the unit can perform its intended functions as required by the WECC BCP (if any) and of this testing section. Submit documentation of the test results and analysis to the CAISO, WECC, or NERC upon any request. Submit any past reports for Black Start tests with the CAISO and WECC. o Those Participants who do not currently test their Black Start capability, will be required to test their Black Start capability. Within 24 hours of conducting a Black Start test, all Participants will notify the CAISO RT Dispatcher by phone indicating the success or failure of the test. Within 14 days of performing a Black Start test, all Participants will file a letter with the CAISO regarding the success or failure of the test.",1,F,False
+2903,76,US,"Enables the user to select the pertinent class, each class is highlighted for ease of use.",1,F,False
+2904,76,SE,"In the event, inflammatory/derogatory content has been identified, the content will be immediately removed and the appropriate authorities with be notified resulting in possible disciplinary action.",1,SE,True
+2905,76,US,News Feature: The administrator has the capability to post current news on this section as needed.,1,F,False
+2906,76,US,Contact Us Feature: Will enable the user to look up a list of pertinent e-mail addresses/phone numbers within the institution.,1,F,False
+2907,76,US,Help Feature: Feature is linked with the help desk staff of the particular institution; anyone who has difficulty in logging on can choose this feature to contact the system administrator.,1,PE,False
+2908,76,US,The initial entry (Welcome Screen 1) has three separate quadrants; each quadrant has a specific function.,1,F,False
+2909,76,US,The user interface of the Virtual-ED system is designed with increased emphasis on the user Human-Machine interface. The interface is compartmentalized by competency to ensure that the user can easily navigate within the portal. Each compartment has a distinctive focus with a minimalist approach. The user has the capability to alter the interface as suited.,1,US,True
+2910,76,SE,"Users may not use the system to upload or post data which is discriminatory in regards to race, color, creed, religion, sex, age, handicap, marital status, or national origin. Users may not upload or post data which is inflammatory or derogatory.",1,F,False
+2911,76,SE,User passwords should be between 8 and 12 characters including letters and numbers but excluding spaces.,1,F,False
+2912,76,SE,All users are responsible for securing a backup of any uploaded data/content to the system in the event of an outage.,1,F,False
+2913,76,SE,The systems should adhere to the privacy policy set forth by NJIT and its administration and also state and federal guidelines.,1,F,False
+2914,76,SE,"In the event your account has been compromised, notify the NJIT help desk immediately. Refrain from using the infected account to communicate with anyone else.",1,F,False
+2915,76,SE,"All archived chats, e-mail, file share, and IM Messages are governed by the NJIT E-mail use policy. The user is encouraged to view the content at the NJIT homepage for detailed use of the policy and restrictions and limitations of the policy.",1,F,False
+2916,76,SE,"The information within the system is regarded private, however in the event of an investigation by a legal authority, including by not limited to a subpoena or audit, the information will be released to the proper authorities for the purpose intended.",1,F,False
+2917,76,SE,The user should periodically change the password; currently the user policy requires a mandatory password change every three months.,1,F,False
+2918,76,US,"Enables the user to choose a specific application to be used. To launch an application click on the application icon, the application will open up on a separate screen",1,F,False
+2919,76,SE,The user is responsible for content uploaded. NJIT policy prohibits the use NJIT facilities/assets for personal use.,1,F,False
+2920,76,US,Web conferencing feature enables the user to interact with multiple users within a given class. Each user can chat with one another while the session is open.,1,F,False
+2921,76,US,"The portal will be periodically unavailable due to necessary maintenance upgrades. In the event of scheduled maintenance, the students/staff will be notified at least 24 hours in-advance.",1,PE,False
+2922,76,US,This screen is an extension of the web conferencing feature; this screen enables the users to view all available chat sessions available at any given time.,1,PE,False
+2923,76,SE,The user ID and the password should not be shared with anyone (students/staff/or anyone else).,1,F,False
+2924,76,US,"Appropriate funding must be acquired to make required upgrades to existing systems, buy additional hardware and software, and acquire skilled personnel to develop project.",1,PE,False
+2925,76,US,The system must be completed within the timeframe allotted for development.,1,PE,False
+2926,76,US,The content is the responsibility of the users of the system; NJIT is neither responsible nor liable for the accuracy or the correctness of the content.,1,F,False
+2927,76,US,The Web-Conferencing features’ performance depends on the availability of the bandwidth. The minimum of a broadband connection is recommended to fully utilize Web-Conferencing feature.,1,PE,False
+2928,76,US,"The system has an estimated 99% up time, though in an event of an outage data loss can occur.",1,PE,False
+2929,76,US,"Security: Users must have antivirus software installed so they can scan the incoming files from other users of the system, any commercially available Antivirus is can be used scanning files.",1,PE,False
+2930,76,US,Data Transfer Rates: Recommended 1.5 MBPS Download speed (for any download activities) and upload speed of minimum 128 Kbps.,1,PE,False
+2931,76,US,"Communication Standards: SSH client, FTP client, VPN client are used for connection between two computing endpoints.",1,PE,False
+2932,76,US,The users must have pop-up windows enabled on their systems and must enable java scripts on their systems to be able to install Instant-Edu messaging software.,1,F,False
+2933,76,US,"Web Browser: The system requires the use of IE or Fire fox, Safari as the native web browser. It is recommended that current system performs optimally with the suggested browsers.",1,US,True
+2934,76,US,"When using “Test administering” feature (applicable to Administrators only), XL and PDF must be installed in the native machine to view the downloadable reports. By default the reports will be saved to the “C: Program files/Virtual-ED/Bin/My reports folder”, (Requires XL-2002 or higher and Adobe Acrobat Reader 8 or higher)",1,PE,False
+2935,76,US,"The Virtual-ED software has a seamless integration with the local operating/hardware system. Once the user logs on to the Virtual-ED system (screen.1), the interface will seamlessly manage the local input/output/operating system, devices as needed",1,PE,False
+2936,76,US,Visual Input: The conferencing feature requires a high resolution video input device. The device needs to be configured in accordance to manufacturer recommended settings and should be in operation before enabling the conferencing feature.,1,PE,False
+2937,76,US,"Input devices: All hardware interfaces will be provided by the operating system, the system will require a keyboard and a mouse. In addition a properly configured sound card and a voice input device will be needed to utilize the conferencing feature.",1,PE,False
+2938,76,US,Display Monitor: It is recommended that a high resolution LCD or CRT monitor be used for best results.,1,PE,False
+2939,76,US,"File transfer feature enables the user to have the ability to manage a private temporary hosting space. Tools such as file uploading, directory creator, move, delete and rename will be accessible",1,F,False
+2940,76,US,Instant messaging feature will allow users to interact with faculty and follow classmates over a text based one-to-one or one-to-many connection.,1,PE,False
+2941,76,SE,The user is responsible for maintaining the user account. Action must be taken by the user to prevent the user account from being compromised.,1,F,False
+2942,76,F,"The students overall login should allow them access to the appropriate folder, and their account should only have Write privileges.",1,F,True
+2943,76,PE,System may require users to download program updates to become compatible and compliant with system.,1,PE,True
+2944,76,F,"The students overall login should allow them access to the appropriate folder, and their account should only have Read, Write, and Delete privileges",1,F,True
+2945,76,F,"For the first release, each student needs a quota space of 2GB. Files causing the quota to be exceeded should not be allowed to upload.",1,SE,False
+2946,76,F,"FTP management software on the server setup with quota space, user authentication, and appropriate user rights.",1,F,True
+2947,76,F,Firewall ports may need to be unblocked on both sides to accommodate file transfers.,1,PE,False
+2948,76,F,"The professor’s username should allow them access to the appropriate folder and have Read, Write, and Delete privileges.",1,F,True
+2949,76,F,Files causing the quota to be exceeded should not be allowed to upload.,1,SE,False
+2950,76,F,"For the first release, each class needs a quota space of at least 1GB per student in that class. If the upload will cause the account to go over disk space quota, the file should be still be allowed to upload and an email sent to the administrator and professor.",1,PE,False
+2951,76,F,Firewall ports may need to be unblocked on both sides to accommodate file transfers.,1,PE,False
+2952,76,F,Users must have web cam and microphone if they want to be able to create an introducing video of themselves on their profile page,1,F,True
+2953,76,F,"Users must be connected on a high speed internet (DSL, Cable)",1,PE,False
+2954,76,F,Users must have antivirus software installed so they can scan the incoming files from other users of the system,1,PE,False
+2955,76,F,Users must enable java scripts on their systems to be able to install Instant-Edu messaging software,1,F,True
+2956,76,F,Users must have pop-up windows enabled on their systems,1,PE,False
+2957,76,F,"Users are limited to Internet Explorer, Mozilla Firefox and Safari internet browsers",1,US,False
+2958,76,F,"Users are limited to Windows XP, Vista or Mac- OS",1,PE,False
+2959,76,SE,"User must comply with all local, state, and federal laws when using available resources. Any infringements or violations including but not limited to: unauthorized use, harassment, exploitation of any gaps in the portal, inflammatory/derogatory content, or defacing the system will result in the appropriate authorities being notified.",1,PE,False
+2960,76,F,Users must have their computers equipped with microphone and web camera.,1,F,True
+2961,76,F,"FTP management software on the server setup with quota space, user authentication, and appropriate user rights.",1,F,True
+2962,76,F,"FTP management software on the server setup with quota space, user authentication, and appropriate user rights.",1,F,True
+2963,76,F,"The professor’s username should allow them access to the class exam folder and have Read, Write, and Delete privileges.",1,F,True
+2964,76,PE,System must be accessible on and off campus via broadband internet connection and using required ID/Password combination.,1,F,False
+2965,76,F,"For the first release, each class needs a private folder with Write permissions only for student logins.",1,F,True
+2966,76,PE,The reporting functionality utilizes the Microsoft Excel (.XLS) and Adobe Portable Document Format (.PDF) for report outputs. The following recommended software must be installed in the local machine to fully utilize the reporting functionality.,1,PE,True
+2967,76,PE,"The system requires the use of Internet Explorer, Safari, or Firefox as the native web browser. It is recommended the current system performs optimally with the suggested two browsers. The use of other than the recommended browsers may cause performance issues that have not been addressed by the software vendor.",1,PE,True
+2968,76,PE,"The web conferencing feature of the system requires the workstation utilized have at least the following minimum requirements: A minimum of 500 MHz, 256 MB of available memory, Mac-compatible Webcam and headset (preferred) or separate webcam, microphone, and speakers, Broadband internet access (cable, DSL, etc.)",1,PE,True
+2969,76,F,Users must accept the privacy statement prior to using the application sharing,1,F,True
+2970,76,F,Users must enable java scripts on their systems to be able to install Whiteboard-Edu software,1,F,True
+2971,76,F,Users must have Real Player installed on their systems,1,PE,False
+2972,76,F,Users must enable java scripts on their systems to be able to install Instant-Edu messaging software,1,F,True
+2973,76,F,Users must have antivirus software installed so they can scan the incoming files from other users of the system,1,PE,False
+2974,76,F,Students need Excel installed and/or a PDF reader. Professors need Excel and a PDF creator.,1,PE,False
+2975,76,F,Firewall ports may need to be unblocked on both sides to accommodate file transfers.,1,PE,False
+2976,76,F,"FTP management software on the server setup with quota space, user authentication, and appropriate user rights.",1,F,True
+2977,76,F,"For the first release, each class needs a private folder with Write permissions only for student logins.",1,F,True
+2978,76,F,Students need Excel installed and/or a PDF reader. Professors need Excel and a PDF creator.,1,PE,False
+2979,76,F,Firewall ports may need to be unblocked on both sides to accommodate file transfers.,1,PE,False
+2980,76,F,"The professor’s username should allow them access to the class exam folder and have Read, Write, and Delete privileges.",1,F,True
+3458,84,O,The tools shall be able to scale to process large collections using distributed processing and data transport,1,PE,False
+3459,84,O,"The tools shall be able to process a set of multiple WARC files at the same time. For this purpose, the tools will allow you to choose/group them by: explicit naming, wildcard name matching, size limitation, number of items",1,F,False
+3460,84,F,Integrate the full-text search (search-tools project) module with the WARC browser to provide users with WARC indexing/searching capabilities.,1,F,True
+3461,84,F,Integrate a proxy mode inside the WARC browser,1,F,True
+3462,84,F,Provide a tool to draw difference graphs between WARC collections,1,F,True
+3463,84,F,"It shall be possible to export summaries in various formats (e.g., XML, CSV)",1,PE,False
+3464,84,F,"Provide a ‘‘diff‘‘ tool to compare WARC sets based on defined criteria (e.g., timestamp, hostname, etc.)",1,F,True
+3465,84,F,Enhance the WARC browser to display a manifest of WARC files and their locations,1,F,True
+3466,84,F,Enhance the WARC browser to display aggregated WARCs summaries in its UI,1,F,True
+3467,84,O,The tools shall offer best possible performance to correctly process large collections (I/O bound),1,PE,False
+3468,84,F,Implement WARC browser server side rewriting,1,F,True
+3469,84,O,The tools shall be able to run on multiple machines but will not provide functionality for dealing with hardware failures (out of scope),1,PE,False
+3470,84,O,The migration workflow system will be driven by command line tools and scripts,1,PE,False
+3471,84,O,"The tools shall be compliant with Java development environments, by using web services, RESTful API’s, etc.",1,PE,False
+3472,84,O,"The tools shall provide logging facilities, for example, to follow command progression, i.e. process duration, output levels, etc.",1,F,False
+3473,84,O,The tools shall provide enhanced usability by providing easy to adapt shell script wrappers for the major commands,1,PE,False
+3474,84,O,"It shall be possible to operate the tools in modes that restrict their effects to selected collection subsets. For example, select by name, random sampling, etc",1,F,False
+3475,84,O,The workflow system shall have a configurable management strategy for migration from ARCs to WARCs.,1,F,False
+3476,84,O,Migration configurations can be built with a Web User Interface,1,PE,False
+3477,84,O,"Active migrations can be monitored, paused, and restarted (a console application) with a Web User Interface",1,PE,False
+3478,84,O,"Pre and post conversion actions will be provided for at each level of the migration, e.g. record, WARC, job",1,F,False
+3479,84,O,IIPC members should provide us with the default METADATA they want to be included for migration.,1,L,False
+3480,84,O,"Deduplication may be run before migration, inside a batch process.",1,F,False
+3481,84,O,Repackaging filters can be used by the summary module,1,F,False
+3482,84,O,Implementation of the tools shall avoid unnecessary technology dependencies and shall not include development of partner-specific integration technologies,1,F,False
+3483,84,F,The migration framework shall provide tools to build reports from WARC files,1,F,True
+3484,84,F,Provide a way to view crawls deltas for quality assurance,1,F,True
+3485,84,F,Pre operation can prevent a file or record being processed by returning value,1,F,True
+3486,84,F,The migration workflow shall provide a clear Application Programming Interface (API) to handle the migration process and default configuration.,1,F,True
+3487,84,F,The migration API will require inclusion of only one header file.,1,F,True
+3488,84,F,"A configuration must be provided explicitly, errors should be generated in the absence of a configuration.",1,F,True
+3489,84,F,"The user shall be able to provide metadata related to the conversion that will be stored in the converted files (e.g., institution, context, crawler, collection name, ...)",1,F,True
+3490,84,F,"It shall be possible to request that automatically generated migration metadata be stored in the converted files (e.g., OS/Kernel type, original ARC name, ARC size, ARC digests, conversion timestamp, ARC record offset, ...)",1,F,True
+3491,84,F,"The migration workflow shall be able to call external tools and services (e.g., database queries, shell commands, web service).",1,F,True
+3492,84,F,"The migration process shall use persistent, opaque, unique, and global identifiers for records access.",1,F,True
+3493,84,F,"A (default) external tool (e.g., ClamAV) will be used to scan files before conversion (pre-conversion step).",1,F,True
+3494,84,F,"The API should be flexible enough to allow external tools such as JHOVE, DROID to be used for file format identification.",1,PE,False
+3495,84,F,The ARC to WARC migration should be able to run on multiple machines that will be easy to deploy. This may be achieved by using a simple messaging infrastructure.,1,PE,False
+3496,84,F,Logging during the migration may be turned on/off at any time,1,SE,False
+3497,84,F,"Software checkpoints (such as start-trans, end-trans) may be added during processing for managing atomic transactions (e.g., operations on a file, these must start and complete to be accepted in the migration), except where operating system limitations would prohibit it.",1,F,True
+3498,84,F,"Each repackaged WARC file shall include a user-defined METADATA record which will describe the extraction context (e.g., filter used, involved WARC files)",1,L,False
+3499,84,F,"Duplicate detection shall find and report WARC records with the same checksums. A centralised database will be used to store previously processed records, against which new ones will be compared.",1,F,True
+3500,84,F,"Repackaging will allow pre and post record, file and job operations",1,F,True
+3501,84,F,It shall be possible to repackage WARC files by filtering on any field in the WARC specification.,1,F,True
+3502,84,F,"It shall be possible to repackage WARC files by filtering records based on timestamp (e.g., dates interval).",1,F,True
+3503,84,F,"It shall be possible to perform a “dry-run migration”. That is, a blank conversion to generate useful reports (performance issues, bad ARCs, time estimation ...) without writing real WARC data (i.e. simulating only). Dry run is defined entirely by the configuration.",1,PE,False
+3504,84,F,It shall be possible to repackage WARC files by filtering records based on MIME-Types.,1,F,True
+3505,84,F,It shall be possible to repackage WARC files by filtering records based on size.,1,F,True
+3506,84,F,It shall be possible to perform a round trip validation: migrate the newly created WARC file back to ARC and compare both checksums,1,F,True
+3507,84,F,Validation shall use Heritrix’s arcreader to double check that the original ARC record was correctly converted to WARC.,1,F,True
+3508,84,F,Sampling will be provided where applicable to quickly validate the conversions,1,F,True
+3509,84,F,Core validation shall use payload checksum comparisons.,1,F,True
+3510,84,F,"To validate that the migration succeeded, arc_warc_verify will use the METADATA included in the newly generated WARC files to match records with their corresponding ARC files",1,F,True
+3511,84,F,It shall be possible to repackage WARC files by filtering records based on URL (regular expressions),1,F,True
+148,4,L,All actions that modify an existing dispute case must be recorded in the case history.,1,F,False
+149,4,F,The Disputes System will provide the user the ability to create or initiate a ticket retrieval request. As part of ticket retrieval creation process the system must prompt the user to enter all the required information to create the ticket retrieval request. The ticket retrieval request is a document that is sent to merchant inquiring the validity of a transaction.,1,F,True
+150,4,F,The Disputes System must provide the user the ability to initiate a single dispute case on multiple transactions that belong to a single merchant.,1,F,True
+151,4,F,The Disputes System must allow the users to select disputable transactions (based on the age of the transaction) from a user interface and initiate a dispute (ticket retrieval request or chargeback notification) on the selected transaction.,1,F,True
+152,4,F,The Disputes System shall provide update access capability for authorized users of the application.,1,F,True
+153,4,F,The Disputes System must prevent users from accessing any dispute cases that do not belong to their cardholder base.,1,F,True
+154,4,F,The Disputes System must provide different levels of access with regard to disputes case initiation and follow-up actions.,1,F,True
+155,4,F,The Disputes System will facilitate direct data entry of a dispute case via a user interface that supports real time responses to the users.,1,PE,False
+156,4,F,The Disputes System must be accessible by both internal and external users.,1,F,True
+157,4,F,The Disputes System must allow the user to create three unique types of ticket retrieval requests. The three types of ticket retrieval requests are (1) Request for original receipt (2) Request for a copy of the receipt or (3) Request for a portfolio. A portfolio consists of documentation that would provide proof of a purchase such as the documentation that is received from a car rental agency that is more than a sales receipt.,1,F,True
+158,4,F,The Disputes System shall provide view access capability for authorized users of the application.,1,F,True
+159,4,F,The Disputes System must prevent external users from requesting original receipts. Requests for original receipts are restricted to internal users.,1,F,True
+160,4,F,The Disputes System shall provide the users the ability to view the history of all activities that have occurred on the dispute case.,1,F,True
+161,4,F,The Disputes System shall allow the user to create or initiate a chargeback request. The system must prompt the user to enter the required information to initiate a chargeback request. The chargeback request results in a printed chargeback notification that is sent to merchant indicating that their account will be charged back if no proof is provided that the disputed transaction is valid.,1,F,True
+162,4,F,The Disputes System must provide a confirmation to the user upon the creation of a chargeback request. The confirmation must contain the following information; the dispute case number the type of chargeback requested (pending or immediate) and the date that the merchant response is due.,1,F,True
+163,4,F,The Disputes System shall prevent the creation of duplicate dispute requests 100% of the time.,1,F,True
+164,4,F,The Disputes System shall accurately provide a list of possible reason codes for a given transaction. The list of possible reason codes must be derived based on the type of transaction and the industry that the merchant belongs to according to the business rules defined for the Disputes System.,1,F,True
+165,4,F,The Disputes System must provide the ability to view existing dispute cases.,1,F,True
+166,4,F,The Disputes System must provide Search functionality. The search method must include the ability to search by (1) the dispute case number (2) the merchant account number (3) the cardmember account number and (4) the issuer number. In addition to the above criteria the search functionality must further allow the user to limit the results of the search by a date range the type of dispute (ticket retrieval request or chargeback notification) the case status (open closed or all) and the dispute reason code.,1,F,True
+167,4,F,A list of all disputes cases that meet the entered search criteria must be provided to the user. The list of cases must differentiate the type and/or status of the case by color -coding the line item in the list. For example all open cases will be yellow and all closed cases will be gray.,1,F,True
+168,4,F,The Dispute System shall provide the users with the ability to follow up on a dispute case via follow-up actions. The list of available follow up actions for a given dispute case must be filtered by the status of the case and the access level of the user.,1,F,True
+169,4,F,The Disputes System shall record the name of the user and the date for any activity that creates or modifies the disputes case in the system. A detailed history of the actions taken on the case including the date and the user that performed the action must be maintained for auditing purposes.,1,F,True
+170,4,F,For any systematic (non-user initiated) action that occurs on a case such as the disputes aging process a case activity will be generated. Upon the next logon the user that initiated the dispute case must be notified that a systematic action has occurred on the dispute case.,1,F,True
+171,4,F,All letter requests must be formatted according to guidelines specified by the Print Letter Utility system.,1,F,True
+172,4,F,Any disputes cases that have been closed for over 6 months must be purged from the online disputes database.,1,F,True
+173,4,F,The Disputes System must provide a confirmation to the user upon the creation of ticket retrieval request that contains the following information; the dispute case number the type of retrieval requested (copy original or portfolio) and the date that the merchant response is due.,1,F,True
+174,4,L,The Disputes application must maintain a detailed history of every action that a user takes on a dispute case. This ensures a complete audit trail if questions arise later on with regard to a particular dispute case.,1,F,False
+175,4,L,All business rules specified in the Disputes System shall be in compliance with the Merchant Operating Regulations.,1,L,True
+176,4,L,The Disputes application must conform to the legal requirements as specified by Regulation E and Regulation Z that govern credit card disputes processing.,1,L,True
+177,4,L,All business rules specified in the Disputes System shall be in compliance to the guidelines of Regulation E and Regulation Z.,1,L,True
+178,4,LF,The Disputes application shall comply with the corporate standards for user interface creation for internally and externally used applications.,1,F,False
+179,4,LF,All screens created as part of the Disputes application must comply with corporate standards for interface creation.,1,F,False
+180,4,US,The list of dispute cases that are displayed after a search is performed must be color coded for easy identification of dispute cases based upon the dispute case status.,1,F,False
+181,4,US,100% of the cardmember and merchant services representatives shall use the Disputes application regularly after a 2-day training course.,1,PE,False
+182,4,US,100% of merchant services representatives shall be able to successfully perform a follow up action on a dispute case on the first encounter after completing the training course.,1,F,False
+183,4,PE,The maximum wait time for a user navigating from one screen to another within the Disputes application shall be no more than 5 seconds.,1,PE,True
+184,4,PE,The Disputes application shall support 350 concurrent users without any degradation of performance in the application.,1,PE,True
+185,4,O,The Disputes application shall be available 24x7x365 with the exception of the following scheduled maintenance windows. Monday – Saturday 3:00am to 4:00am EST Sunday 1:00amd to 5:00am EST,1,PE,False
+186,4,O,The Disputes application shall interface with the Statement Database. The Statement Database provides the transaction details to the Disputes System. All transaction details must be obtained from the Statement Database,1,F,False
+187,4,O,The Disputes application shall interface with the Cardmember Information Database. The Cardmember Information Database provides detailed information with regard to a cardmember. All cardmember detail information must be obtained from the Cardmember Information Database.,1,F,False
+188,4,O,The Disputes applications shall interface with the Merchant Information Database. The Merchant Information Database provides detailed information with regard to the merchant. All merchant detail information shall be obtained from the Merchant Information Database.,1,F,False
+189,4,US,100% of cardmember services representatives shall be able to successfully create a dispute case on the first encounter after completing the training course.,1,F,False
+190,4,O,The Disputes application shall interface with the Cardmember Posting and Billing System. This will allow the Disputes application to request adjustments to cardmember and merchant’s accounts. All adjustment requests must be sent to the Cardmember Posting and Billing System.,1,F,False
+191,4,L,The Disputes application must conform to the legal requirements as specified by the Merchant Operating Regulations.,1,L,True
+192,4,O,The Disputes application shall interface with the Letters application. This will allow the Disputes application to request letters as part of the dispute initiation and dispute follow up process. All letter requests must be sent to the Print Letter Utility application.,1,F,False
+193,4,SE,All updates to data files or database must be initiated from the Disputes System.,1,F,False
+194,4,SE,The Disputes application shall manipulate and view business data. Users will not have direct access to data files or databases.,1,F,False
+195,4,SE,If a user account is revoked it can only be re-instantiated by the System Administrator.,1,F,False
+196,4,SE,Only the System Administrator shall be able to reset a revoked user logon account,1,F,False
+197,4,SE,The Disputes System shall generate a User Report that details any new users that have been added and any changes to an existing user’s access level. The report will be reviewed for auditing purposes.,1,F,False
+198,4,SE,All authorized users once authenticated must be able to logon to the Disputes System,1,F,False
+199,4,SE,The Disputes application shall ensure that only authorized users are allowed to logon to the application.,1,F,False
+200,4,SE,Only users with Update access must be able to initiate dispute requests.,1,F,False
+201,4,SE,The Disputes application shall ensure that only users with the appropriate access level are allowed to initiate dispute requests.,1,F,False
+202,4,SE,All additions of new users and modifications to user’s access shall be recorded on the User Report.,1,F,False
+542,11,MN,The product shall be internet browser independent.The product must run using Internet Explorer and Netscape Navigator.,1,PE,False
+543,11,LF,The interface shall be appealing to callers and supervisors. In the interface and usability survey 80% of beta testers must report that the interface is appealing.,1,PE,False
+544,11,LF,The interface shall have a simple look. In the interface and usability survey 90% of beta testers must report that the interface is adequately simple.,1,US,False
+545,11,SE,The product shall ensure that only supervisors can view schedule of all callers.The product must ensure that supervisors are allowed to access advertise empty time slots.,1,F,False
+546,11,SE,The product shall ensure that only supervisors can enter a caller’s schedule.The product must ensure that supervisors are allowed to access advertise empty time slots.,1,F,False
+547,11,A,The system must be available for use between 7:00AM and 11:59PM all days of the year.,1,PE,False
+548,11,SE,The product shall ensure that only supervisors can advertise empty time slots.The product must ensure that supervisors are allowed to access advertise empty time slots.,1,F,False
+549,11,PE,On a 112k connection or faster the system response time for all operations must be no more than 3 seconds 90% of the time.,1,PE,True
+550,11,PE,On a 56k connection the system response time for all operations must be no more than 6 seconds 90% of the time.,1,PE,True
+551,11,PE,The system shall be responsive. At the DePaul TeleServices Center when a supervisor uses the system to view a callers schedule the system response time must be no more than 2 seconds 90% of the time and no more than 5 seconds the rest of the time.,1,PE,True
+552,11,US,The system shall be easy to learn by callers and supervisors. Callers and supervisors shall learn how to use the system within 10 minutes.,1,US,True
+553,11,US,The system shall be easy to use by callers and supervisors. Callers and supervisors must be able to accomplish any system task within 2 minutes.,1,PE,False
+554,11,A,The system shall have high availability every day of the year.The system must be available for use between 12:00AM and 6:00PM all days of the year.,1,PE,False
+679,25,US,The system shall provide a way to return to the startup screen.,1,PE,False
+680,25,LF,The campus map shall have a pause/resume button. The pause and resume button will allow the user to scroll and select other buildings without being interrupted by the automatic search and announce feature.,1,PE,False
+681,25,LF,The campus map shall provide visual clues regarding what areas have prepared audio and therefore may be selected.,1,F,False
+682,25,US,The system shall allow the user to scroll the campus map from the campus map tab.,1,F,False
+683,25,LF,The system shall show a tabbed display (or equivalent functionality) with the campus map on one tab and info on the most recently announced building on the other.,1,PE,False
+705,30,SE,Information transmission should be securely transmitted to server without any changes in information.,1,F,False
+706,30,F,Enable the admin to generate reports which contains all the posts and their corresponding replies.,1,F,True
+707,30,F,Provide an interface for the admin to approve posts so that posts are not visible without admin approval.,1,F,True
+708,30,F,Enable a logged in user to up vote and down vote answers.,1,F,True
+709,30,F,Enable a logged in user to post answers.,1,F,True
+710,30,LF,Be intuitive even to first time users,1,PE,False
+711,30,F,Enable a user to view questions and their corresponding answers.,1,F,True
+712,30,F,Enable a registered user to view his profile. Additional information viz. questions asked by him and answers posted by him are also displayed.,1,F,True
+713,30,F,Enable a registered user to change his password if he forgets his password.,1,F,True
+714,30,F,Enable new users to register to the tech support system.,1,F,True
+715,30,F,Authenticate and Login user to the web app.,1,F,True
+716,30,F,Enable a logged in user to ask questions.,1,F,True
+745,33,A,The website is available whenever the users want to use it.,1,PE,False
+746,33,O,The system should have to keep the location where the doughnut will be send.,1,F,False
+747,33,F,The system should require the user to state time when should the doughnut be delivered.,1,F,True
+748,33,F,The system should ask the user to key in the pickup date.,1,F,True
+749,33,F,The system should keep the customer contact number.,1,F,True
+750,33,F,The system should keep the customer email.,1,PE,False
+751,33,F,The system shall give the user an opportunity for the user to choose the selection of doughnut provided.,1,F,True
+752,33,F,The system shall allow user to decorate their doughnut.,1,F,True
+753,33,F,The system shall allow user to choose their preferable topping.,1,F,True
+754,33,F,The system shall allow user to choose filling that they want.,1,F,True
+755,33,F,The system should take the customer name.,1,F,True
+783,38,F,Vendors must take permission from the Administrator for selling their products under the site. Administrator will test product’s quality according to its market price to permit vendor for selling purpose.,1,F,True
+784,38,F,Consult with the Administrator about the payment details of the customers for the updating of the database.,1,F,True
+785,38,F,Responsible for contacting the banks for the validation of the a/c number provided by the customer while purchasing and make the transaction from the given a/c.,1,L,False
+786,38,F,Keep track of all the payment transactions made by the customers and update the payment information.,1,F,True
+787,38,F,Responsible for managing stocks of each product items.,1,F,True
+788,38,F,Taking permission from the Administrator for the product to be purchased from vendor.,1,F,True
+789,38,F,Provide feasible solutions to the customers on their complaints and queries.,1,PE,False
+790,38,F,Responsible for informing administrator when any product item’s stock goes under the minimum level.,1,F,True
+791,38,F,Keep track of each product item’s stocks for selling purpose.,1,SE,False
+792,38,F,Responsible for properly allocating the selected product according to the customer’s choice and delivering product to the customer.,1,PE,False
+793,38,F,View the personal details of the customer.,1,F,True
+794,38,F,Can consult with the Administrator regarding product’s quality and advertisements.,1,F,True
+795,38,F,Can only visit the site without registration.,1,SE,False
+796,38,F,Control the database and keep track of all records of customers and employee details.,1,F,True
+797,38,F,Can give feedback to the 24X7 Customer Care Service center about their impression for the site and services.,1,PE,False
+798,38,FT,The system shall accommodate high number of items and users without any fault.,1,PE,False
+799,38,SE,System use shall not cause any harm to human users.,1,SE,True
+800,38,SE,System will use secured database,1,F,False
+801,38,SE,Normal users can just read information but they cannot edit or modify anything except their personal and some other information.,1,F,False
+802,38,SE,System will have different types of users and every user has access constraints.,1,SE,True
+803,38,F,Customer must logout of the site after purchasing products.,1,SE,False
+804,38,F,View the details of all employees and control the whole site.,1,F,True
+805,38,SE,Customers must have a valid login id to enter into the site.,1,F,False
+806,38,F,New users can sign up by creating new ID.,1,F,True
+807,38,F,Can view all available products and can compare them and make a choice for purchasing products.,1,PE,False
+808,38,F,Can purchase any product through valid credit card.,1,F,True
+809,38,F,Contact with the vendors and give permission to sell their product under the site after testing the product’s quality.,1,F,True
+1171,52,PO,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.,1,PE,False
+1172,52,PO,"System-wide data capacity. The data capacity of the system is limited by transfer methods and technology, as well as archiving capacity on site. The system data capacity is capable of retaining 7 days of data produced by the largest instrument, the last 3 days of which must be available interactively from hard disk or similar medium.",1,PE,False
+1173,52,PO,"The system must allow for fast transmission of rough images every 0.5 sec. This may be assisted through the use of data-loss compression techniques (e.g. JPEG, MPEG, etc).",1,PE,False
+1174,52,PO,"In addition, there is the need for transmission of images matching the original resolution. This high-quality transmission must require less than 20 sec, and can only be assisted with loss-less compression.",1,PE,False
+1175,52,PO,"Every command must be accepted/rejected within 2 sec and before the corresponding action occurs. (This is different than the ACK/NAK response of the communications protocol - here, the target system must have examined the command and verified its validity.",1,F,False
+1176,52,PO,The telescope and instrument software shall contain built-in test (BIT) facilities to verify Gemini 8m Telescopes system and Gemini 8m Telescopes software performances.,1,PE,False
+1177,52,PO,Requests of subsystems for status information must be answered within 5 sec and be possible in maintenance level operation.,1,PE,False
+1178,52,PO,Requirements for response times within the user interfaces are given in the User Interface requirements section.,1,PE,False
+1179,52,PO,"Every Gemini 8m Telescopes software module shall have corresponding test specifications to check normal operation of releases, to be used both for acceptance tests and as an on-line test procedure.",1,PE,False
+1180,52,PO,The Gemini 8m Telescopes control software shall also provide for execution of self-test sequences of the Gemini 8m Telescopes system and subsystems. These shall automatically exercise all subsystems present in a given operational configuration.,1,PE,False
+1181,52,PO,"Storage of data. Data from all instruments and detectors is stored as compressed data, using a standard format. There is a first level of storage within IOCs, to secure data in the event of link failures.",1,PE,False
+1182,52,PO,"Status display update must be within 4 sec at the local stations (certain functions, such as telescope position, may have tighter constraints). Remote station update response is given in the Requirements for Remote Operations section.",1,PE,False
+1183,52,PO,"Data acquisition format. Data is normally acquired as uncompressed data, but may be compressed using a loss-less compression technique for transmission from the Gemini system or across the system LAN. The goal of compression is to minimize bandwidth impact on the LAN and WAN and to save space on removable media.",1,PE,False
+1184,52,PO,Data flow. Data from detectors must be stored in the most effective method permitted by available technology. Astronomical data is often detector readout limited so that disk access and data transfer times are not significant.,1,PE,False
+1185,52,PO,"For mosaicked, large optical detectors, a full readout of the detector must be done in about 2 or 3 minutes.",1,PE,False
+1186,52,A,All software bugs should be logged and then fixed as soon as possible after detection. The goal is to have restart conditions occur only on hardware failure.,1,PE,False
+1187,52,PO,"Concurrent data access and display. Since the Gemini system supports monitoring of operation, there must be the capability of providing multiple, simultaneous access to data. Data transfer between the virtual telescope system and attached workstations therefore imposes significant transfer requirements on the LAN. The LAN must support a transfer rate of 20-40 Mbits/second.",1,PE,False
+1188,52,PO,"The syntax of control flow commands is to be consistent across the system, whether accessing workstation software or IOC software.",1,PE,False
+1189,52,PO,"All subsystems must respond to a common set of commands to test operational status, inquiries as to version, perform self-tests.",1,F,False
+1190,52,PO,"All IOC subsystems must respond to additional common commands for such activities as start, stop, initialize, reset parameters, etc.",1,F,False
+1191,52,A,"Fault recovery, exception handling, fail-safe checks, etc. should be used to improve reliability.",1,PE,False
+1192,52,PO,"Handshaking of commands between IOCs must occur within 100-200 msec, signaling acceptance of each command.",1,F,False
+1193,52,PO,"For commands allowing delayed replies, timeouts for that reply must also be supported.",1,F,False
+1194,52,PO,"Peak control information within the system is expected to be 100 TPS. This assumes bridging between communication sections, to isolate traffic in relevant sections only.",1,PE,False
+1195,52,PO,"For focusing and related activities, maximum acceptable detector readout time is about 0.1 sec, though only a portion of the detector may be read during that time.",1,PE,False
+1196,52,PO,"The support structure for communicating commands must be reliable, with a uniform ACK/NAK protocol adopted across all systems. Timeouts must be supported at approximately 500 msec.",1,PE,False
+1590,60,PE,This is no longer the case since everybody agrees upon having a single point of contact per Member State (even though the Member State is organized with several Card Issuing Authorities – up to the Member State to manage its own organisation).,1,F,False
+1591,60,PE,There will be no restriction in time or place for the use of the software built from the specifications produced under this contract.,1,F,False
+1592,60,PE,The system must be able to establish and keep the dialog with the Members systems despite the various technical environments and technologies used on their sites.,1,PE,True
+1593,60,PE,The system will be designed so that background tasks can continue while the user performs foreground tasks.,1,PE,True
+1594,60,PE,The system will be used 24x7 by operators under pressure to produce results rapidly. The system must respond rapidly to user requests irrespective of any background tasks. Such highavailability (24x7) is also required from the Member States systems to ensure acceptable response time (less than 1 minute) to enforcement authorities requests.,1,PE,True
+1595,60,SC,The system should be able to support other types of message structure to cover f.i. a future driving licence network and correlated activities.,1,F,False
+1596,60,SC,The system must be maintainable and extensible. SUP-03 The system must be designed so that it can migrate to upgraded hardware or new versions of the operating systems involved.,1,PE,False
+1597,60,SC,The system must be able to migrate to other type of network than the one proposed by TESTA-II.,1,F,False
+1598,60,SC,Each Member of this network will organise its data about smart card holders with no constraints or recommendations on operating system and/or technology used. The system will be able to dialog with these environments or specify a generic interface to dialog with the Member’s applications.,1,F,False
+1599,60,SC,The system must be designed and documented with the expectation that its operational lifetime will be many years.,1,PE,False
+1600,60,SC,The system must use the network facilities supplied by the TESTA-II network.],1,PE,False
+1601,60,SC,The algorithms in the software will be based on existing techniques and no research will be required to develop new algorithms under this contract.,1,F,False
+1602,60,SC,The system is to be designed as a robust and dependable operational system which is tolerant to operator errors and which will recover cleanly from power cuts or other disasters.,1,PE,False
+1603,60,SC,"The system must function reliably, with few or no interruptions in its first operational year and fewer still thereafter.",1,PE,False
+1604,60,SC,The system must give stable and reproducible results.,1,PE,False
+1605,60,US,The system must make it easy to correct mistakes.,1,F,False
+1606,60,SC,"The system must provide solutions/rules regarding data encoding problems such as supporting different character sets, name truncation rules, name matching in case of misspelling.",1,F,False
+1607,60,SC,Most of the functionality of the new software shall depend on pre-existing or commercially available software.,1,PE,False
+1608,60,US,The system must be easy to learn and does not obstruct the thematic understanding of the users.,1,US,True
+1609,60,F,The system must allow enforcement authorities (through its Card Issuing Authority) to ask for workshop card status (based on workshop card number + issuing Member State code) to the corresponding Card Issuing Authority of the Member State having issued the card.,1,L,False
+1610,60,US,The system must guide users through an interface based on end user concepts.,1,PE,False
+1611,60,F,The system must allow a member of the network to send requests to a particular or all the other members about possible delivery of a driver’s smart card to a similar person.,1,F,True
+1612,60,F,The system must allow a member of the network to send a bulk request on all or a large part of its driver’s smart card holders to a particular or all members of the network.,1,F,True
+1613,60,F,The system must track the workflow between senders and related replies.,1,F,True
+1614,60,F,"The system must be able, in accordance with the rules on delays for each transaction, to automatically transmit alert messages to senders/replier/administrator when, f.i. a constraint on delay for reply is not fulfilled.",1,F,True
+1615,60,F,"The system must allow the administrator to extract statistics of use, standard delay of reply by member/period, percentage of unsuccessful transaction,...",1,F,True
+1616,60,F,The system must provide the management of user rights and permissions.,1,F,True
+1617,60,F,The system must allow a member to do statistics on messages issued and received from/to his system. FUN-04 The system must provide automatic reply to the sender of the request through the use of a standard interface to the Members systems.,1,F,True
+1618,60,F,The system must be able to include new members in the network through simple administrative tasks.,1,F,True
+1619,60,F,The system must be highly automatic to relieve the users of as many repetitive and tedious tasks as possible.,1,PE,False
+1620,60,F,The system must provide at application level a full security and encryption policy compatible with the level of security required in such situation.,1,F,True
+1621,60,F,"The system must be such that none of the Member States of the network, including the administrator, re-construct a consolidated European database.",1,L,False
+1622,60,F,"The system must allow a Member State (through its Card Issuing Authority) to ask for the status of card (lost, stolen,…) to the corresponding Card Issuing Authority of the Member State having issued the card.",1,F,True
+1623,60,F,"The system must allow a Member State (through its Card Issuing Authority) to send card status modification requests (lost, stolen,…) to the corresponding Card Issuing Authority of the Member State having issued the card.",1,F,True
+1624,60,F,"The system must be able to define and manage various type of messages already in the driver’s smart card holder like predelivery check, stolen/lost cards, renewals, exchanges and duplicates.",1,F,True
+1625,60,F,"The system must allow enforcement authorities (through its Card Issuing Authority) to ask for driver’s card status (based on either card number + issuing Member State code or driver’s surname, first names, date of birth and issuing Member State code) to the corresponding Card Issuing Authority of the Member State having issued the card.",1,F,True
+3099,79,F,The system should allow the Construction Junction Staff to create new reports whenever required to satisfy their changing operational and business needs.,1,PE,False
+3100,79,US,"The application is expected to operate via touch screen user interfaces, and take advantage of that technology to be as fast, efficient, intuitive, and flexible as possible while also minimizing the potential for errors and duplications. It should minimize the use of keyboard and mouse when processing acquisitions, and should allow acquisitions to be completed with few clicks and page switches.",1,US,True
+3101,79,A,Donation/acquisition processing - The system must be available during normal Construction Junction operating hours.,1,PE,False
+3102,79,A,Sales processing - The system must be available during normal Construction Junction operating hours.,1,PE,False
+3103,79,A,Inventory management - The system must be available beyond normal operating hours to accommodate inventory management operations.,1,PE,False
+3104,79,MN,"The system must be written using industry best practices, and must be built using only Construction Junction approved products and technologies. The system must also be written in such a way that it can be supported by planned Construction Junction staffing levels.",1,PE,False
+3105,79,SE,"The system should record changes to application entities in the form of „created user/time‟, „modified user/time‟ fields. The system should also record information about various sensitive inventory management operations such as deleting items and changing the price of items.",1,F,False
+3106,79,PE,"The functionality provided by the Inventory Management System will be critical to the normal operation of the Construction Junction business. As such, the system should perform with consistently and predictably low response times in order not to impact the performance or the timely execution of the various tasks that need to be conducted by the Construction Junction staff.",1,PE,True
+3107,79,F,"The system should be able to generate reports based on the following entities, including reports that correlate them: Inventory items, Inventory departments, Inventory categories, Acquisitions Donors.",1,F,True
+3108,79,L,The following copyright notice must be displayed in all user interfaces: © 2009 - Construction Junction,1,F,False
+3109,79,SE,"Access to the application by the Construction Junction staff must require user login. Access to application screens and functions is granted or denied based on the profile and role of the currently logged in user, as detailed in the preceding use-case requirements.",1,F,False
+3110,79,F,"The application will provide a reporting mechanism that, at a minimum, allows Construction Junction to review and report by inventory, inventory type, donor contact information, and the ability to link inventory to individual that donated it.",1,F,True
+3111,79,A,"The system must be available beyond normal operating hours to accommodate website use – Inventory listing, wish list management and online purchases.",1,PE,False
+3112,79,F,"Pick Up and Decon crews may also initiate the receiving process, entering as much detailed information about the donated items as desired, and generating a donation receipt. They cannot, however, add items to the inventory or complete the acquisition process. A Receiving Associate is required to review all the acquisition information before those actions can take place.",1,F,True
+3113,79,F,"The system should provide a categorized view of the entire inventory to the Construction Junction staff. Starting at the department level, users can navigate into the inventory item categories and subcategories, all the way down to an individual inventory item.",1,PE,False
+3114,79,F,The system should allow inventory administrators to customize the inventory structure by defining the inventory departments (not to be confused actual retail floor departments known later in this document as stocking locations).,1,F,True
+3115,79,F,The system should allow inventory administrators to customize the inventory structure by defining the inventory departments and categories.,1,F,True
+3116,79,F,Any item in the inventory may be purchased by a Construction Junction customer. The sale of the item is processed by QuickBooks POS and the inventory must be updated accordingly.,1,F,True
+3117,79,F,"Items are typically added to the inventory as part of the donation processes. This is called adding an item in donation processing. Alternatively, items can be added during routine inventory maintenance. This is called adding an item in inventory management mode.",1,PE,False
+3118,79,F,"The system should allow inventory administrators to customize the attributes and details available for each inventory item. Attributes can be defined for each department, and details can be defined for each department and/or category",1,F,True
+3119,79,F,The system should assist in the task of pricing a new inventory item by making pricing suggestions to the user when adding to or modifying an item in the inventory. The suggested prices should be calculated based on the original and sale prices of similar items that currently exist or existed in the inventory in the past.,1,PE,False
+3120,79,F,"Acquisition records for Drop-Off, Pickup and Decon donations are created in the CRM system. Inventory Management users should be able to view all past and current acquisitions. Receiving Associates use this function to locate an expected acquisition when receiving a donation at the loading dock. Pickup and Decon crews may also use this function to initiate the process of receiving items while in the truck, on their way to the receiving dock.",1,PE,False
+3121,79,F,"Drop Off acquisitions are not typically pre-scheduled as Pick Up and Decon acquisitions except for those submitted through the organizational website. As such, when a donor arrives with an unexpected drop off donation, a new acquisition needs to be able to be created in the CRM system first, at either the customer service desk or at the dock, before it can be viewed in the acquisitions screen.",1,PE,False
+3122,79,F,"A donor in possession of a valid acquisition number can proceed to the receiving dock where the items to be donated will be received and processed, and a donation receipt will be generated. Alternatively, a donor may go directly to the receiving dock, in which case a new acquisition is created by the Receiving Associate before items can be received and processed.",1,F,True
+3123,79,F,"The screens used for the acquisition process should simplify and expedite the data entry process, allowing the Receiving Associate to enter only the information needed to generate the donation receipt. Additional attributes needed to complete the item information and effectively add the item to the inventory can be added at a second step, after the receipt has been printed and the donor has been served. The Receiving Associate can print temporary acquisition labels for items that require further processing.",1,F,True
+3124,79,F,"The system should allow various management actions to be performed on items existing in the inventory. These include modifying, deleting and splitting an item, and viewing the item‟s details and item history. These actions are only available for Unique and Stock items.",1,F,True

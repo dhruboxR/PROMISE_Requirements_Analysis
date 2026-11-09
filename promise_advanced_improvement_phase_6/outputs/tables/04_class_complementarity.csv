@@ -1,0 +1,13 @@
+Class,Total,HybridCorrect,DeBERTaCorrect,DeBERTaOnly,HybridOnly
+F,636,565,505,42,102
+PE,33,18,29,11,0
+US,61,12,7,2,7
+SE,63,48,5,1,44
+L,9,4,4,0,0
+FT,12,1,0,0,1
+A,20,11,0,0,11
+LF,20,2,0,0,2
+O,46,5,0,0,5
+MN,31,0,0,0,0
+SC,12,0,0,0,0
+PO,25,1,0,0,1

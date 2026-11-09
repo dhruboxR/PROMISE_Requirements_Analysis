@@ -1,0 +1,19 @@
+{
+  "experiment": 8,
+  "seed": 42,
+  "sampling_method": "12 random examples from each of six priority projects plus 24 random development controls",
+  "total_sampled": 96,
+  "priority_sampled": 72,
+  "control_sampled": 24,
+  "priority_projects": [
+    "80",
+    "82",
+    "86",
+    "52",
+    "59",
+    "74"
+  ],
+  "original_test_accessed": false,
+  "original_labels_modified": false,
+  "representative_of_full_dataset": false
+}

@@ -1,0 +1,112 @@
+{
+  "phase": 6,
+  "experiment": 3,
+  "model": "microsoft/deberta-v3-base",
+  "fold": 1,
+  "timestamp_utc": "2026-11-09T21:02:03.923451+00:00",
+  "training_records": 2159,
+  "held_out_records": 968,
+  "epochs": 3,
+  "max_length": 96,
+  "batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-05,
+  "class_weighting": "none",
+  "training_loss": 2.3969343656375086,
+  "held_out_metrics": {
+    "accuracy": 0.5681818181818182,
+    "macro_f1": 0.1288775693219413,
+    "balanced_accuracy": 0.1926147215158969,
+    "weighted_f1": 0.5433472453349297
+  },
+  "best_checkpoint": "/home/dhrubo_roy/Unofficial Thesis/promise_advanced_improvement_phase_6/outputs/models/03_deberta_balanced_fold1/checkpoint-810",
+  "class_report": {
+    "F": {
+      "precision": 0.7709923664122137,
+      "recall": 0.7940251572327044,
+      "f1-score": 0.7823392718822618,
+      "support": 636.0
+    },
+    "A": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 20.0
+    },
+    "L": {
+      "precision": 0.17391304347826086,
+      "recall": 0.4444444444444444,
+      "f1-score": 0.25,
+      "support": 9.0
+    },
+    "LF": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 20.0
+    },
+    "MN": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 31.0
+    },
+    "O": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 46.0
+    },
+    "PE": {
+      "precision": 0.11026615969581749,
+      "recall": 0.8787878787878788,
+      "f1-score": 0.19594594594594594,
+      "support": 33.0
+    },
+    "SC": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "SE": {
+      "precision": 0.38461538461538464,
+      "recall": 0.07936507936507936,
+      "f1-score": 0.13157894736842105,
+      "support": 63.0
+    },
+    "US": {
+      "precision": 0.5,
+      "recall": 0.11475409836065574,
+      "f1-score": 0.18666666666666668,
+      "support": 61.0
+    },
+    "FT": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 12.0
+    },
+    "PO": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 25.0
+    },
+    "accuracy": 0.5681818181818182,
+    "macro avg": {
+      "precision": 0.16164891285013971,
+      "recall": 0.1926147215158969,
+      "f1-score": 0.1288775693219413,
+      "support": 968.0
+    },
+    "weighted avg": {
+      "precision": 0.5684771848452516,
+      "recall": 0.5681818181818182,
+      "f1-score": 0.5433472453349297,
+      "support": 968.0
+    }
+  },
+  "original_test_accessed": false,
+  "evaluation_note": "Held-out development fold. No independent test evaluation."
+}

@@ -1,0 +1,13 @@
+{
+  "experiment": "08B",
+  "total": 96,
+  "agreements": 36,
+  "disagreements": 60,
+  "exact_agreement": 0.375,
+  "cohens_kappa": 0.28473860673041096,
+  "comparison": "AI-assisted labels vs original dataset",
+  "independent_expert_review_completed": false,
+  "original_labels_modified": false,
+  "original_test_accessed": false,
+  "important_limitation": "This is a targeted, nonrepresentative sample. Disagreement does not establish an incorrect dataset annotation."
+}

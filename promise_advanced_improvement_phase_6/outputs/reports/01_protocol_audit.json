@@ -1,0 +1,43 @@
+{
+  "phase": 6,
+  "experiment": 1,
+  "timestamp_utc": "2026-11-09T19:33:36.334430+00:00",
+  "development_records": 3127,
+  "classes": 12,
+  "connected_groups": 66,
+  "cv_method": "StratifiedGroupKFold",
+  "n_splits": 3,
+  "random_seed": 42,
+  "fold_statistics": [
+    {
+      "fold": 1,
+      "training_records": 2159,
+      "held_out_records": 968,
+      "project_overlap": 0,
+      "normalized_text_overlap": 0,
+      "connected_group_overlap": 0
+    },
+    {
+      "fold": 2,
+      "training_records": 2024,
+      "held_out_records": 1103,
+      "project_overlap": 0,
+      "normalized_text_overlap": 0,
+      "connected_group_overlap": 0
+    },
+    {
+      "fold": 3,
+      "training_records": 2071,
+      "held_out_records": 1056,
+      "project_overlap": 0,
+      "normalized_text_overlap": 0,
+      "connected_group_overlap": 0
+    }
+  ],
+  "matches_phase5_folds": true,
+  "phase5_manifest_sha256": "c82bc54d7d7213e4ce3d866f7808931d1a9022603eae2f149f3fb28c1ba53eb2",
+  "test_partition_accessed": false,
+  "phase5_reference_mean_cv_accuracy": 0.6551,
+  "phase5_reference_mean_cv_macro_f1": 0.32,
+  "note": "Evaluation protocol audit only; no new model performance was measured."
+}

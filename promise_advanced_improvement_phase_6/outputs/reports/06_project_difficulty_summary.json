@@ -1,0 +1,14 @@
+{
+  "phase": 6,
+  "experiment": 6,
+  "development_records": 3127,
+  "projects_analyzed": 69,
+  "project_class_combinations": 283,
+  "projects_with_all_predictions_wrong": [
+    "25",
+    "74",
+    "80"
+  ],
+  "original_test_accessed": false,
+  "note": "Descriptive development-set audit. No new model evaluation performed."
+}

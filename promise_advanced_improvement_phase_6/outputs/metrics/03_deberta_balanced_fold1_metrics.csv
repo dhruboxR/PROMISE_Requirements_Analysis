@@ -1,0 +1,2 @@
+Fold,TrainRecords,HeldOutRecords,accuracy,macro_f1,balanced_accuracy,weighted_f1
+1,2159,968,0.5681818181818182,0.1288775693219413,0.1926147215158969,0.5433472453349297

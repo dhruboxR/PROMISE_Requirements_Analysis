@@ -1,0 +1,36 @@
+{
+  "phase": 6,
+  "experiment": 2,
+  "timestamp_utc": "2026-11-09T19:36:07.788968+00:00",
+  "development_requirements": 3127,
+  "configurations": [
+    "none",
+    "tempered",
+    "balanced"
+  ],
+  "oof_metrics": {
+    "none": {
+      "accuracy": 0.6632555164694596,
+      "macro_f1": 0.287417973227075,
+      "balanced_accuracy": 0.2568976509018456
+    },
+    "tempered": {
+      "accuracy": 0.6533418612088263,
+      "macro_f1": 0.31143220086091333,
+      "balanced_accuracy": 0.2899951919386278
+    },
+    "balanced": {
+      "accuracy": 0.627758234729773,
+      "macro_f1": 0.31483697702776364,
+      "balanced_accuracy": 0.3126787961277195
+    }
+  },
+  "tempered_vs_balanced": {
+    "both_correct": 1922,
+    "both_incorrect": 1043,
+    "tempered_only_correct": 121,
+    "balanced_only_correct": 41
+  },
+  "test_partition_accessed": false,
+  "note": "Analysis of existing Phase 5 held-out predictions. These are pooled OOF metrics, not mean fold metrics or independent test results."
+}
