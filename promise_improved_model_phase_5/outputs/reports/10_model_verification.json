@@ -1,0 +1,36 @@
+{
+  "phase": 5,
+  "experiment": 10,
+  "timestamp_utc": "2026-11-09T19:18:12.261264+00:00",
+  "checks": {
+    "artifact_checksums": "passed",
+    "class_labels": "passed",
+    "feature_dimensions": "passed",
+    "phase2_normalization": "passed",
+    "repeated_inference": "passed",
+    "equivalent_raw_inputs": "passed"
+  },
+  "training_records": 3127,
+  "lexical_dimensions": 48609,
+  "semantic_dimensions": 384,
+  "hybrid_dimensions": 48993,
+  "predicted_category": "F",
+  "top_predictions": [
+    {
+      "label": "F",
+      "probability": 0.636570461935353
+    },
+    {
+      "label": "SE",
+      "probability": 0.3535773659748031
+    },
+    {
+      "label": "US",
+      "probability": 0.0044274222149880554
+    }
+  ],
+  "previous_mean_cv_macro_f1": 0.32,
+  "independent_test_performed": false,
+  "test_partition_accessed": false,
+  "note": "Technical verification only. Does not establish model generalization."
+}
