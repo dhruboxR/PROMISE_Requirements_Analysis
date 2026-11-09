@@ -551,4 +551,107 @@ Both incorrect: 1043
 Experiment 07 completed.
 Original test partition not accessed.
 
+--------------------------------------------------------------------------------
+        RUN - python scripts/08_train_final_hybrid_model.py
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/08_train_final_hybrid_model.py
+
+PHASE 5: EXPERIMENT 08
+TRAIN AND SAVE THE SELECTED HYBRID MODEL
+=================================================================
+Development records: 3127
+Connected groups: 66
+Classes: 12
+Development manifest: VERIFIED
+
+Fitting word + character TF-IDF...
+TF-IDF shape: (3127, 48609)
+
+Device: cuda
+Loading frozen MiniLM...
+Loading weights: 100%|████████████████████████████████████████| 103/103 [00:00<00:00, 4833.01it/s]
+
+Generating semantic embeddings...
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+MiniLM shape: (3127, 384)
+
+Hybrid shape: (3127, 48993)
+
+Tempered class weights:
+F   count=1923  weight=0.459536
+A   count=60    weight=2.601559
+L   count=174   weight=1.527688
+LF  count=79    weight=2.267231
+MN  count=64    weight=2.518948
+O   count=136   weight=1.727984
+PE  count=138   weight=1.715417
+SC  count=86    weight=2.173001
+SE  count=202   weight=1.417861
+US  count=169   weight=1.550122
+FT  count=30    weight=3.679159
+PO  count=66    weight=2.480489
+
+Training Logistic Regression...
+Training completed.
+Iterations: [47]
+Serialization check: VERIFIED
+
+Saved model files:
+/home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/models/08_hybrid_tfidf_vectorizer.joblib
+/home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/models/08_hybrid_classifier.joblib
+/home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/models/08_hybrid_model_metadata.json
+
+EXPERIMENT 08 COMPLETED
+Original test partition was not accessed.
+No independent evaluation was performed.
+
+
+--------------------------------------------------------------------------------
+[ SCRIPT - 9 WAS USED FOR SHORT TESTINGS ] 
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+        RUN - python scripts/10_verify_hybrid_model.py               
+--------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_improved_model_phase_5$ python scripts/10_verify_hybrid_model.py
+'
+PHASE 5: EXPERIMENT 10
+FINAL HYBRID MODEL VERIFICATION
+=================================================================
+Artifact checksum verification: PASSED
+Class labels: PASSED
+Lexical dimensions: 48609
+Semantic dimensions: 384
+Hybrid dimensions: 48993
+Feature dimension verification: PASSED
+Phase 2 normalization comparison: PASSED
+
+Running repeated inference checks...
+Loading weights: 100%|██████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 13318.53it/s]
+Encoded 1/1 requirements
+Loading weights: 100%|███████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 5866.24it/s]
+Encoded 1/1 requirements
+Repeated prediction consistency: PASSED
+Loading weights: 100%|███████████████████████████████████████████████████████████| 103/103 [00:00<00:00, 7091.25it/s]
+Encoded 1/1 requirements
+Equivalent input consistency: PASSED
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_improved_model_phase_5/outputs/reports/10_model_verification.json
+
+EXPERIMENT 10 COMPLETED
+All verification checks passed.
+Original test partition not accessed.
+
+
 
