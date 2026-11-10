@@ -4,7 +4,7 @@
 
 This repository contains research on automated software requirements classification using the PROMISE+ dataset. The project focuses on dataset analysis, leakage-controlled preprocessing, traditional machine learning, transformer-based models, hybrid classification, cross-project generalization, and annotation consistency analysis.
 
-**Research Status: Phases 1–6 Completed | Phase 7 Planned**
+**Research Status: Phases 1–8 Completed / Closed | Fresh research restart planned**
 
 ## 1. Research Objectives
 
@@ -72,12 +72,15 @@ PROMISE_Requirements_Analysis/
 ├── promise_advanced_improvement_phase_6/
 │   ├── scripts/
 │   ├── outputs/
-│   │   ├── metrics/
-│   │   ├── reports/
-│   │   ├── tables/
-│   │   ├── models/
-│   │   └── annotation_audit/
 │   ├── EXPERIMENT_LOG.md
+│   └── README.md
+├── promise_pure_analysis_phase_7/
+│   ├── scripts/
+│   ├── outputs/
+│   └── README.md
+├── promise_classification_phase_8/
+│   ├── scripts/
+│   ├── outputs/
 │   └── README.md
 ├── README.md
 ├── requirements.txt
@@ -86,7 +89,7 @@ PROMISE_Requirements_Analysis/
 
 Each phase contains its own scripts, outputs, and documentation. Large model checkpoints and virtual environments may be excluded from Git tracking.
 
-Phase 7 will be maintained separately when source-document verification begins.
+Phase 7 and Phase 8 are archived in their own project directories. Folder listings above are abbreviated; check local phase READMEs for verified artifacts. A fresh research restart is planned separately and has not yet been implemented.
 
 ## 4. Research Phases
 
@@ -98,7 +101,8 @@ Phase 7 will be maintained separately when source-document verification begins.
 | Phase 4 | Advanced models and comparative evaluation | Completed |
 | Phase 5 | Hybrid classification and model verification | Completed |
 | Phase 6 | Advanced modeling, generalization analysis, and annotation audit | Completed |
-| Phase 7 | Original source-document verification and annotation quality analysis | Planned |
+| Phase 7 | PURE source provenance, matching, and training-source eligibility audit | Closed |
+| Phase 8 | Classification improvement, annotation review, and model fusion experiments | Closed after Experiment 24B |
 
 ### Phase 1: Dataset Exploration
 
@@ -359,9 +363,56 @@ Verification against the original requirements documents and independent expert 
 
 **Experiment records:** [Phase 6 Experiment Log](promise_advanced_improvement_phase_6/EXPERIMENT_LOG.md)
 
+### Phase 7: PURE Source Provenance and Leakage Audit
+
+Phase 7 investigated original PURE requirements documents as potential sources of context and additional data. Its purpose was **source provenance and eligibility assessment**, not model training or changing PROMISE+ ground truth.
+
+- Inventoried **79 original PURE documents** (62 PDF, 13 DOC, 3 HTML/HTM, 1 RTF), plus 18 XML files.
+- Linked 11 priority PROMISE+ records from projects 52, 80, and 86 to source-document context.
+- Extracted 79 documents and identified 8,462 candidate requirements; candidate matches and fuzzy links were **not automatically treated as verified source equivalences**.
+- Audited document provenance and possible split overlap. Among 79 documents, 39 had unresolved provenance, 36 were single-fold candidates, and 4 were original-test-overlap candidates; zero were confirmed as multi-fold candidates in the reported audit.
+- Evaluated **237 document-by-fold decision rows** in the eligibility review. **No PURE document was approved for additional training use.**
+
+This investigation did not establish that the existing classifiers suffered leakage, and it did not complete independent adjudication of suspected label errors. Source matching and training eligibility remain separate questions.
+
+**Documentation:** [Phase 7 README](promise_pure_analysis_phase_7/README.md)
+
+### Phase 8: Classification Improvement Experiments (Closed)
+
+Phase 8 used the existing **3,127 development requirements** and project-aware / connected-group splits to investigate why minority classes were difficult to predict and whether new training approaches could improve classification. It ended after **Experiment 24B**. The original test was not accessed during Phase 8; original labels were not modified.
+
+Key experiments included hierarchical classification, minority-class specialist corrections, semantic-feature weighting, MiniLM fine-tuning, project-level failure analysis, provisional annotation review, cross-project supervised contrastive learning, sampling ablations, matched hybrid comparisons, and fixed-weight probability fusion.
+
+**Matched nine-inner-fold comparison (exploratory):**
+
+| Model | Mean accuracy | Mean macro-F1 | Mean F recall | Mean PO recall |
+|---|---:|---:|---:|---:|
+| Shuffled MiniLM, weighted CE | 61.12% | 24.94% | 80.97% | 3.20% |
+| Fully class-aware MiniLM | 38.05% | 25.00% | 36.36% | 26.05% |
+| Mixed 75/25 MiniLM | 60.54% | **29.41%** | 78.08% | 27.70% |
+| Hybrid TF-IDF + frozen MiniLM | **64.94%** | 28.41% | **89.61%** | 0.44% |
+
+The **mixed 75/25** sampler combined 12 ordinary samples with 4 minority-focused samples per batch. It improved macro-F1 against shuffled MiniLM on **8 of 9** inner comparisons with little mean accuracy loss. Against the hybrid, it had approximately **1.00 percentage point** higher mean macro-F1 but **4.40 points** lower accuracy, winning macro-F1 in just **5 of 9** comparisons. Neither model demonstrated conclusive superiority. These nine evaluations used overlapping development records and are **not independent test results**.
+
+**Fixed-weight fusion feasibility (one inner fold, 790 validation records):**
+
+| Model | Accuracy | Macro-F1 | Balanced accuracy |
+|---|---:|---:|---:|
+| Hybrid | 64.05% | **34.18%** | **33.90%** |
+| Mixed MiniLM | 61.65% | 27.86% | 28.95% |
+| Fusion: 75% hybrid + 25% mixed | **64.18%** | 32.53% | 32.08% |
+
+Both standalone models exactly reproduced earlier metrics. Fusion corrected seven hybrid errors but introduced six new errors and reduced macro-F1, so **simple probability fusion was discontinued**.
+
+An assisted review of **24 intentionally selected requirements** identified 12 potential label mismatches, 7 ambiguous cases, 3 apparently consistent cases, and 2 with insufficient context. These are **provisional, nonrepresentative judgments**, not verified ground-truth errors.
+
+The main finding is that training-sample composition strongly changes the accuracy–minority-recall trade-off, but Phase 8 did not establish a new model that reliably outperforms the earlier Phase 5 hybrid. Repeated use of the same development splits makes these results exploratory.
+
+**Documentation:** [Phase 8 README](promise_classification_phase_8/README.md)
+
 ## 5. Overall Model Comparison
 
-The strongest selected development model remains the Phase 5 hybrid classifier.
+The Phase 5 hybrid remains the strongest selected **original three-fold development benchmark**. The Phase 8 nine-inner-fold results below use a different validation protocol and must not be compared directly with those original three-fold means.
 
 | Model | Evaluation | Accuracy | Macro-F1 | Balanced Accuracy |
 |---|---|---:|---:|---:|
@@ -371,10 +422,12 @@ The strongest selected development model remains the Phase 5 hybrid classifier.
 | DeBERTa Unweighted | Fold 1 only | 65.70% | 6.61% | 8.33% |
 | DeBERTa Tempered | Fold 1 only | 67.05% | 12.40% | 15.26% |
 | DeBERTa Balanced | Fold 1 only | 56.82% | 12.89% | 19.26% |
+| Phase 8 mixed MiniLM | Nine overlapping inner-fold mean | 60.54% | 29.41% | Not reported in the matched summary |
+| Phase 8 matched hybrid | Nine overlapping inner-fold mean | 64.94% | 28.41% | Not reported in the matched summary |
 
-The DeBERTa results are included as exploratory Fold 1 comparisons and are not directly equivalent to three-fold mean results.
+DeBERTa results are exploratory Fold 1 comparisons. Phase 8 results are nine overlapping inner-fold means. **Do not rank these protocols as though they were the same evaluation.**
 
-No Phase 6 model demonstrated a validated improvement over the Phase 5 hybrid.
+No Phase 6 model demonstrated a validated improvement over the Phase 5 hybrid. Phase 8 likewise did not establish a new independently validated improvement.
 
 ## 6. Technologies
 
@@ -441,26 +494,23 @@ The pretrained MiniLM checkpoint and saved classifier artifacts are required.
 - Phase 5 improvements have not been confirmed through a new independent test evaluation.
 - The annotation audit used a targeted, nonrepresentative sample.
 - AI-assisted annotation disagreements do not establish incorrect ground-truth labels.
-- Independent expert review and original source-document verification remain incomplete.
+- Phase 7 traced selected priority records to source-document context, but independent expert adjudication of annotation quality remains incomplete.
+- Phase 7 approved zero PURE documents for training augmentation because source eligibility and split isolation were unresolved.
+- Phase 8 used already-examined development folds repeatedly for model choices; its nine inner evaluations are overlapping and exploratory.
+- Phase 8 did not access the original test partition; Phase 3 did, so the original test is not fully untouched across the overall research history.
 - Requirements classification does not directly establish semantic inconsistency between requirements.
 
-## 10. Next Research Direction: Phase 7
+## 10. Research Status and Fresh Restart
 
-**Phase 7: Original Source Document Verification and Annotation Quality Analysis**
+**Phases 1–8 are now documented as completed or closed.** Phase 7's final source-eligibility audit approved **zero** PURE documents for additional model training. Phase 8 ended after Experiment 24B; neither a new hybrid replacement nor simple probability fusion demonstrated a reliably validated improvement over the Phase 5 reference.
 
-Phase 7 will investigate the original requirements documents associated with selected PROMISE+ records.
+The research will be **restarted as a new, separately documented workflow**. No new phase, training runs, or evaluation protocol are claimed as completed here. Recommended safeguards for the restart are:
 
-Planned activities include:
-
-1. Inspecting original PURE requirements documents.
-2. Matching selected PROMISE+ requirements to their source specifications.
-3. Identifying source-document sections and original classification evidence.
-4. Verifying 11 priority annotation disagreements.
-5. Documenting whether the surrounding context supports the original labels.
-6. Preparing an evidence-based annotation quality report.
-7. Considering independently verified corrections in a separate experimental dataset, if justified.
-
-The existing PROMISE+ dataset, Phase 5 classifier, and Phase 6 results will remain unchanged during source verification.
+1. Preserve the Phase 1–8 scripts, outputs, and original labels as an immutable historical record.
+2. Define the research question, target metrics, baseline, and project/connected-group isolation rules before new model comparisons.
+3. Distinguish validation used for selection from evidence used for performance estimation; do not treat previously inspected folds as untouched confirmation data.
+4. Consider the original test's historical Phase 3 access when describing independent evaluation.
+5. Do not reuse PURE documents as training data without independently establishing provenance, licensing, labeling quality, and split eligibility.
 
 ## 11. Research Documentation
 
@@ -476,6 +526,8 @@ Relevant documentation:
 - [Phase 4 README](promise_advanced_models_phase_4/README.md)
 - [Phase 5 README](promise_improved_model_phase_5/README.md)
 - [Phase 6 README](promise_advanced_improvement_phase_6/README.md)
+- [Phase 7 README](promise_pure_analysis_phase_7/README.md)
+- [Phase 8 README](promise_classification_phase_8/README.md)
 
 ## 12. Dataset Attribution
 
@@ -491,8 +543,8 @@ The original datasets, pretrained language models, and third-party software rema
 
 ---
 
-**Current Research Status:** Phases 1–6 Completed. Phase 7 Planned.
+**Current Research Status:** Phases 1–8 completed/closed. Phase 8 ended after Experiment 24B; fresh research restart planned.
 
 **Best Selected Development Model:** Phase 5 Hybrid, 65.51% mean project-aware cross-validation accuracy and 32.00% mean macro-F1.
 
-**Next Research Activity:** Original source-document verification and annotation quality analysis.
+**Next Research Activity:** Define a new research objective and leakage-safe evaluation plan in a separate fresh-start project. Phase 7 and Phase 8 remain archived.
