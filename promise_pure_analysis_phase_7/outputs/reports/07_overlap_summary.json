@@ -1,0 +1,18 @@
+{
+  "experiment": "07",
+  "created_utc": "2026-11-09T22:57:42.871179+00:00",
+  "promise_source": "promise_exploration_phase_1/outputs/validated/Promise+_repaired.arff",
+  "promise_records": 3677,
+  "pure_candidates": 8462,
+  "exact_matches": 190,
+  "normalized_only_matches": 23,
+  "unmatched_candidates": 8249,
+  "matched_candidates": 213,
+  "matched_candidate_percentage": 2.52,
+  "distinct_promise_records_matched": 276,
+  "documents_with_matches": 17,
+  "near_duplicate_analysis_completed": false,
+  "new_requirements_verified": false,
+  "training_dataset_created": false,
+  "original_datasets_modified": false
+}

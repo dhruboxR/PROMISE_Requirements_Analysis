@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 11
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-101
+
+CandidateID: PURE-CAND-007133
+Document: 2007 - nde.pdf
+PROMISE+ RecordID: 1642
+PROMISE+ ProjectID: 61
+Similarity: 0.390515
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+US2 Help desk staff The Contractor 100% of all requests Reports generated shall respond in a shall respond to all for information shall from Customer timely manner for requests for be completed or Request Tracking requests for information within reassigned to subject Tool will be information on 5 days of receiving experts within 5 presented to the OSDPD products request.
+
+### PROMISE+ requirement
+
+The system shall respond to all user requests within 20 seconds.
+
+---
+
+## FUZZY-102
+
+CandidateID: PURE-CAND-005847
+Document: 2006 - eirene sys 15.pdf
+PROMISE+ RecordID: 2221
+PROMISE+ ProjectID: 68
+Similarity: 0.381259
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+13.4.4 On receipt of a Railway emergency call, the controller’s display should indicate the location of the train. (O)
+
+### PROMISE+ requirement
+
+When a train has received an emergency stop ETCS shall command the emergency brake. 
+
+---
+
+## FUZZY-103
+
+CandidateID: PURE-CAND-002781
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 3609
+PROMISE+ ProjectID: 86
+Similarity: 0.348933
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+NPAC SMS shall use the Subscription Modification Retry Attempts tunable parameter which defines the number of times a new Subscription Version will be sent to a Local SMS which has not acknowledged receipt of the modify request.
+
+### PROMISE+ requirement
+
+Receipt of acknowledgment operation to match acknowledgement with original message and provide a record/report of acknowledged and un-acknowledged transmissions
+
+---
+
+## FUZZY-104
+
+CandidateID: PURE-CAND-002798
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 874
+PROMISE+ ProjectID: 45
+Similarity: 0.34244
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+NPAC SMS shall, upon placing a Subscription Version into conflict, set the version status to conflict.
+
+### PROMISE+ requirement
+
+The system shall allow the mediator to solve a location conflict.
+
+---
+
+## FUZZY-105
+
+CandidateID: PURE-CAND-005173
+Document: 2005 - clarus low.pdf
+PROMISE+ RecordID: 1947
+PROMISE+ ProjectID: 63
+Similarity: 0.327215
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+X-905 The Clarus program shall OCS H maintain information about data providers.
+
+### PROMISE+ requirement
+
+The user shall be able to create new programs by manually entering program information. 
+
+---
+
+## FUZZY-106
+
+CandidateID: PURE-CAND-001507
+Document: 1999 - tcs.pdf
+PROMISE+ RecordID: 3224
+PROMISE+ ProjectID: 82
+Similarity: 0.322019
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+TCS transportation in theater for Army and Marine Corps systems shall be by ground transport, air, or rail.
+
+### PROMISE+ requirement
+
+The transport of a VCD package MUST ensure that the package has not been altered or modified during transportation or validation. 
+
+---
+
+## FUZZY-107
+
+CandidateID: PURE-CAND-004196
+Document: 2004 - philips.doc
+PROMISE+ RecordID: 734
+PROMISE+ ProjectID: 32
+Similarity: 0.305912
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+P3.2 When a buddy changes his status, the application shall update it.
+
+### PROMISE+ requirement
+
+It must be able to change and update information on the server.
+
+---
+
+## FUZZY-108
+
+CandidateID: PURE-CAND-001480
+Document: 1999 - tcs.pdf
+PROMISE+ RecordID: 2666
+PROMISE+ ProjectID: 71
+Similarity: 0.30455
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+SSS389 The TCS throughput shall not exceed 50% of throughput capability delivered.
+
+### PROMISE+ requirement
+
+In the event of a failure of the Operational Environment during the NPOESS missions, the System Test Environment shall be capable of delivering products to the operational community within the same throughput and latency parameters as the operational system. 
+
+---
+
+## FUZZY-109
+
+CandidateID: PURE-CAND-004469
+Document: 2004 - sprat.pdf
+PROMISE+ RecordID: 2900
+PROMISE+ ProjectID: 75
+Similarity: 0.276436
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+FR- SSM 6 Requirement Definition: The system shall allow analysts to view the elements of any scenario in the project.
+
+### PROMISE+ requirement
+
+The format of service requirements is defined. 
+
+---
+
+## FUZZY-110
+
+CandidateID: PURE-CAND-002415
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 8
+PROMISE+ ProjectID: 1
+Similarity: 0.250074
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+NPAC SMS shall, upon modification of an NPA-NXX-X in the Number Pooling NPA- NXX-X Holder Information, automatically modify the old/new NPA-NXX-X for an NPA-NXX currently in Permissive Dialing in an NPA Split.
+
+### PROMISE+ requirement
+
+The system shall allow modification of the display.
+

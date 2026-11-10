@@ -1,0 +1,19 @@
+{
+  "experiment": "08A",
+  "created_utc": "2026-11-09T23:01:15.653037+00:00",
+  "pure_candidates": 8462,
+  "promise_records": 3677,
+  "total_matching_pairs": 1728,
+  "normalized_equal_pairs": 279,
+  "promise_inside_pure_pairs": 1195,
+  "pure_inside_promise_pairs": 254,
+  "unique_pure_candidates_matched": 1198,
+  "unique_promise_records_matched": 1574,
+  "documents_with_matches": 40,
+  "minimum_partial_words": 8,
+  "minimum_partial_characters": 50,
+  "near_duplicates_verified": false,
+  "source_projects_verified": false,
+  "training_dataset_created": false,
+  "original_datasets_modified": false
+}

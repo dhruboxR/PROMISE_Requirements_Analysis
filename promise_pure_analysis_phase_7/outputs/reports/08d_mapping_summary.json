@@ -1,0 +1,12 @@
+{
+  "experiment": "08D",
+  "created_utc": "2026-11-09T23:06:43.285652+00:00",
+  "pure_documents": 79,
+  "candidate_document_project_relationships": 48,
+  "documents_with_direct_evidence": 40,
+  "documents_without_direct_evidence": 39,
+  "fuzzy_similarity_threshold": 0.9,
+  "project_mappings_verified": 0,
+  "evaluation_partition_leakage_checked": false,
+  "original_datasets_modified": false
+}

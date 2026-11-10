@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 10
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-091
+
+CandidateID: PURE-CAND-007787
+Document: 2009 - inventory 2.0.pdf
+PROMISE+ RecordID: 3111
+PROMISE+ ProjectID: 79
+Similarity: 0.479133
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+The system must be able to provide the contents of the categorized inventory for viewing on the website, allowing users to create wish lists and purchase items online 4.2.
+
+### PROMISE+ requirement
+
+The system must be available beyond normal operating hours to accommodate website use – Inventory listing, wish list management and online purchases. 
+
+---
+
+## FUZZY-092
+
+CandidateID: PURE-CAND-003350
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 231
+PROMISE+ ProjectID: 5
+Similarity: 0.473747
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+NPAC SMS shall support an Audit Results Report.
+
+### PROMISE+ requirement
+
+The audit report shall be displayed to the user.
+
+---
+
+## FUZZY-093
+
+CandidateID: PURE-CAND-000507
+Document: 1998 - themas.pdf
+PROMISE+ RecordID: 1205
+PROMISE+ ProjectID: 53
+Similarity: 0.466122
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+3.1.1.5.3 Processing The overtemperature values shall reside in an initialization file.
+
+### PROMISE+ requirement
+
+The THEMAS system shall determine wh en a reported temperature or a changed temperature setting exceeds the limits set by the overtemperature values. Temperatures that exceed the overtemperature limits shall be reported as such. Temperatures that do not exceed these limits shall be output for subsequent processing.
+
+---
+
+## FUZZY-094
+
+CandidateID: PURE-CAND-008424
+Document: 2010 - mashboot.pdf
+PROMISE+ RecordID: 1056
+PROMISE+ ProjectID: 49
+Similarity: 0.462596
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+A member should be able to store authentication for supported services
+
+### PROMISE+ requirement
+
+The system should support multi-tier authentication where required;
+
+---
+
+## FUZZY-095
+
+CandidateID: PURE-CAND-003420
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 3609
+PROMISE+ ProjectID: 86
+Similarity: 0.450497
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+Before a key list may be used, the sender must receive a key acknowledgment file.
+
+### PROMISE+ requirement
+
+Receipt of acknowledgment operation to match acknowledgement with original message and provide a record/report of acknowledged and un-acknowledged transmissions
+
+---
+
+## FUZZY-096
+
+CandidateID: PURE-CAND-006463
+Document: 2007 - eirene fun 7.pdf
+PROMISE+ RecordID: 3658
+PROMISE+ ProjectID: 89
+Similarity: 0.439409
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+It shall be possible to ‘activate’ or ‘deactivate’ the mobile’s subscription to these groups. (M)
+
+### PROMISE+ requirement
+
+User Account Deactivation The system allows user accounts to be deactivated.
+
+---
+
+## FUZZY-097
+
+CandidateID: PURE-CAND-004065
+Document: 2004 - grid bgc.pdf
+PROMISE+ RecordID: 921
+PROMISE+ ProjectID: 46
+Similarity: 0.435513
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+The system shall provide a display of the categories a user currently has selected. 2.2.
+
+### PROMISE+ requirement
+
+The system shall display detailed product categorization to the user.
+
+---
+
+## FUZZY-098
+
+CandidateID: PURE-CAND-007774
+Document: 2009 - inventory 2.0.pdf
+PROMISE+ RecordID: 2689
+PROMISE+ ProjectID: 72
+Similarity: 0.435199
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+Item history should also include: 6.1.
+
+### PROMISE+ requirement
+
+The system should maintain a grade history. 
+
+---
+
+## FUZZY-099
+
+CandidateID: PURE-CAND-003355
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 2689
+PROMISE+ ProjectID: 72
+Similarity: 0.41644
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+NPAC SMS shall maintain a History Log to keep track of transactions processed.
+
+### PROMISE+ requirement
+
+The system should maintain a grade history. 
+
+---
+
+## FUZZY-100
+
+CandidateID: PURE-CAND-003117
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 836
+PROMISE+ ProjectID: 45
+Similarity: 0.411613
+Similarity group: 0.40-0.60
+
+### PURE passage
+
+NPAC SMS shall allow a user to define a password that is already associated with another userId.
+
+### PROMISE+ requirement
+
+The system shall allow the user to change the password.
+

@@ -1,0 +1,20 @@
+{
+  "experiment": "Phase 8 Experiment 07",
+  "method": "Nested lexical-semantic fusion weighting",
+  "candidate_weights": [
+    0.0,
+    0.25,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "inner_folds": 3,
+  "outer_folds": 3,
+  "seed": 42,
+  "baseline_reproduced": true,
+  "outer_validation_used_for_selection": false,
+  "development_results_exploratory": true,
+  "prior_outer_results_informed_research_direction": true,
+  "original_test_accessed": false
+}

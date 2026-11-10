@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 02
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-011
+
+CandidateID: PURE-CAND-000065
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 974
+PROMISE+ ProjectID: 49
+Similarity: 0.964527
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Supporting text skimming: Fast skimming of text should be supported by the 21. provision of clear links, bulleted lists, highlighted keywords, logical headings, and short phrases and sentences.
+
+### PROMISE+ requirement
+
+Fast skimming of text should be supported by the provision of clear links, bulleted lists, highlighted keywords, logical headings, and short phrases and sentences.
+
+---
+
+## FUZZY-012
+
+CandidateID: PURE-CAND-000088
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1014
+PROMISE+ ProjectID: 49
+Similarity: 0.955577
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Providing a site map: A separate navigation overview such as a site map should be 39. provided for application showing the structure of the site in an overview form.
+
+### PROMISE+ requirement
+
+A separate navigation overview such as a site map should be provided for application showing the structure of the site in an overview form.
+
+---
+
+## FUZZY-013
+
+CandidateID: PURE-CAND-000070
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 995
+PROMISE+ ProjectID: 49
+Similarity: 0.953693
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Using familiar terminology for navigation links: Navigation links — particularly links representing the main navigation structure — should be labelled with terms 25. that are familiar to the user, based on his/her general knowledge, prior experience in the application domain or experience of using other systems.
+
+### PROMISE+ requirement
+
+Navigation links — particularly links representing the main navigation structure — should be labelled with terms that are familiar to the user, based on his/her general knowledge, prior experience in the application domain or experience of using other systems.
+
+---
+
+## FUZZY-014
+
+CandidateID: PURE-CAND-000064
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 975
+PROMISE+ ProjectID: 49
+Similarity: 0.949935
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Writing style: The reading and understanding of the textual content on the screen should be supported by suitable means, including the use of short sentences, the 20. division of the text into shorter chunks or the presentation of content items in the form of bullet points.
+
+### PROMISE+ requirement
+
+The reading and understanding of the textual content on the screen should be supported by suitable means, including the use of short sentences, the division of the text into shorter chunks or the presentation of content items in the form of bullet points.
+
+---
+
+## FUZZY-015
+
+CandidateID: PURE-CAND-007340
+Document: 2008 - caiso.pdf
+PROMISE+ RecordID: 2871
+PROMISE+ ProjectID: 74
+Similarity: 0.949813
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+8 The following start-up/synchronizing time limits shall apply to the Black Start testing units: • Hydroelectric generating units or combustion gas turbines - within 30 minutes of the initiation of the Black Start process, • Industrial gas turbines - within 60 minutes of the initiation of the Black Start process, • Hot, steam-driven turbines, within 2.5 hours of the initiation of the Black Start process. • If the certified Black Start facility is in another reliability coordinator area or is comprised of an unspecified technology then specific start time limits are negotiated.
+
+### PROMISE+ requirement
+
+The following start-up/synchronizing time limits shall apply to the Black Start testing units: Hydroelectric generating units or combustion gas turbines - within 30 minutes of the initiation of the Black Start process, Industrial gas turbines - within 60 minutes of the initiation of the Black Start process, Hot, steam-driven turbines, within 2.5 hours of the initiation of the Black Start process. If the certified Black Start facility is in another reliability coordinator area or is comprised of an unspecified technology then specific start time limits are negotiated. These times include ICU start-up, normal start-up of the unit, plus switching time for the actual synchronizing of the unit. 
+
+---
+
+## FUZZY-016
+
+CandidateID: PURE-CAND-002196
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1333
+PROMISE+ ProjectID: 57
+Similarity: 0.948566
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The viewing of outputs is detailed in Section 3.2.3. [SRSreq 87] When a user selects the View/Text menu option, the HATS-GUI shall prompt a user to select a pretty-printed text file in the current application.
+
+### PROMISE+ requirement
+
+When a user selects the View/Text menu option, the HATS-GUI shall prompt a user to select a pretty-printed text file in the current application. The viewing of text outputs is detailed in Section 3.2.3.
+
+---
+
+## FUZZY-017
+
+CandidateID: PURE-CAND-006966
+Document: 2007 - nde.pdf
+PROMISE+ RecordID: 2645
+PROMISE+ ProjectID: 71
+Similarity: 0.941813
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+3.2.1 Define Data Products The System shall be capable of defining Data Products for Ingest.
+
+### PROMISE+ requirement
+
+The System shall be capable of defining Data Products for Ingest. 3.
+
+---
+
+## FUZZY-018
+
+CandidateID: PURE-CAND-000007
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1057
+PROMISE+ ProjectID: 49
+Similarity: 0.93972
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The solution should enable the help-desk user to view the reports on the 4. submitted defects or enhancement requests category-wise, status-wise, and age- wise.
+
+### PROMISE+ requirement
+
+The solution should enable the help-desk user to view the reports on the submitted defects or enhancement requests category-wise, status-wise, and agewise.
+
+---
+
+## FUZZY-019
+
+CandidateID: PURE-CAND-006696
+Document: 2007 - ertms.pdf
+PROMISE+ RecordID: 2378
+PROMISE+ ProjectID: 68
+Similarity: 0.935391
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+4.3.5.1a Actual speed shall be indicated on the DMI (M).
+
+### PROMISE+ requirement
+
+Actual speed shall be indicated on the DMI 
+
+---
+
+## FUZZY-020
+
+CandidateID: PURE-CAND-002150
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1424
+PROMISE+ ProjectID: 57
+Similarity: 0.93469
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+[SRSreq 50] The HATS-GUI shall allow a user to create an application minimally consisting of a lexical specification file, a grammar file, a user-defined functions file, and application configuration information.
+
+### PROMISE+ requirement
+
+The HATS-GUI shall allow a user to create an application minimally consisting of a lexical specification file, a grammar file, a user-defined functions file, and application configuration information. The user shall be able to name this application.
+

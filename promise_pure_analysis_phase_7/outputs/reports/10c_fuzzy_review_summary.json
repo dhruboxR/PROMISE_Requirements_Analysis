@@ -1,0 +1,83 @@
+{
+  "experiment": "10C",
+  "created_utc": "2026-11-09T23:47:16.698035+00:00",
+  "review_pairs": 120,
+  "total_fuzzy_candidates_searched": 7264,
+  "sample_design": "Stratified random sample of each PURE candidate's highest-scoring PROMISE+ match",
+  "random_seed": 42,
+  "reviewed_by": "ChatGPT AI-assisted textual assessment",
+  "independent_human_reviewers": 0,
+  "decision_counts": {
+    "Same requirement": 46,
+    "Partial overlap": 36,
+    "Different requirement": 38,
+    "Uncertain": 0
+  },
+  "same_requirement_count": 46,
+  "any_overlap_count": 82,
+  "uncertain_count": 0,
+  "flagged_for_source_check": 0,
+  "group_results": [
+    {
+      "SimilarityGroup": "0.90-1.00",
+      "PopulationCandidates": 106,
+      "ReviewedPairs": 30,
+      "SameRequirement": 23,
+      "PartialOverlap": 7,
+      "DifferentRequirement": 0,
+      "Uncertain": 0,
+      "SameRatePercent": 76.67,
+      "AnyOverlapRatePercent": 100.0
+    },
+    {
+      "SimilarityGroup": "0.80-0.90",
+      "PopulationCandidates": 151,
+      "ReviewedPairs": 30,
+      "SameRequirement": 19,
+      "PartialOverlap": 8,
+      "DifferentRequirement": 3,
+      "Uncertain": 0,
+      "SameRatePercent": 63.33,
+      "AnyOverlapRatePercent": 90.0
+    },
+    {
+      "SimilarityGroup": "0.60-0.80",
+      "PopulationCandidates": 286,
+      "ReviewedPairs": 20,
+      "SameRequirement": 4,
+      "PartialOverlap": 14,
+      "DifferentRequirement": 2,
+      "Uncertain": 0,
+      "SameRatePercent": 20.0,
+      "AnyOverlapRatePercent": 90.0
+    },
+    {
+      "SimilarityGroup": "0.40-0.60",
+      "PopulationCandidates": 789,
+      "ReviewedPairs": 20,
+      "SameRequirement": 0,
+      "PartialOverlap": 7,
+      "DifferentRequirement": 13,
+      "Uncertain": 0,
+      "SameRatePercent": 0.0,
+      "AnyOverlapRatePercent": 35.0
+    },
+    {
+      "SimilarityGroup": "0.00-0.40",
+      "PopulationCandidates": 5932,
+      "ReviewedPairs": 20,
+      "SameRequirement": 0,
+      "PartialOverlap": 0,
+      "DifferentRequirement": 20,
+      "Uncertain": 0,
+      "SameRatePercent": 0.0,
+      "AnyOverlapRatePercent": 0.0
+    }
+  ],
+  "confirmed_ground_truth": false,
+  "verified_precision_available": false,
+  "verified_recall_available": false,
+  "threshold_validated_independently": false,
+  "source_documents_approved_for_training": 0,
+  "original_datasets_modified": false
+}

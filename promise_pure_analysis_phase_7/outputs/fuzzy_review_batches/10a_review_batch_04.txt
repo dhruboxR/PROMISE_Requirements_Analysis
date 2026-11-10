@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 04
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-031
+
+CandidateID: PURE-CAND-000101
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1025
+PROMISE+ ProjectID: 49
+Similarity: 0.89539
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+Performance and Scalability The System must provide adequate response times for commonly performed 1. functions under both standard and peak conditions
+
+### PROMISE+ requirement
+
+The System must provide adequate response times for commonly performed functions under both standard and peak conditions;
+
+---
+
+## FUZZY-032
+
+CandidateID: PURE-CAND-006884
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2470
+PROMISE+ ProjectID: 70
+Similarity: 0.892884
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+CS-100-030 The DUAP Computational Services shall be able to ConOps § 4.3.4 H derive pothole location from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive pothole location from probe vehicle data. 
+
+---
+
+## FUZZY-033
+
+CandidateID: PURE-CAND-000557
+Document: 1998 - themas.pdf
+PROMISE+ RecordID: 1201
+PROMISE+ ProjectID: 53
+Similarity: 0.885204
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+3.1.7.1 Introduction There are two events that shall result in an alarm condition: 1) an invalid temperature value is reported from a thermostat, or 2) the reported temperature has exceeded the defined limits.
+
+### PROMISE+ requirement
+
+There are two events that shall result in an alarm condition: 1) an invalid temperature value is reported from a thermostat, or 2) the reported temperature has exceeded the defined limits. This process shall determine which alarm event is to be generated.
+
+---
+
+## FUZZY-034
+
+CandidateID: PURE-CAND-000060
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 979
+PROMISE+ ProjectID: 49
+Similarity: 0.8781
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+Providing clear error messages: The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if 16. possible, actions the user can take to resolve the error.
+
+### PROMISE+ requirement
+
+The content of error messages shown on the pages or special error pages should clearly state the reason why the error occurred and, if possible, actions the user can take to resolve the error. Users expect error messages to be in the same language as the user interface.
+
+---
+
+## FUZZY-035
+
+CandidateID: PURE-CAND-000624
+Document: 1999 - multi-mahjong.html
+PROMISE+ RecordID: 1217
+PROMISE+ ProjectID: 54
+Similarity: 0.872831
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+If they choose to pick up, the MultiMahjongClient must send this information to the MultiMahjongServer.
+
+### PROMISE+ requirement
+
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+---
+
+## FUZZY-036
+
+CandidateID: PURE-CAND-007335
+Document: 2007 - water use.pdf
+PROMISE+ RecordID: 2767
+PROMISE+ ProjectID: 73
+Similarity: 0.86995
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+TW25 If toolbars are written, must be in .dll format.
+
+### PROMISE+ requirement
+
+If toolbars are written, must be in .dll format. 
+
+---
+
+## FUZZY-037
+
+CandidateID: PURE-CAND-008348
+Document: 2010 - fishing.pdf
+PROMISE+ RecordID: 3610
+PROMISE+ ProjectID: 86
+Similarity: 0.867392
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+Item Description Status Support Notes Y|N|N/A Capture-001 Product MUST provide data capture screens for the entry C of the logbook, transhipment and landing declaration data that is required to be transmitted to the UK fisheries administrations’ ERS system.
+
+### PROMISE+ requirement
+
+The ELSS must provide data capture screens for the entry of the logbook, transhipment and landing declaration data that is required to be transmitted to the UK fisheries administrations’ ERS system. 
+
+---
+
+## FUZZY-038
+
+CandidateID: PURE-CAND-006864
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2549
+PROMISE+ ProjectID: 70
+Similarity: 0.865949
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+DD-905 The DUAP System shall log Dynamic Data Services data MHI H transactions.
+
+### PROMISE+ requirement
+
+The DUAP System shall log Dynamic Data Services data transactions. 
+
+---
+
+## FUZZY-039
+
+CandidateID: PURE-CAND-006824
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2513
+PROMISE+ ProjectID: 70
+Similarity: 0.865083
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+IS-030-024 The DUAP Input Services shall be able to collect weather MHI The specific format of the L data from Michigan Department of Natural Resources interface is to be determined (MDNR) weather information systems using the MDNR in the design of the prototype. interface.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect weather data from Michigan Department of Natural Resources (MDNR) weather information systems using the MDNR interface. 
+
+---
+
+## FUZZY-040
+
+CandidateID: PURE-CAND-006833
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2500
+PROMISE+ ProjectID: 70
+Similarity: 0.861527
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+IS-070-020 The DUAP Input Services shall be able to collect ConOps § 2.3.2.1 The specific format of the D roadway traffic data from the Western Michigan Traffic interface is to be determined Management System (WMTMS) using the WMTMS in the design of the prototype. interface.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect roadway traffic data from the Western Michigan Traffic Management System (WMTMS) using the WMTMS interface. 
+

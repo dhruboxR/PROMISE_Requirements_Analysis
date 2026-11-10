@@ -1,0 +1,25 @@
+{
+  "experiment": "Phase 8 Experiment 21",
+  "title": "Multi-Split Sampling Evaluation",
+  "outer_training_partitions": 3,
+  "inner_folds_per_partition": 3,
+  "paired_comparisons": 9,
+  "training_runs": 18,
+  "epochs": 4,
+  "batch_size": 16,
+  "weight_exponent": 0.25,
+  "learning_rate": 2e-05,
+  "selection_rule": "Predefined final epoch 4",
+  "class_aware_sampling": "Eight class pairs per batch; prefer different projects",
+  "outer_validation_evaluated": false,
+  "original_test_accessed": false,
+  "original_labels_modified": false,
+  "independent_test_evidence": false,
+  "limitations": [
+    "Inner folds reuse development records.",
+    "Nine paired results are not nine independent test sets.",
+    "The development protocol was informed by earlier experiments.",
+    "Sampling with replacement changes effective class frequencies.",
+    "Fixed learning rate and epoch count were not independently tuned."
+  ]
+}

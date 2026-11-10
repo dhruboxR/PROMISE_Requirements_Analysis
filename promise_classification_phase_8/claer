@@ -1,0 +1,18 @@
+Device: cuda
+Generating frozen MiniLM embeddings...
+Loading weights:   0%|          | 0/103 [00:00<?, ?it/s]Loading weights: 100%|██████████| 103/103 [00:00<00:00, 4019.85it/s]
+Encoded 320/3127 requirements
+Encoded 640/3127 requirements
+Encoded 960/3127 requirements
+Encoded 1280/3127 requirements
+Encoded 1600/3127 requirements
+Encoded 1920/3127 requirements
+Encoded 2240/3127 requirements
+Encoded 2560/3127 requirements
+Encoded 2880/3127 requirements
+Encoded 3127/3127 requirements
+
+OUTER FOLD 1
+  Inner fold 1
+  Inner fold 2
+  Inner fold 3

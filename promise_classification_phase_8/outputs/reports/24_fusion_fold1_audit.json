@@ -1,0 +1,19 @@
+{
+  "Experiment": "Phase 8 Experiment 24A",
+  "OuterFold": 1,
+  "InnerFold": 1,
+  "FusionAlphaHybrid": 0.75,
+  "FusionAlphaMixed": 0.25,
+  "TrainingRecords": 1369,
+  "ValidationRecords": 790,
+  "HybridCorrect": 506,
+  "MixedCorrect": 487,
+  "FusionCorrect": 507,
+  "FusionCorrectedHybridErrors": 7,
+  "FusionIntroducedHybridErrors": 6,
+  "HybridMixedDisagreements": 134,
+  "ProbabilitiesCalibrated": false,
+  "OriginalTestAccessed": false,
+  "OuterValidationEvaluated": false,
+  "Exploratory": true
+}

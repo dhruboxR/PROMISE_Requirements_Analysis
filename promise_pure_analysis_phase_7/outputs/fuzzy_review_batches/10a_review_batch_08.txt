@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 08
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-071
+
+CandidateID: PURE-CAND-003962
+Document: 2004 - grid bgc.pdf
+PROMISE+ RecordID: 1998
+PROMISE+ ProjectID: 64
+Similarity: 0.692697
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+The system shall provide a graphical user interface to all functions of the system.
+
+### PROMISE+ requirement
+
+The system uses a graphical user interface to display data to the user 
+
+---
+
+## FUZZY-072
+
+CandidateID: PURE-CAND-003465
+Document: 2002 - evla back.pdf
+PROMISE+ RecordID: 1491
+PROMISE+ ProjectID: 58
+Similarity: 0.672622
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+No Optional time domain processes have as yet been proposed. 3.2.2.14 Fourier Transform Processing – The BE shall be able to perform Fourier Transform the lag set time series.
+
+### PROMISE+ requirement
+
+Fourier Transform Processing – The BE shall be able to perform Fourier Transform the lag set time series. A power-of-two complex-to-complex Fast Fourier Transform with retention of all output positive and negative frequencies will be used. This process must be able to accept as input the output of any of the time domain processes. 
+
+---
+
+## FUZZY-073
+
+CandidateID: PURE-CAND-008174
+Document: 2009 - warc III.pdf
+PROMISE+ RecordID: 3499
+PROMISE+ ProjectID: 84
+Similarity: 0.668582
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+FR 14 — Duplicate detection shall find and report WARC records with the same checksums.
+
+### PROMISE+ requirement
+
+Duplicate detection shall find and report WARC records with the same checksums. A centralised database will be used to store previously processed records, against which new ones will be compared.
+
+---
+
+## FUZZY-074
+
+CandidateID: PURE-CAND-002169
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1353
+PROMISE+ ProjectID: 57
+Similarity: 0.659966
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+No file shall be currently selected at the end of this operation. [SRSreq 72] When a user selects the File/Edit menu item, the HATS-GUI shall request that the operating system start a process and load that process with the editor specified by the application configuration.
+
+### PROMISE+ requirement
+
+When a user selects the File/Edit menu item, the HATS-GUI shall request that the operating system start a process and load that process with the editor specified by the application configuration. The name of a selected file shall be passed to the editor as a command line argument. The editor started by the HATS-GUI shall be the editor associated with the file in the application configuration, or if there is no editor associated with the file, then the editor associated with the file type of the file in the application configuration. If no editor is associated with either the file or the file type, then the default editor shall be used. If no default editor has been selected, then the HATS-GUI shall present a list of the configured editors and allow the user to select an editor. If no editors have been configured, then the HATS-GUI shall inform the user that an editor must be configured before starting an editor.
+
+---
+
+## FUZZY-075
+
+CandidateID: PURE-CAND-001926
+Document: 2001 - ctc network.pdf
+PROMISE+ RecordID: 1263
+PROMISE+ ProjectID: 55
+Similarity: 0.650323
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+When the GUI application is initiated, the user shall be prompted for the following information: C2C-CG-02 • User name • Password The user shall be provided with the capability to select a C2C-CG-03 network identifier for a device command/control request.
+
+### PROMISE+ requirement
+
+When the GUI application is initiated, the user shall be prompted for the following information: User name, Password
+
+---
+
+## FUZZY-076
+
+CandidateID: PURE-CAND-000627
+Document: 1999 - multi-mahjong.html
+PROMISE+ RecordID: 1217
+PROMISE+ ProjectID: 54
+Similarity: 0.642472
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+4.3.7 The MultiMahjongClient must inform the user if another player is fishing.
+
+### PROMISE+ requirement
+
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+---
+
+## FUZZY-077
+
+CandidateID: PURE-CAND-000576
+Document: 1998 - themas.pdf
+PROMISE+ RecordID: 1198
+PROMISE+ ProjectID: 53
+Similarity: 0.635976
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+3.1.10.3 Processing The supervisor’s interface to the THEMAS system shall provide a mechanism to select between an operational history report or a statistical summary report.
+
+### PROMISE+ requirement
+
+The THEMAS shall provide the ability for the supervisor to select between two different types of reports: 1) the operational history of the THEMAS system for the past twelve months and 2) a statistical summary for any selected month.
+
+---
+
+## FUZZY-078
+
+CandidateID: PURE-CAND-002274
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1328
+PROMISE+ ProjectID: 57
+Similarity: 0.631897
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+Display of SDT and Pretty-Printed Text from Common Target file [SRSreq 154] When both an SDT and a pretty-printed text display corresponding to a single transformed target file are open, navigation in the SDT window shall result in navigation in the pretty-printed text window.
+
+### PROMISE+ requirement
+
+When both an SDT and a pretty-printed text display corresponding to a single transformed target file are open, highlighting and cursor location motion shall be mirrored in the two windows. Thus, when a displayed node is selected in the SDT display, the corresponding text in the prettyprint window is highlighted. When the user scrolls to the end of the pretty-printed text display, the display of the SDT should also scroll to the corresponding displayed nodes.
+
+---
+
+## FUZZY-079
+
+CandidateID: PURE-CAND-007320
+Document: 2007 - water use.pdf
+PROMISE+ RecordID: 2809
+PROMISE+ ProjectID: 73
+Similarity: 0.626733
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+SR3 Report on the permit duration (To track expiration • View Report dates for those looking for someone to compete with). • View Water Use Permit Search SR31 Should allow comparison to adjacent districts GIS • View Map layers to permit GIS layer to access adjacent data. • Maintain Quicklinks SR33 Report compliance on a permit (not wells).
+
+### PROMISE+ requirement
+
+Should allow comparison to adjacent districts GIS layers to permit GIS layer to access adjacent data.
+
+---
+
+## FUZZY-080
+
+CandidateID: PURE-CAND-007262
+Document: 2007 - puget sound.pdf
+PROMISE+ RecordID: 2732
+PROMISE+ ProjectID: 72
+Similarity: 0.60135
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+The search feature should be present in two ways.
+
+### PROMISE+ requirement
+
+Actors should be able to search for pages at the course level, since most actors will be searching for material in a given course. The search feature should be present in two ways.  
+

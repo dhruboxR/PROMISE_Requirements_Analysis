@@ -1,0 +1,18 @@
+{
+  "experiment": "Phase 8 Experiment 20",
+  "methods": [
+    "Ordinary shuffled CE",
+    "Class-aware CE",
+    "Class-aware CE plus SupCon"
+  ],
+  "inner_training_records": 1369,
+  "inner_validation_records": 790,
+  "outer_fold_evaluated": false,
+  "original_test_accessed": false,
+  "original_labels_modified": false,
+  "comparison_limitations": [
+    "The inner split has been previously examined.",
+    "Only one split and one random seed were used.",
+    "Class-aware sampling changes effective class frequency."
+  ]
+}

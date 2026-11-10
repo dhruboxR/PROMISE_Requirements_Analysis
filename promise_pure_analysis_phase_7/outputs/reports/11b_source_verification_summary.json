@@ -1,0 +1,21 @@
+{
+  "experiment": "11B",
+  "created_utc": "2026-11-09T23:46:18.506584+00:00",
+  "source_context_cases": 4,
+  "revised_cases": [
+    "FUZZY-035",
+    "FUZZY-042",
+    "FUZZY-115",
+    "FUZZY-119"
+  ],
+  "reclassified_to_different": 4,
+  "remaining_uncertain": 0,
+  "final_decision_counts": {
+    "Same requirement": 46,
+    "Partial overlap": 36,
+    "Different requirement": 38,
+    "Uncertain": 0
+  },
+  "independent_expert_validation": false,
+  "original_datasets_modified": false
+}

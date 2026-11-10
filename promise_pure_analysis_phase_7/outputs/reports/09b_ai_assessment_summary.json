@@ -1,0 +1,16 @@
+{
+  "experiment": "09B",
+  "records_assessed": 11,
+  "potential_inconsistencies_flagged": 11,
+  "proposed_label_counts": {
+    "F": 7,
+    "SE": 1,
+    "PE": 2,
+    "US": 1
+  },
+  "human_assessments_completed": 0,
+  "independent_expert_validation_completed": false,
+  "original_dataset_modified": false,
+  "confirmed_annotation_errors": 0,
+  "note": "All 11 cases were preselected for disagreement. These findings cannot estimate population error rates."
+}

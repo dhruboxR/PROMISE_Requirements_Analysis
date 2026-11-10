@@ -1,0 +1,238 @@
+DocumentName,TargetHeldOutFold,LinkedSourceFolds,ScreeningStatus,Reason,ApprovedForTraining,SourceVerified,AnnotationVerified
+0000 - cctns.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - cctns.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - cctns.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+0000 - gamma j.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - gamma j.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - gamma j.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+0000 - inventory.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - inventory.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+0000 - inventory.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+1995 - gemini.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+1995 - gemini.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1995 - gemini.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1998 - themas.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+1998 - themas.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1998 - themas.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1999 - dii.htm,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+1999 - dii.htm,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+1999 - dii.htm,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+1999 - multi-mahjong.html,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1999 - multi-mahjong.html,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+1999 - multi-mahjong.html,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+1999 - tcs.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+1999 - tcs.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+1999 - tcs.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2000 - nasa x38.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2000 - nasa x38.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2000 - nasa x38.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - beyond.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - beyond.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - beyond.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - ctc network.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2001 - ctc network.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2001 - ctc network.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2001 - elsfork.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - elsfork.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - elsfork.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - esa.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2001 - esa.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2001 - esa.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2001 - hats.pdf,1,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2001 - hats.pdf,2,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2001 - hats.pdf,3,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2001 - libra.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - libra.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - libra.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - npac.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - npac.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - npac.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - space fractions.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - space fractions.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - space fractions.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - telescope.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - telescope.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2001 - telescope.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2002 - evla back.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2002 - evla back.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2002 - evla back.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2002 - evla corr.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2002 - evla corr.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2002 - evla corr.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2002 - sce api.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2002 - sce api.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2002 - sce api.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - agentmom.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - agentmom.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - agentmom.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - pnnl.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - pnnl.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - pnnl.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - qheadache.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - qheadache.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - qheadache.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2003 - tachonet.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2003 - tachonet.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2003 - tachonet.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2004 - colorcast.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - colorcast.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - colorcast.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - e-procurement.rtf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - e-procurement.rtf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - e-procurement.rtf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - grid bgc.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - grid bgc.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - grid bgc.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - ijis.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - ijis.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - ijis.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - jse.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - jse.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - jse.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - philips.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - philips.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - philips.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - rlcs.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - rlcs.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - rlcs.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - sprat.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - sprat.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - sprat.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom gui.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom gui.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom gui.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2004 - watcom.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus high.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus high.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus high.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus low.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus low.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - clarus low.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - grid 3D.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - grid 3D.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - grid 3D.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - microcare.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - microcare.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - microcare.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2005 - nenios.html,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - nenios.html,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - nenios.html,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2005 - phin.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - phin.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - phin.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2005 - pontis.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - pontis.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - pontis.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2005 - triangle.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - triangle.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - triangle.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2005 - znix.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2005 - znix.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2005 - znix.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2006 - eirene sys 15.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2006 - eirene sys 15.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2006 - eirene sys 15.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2006 - stewards.pdf,1,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2006 - stewards.pdf,2,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2006 - stewards.pdf,3,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2007 - central trading system.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - central trading system.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - central trading system.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - e-store.doc,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - e-store.doc,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - e-store.doc,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - eirene fun 7.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - eirene fun 7.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - eirene fun 7.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - ertms.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - ertms.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - ertms.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - get real 0.2.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - get real 0.2.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - get real 0.2.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - mdot.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - mdot.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - mdot.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - nde.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - nde.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - nde.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - nlm.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - nlm.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - nlm.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2007 - puget sound.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2007 - puget sound.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - puget sound.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2007 - water use.pdf,1,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2007 - water use.pdf,2,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2007 - water use.pdf,3,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2008 - caiso.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2008 - caiso.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2008 - caiso.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2008 - keepass.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - keepass.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - keepass.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - peering.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - peering.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - peering.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - viper.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - viper.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - viper.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - virtual ed.doc,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2008 - virtual ed.doc,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2008 - virtual ed.doc,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2008 - vub.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - vub.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2008 - vub.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - email.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - email.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - email.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - gaia.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - gaia.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - gaia.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - inventory 2.0.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - inventory 2.0.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - inventory 2.0.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - library.doc,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - library.doc,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - library.doc,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - library.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - library.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - library.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - model manager.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - model manager.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - model manager.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2009 - peazip.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - peazip.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - peazip.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - peppol.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - peppol.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - peppol.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - video search.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - video search.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - video search.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - warc III.pdf,1,1,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2009 - warc III.pdf,2,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2009 - warc III.pdf,3,1,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - blit draft.pdf,1,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - blit draft.pdf,2,3,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - blit draft.pdf,3,3,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2010 - fishing.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - fishing.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2010 - fishing.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - gparted.pdf,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2010 - gparted.pdf,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2010 - gparted.pdf,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2010 - home 1.3.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - home 1.3.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2010 - home 1.3.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - mashboot.pdf,1,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2010 - mashboot.pdf,2,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2010 - mashboot.pdf,3,,BLOCKED_TEST_SOURCE,Candidate overlap with original test project,No,No,No
+2010 - split merge.pdf,1,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2010 - split merge.pdf,2,2,BLOCKED_HELDOUT_SOURCE,Linked to this fold's held-out projects,No,No,No
+2010 - split merge.pdf,3,2,REVIEW_REQUIRED,"Different held-out fold; independent source, duplicate, and annotation checks required",No,No,No
+2011 - opensg 0.1.doc,1,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2011 - opensg 0.1.doc,2,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No
+2011 - opensg 0.1.doc,3,,BLOCKED_UNRESOLVED,Source provenance not established,No,No,No

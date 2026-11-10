@@ -1,0 +1,32 @@
+{
+  "experiment": "08C",
+  "created_utc": "2026-11-09T23:05:14.749812+00:00",
+  "random_seed": 42,
+  "source_candidate_pairs": 21792,
+  "unique_candidates": 7264,
+  "high_similarity_candidates": 257,
+  "manual_review_sample_size": 120,
+  "similarity_group_population": {
+    "0.90-1.00": 106,
+    "0.80-0.90": 151,
+    "0.60-0.80": 286,
+    "0.40-0.60": 789,
+    "0.00-0.40": 5932
+  },
+  "similarity_group_sample": {
+    "0.90-1.00": 30,
+    "0.80-0.90": 30,
+    "0.60-0.80": 20,
+    "0.40-0.60": 20,
+    "0.00-0.40": 20
+  },
+  "valid_reviewer_decisions": [
+    "Same requirement",
+    "Partial overlap",
+    "Different requirement",
+    "Uncertain"
+  ],
+  "manual_reviews_completed": 0,
+  "training_dataset_created": false,
+  "original_datasets_modified": false
+}

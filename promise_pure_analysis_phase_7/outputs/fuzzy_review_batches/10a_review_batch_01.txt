@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 01
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-001
+
+CandidateID: PURE-CAND-000022
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1068
+PROMISE+ ProjectID: 49
+Similarity: 0.998538
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The System must allow changes to security attributes for groups or users (such 6. as access rights, security level, privileges, password allocation and management) to be made only by super-user.
+
+### PROMISE+ requirement
+
+The System must allow changes to security attributes for groups or users (such as access rights, security level, privileges, password allocation and management) to be made only by super-user.
+
+---
+
+## FUZZY-002
+
+CandidateID: PURE-CAND-000006
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1059
+PROMISE+ ProjectID: 49
+Similarity: 0.998498
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The solution should enable the user to track the submitted defect or 3. enhancement request.
+
+### PROMISE+ requirement
+
+The solution should enable the user to track the submitted defect or enhancement request.
+
+---
+
+## FUZZY-003
+
+CandidateID: PURE-CAND-000020
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1070
+PROMISE+ ProjectID: 49
+Similarity: 0.997378
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The System must allow only admin-users to set up user profiles and allocate 4. users to groups.
+
+### PROMISE+ requirement
+
+The System must allow only admin-users to set up user profiles and allocate users to groups.
+
+---
+
+## FUZZY-004
+
+CandidateID: PURE-CAND-000026
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1065
+PROMISE+ ProjectID: 49
+Similarity: 0.996576
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+If the System allows users to make unauthorised attempts to access cases, it 9. must log these in the audit trail.
+
+### PROMISE+ requirement
+
+If the System allows users to make unauthorised attempts to access cases, it must log these in the audit trail.
+
+---
+
+## FUZZY-005
+
+CandidateID: PURE-CAND-005383
+Document: 2005 - pontis.pdf
+PROMISE+ RecordID: 1927
+PROMISE+ ProjectID: 63
+Similarity: 0.992993
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Bridge-level security of the user shall be applied automatically. 2.7 The user shall be able to select a project by directly typing in the project ID in the GUI, with the display scrolling to that structure.
+
+### PROMISE+ requirement
+
+The user shall be able to select a project by directly typing in the project ID in the GUI, with the display scrolling to that structure. Bridge or project level security of the user shall be applied automatically. 
+
+---
+
+## FUZZY-006
+
+CandidateID: PURE-CAND-000062
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 977
+PROMISE+ ProjectID: 49
+Similarity: 0.991004
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Making text resizable by the user: Text should be able to be resized by the user, 18. using functions provided by the user agent or other appropriate means i.e. see ISO 9241-171.
+
+### PROMISE+ requirement
+
+Making text resizable by the user: Text should be able to be resized by the user, using functions provided by the user agent or other appropriate means i.e. see ISO 9241-171.
+
+---
+
+## FUZZY-007
+
+CandidateID: PURE-CAND-007803
+Document: 2009 - library.doc
+PROMISE+ RecordID: 3159
+PROMISE+ ProjectID: 80
+Similarity: 0.981575
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+CO-2: Management Processes shall produce standards-compliant HTML.
+
+### PROMISE+ requirement
+
+Management Processes shall produce standards-compliant HTML. 
+
+---
+
+## FUZZY-008
+
+CandidateID: PURE-CAND-006643
+Document: 2007 - ertms.pdf
+PROMISE+ RecordID: 2355
+PROMISE+ ProjectID: 68
+Similarity: 0.979688
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+4.1.4.3 Partial Supervision shall be indicated on the DMI. (M)
+
+### PROMISE+ requirement
+
+Partial Supervision shall be indicated on the DMI. 
+
+---
+
+## FUZZY-009
+
+CandidateID: PURE-CAND-000074
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1023
+PROMISE+ ProjectID: 49
+Similarity: 0.967577
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+Providing printable document versions: If a document is either too long, dispersed over several pages or in a specific layout that is not suitable for online reading, a 29. printer-friendly version of the document should be provided that prints the content in a form acceptable to the user (e.g. in the expected layout, paper format, or orientation).
+
+### PROMISE+ requirement
+
+If a document is either too long, dispersed over several pages or in a specific layout that is not suitable for online reading, a printer-friendly version of the document should be provided that prints the content in a form acceptable to the user (e.g. in the expected layout, paper format, or orientation).
+
+---
+
+## FUZZY-010
+
+CandidateID: PURE-CAND-005328
+Document: 2005 - phin.pdf
+PROMISE+ RecordID: 1764
+PROMISE+ ProjectID: 62
+Similarity: 0.967372
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+2.2.7 Prophylaxis and Treatment Data 2.2.7.1 Systems supporting OM should capture or be linked to data regarding the prophylaxis or treatment to cases, exposed individuals, or at risk persons, including the person who ordered the prophylaxis or treatment, and the name, date, type, duration, and dosage of the treatment or prophylaxis given.
+
+### PROMISE+ requirement
+
+Systems supporting OM should capture or be linked to data regarding the prophylaxis or treatment to cases, exposed individuals, or at risk persons, including the person who ordered the prophylaxis or treatment, and the name, date, type, duration, and dosage of the treatment or prophylaxis given. For specific data requirements regarding the administration of prophylaxis and treatment. 
+

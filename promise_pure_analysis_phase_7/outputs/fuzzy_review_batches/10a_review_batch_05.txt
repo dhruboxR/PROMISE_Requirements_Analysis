@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 05
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-041
+
+CandidateID: PURE-CAND-002074
+Document: 2001 - esa.pdf
+PROMISE+ RecordID: 1294
+PROMISE+ ProjectID: 56
+Similarity: 0.861242
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+Any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry that are electronically distributed shall be To support the APAF Software provided to the ASPERA-3 Co-I’s ASPERA-3 team in APAF-DR-01c Demonstration Requirements within 24 hours of acquiring meeting mission Review Minutes ASPERA-3 and MEX OA goals and objectives telemetry as long as the transmission and processing are error-free.
+
+### PROMISE+ requirement
+
+Any APAF-generated intermediate files of ASPERA-3 and MEX OA cleaned-up telemetry that are electronically distributed shall be provided to the ASPERA-3 Co-I’s within 24 hours of acquiring ASPERA-3 and MEX OA telemetry as long as the transmission and processing are error-free.
+
+---
+
+## FUZZY-042
+
+CandidateID: PURE-CAND-000626
+Document: 1999 - multi-mahjong.html
+PROMISE+ RecordID: 1217
+PROMISE+ ProjectID: 54
+Similarity: 0.85734
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+When they choose to discard, the MultiMahjongClient must send this information to the MultiMahjongServer.
+
+### PROMISE+ requirement
+
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+---
+
+## FUZZY-043
+
+CandidateID: PURE-CAND-006881
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2494
+PROMISE+ ProjectID: 70
+Similarity: 0.847692
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 5.3 CS-100 The DUAP System shall be able to derive roadway ConOps § 4.3.4 L surface conditions from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP System shall be able to derive roadway surface conditions from probe vehicle data. 
+
+---
+
+## FUZZY-044
+
+CandidateID: PURE-CAND-006861
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2567
+PROMISE+ ProjectID: 70
+Similarity: 0.847627
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+DD-100 The DUAP System shall cache data only if the data MHI H record associates the data with its source, a geo- referenced location, and a timestamp.
+
+### PROMISE+ requirement
+
+The DUAP System shall cache data only if the data record associates the data with its source, a georeferenced location, and a timestamp. 
+
+---
+
+## FUZZY-045
+
+CandidateID: PURE-CAND-003521
+Document: 2002 - evla corr.pdf
+PROMISE+ RecordID: 1563
+PROMISE+ ProjectID: 59
+Similarity: 0.845493
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ID Description 3.2.1.1 Power Supplies– Where applicable, all computers and peripherals shall be powered though UPS type devices with sufficient capacity for the computers to safely coordinate a system wide shutdown of the correlator hardware in the event of a prolonged power outage.
+
+### PROMISE+ requirement
+
+Power Supplies– Where applicable, all computers and peripherals shall be powered though UPS type devices with sufficient capacity for the computers to safely coordinate a system wide shutdown of the correlator hardware in the event of a prolonged power outage. The UPS devices need the ability to signal the CMCS when a power outage has occurred and keep the CMCS apprised of time remaining on backup power.
+
+---
+
+## FUZZY-046
+
+CandidateID: PURE-CAND-006871
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2538
+PROMISE+ ProjectID: 70
+Similarity: 0.842193
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 5.3 CS-010-055 The DUAP Computational Services shall be able to ConOps § 4.3.4 L derive arterial queue length from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive arterial queue length from probe vehicle data.
+
+---
+
+## FUZZY-047
+
+CandidateID: PURE-CAND-006867
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2534
+PROMISE+ ProjectID: 70
+Similarity: 0.841809
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 5.3 CS-010-020 The DUAP Computational Services shall be able to ConOps § 4.3.4 H derive congestion level based on volume to capacity from ConOps § 5.3 probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive congestion level based on volume to capacity from probe vehicle data. 
+
+---
+
+## FUZZY-048
+
+CandidateID: PURE-CAND-006923
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2477
+PROMISE+ ProjectID: 70
+Similarity: 0.839765
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+PS-020-050 The system map display shall provide a means to select ConOps § 4.3.6 L which data layers are displayed.
+
+### PROMISE+ requirement
+
+The system map display shall provide a means to select which data layers are displayed.
+
+---
+
+## FUZZY-049
+
+CandidateID: PURE-CAND-002193
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1349
+PROMISE+ ProjectID: 57
+Similarity: 0.837459
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+This process is further described in Section 3.2.3. [SRSreq 85] When a user selects the Run/Pretty-print menu option, the HATS-GUI shall execute the Pretty- print HATS-SML programs as described in Appendix D.
+
+### PROMISE+ requirement
+
+When a user selects the Run/Pretty-print menu option, the HATS-GUI shall execute the Prettyprint HATS-SML programs as described in Appendix D.
+
+---
+
+## FUZZY-050
+
+CandidateID: PURE-CAND-006863
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2552
+PROMISE+ ProjectID: 70
+Similarity: 0.837044
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+DD-040 The DUAP System shall allow data to be accessed as ConOps § 4.3.2 H soon as it is cached.
+
+### PROMISE+ requirement
+
+The DUAP System shall allow data to be accessed as soon as it is cached. 
+

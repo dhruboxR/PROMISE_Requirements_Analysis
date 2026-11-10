@@ -1,0 +1,23 @@
+{
+  "experiment": "Phase 8 Experiment 22",
+  "method": "75/25 mixed class-aware sampling",
+  "batch_size": 16,
+  "ordinary_samples_per_batch": 12,
+  "focused_samples_per_batch": 4,
+  "focused_classes": "Two non-F classes per batch",
+  "focused_pair_rule": "Prefer two different source projects",
+  "epochs": 4,
+  "weight_exponent": 0.25,
+  "new_training_runs": 9,
+  "paired_inner_comparisons": 9,
+  "outer_validation_evaluated": false,
+  "original_test_accessed": false,
+  "original_labels_modified": false,
+  "limitations": [
+    "The ratio was chosen after earlier development results.",
+    "Inner folds are not independent test samples.",
+    "Fewer unique natural records may be seen per epoch.",
+    "Focused sampling uses replacement.",
+    "Model selection is exploratory."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "experiment": "04",
+  "created_utc": "2026-11-09T22:47:07.080588+00:00",
+  "requirements": 11,
+  "reviewer_sheets": 2,
+  "allowed_labels": [
+    "F",
+    "A",
+    "L",
+    "LF",
+    "MN",
+    "O",
+    "PE",
+    "SC",
+    "SE",
+    "US",
+    "FT",
+    "PO"
+  ],
+  "pdf_context_windows_requiring_check": [
+    "AUDIT-005",
+    "AUDIT-012",
+    "AUDIT-015",
+    "AUDIT-021",
+    "AUDIT-026",
+    "AUDIT-027",
+    "AUDIT-031"
+  ],
+  "independent_reviews_completed": 0,
+  "dataset_labels_modified": false
+}

@@ -1,0 +1,34 @@
+{
+  "experiment": "08F",
+  "created_utc": "2026-11-09T23:13:58.145461+00:00",
+  "phase2_split_counts": {
+    "Train": 2574,
+    "Validation": 553,
+    "Test": 550
+  },
+  "development_records": 3127,
+  "heldout_fold_sizes": {
+    "1": 968,
+    "2": 1103,
+    "3": 1056
+  },
+  "protocol_checks": {
+    "phase5_phase6_agreement": true,
+    "project_group_separation": true,
+    "phase5_assignments": 3127,
+    "phase6_assignments": 3127
+  },
+  "pure_documents": 79,
+  "project_relationships": 48,
+  "risk_status_counts": {
+    "Single development fold candidate": 36,
+    "No direct match - provenance unresolved": 39,
+    "Original test overlap candidate": 4
+  },
+  "multiple_fold_source_candidates": 0,
+  "original_test_overlap_candidates": 4,
+  "source_identity_verified": false,
+  "future_training_data_approved": 0,
+  "existing_model_leakage_proven": false,
+  "original_datasets_modified": false
+}

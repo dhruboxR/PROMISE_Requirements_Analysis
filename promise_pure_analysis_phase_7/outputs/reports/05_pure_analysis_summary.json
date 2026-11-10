@@ -1,0 +1,64 @@
+{
+  "experiment": "05",
+  "created_utc": "2026-11-09T22:53:00.723019+00:00",
+  "dataset": "PURE",
+  "total_documents": 79,
+  "format_counts": {
+    "doc": 13,
+    "htm": 1,
+    "html": 2,
+    "pdf": 62,
+    "rtf": 1
+  },
+  "successful_extractions": 79,
+  "failed_or_empty_extractions": 0,
+  "total_extracted_words": 886823,
+  "total_extracted_characters": 5962595,
+  "mean_words_per_successful_document": 11225.61,
+  "longest_documents": [
+    {
+      "name": "2001 - npac.doc",
+      "words": 76767
+    },
+    {
+      "name": "2009 - peppol.pdf",
+      "words": 54694
+    },
+    {
+      "name": "1999 - tcs.pdf",
+      "words": 38123
+    },
+    {
+      "name": "2003 - pnnl.pdf",
+      "words": 35613
+    },
+    {
+      "name": "2006 - eirene sys 15.pdf",
+      "words": 29698
+    },
+    {
+      "name": "2002 - sce api.pdf",
+      "words": 29023
+    },
+    {
+      "name": "1995 - gemini.pdf",
+      "words": 24709
+    },
+    {
+      "name": "2007 - nde.pdf",
+      "words": 23220
+    },
+    {
+      "name": "2000 - nasa x38.doc",
+      "words": 23109
+    },
+    {
+      "name": "2001 - telescope.pdf",
+      "words": 22983
+    }
+  ],
+  "extraction_issues": [],
+  "requirement_count_validated": false,
+  "classification_labels_assigned": false,
+  "original_dataset_modified": false
+}

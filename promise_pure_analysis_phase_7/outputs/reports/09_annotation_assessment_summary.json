@@ -1,0 +1,31 @@
+{
+  "experiment": "09",
+  "created_utc": "2026-11-09T23:19:24.071217+00:00",
+  "title": "AI-Assisted Source-Context Annotation Assessment",
+  "requirements": 11,
+  "source_documents": 4,
+  "original_label_distribution": {
+    "LF": 4,
+    "PO": 2,
+    "SC": 5
+  },
+  "previous_ai_distribution": {
+    "F": 7,
+    "PE": 2,
+    "SE": 1,
+    "US": 1
+  },
+  "original_ai_agreements": 0,
+  "original_ai_disagreements": 11,
+  "researcher_assessments_completed": 0,
+  "independent_expert_reviews_completed": 0,
+  "valid_assessment_statuses": [
+    "Original label supported",
+    "Potential inconsistency",
+    "Unresolved"
+  ],
+  "source_traceability_established": true,
+  "contextual_label_verification_completed": false,
+  "label_corrections_approved": 0,
+  "original_datasets_modified": false
+}

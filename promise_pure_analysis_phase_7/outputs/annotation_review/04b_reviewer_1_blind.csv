@@ -1,0 +1,12 @@
+AuditID,RequirementText,ProposedLabel,Confidence,NeedsMoreContext,ReviewerReason
+AUDIT-005,"Each file should have the suffix of .xml, e.g. A1234520090623000001.xml.",,,,
+AUDIT-009,"The system can generate a report of the value of items (based on data in item record) in the entire collection or a portion. Example: staff can obtain value of all items with status of longoverdue, or value of all dvds in children's collection, or value of entire collection.",,,,
+AUDIT-010,"The system generates a list of patrons with no circulation or electronic activity in the last X days (X configurable). List should be configurable to System, Home Library, County, etc.",,,,
+AUDIT-012,All xml documents attached to emails to the UK fisheries administrations' ERS system must be encrypted using PGP.,,,,
+AUDIT-015,The ELSS must provide facilities to transmit deletions to previously transmitted data.,,,,
+AUDIT-021,"Status display update must be within 4 sec at the local stations (certain functions, such as telescope position, may have tighter constraints).",,,,
+AUDIT-026,"System Administration shall be accessible with screen-reading software, screen-magnification software, and other software programs designed to increase accessibility.",,,,
+AUDIT-027,"For focusing and related activities, maximum acceptable detector readout time is about 0.1 sec, though only a portion of the detector may be read during that time.",,,,
+AUDIT-028,"The system produces statistics that can be used to understand and predict patron behavior and use of materials. For example, how quickly is a particular book returned, on average? How likely is a particular book to be renewed? What percent of check-outs at a particular branch are renewals?",,,,
+AUDIT-031,Correction operation to capture and deliver a formatted correction request for transmission by a vessel's communications system(s) to the UK fisheries administrations' ERS system to correct previously sent data (COR).,,,,
+AUDIT-034,The system provides an interface showing capacity of all branches (as defined in PINES-014).,,,,

@@ -1,0 +1,104 @@
+TargetClass,TargetProject,OuterFold,Source,RecordID,ProjectID,OriginalClass,RequirementText
+L,82,2,Training,658,19,L,The calculations performed by the system must comply according to the norms set by the user and should not vary unless explicitly changed by the user.
+L,82,2,Training,148,4,L,All actions that modify an existing dispute case must be recorded in the case history.
+L,82,2,Training,240,5,L,The product shall comply with the estimatics laws relating to recycled parts usage.
+L,82,2,Training,1862,63,L,The system shall be capable of exporting the NBI data in the specified NBI format as outlined in the NBI guideline. The system shall be capable supporting the future NBI coding guide changes.
+L,82,2,Training,2014,65,L,"All proprietary trademarks, product names and/or logos used on this document are trademarks of their respective owners."
+L,82,2,Training,2158,67,L,"E-store should display the disclaimers, copyright, word mark, trademark and product warranties of the Marvel electronics and home entertainment."
+L,82,2,Training,3108,79,L,The following copyright notice must be displayed in all user interfaces: © 2009 - Construction Junction
+L,82,2,Training,395,8,L,IzognMovies shall meet the licensing requirements set forth by the appropriate organizations in order to stream African movies.
+L,82,2,HeldOut,3183,82,L,Re-compiling a VCD simple package into a VCD advanced package MUST be possible
+L,82,2,HeldOut,3184,82,L,Re-compiling a VCD advanced package into a VCD advanced package MUST be possible
+L,82,2,HeldOut,3185,82,L,A VCD service provider SHOULD be trusted to correctly process unstructured evidences into (structured) context specific data by manual means in order to create context specific data using the semi-automated approach.
+L,82,2,HeldOut,3186,82,L,There MUST be an access policy that is issued by the economic operator that mandates a contracting authority to request attestation from the national VCD service provider on demand.
+L,82,2,HeldOut,3187,82,L,A general reference structure and syntax MUST be defined. This may include creating contracting authority specific or VCD specific references in order to identify a mandate that has been given by the economic operator to this contracting authority for retrieving attestation or even updates on it.
+L,82,2,HeldOut,3188,82,L,National and local political commitments and service-level agreements MUST ensure that consensuses on roles and responsibilities are built with regard to this solution and in particular the National Service Providers who delivers attestations on demand.
+L,82,2,HeldOut,3189,82,L,"There MUST be a service-level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about the response time of a delivery of attestations and data availability."
+L,82,2,HeldOut,3190,82,L,"There MUST be a service-level agreement between the parties involved (Economic Operators, Contracting authorities, National Service Providers, and Trusted Attestation Service) about conflict resolution that describe what to do when errors occur or when attestation or translations cannot be delivered “on demand”."
+SC,80,3,Training,961,48,SC,The system should be able to scale up to 500 concurrent users (if there is a need in the future) by installing additional hardware components.
+SC,80,3,Training,1461,58,SC,"Hardware – I/O, communications, and processing hardware shall be easily expandable, reconfigureable, augmentable and replaceable to meet increasing data transfer and processing demands imposed by EVLA science, Correlator changes, and availability of new hardware."
+SC,80,3,Training,1571,59,SC,"Hardware – I/O, communications, and processing hardware shall be easily expandable, reconfigurable, augmentable and replaceable to meet increasing data traffic and processing demands imposed by EVLA science, Correlator changes, and availability of new hardware."
+SC,80,3,Training,284,6,SC,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.
+SC,80,3,Training,1595,60,SC,The system should be able to support other types of message structure to cover f.i. a future driving licence network and correlated activities.
+SC,80,3,HeldOut,3125,80,SC,"The system generates a list of items that have been in-transit for more than X days (X configurable), per branch and per system. The report would merge the transit to and transit from into one report for ease of front-line staff use."
+SC,80,3,HeldOut,3126,80,SC,The system provides reports of missing and damaged items per branch.
+SC,80,3,HeldOut,3127,80,SC,"System provides a utility for transferring batches of items between branches, used for example to move books into a mobile library, an outreach program collection, or a ""just-in-time"" warehouse. Utility includes ability to query for candidate materials; ability to save queries for repeated use; ability to manually select titles from query results; and ability to change records of all or selected items to move to new location. Mechanisms for moving items include changing location field, generating pull lists, etc. In addition, utility provides means to revert items to original location after a set period of time, and/or based on other criteria."
+SC,80,3,HeldOut,3128,80,SC,"Ability to control inventory of uncataloged material, such as paperback books and children s board books. Support for quick distribution; minimal branch labor; and ability to identify how the material is being used. Ability to count transactions and include in circulation statistics and reports."
+SC,80,3,HeldOut,3129,80,SC,System must be able to support the fine-grained reports requirements as described in Appendix B.
+SC,80,3,HeldOut,3130,80,SC,The system provides an interface showing capacity of all branches
+SC,80,3,HeldOut,3131,80,SC,"Ability to report on the volume of material in a given library at any point in time, based on new acquisitions, items on the shelf, and items out in circulation, with the ability to break down volume in categories (e.g. total items in library, number of holds, number of adult fiction, number of board books, etc)."
+SC,80,3,HeldOut,3132,80,SC,"The system produces useful demographic statistics, including transactions by geographical regions, age ranges, etc. The data used to produce these statistics must be anonymized, i.e. information that could be used to identify a patron is deleted."
+SC,60,1,Training,563,12,SC,The product shall be able to process all transactions.The product shall process minimum of 1 million transactions per year.
+SC,60,1,Training,961,48,SC,The system should be able to scale up to 500 concurrent users (if there is a need in the future) by installing additional hardware components.
+SC,60,1,Training,259,5,SC,The product shall be able to handle up to 1500 simultaneous users. The system shall perform with 1500 users as a time.
+SC,60,1,Training,1461,58,SC,"Hardware – I/O, communications, and processing hardware shall be easily expandable, reconfigureable, augmentable and replaceable to meet increasing data transfer and processing demands imposed by EVLA science, Correlator changes, and availability of new hardware."
+SC,60,1,Training,1571,59,SC,"Hardware – I/O, communications, and processing hardware shall be easily expandable, reconfigurable, augmentable and replaceable to meet increasing data traffic and processing demands imposed by EVLA science, Correlator changes, and availability of new hardware."
+SC,60,1,Training,284,6,SC,The language of the product shall accommodate all of the target market countries. 90% of survey respondents from each target market country will find that the language of the product is acceptable.
+SC,60,1,Training,451,8,SC,The website shall be capable of supporting 100 000 customers.
+SC,60,1,Training,3125,80,SC,"The system generates a list of items that have been in-transit for more than X days (X configurable), per branch and per system. The report would merge the transit to and transit from into one report for ease of front-line staff use."
+SC,60,1,HeldOut,1595,60,SC,The system should be able to support other types of message structure to cover f.i. a future driving licence network and correlated activities.
+SC,60,1,HeldOut,1596,60,SC,The system must be maintainable and extensible. SUP-03 The system must be designed so that it can migrate to upgraded hardware or new versions of the operating systems involved.
+SC,60,1,HeldOut,1597,60,SC,The system must be able to migrate to other type of network than the one proposed by TESTA-II.
+SC,60,1,HeldOut,1598,60,SC,Each Member of this network will organise its data about smart card holders with no constraints or recommendations on operating system and/or technology used. The system will be able to dialog with these environments or specify a generic interface to dialog with the Member’s applications.
+SC,60,1,HeldOut,1599,60,SC,The system must be designed and documented with the expectation that its operational lifetime will be many years.
+SC,60,1,HeldOut,1600,60,SC,The system must use the network facilities supplied by the TESTA-II network.]
+SC,60,1,HeldOut,1601,60,SC,The algorithms in the software will be based on existing techniques and no research will be required to develop new algorithms under this contract.
+SC,60,1,HeldOut,1602,60,SC,The system is to be designed as a robust and dependable operational system which is tolerant to operator errors and which will recover cleanly from power cuts or other disasters.
+PO,59,2,Training,763,34,PO,An end-user may use this system on any OS; either it is Windows or Linux.
+PO,59,2,Training,851,45,PO,The system shall run on Windows Server 2003.
+PO,59,2,Training,1106,50,PO,The system shall be extremely portable via the usb drive.
+PO,59,2,Training,1145,51,PO,The Application should be installed in any Microsoft or Unix platform.
+PO,59,2,Training,1171,52,PO,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.
+PO,59,2,HeldOut,1538,59,PO,"Form Factor – The MCCC shall be a high availability type generalpurpose computer capable of supporting multiple Ethernet interfaces, COTS operating systems, and support server/host services for the CMIB operating system. This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible."
+PO,59,2,HeldOut,1539,59,PO,"Operating System – The operating system/module combination shall be capable of supporting the real-time requirements of the correlator hardware, hardware monitor/control/diagnostics with support for standalone “test bench” operation with simulated control data generation, and the ability to access and upgrade correlator hardware PLD/FPGA personalities through its network connection."
+PO,59,2,HeldOut,1540,59,PO,"Module Features – The CMIB shall contain 64 Mbytes or greater of SDRAM, IDE hard disk interface, minimum of one serial and one parallel interface, PCI/ISA buses, 100BaseT network interface, capacity to boot and run a generic COTS operating system in a near real-time environment from local non-volatile storage."
+PO,59,2,HeldOut,1541,59,PO,Form Factor– The CMIB shall conform to both electrical and physical PC104+ standards.
+PO,59,2,HeldOut,1542,59,PO,Hardware Booting – The CMIB shall have control of hardware “warm boots” such that an external command from the MCCC to reboot the CMIB shall have an option to force a hardware warm boot.
+PO,59,2,HeldOut,1543,59,PO,Accessibility – All computers within the CMCS system shall have the ability for authorized users to directly access individual systems for maintenance and monitoring through remote logins.
+PO,59,2,HeldOut,1544,59,PO,Hardware addressing – The CMIB shall be able to read back the contents of all writeable hardware control registers where meaningful. It is desired that the state of the correlator hardware be available through interrogation across the CMIB bus for monitoring and fault tolerance.
+PO,59,2,HeldOut,1545,59,PO,"Hardware Visual Health Monitoring – The carrier board for the CMIB shall have an externally visible indicator (LED or other) that will provide a user with a physical indication of CMIB operational status (red = fault, green = ok)."
+PO,52,1,Training,851,45,PO,The system shall run on Windows Server 2003.
+PO,52,1,Training,964,48,PO,The system should be portable to various operating environments.
+PO,52,1,Training,1106,50,PO,The system shall be extremely portable via the usb drive.
+PO,52,1,Training,1145,51,PO,The Application should be installed in any Microsoft or Unix platform.
+PO,52,1,Training,1538,59,PO,"Form Factor – The MCCC shall be a high availability type generalpurpose computer capable of supporting multiple Ethernet interfaces, COTS operating systems, and support server/host services for the CMIB operating system. This computer may exist as a hot swappable or redundant CPU device capable of self-healing where possible."
+PO,52,1,HeldOut,1171,52,PO,Data transmission format. Data is transmitted between Gemini and home Institutes using a FITS format and contains all header information provided with the data.
+PO,52,1,HeldOut,1172,52,PO,"System-wide data capacity. The data capacity of the system is limited by transfer methods and technology, as well as archiving capacity on site. The system data capacity is capable of retaining 7 days of data produced by the largest instrument, the last 3 days of which must be available interactively from hard disk or similar medium."
+PO,52,1,HeldOut,1173,52,PO,"The system must allow for fast transmission of rough images every 0.5 sec. This may be assisted through the use of data-loss compression techniques (e.g. JPEG, MPEG, etc)."
+PO,52,1,HeldOut,1174,52,PO,"In addition, there is the need for transmission of images matching the original resolution. This high-quality transmission must require less than 20 sec, and can only be assisted with loss-less compression."
+PO,52,1,HeldOut,1175,52,PO,"Every command must be accepted/rejected within 2 sec and before the corresponding action occurs. (This is different than the ACK/NAK response of the communications protocol - here, the target system must have examined the command and verified its validity."
+PO,52,1,HeldOut,1176,52,PO,The telescope and instrument software shall contain built-in test (BIT) facilities to verify Gemini 8m Telescopes system and Gemini 8m Telescopes software performances.
+PO,52,1,HeldOut,1177,52,PO,Requests of subsystems for status information must be answered within 5 sec and be possible in maintenance level operation.
+PO,52,1,HeldOut,1178,52,PO,Requirements for response times within the user interfaces are given in the User Interface requirements section.
+O,74,1,Training,561,12,O,The product shall interface CSR and Datastream.The product shall exchange messages between CSR and EAM on a real time basis without any direct interfaces between two systems.
+O,74,1,Training,619,15,O,The RFS system should be able to easily interface with the BDW environment in order to load the data. • 7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process every year. The data will be as of October month-end. Test files (7) shall be loaded up to 5 times throughout the year from the BDW.
+O,74,1,Training,693,27,O,The system shall utilise periodic 30-second keep-alive messages between tablets and the server to monitor tablet operational status.
+O,74,1,Training,722,31,O,Flea Market system will interface with the web server and RDBMS software using APIs provided by the implementation language
+O,74,1,Training,734,32,O,It must be able to change and update information on the server.
+O,74,1,Training,833,43,O,The system shall be compatible with the Microsoft Windows Operating System.
+O,74,1,Training,251,5,O,The product shall adhere to the corporate Architecture guidelines
+O,74,1,Training,1253,55,O,"The C2C shall be able to operate in normal mode. In this mode the C2C receives data from all connected systems, including the Incident GUI, and combines the data into a single data store (database)."
+O,74,1,HeldOut,2861,74,O,Submit a CAISO market schedule for any test energy.
+O,74,1,HeldOut,2862,74,O,Black Start units may be tested and/or assessed for the ability to Complete such number of successive starts within such period of time as may be specified in the Black Start section of the unit’s RMR or Interim Black Start contract. Its ability to produce the range of reactive power resources required by its voltage support section of the unit’s RMR or Interim Black Start contract.
+O,74,1,HeldOut,2863,74,O,Black Start units may be tested and/or assessed for the ability to selfprovide start-up power for the period of time it takes to complete the startup process at the generating station and to switch to the applicable transmission path and synchronize to the grid.
+O,74,1,HeldOut,2864,74,O,The CAISO annually requests Black Start tests from at least one third of all RMR and Interim Black Start units.
+O,74,1,HeldOut,2865,74,O,The CAISO shall have the sole right to determine when the operation of Black Start Generating Unit is required to respond to conditions on the CAISO Controlled Grid.
+O,74,1,HeldOut,2866,74,O,"The CAISO shall from time to time undertake performance tests, with or without prior notification."
+O,74,1,HeldOut,2867,74,O,The minimum run time duration (the generation time after being synchronized to the grid) of a Black Start test is 10 minutes.
+O,74,1,HeldOut,2868,74,O,All Black Start Generating Units must satisfy technical requirements specified by the CAISO.
+O,6,2,Training,561,12,O,The product shall interface CSR and Datastream.The product shall exchange messages between CSR and EAM on a real time basis without any direct interfaces between two systems.
+O,6,2,Training,598,14,O,A secondary database will be used to store historical statistics and data.
+O,6,2,Training,619,15,O,The RFS system should be able to easily interface with the BDW environment in order to load the data. • 7 data files shall be received from the BDW and loaded into the RFS system within 3 hours one day prior to the start of budgeting process every year. The data will be as of October month-end. Test files (7) shall be loaded up to 5 times throughout the year from the BDW.
+O,6,2,Training,693,27,O,The system shall utilise periodic 30-second keep-alive messages between tablets and the server to monitor tablet operational status.
+O,6,2,Training,734,32,O,It must be able to change and update information on the server.
+O,6,2,Training,746,33,O,The system should have to keep the location where the doughnut will be send.
+O,6,2,Training,761,34,O,The system provides storage of all databases on redundant computers with automatic switchover.
+O,6,2,Training,782,37,O,The available server must be reliable and the network connectivity in the supermarket should be proper for smooth flow of all operations and data.
+O,6,2,HeldOut,290,6,O,The product must be developed with the J2SE/J2EE programming language libraries
+O,6,2,HeldOut,311,6,O,The product shall be able to be installed in any operating environment within 2 days.
+O,6,2,HeldOut,323,6,O,A database management system such as Oracle DB2 MySql or HSQL will need to be integrated with the product.
+O,6,2,HeldOut,324,6,O,The product must make use of web/application server technology. Open source examples include Apache web server Tomcat and the JBoss application server.
+O,6,2,HeldOut,325,6,O,The product will require collaboration with a database management system (DBMS). The DBMS may be located on the same machine as the product or on a separate machine residing on the same computer network.
+O,6,2,HeldOut,326,6,O,The product will function alongside server software on any operating system where the Java runtime can be installed.
+O,6,2,HeldOut,327,6,O,The product must work with most database management systems (DBMS) on the market whether the DBMS is colocated with the product on the same machine or is located on a different machine on the computer network.
+O,6,2,HeldOut,328,6,O,The product is expected to integrate with multiple database management systems. The product will operate with Oracle SQL Server DB2 MySQL HSQL and MS Access.

@@ -1,0 +1,15 @@
+{
+  "experiment": 1,
+  "dataset": "PURE",
+  "original_documents": 79,
+  "document_formats": {
+    "doc": 13,
+    "htm": 1,
+    "html": 2,
+    "pdf": 62,
+    "rtf": 1
+  },
+  "xml_files": 18,
+  "inventory_created_utc": "2026-11-09T22:34:36.999535+00:00",
+  "original_files_modified": false
+}

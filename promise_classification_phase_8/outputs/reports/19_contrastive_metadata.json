@@ -1,0 +1,22 @@
+{
+  "experiment": "Phase 8 Experiment 19",
+  "method": "Cross-project supervised contrastive feasibility",
+  "training_records": 1369,
+  "validation_records": 790,
+  "modes": [
+    "CE_Only",
+    "CE_SupCon"
+  ],
+  "epochs": 4,
+  "learning_rate": 2e-05,
+  "weight_exponent": 0.25,
+  "contrastive_weight": 0.1,
+  "temperature": 0.1,
+  "sampling": "8 classes x 2 examples",
+  "positive_pair_rule": "same class, different project",
+  "heldout_outer_evaluated": false,
+  "original_test_accessed": false,
+  "labels_modified": false,
+  "experiment_exploratory": true,
+  "selection_bias_warning": "The inner split has been examined previously. Results are feasibility findings, not independent evidence."
+}

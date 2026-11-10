@@ -1,0 +1,18 @@
+{
+  "experiment": "Phase 8 Experiment 03",
+  "purpose": "Binary specialist feasibility",
+  "targets": [
+    "O",
+    "SC",
+    "PO"
+  ],
+  "development_records": 3127,
+  "fixed_folds": 3,
+  "classifier": "LogisticRegression",
+  "class_weights": "binary tempered",
+  "threshold": 0.5,
+  "feature_representation": "Word+character TF-IDF and frozen MiniLM",
+  "test_accessed": false,
+  "full_12_class_improvement_established": false,
+  "outputs_are_exploratory": true
+}

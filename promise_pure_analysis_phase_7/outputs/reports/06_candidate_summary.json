@@ -1,0 +1,62 @@
+{
+  "experiment": "06",
+  "created_utc": "2026-11-09T22:54:53.352970+00:00",
+  "documents_in_inventory": 79,
+  "documents_processed": 79,
+  "documents_skipped": [],
+  "total_candidate_passages": 8462,
+  "documents_with_candidates": 79,
+  "pattern_frequencies": {
+    "must": 1290,
+    "required_to": 120,
+    "shall": 5539,
+    "should": 1530,
+    "system_can": 46,
+    "will_be_able_to": 103
+  },
+  "top_10_documents": [
+    {
+      "document": "2001 - npac.doc",
+      "candidates": 1119
+    },
+    {
+      "document": "1999 - tcs.pdf",
+      "candidates": 931
+    },
+    {
+      "document": "2007 - eirene fun 7.pdf",
+      "candidates": 513
+    },
+    {
+      "document": "2005 - clarus low.pdf",
+      "candidates": 438
+    },
+    {
+      "document": "2006 - eirene sys 15.pdf",
+      "candidates": 367
+    },
+    {
+      "document": "1995 - gemini.pdf",
+      "candidates": 305
+    },
+    {
+      "document": "2009 - peppol.pdf",
+      "candidates": 268
+    },
+    {
+      "document": "2007 - nde.pdf",
+      "candidates": 225
+    },
+    {
+      "document": "2004 - rlcs.pdf",
+      "candidates": 216
+    },
+    {
+      "document": "2000 - nasa x38.doc",
+      "candidates": 206
+    }
+  ],
+  "verified_requirement_count": null,
+  "human_review_completed": false,
+  "dataset_labels_modified": false
+}

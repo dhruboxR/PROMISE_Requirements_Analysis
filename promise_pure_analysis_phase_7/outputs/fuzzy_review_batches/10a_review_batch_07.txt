@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 07
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-061
+
+CandidateID: PURE-CAND-006856
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2561
+PROMISE+ ProjectID: 70
+Similarity: 0.78546
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+MHI H AS-906 The DUAP System shall log Administrative Services data MHI H transactions.
+
+### PROMISE+ requirement
+
+The DUAP System shall log Administrative Services data transactions. 
+
+---
+
+## FUZZY-062
+
+CandidateID: PURE-CAND-002141
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1433
+PROMISE+ ProjectID: 57
+Similarity: 0.781728
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+HATS-SML [SRSreq 40] The HATS-GUI shall interface with HATS-SML (version 2.0) in order to parse transformation language programs, execute transformation language programs, and create output SDTs, error messages, pretty-printed text, and parsed transformation language programs.
+
+### PROMISE+ requirement
+
+The HATS-GUI shall interface with HATS-SML (version 2.0) in order to parse transformation language programs, execute transformation language programs, and create output SDTs, error messages, pretty-printed text, and parsed transformation language programs. The interface shall consist of starting HATS-SML programs and passing command line arguments and capturing data written to the standard output and standard error streams of the HATS-SML processes. The HATS-SML programs and their command line arguments are described in Appendix D.
+
+---
+
+## FUZZY-063
+
+CandidateID: PURE-CAND-003478
+Document: 2002 - evla back.pdf
+PROMISE+ RecordID: 1532
+PROMISE+ ProjectID: 58
+Similarity: 0.779938
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+Report all crashed, stopped, or unresponsive processors. 3.2.2.26 Monitor Networks – The BE shall periodically or upon request check all Backend internal networks and assure that all communication connections are intact and functioning.
+
+### PROMISE+ requirement
+
+Monitor Networks – The BE shall periodically or upon request check all Backend internal networks and assure that all communication connections are intact and functioning. Report all non-functioning components. 
+
+---
+
+## FUZZY-064
+
+CandidateID: PURE-CAND-006876
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2542
+PROMISE+ ProjectID: 70
+Similarity: 0.769169
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+ConOps § 5.1 ConOps § 5.3 CS-020-020 The DUAP Computational Services shall be able to infer ConOps § 4.3.4 H incident locations from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to infer incident locations from probe vehicle data. 
+
+---
+
+## FUZZY-065
+
+CandidateID: PURE-CAND-006841
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2508
+PROMISE+ ProjectID: 70
+Similarity: 0.760618
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+ID Function Source Comments Importance IS-070-100 The DUAP Input Services shall be able to collect traffic ConOps § 2.3.2.6 The specific format of the D data from the Statewide TMC system using the Statewide interface is to be determined TMC interface. in the design of the prototype.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect traffic data from the Statewide TMC system using the Statewide TMC interface.
+
+---
+
+## FUZZY-066
+
+CandidateID: PURE-CAND-006859
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2564
+PROMISE+ ProjectID: 70
+Similarity: 0.754848
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+DD-030 The DUAP System shall cache (both raw and derived) MHI See List in APPENDIX E - SAE H road weather data.
+
+### PROMISE+ requirement
+
+The DUAP System shall cache (both raw and derived) road weather data. 
+
+---
+
+## FUZZY-067
+
+CandidateID: PURE-CAND-003862
+Document: 2003 - tachonet.pdf
+PROMISE+ RecordID: 1617
+PROMISE+ ProjectID: 60
+Similarity: 0.730752
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+FUN-03 The system must allow a member to do statistics on messages issued and received from/to his system.
+
+### PROMISE+ requirement
+
+The system must allow a member to do statistics on messages issued and received from/to his system. FUN-04 The system must provide automatic reply to the sender of the request through the use of a standard interface to the Members systems.
+
+---
+
+## FUZZY-068
+
+CandidateID: PURE-CAND-003457
+Document: 2002 - evla back.pdf
+PROMISE+ RecordID: 1502
+PROMISE+ ProjectID: 58
+Similarity: 0.721266
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+This includes checking for receive errors and determining that all expected data was received, accumulation of error statistics and comparison against tolerances, and reporting of all out of tolerance conditions. 3.2.2.3 Input Data Management - The BE shall store input data records in a memory buffer and track buffer locations of all input data until data processing is complete.
+
+### PROMISE+ requirement
+
+Verify Receive – The BE shall verify the successful receipt of incoming data from the Correlator. This includes checking for receive errors and determining that all expected data was received, accumulation of error statistics and comparison against tolerances, and reporting of all out of tolerance conditions. 
+
+---
+
+## FUZZY-069
+
+CandidateID: PURE-CAND-005417
+Document: 2005 - pontis.pdf
+PROMISE+ RecordID: 1863
+PROMISE+ ProjectID: 63
+Similarity: 0.700786
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+This shall be a privileged operation. 15.5 The system shall provide data review wizard for comparing incoming bridge data with existing data.
+
+### PROMISE+ requirement
+
+The system shall provide data review wizard for comparing incoming bridge data with existing data. The errors will be highlighted for easy review. 
+
+---
+
+## FUZZY-070
+
+CandidateID: PURE-CAND-005347
+Document: 2005 - phin.pdf
+PROMISE+ RecordID: 1707
+PROMISE+ ProjectID: 62
+Similarity: 0.693319
+Similarity group: 0.60-0.80
+
+### PURE passage
+
+Vocabulary requirements that span PHIN functional areas should be reviewed in “PHIN Preparedness Cross Functional Components Requirements”, available at www.cdc.gov/phin.
+
+### PROMISE+ requirement
+
+Privacy requirements ensure that sensitive information is not accessibly to unauthorized uses. Privacy requirements are broadly defined because they span all PHIN functional areas. These requirements should be reviewed in “PHIN Preparedness Cross Functional Components Requirements”, available at www.cdc.gov/phin.
+

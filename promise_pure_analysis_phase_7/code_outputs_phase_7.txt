@@ -1,0 +1,636 @@
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/01_inventory_documents.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/01_inventory_documents.py
+python scripts/01_inventory_documents.py
+
+PHASE 7 EXPERIMENT 01
+PURE DOCUMENT INVENTORY
+=======================================================
+Original documents: 79
+DOC: 13
+HTM: 1
+HTML: 2
+PDF: 62
+RTF: 1
+XML documents: 18
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/01_pure_document_inventory.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/01_pure_inventory_summary.json
+
+EXPERIMENT 01 COMPLETED
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/02_match_source_documents.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/02_match_source_documents.py
+
+python scripts/02_match_source_documents.py
+AUDIT-005 | Project 86 | 2010 - fishing.pdf | Page 9 | Fragment matched
+AUDIT-009 | Project 80 | 2009 - library.pdf | Page ? | Not found - manual review
+AUDIT-010 | Project 80 | 2009 - library.pdf | Page ? | Not found - manual review
+AUDIT-012 | Project 86 | 2010 - fishing.pdf | Page 9 | Fragment matched
+AUDIT-015 | Project 86 | 2010 - fishing.pdf | Page 10 | Fragment matched
+AUDIT-021 | Project 52 | 1995 - gemini.pdf | Page 34 | Fragment matched
+AUDIT-026 | Project 80 | 2009 - library.pdf | Page 5 | Fragment matched
+AUDIT-027 | Project 52 | 1995 - gemini.pdf | Page 32 | Fragment matched
+AUDIT-028 | Project 80 | 2009 - library.pdf | Page ? | Not found - manual review
+AUDIT-031 | Project 86 | 2010 - fishing.pdf | Page 5 | Fragment matched
+AUDIT-034 | Project 80 | 2009 - library.pdf | Page ? | Not found - manual review
+
+Matches: 7/11
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/02_source_matches.csv
+Original labels unchanged.
+(.venv-transformers) dhrubo_roy
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/02_match_source_documents.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python scripts/02_match_source_documents.py
+AUDIT-005 | Project 86 | 2010 - fishing.pdf | PDF page 9 | Fragment matched
+AUDIT-009 | Project 80 | 2009 - library.doc | DOC extracted lines 549-549 | Fragment matched
+AUDIT-010 | Project 80 | 2009 - library.doc | DOC extracted lines 495-495 | Fragment matched
+AUDIT-012 | Project 86 | 2010 - fishing.pdf | PDF page 9 | Fragment matched
+AUDIT-015 | Project 86 | 2010 - fishing.pdf | PDF page 10 | Fragment matched
+AUDIT-021 | Project 52 | 1995 - gemini.pdf | PDF page 34 | Fragment matched
+AUDIT-026 | Project 80 | 2009 - library.pdf | PDF page 5 | Multiple fragment matches
+AUDIT-027 | Project 52 | 1995 - gemini.pdf | PDF page 32 | Fragment matched
+AUDIT-028 | Project 80 | 2009 - library.doc | DOC extracted lines 392-393 | Fragment matched
+AUDIT-031 | Project 86 | 2010 - fishing.pdf | PDF page 5 | Fragment matched
+AUDIT-034 | Project 80 | 2009 - library.doc | DOC extracted lines 418-419 | Fragment matched
+
+=======================================================
+PHASE 7 EXPERIMENT 02 RESULTS
+=======================================================
+Matched records: 11/11
+Unmatched records: 0
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/02_source_matches.csv
+Dataset labels modified: No
+Independent annotation verification: Pending
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/03_extract_source_context.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/03_extract_source_context.py
+
+python scripts/03_extract_source_context.py
+AUDIT-005 | 2010 - fishing.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-009 | 2009 - library.doc | 1 occurrence(s) | Source fragment located
+AUDIT-010 | 2009 - library.doc | 1 occurrence(s) | Source fragment located
+AUDIT-012 | 2010 - fishing.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-015 | 2010 - fishing.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-021 | 1995 - gemini.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-026 | 2009 - library.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-027 | 1995 - gemini.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-028 | 2009 - library.doc | 1 occurrence(s) | Source fragment located
+AUDIT-031 | 2010 - fishing.pdf | 1 occurrence(s) | Source fragment located
+AUDIT-034 | 2009 - library.doc | 1 occurrence(s) | Source fragment located
+
+=======================================================
+PHASE 7 EXPERIMENT 03
+=======================================================
+Requirements with context: 11 / 11
+Ambiguous requirements: []
+Unmatched requirements: []
+CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/03_source_context.csv
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/03_source_context_summary.json
+Original labels modified: No
+Independent verification: Pending
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/04_prepare_independent_review.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 04
+==================================================
+Requirements: 11
+Blind reviewer sheets created: 2
+PDF context windows to verify: 7
+Original labels revealed to reviewers: No
+Reviewer decisions recorded: 0
+Output directory: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/annotation_review
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/04b_prepare_verified_review.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python scripts/04b_prepare_verified_review.py
+PHASE 7 EXPERIMENT 04B
+==================================================
+Requirements prepared: 11
+PDF statements: 7
+DOC statements: 4
+Blind reviewer sheets: 2
+Original labels hidden: Yes
+Independent reviews completed: 0
+Output: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/annotation_review
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/05_analyze_pure_documents.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/05_analyze_pure_documents.py
+
+python scripts/05_analyze_pure_documents.py
+PHASE 7 EXPERIMENT 05
+PURE DOCUMENT TEXT ANALYSIS
+============================================================
+[01/79] Success      5445 words | 0000 - cctns.pdf
+[02/79] Success      7006 words | 0000 - gamma j.pdf
+[03/79] Success      3716 words | 0000 - inventory.pdf
+[04/79] Success     24709 words | 1995 - gemini.pdf
+[05/79] Success      6936 words | 1998 - themas.pdf
+[06/79] Success      4781 words | 1999 - dii.htm
+[07/79] Success      6878 words | 1999 - multi-mahjong.html
+[08/79] Success     38123 words | 1999 - tcs.pdf
+[09/79] Success     23109 words | 2000 - nasa x38.doc
+[10/79] Success     11099 words | 2001 - beyond.pdf
+[11/79] Success      5853 words | 2001 - ctc network.pdf
+[12/79] Success     17566 words | 2001 - elsfork.pdf
+[13/79] Success      4710 words | 2001 - esa.pdf
+[14/79] Success     22258 words | 2001 - hats.pdf
+[15/79] Success      4752 words | 2001 - libra.doc
+[16/79] Success     76767 words | 2001 - npac.doc
+[17/79] Success      3271 words | 2001 - space fractions.pdf
+[18/79] Success     22983 words | 2001 - telescope.pdf
+[19/79] Success      5915 words | 2002 - evla back.pdf
+[20/79] Success      4581 words | 2002 - evla corr.pdf
+[21/79] Success     29023 words | 2002 - sce api.pdf
+[22/79] Success      1865 words | 2003 - agentmom.pdf
+[23/79] Success     35613 words | 2003 - pnnl.pdf
+[24/79] Success      2695 words | 2003 - qheadache.pdf
+[25/79] Success     10499 words | 2003 - tachonet.pdf
+[26/79] Success      4052 words | 2004 - colorcast.pdf
+[27/79] Success      8015 words | 2004 - e-procurement.rtf
+[28/79] Success      7933 words | 2004 - grid bgc.pdf
+[29/79] Success      4518 words | 2004 - ijis.doc
+[30/79] Success      8787 words | 2004 - jse.doc
+[31/79] Success      2595 words | 2004 - philips.doc
+[32/79] Success     17117 words | 2004 - rlcs.pdf
+[33/79] Success      6995 words | 2004 - sprat.pdf
+[34/79] Success      9688 words | 2004 - watcom gui.pdf
+[35/79] Success     14341 words | 2004 - watcom.pdf
+[36/79] Success      9169 words | 2005 - clarus high.doc
+[37/79] Success     21255 words | 2005 - clarus low.pdf
+[38/79] Success      2421 words | 2005 - grid 3D.pdf
+[39/79] Success      6675 words | 2005 - microcare.pdf
+[40/79] Success      2801 words | 2005 - nenios.html
+[41/79] Success      6122 words | 2005 - phin.pdf
+[42/79] Success     19226 words | 2005 - pontis.pdf
+[43/79] Success      4932 words | 2005 - triangle.pdf
+[44/79] Success      3639 words | 2005 - znix.pdf
+[45/79] Success     29698 words | 2006 - eirene sys 15.pdf
+[46/79] Success     10949 words | 2006 - stewards.pdf
+[47/79] Success      2535 words | 2007 - central trading system.pdf
+[48/79] Success      2872 words | 2007 - e-store.doc
+[49/79] Success     22916 words | 2007 - eirene fun 7.pdf
+[50/79] Success      9958 words | 2007 - ertms.pdf
+[51/79] Success      2695 words | 2007 - get real 0.2.pdf
+[52/79] Success     15912 words | 2007 - mdot.pdf
+[53/79] Success     23220 words | 2007 - nde.pdf
+[54/79] Success     18335 words | 2007 - nlm.doc
+[55/79] Success      4537 words | 2007 - puget sound.pdf
+[56/79] Success     15022 words | 2007 - water use.pdf
+[57/79] Success      2549 words | 2008 - caiso.pdf
+[58/79] Success      7593 words | 2008 - keepass.pdf
+[59/79] Success      5581 words | 2008 - peering.pdf
+[60/79] Success      9924 words | 2008 - viper.doc
+[61/79] Success      8991 words | 2008 - virtual ed.doc
+[62/79] Success      7457 words | 2008 - vub.pdf
+[63/79] Success      4361 words | 2009 - email.pdf
+[64/79] Success      3683 words | 2009 - gaia.pdf
+[65/79] Success     18394 words | 2009 - inventory 2.0.pdf
+[66/79] Success      4885 words | 2009 - library.doc
+[67/79] Success      3878 words | 2009 - library.pdf
+[68/79] Success      3790 words | 2009 - model manager.pdf
+[69/79] Success      8005 words | 2009 - peazip.pdf
+[70/79] Success     54694 words | 2009 - peppol.pdf
+[71/79] Success      2981 words | 2009 - video search.pdf
+[72/79] Success      3801 words | 2009 - warc III.pdf
+[73/79] Success      2520 words | 2010 - blit draft.pdf
+[74/79] Success     15042 words | 2010 - fishing.pdf
+[75/79] Success      4754 words | 2010 - gparted.pdf
+[76/79] Success      4270 words | 2010 - home 1.3.pdf
+[77/79] Success      3290 words | 2010 - mashboot.pdf
+[78/79] Success      6032 words | 2010 - split merge.pdf
+[79/79] Success      1265 words | 2011 - opensg 0.1.doc
+
+============================================================
+EXPERIMENT 05 SUMMARY
+============================================================
+Documents processed: 79
+Successful extractions: 79
+Failed/empty extractions: 0
+Total extracted words: 886823
+Total extracted characters: 5962595
+CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/05_pure_document_statistics.csv
+JSON: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/05_pure_analysis_summary.json
+Original dataset modified: No
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/06_extract_requirement_candidates.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/06_extract_requirement_candidates.py
+
+python scripts/06_extract_requirement_candidates.py
+0000 - cctns.pdf: 110 candidate passages
+0000 - gamma j.pdf: 55 candidate passages
+0000 - inventory.pdf: 8 candidate passages
+1995 - gemini.pdf: 305 candidate passages
+1998 - themas.pdf: 104 candidate passages
+1999 - dii.htm: 24 candidate passages
+1999 - multi-mahjong.html: 48 candidate passages
+1999 - tcs.pdf: 931 candidate passages
+2000 - nasa x38.doc: 206 candidate passages
+2001 - beyond.pdf: 68 candidate passages
+2001 - ctc network.pdf: 78 candidate passages
+2001 - elsfork.pdf: 107 candidate passages
+2001 - esa.pdf: 54 candidate passages
+2001 - hats.pdf: 192 candidate passages
+2001 - libra.doc: 15 candidate passages
+2001 - npac.doc: 1119 candidate passages
+2001 - space fractions.pdf: 4 candidate passages
+2001 - telescope.pdf: 14 candidate passages
+2002 - evla back.pdf: 69 candidate passages
+2002 - evla corr.pdf: 49 candidate passages
+2002 - sce api.pdf: 85 candidate passages
+2003 - agentmom.pdf: 4 candidate passages
+2003 - pnnl.pdf: 191 candidate passages
+2003 - qheadache.pdf: 10 candidate passages
+2003 - tachonet.pdf: 87 candidate passages
+2004 - colorcast.pdf: 16 candidate passages
+2004 - e-procurement.rtf: 8 candidate passages
+2004 - grid bgc.pdf: 167 candidate passages
+2004 - ijis.doc: 2 candidate passages
+2004 - jse.doc: 60 candidate passages
+2004 - philips.doc: 6 candidate passages
+2004 - rlcs.pdf: 216 candidate passages
+2004 - sprat.pdf: 103 candidate passages
+2004 - watcom gui.pdf: 139 candidate passages
+2004 - watcom.pdf: 67 candidate passages
+2005 - clarus high.doc: 24 candidate passages
+2005 - clarus low.pdf: 438 candidate passages
+2005 - grid 3D.pdf: 15 candidate passages
+2005 - microcare.pdf: 46 candidate passages
+2005 - nenios.html: 53 candidate passages
+2005 - phin.pdf: 52 candidate passages
+2005 - pontis.pdf: 114 candidate passages
+2005 - triangle.pdf: 31 candidate passages
+2005 - znix.pdf: 34 candidate passages
+2006 - eirene sys 15.pdf: 367 candidate passages
+2006 - stewards.pdf: 43 candidate passages
+2007 - central trading system.pdf: 20 candidate passages
+2007 - e-store.doc: 116 candidate passages
+2007 - eirene fun 7.pdf: 513 candidate passages
+2007 - ertms.pdf: 206 candidate passages
+2007 - get real 0.2.pdf: 9 candidate passages
+2007 - mdot.pdf: 158 candidate passages
+2007 - nde.pdf: 225 candidate passages
+2007 - nlm.doc: 49 candidate passages
+2007 - puget sound.pdf: 79 candidate passages
+2007 - water use.pdf: 23 candidate passages
+2008 - caiso.pdf: 9 candidate passages
+2008 - keepass.pdf: 28 candidate passages
+2008 - peering.pdf: 4 candidate passages
+2008 - viper.doc: 47 candidate passages
+2008 - virtual ed.doc: 86 candidate passages
+2008 - vub.pdf: 46 candidate passages
+2009 - email.pdf: 17 candidate passages
+2009 - gaia.pdf: 16 candidate passages
+2009 - inventory 2.0.pdf: 206 candidate passages
+2009 - library.doc: 27 candidate passages
+2009 - library.pdf: 15 candidate passages
+2009 - model manager.pdf: 20 candidate passages
+2009 - peazip.pdf: 15 candidate passages
+2009 - peppol.pdf: 268 candidate passages
+2009 - video search.pdf: 5 candidate passages
+2009 - warc III.pdf: 40 candidate passages
+2010 - blit draft.pdf: 54 candidate passages
+2010 - fishing.pdf: 129 candidate passages
+2010 - gparted.pdf: 4 candidate passages
+2010 - home 1.3.pdf: 25 candidate passages
+2010 - mashboot.pdf: 42 candidate passages
+2010 - split merge.pdf: 16 candidate passages
+2011 - opensg 0.1.doc: 7 candidate passages
+
+=======================================================
+PHASE 7 EXPERIMENT 06 SUMMARY
+=======================================================
+Documents processed: 79
+Total candidate passages: 8462
+Documents skipped: 0
+Verified requirements: Not established
+Labels assigned: No
+Candidate CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/06_requirement_candidates.csv
+Summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/06_candidate_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/07_analyze_promise_overlap.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 07
+=======================================================
+PROMISE+ records: 3677
+PURE candidates: 8462
+Exact matches: 190
+Normalized-only matches: 23
+Unmatched candidates: 8249
+Matched candidates: 213
+Distinct PROMISE+ records matched: 276
+Documents with matches: 17
+Candidate CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/07_pure_promise_overlap.csv
+Document summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/07_document_overlap_summary.csv
+JSON report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/07_overlap_summary.json
+Original datasets modified: No
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08a_partial_text_matching.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 08A
+=======================================================
+PURE candidates: 8462
+PROMISE+ requirements: 3677
+Matching text pairs: 1728
+Normalized-equal pairs: 279
+PROMISE inside PURE: 1195
+PURE inside PROMISE: 254
+Unique PURE candidates matched: 1198
+Unique PROMISE+ records matched: 1574
+Documents with matches: 40
+CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08a_partial_matches.csv
+Document summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08a_document_summary.csv
+JSON: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08a_partial_summary.json
+Original datasets modified: No
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08b_fuzzy_text_matching.py
+-----------------------------------------------------------------------------------------------
+
+PURE candidates: 8462
+Already matched in 08A: 1198
+Candidates for fuzzy search: 7264
+PROMISE+ requirements: 3677
+
+Building character TF-IDF representations...
+
+Comparing candidate passages...
+Compared 7264/7264
+
+PHASE 7 EXPERIMENT 08B
+=======================================================
+Candidates searched: 7264
+Candidate pairs saved: 21792
+Best similarity >= 0.80: 257
+Best similarity >= 0.90: 106
+Mean best similarity: 0.3361
+CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08b_fuzzy_candidates.csv
+Summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08b_fuzzy_summary.json
+Verified fuzzy matches: 0
+Original datasets modified: No
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08c_prepare_match_review.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 08C
+=======================================================
+Candidate pairs read: 21792
+Unique PURE candidates: 7264
+High similarity candidates: 257
+Manual review sample: 120
+
+Similarity groups:
+0.90-1.00 | Population: 106 | Sample: 30
+0.80-0.90 | Population: 151 | Sample: 30
+0.60-0.80 | Population: 286 | Sample: 20
+0.40-0.60 | Population: 789 | Sample: 20
+0.00-0.40 | Population: 5932 | Sample: 20
+
+High-similarity CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08c_high_similarity_pairs.csv
+Manual review CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08c_manual_review_sample.csv
+Summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08c_review_preparation_summary.json
+Completed manual reviews: 0
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08d_source_project_mapping.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 08D
+=======================================================
+PURE documents: 79
+Candidate document-project relationships: 48
+Documents with direct evidence: 40
+Documents without direct evidence: 39
+Verified mappings: 0
+Project mapping: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08d_project_mapping_candidates.csv
+Document summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08d_document_mapping_summary.csv
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08d_mapping_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08e_source_leakage_audit.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 08E
+============================================================
+Split record counts:
+  Train: 2574 records, 50 projects
+  Validation: 553 records, 19 projects
+  Test: 550 records, 19 projects
+Cross-split text keys detected: 0
+
+PURE documents: 79
+Candidate project links: 48
+
+Risk classifications:
+  Ambiguous project mapping: 5
+  No direct evidence - provenance unresolved: 39
+  Test-project overlap candidate: 4
+  Train-project overlap candidate: 24
+  Validation-project overlap candidate: 7
+
+Ambiguous source documents: 5
+Approved for training: 0
+Phase 4/5 CV-fold audit: Not yet performed
+Original datasets modified: No
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08e_project_partition_mapping.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08e_document_leakage_audit.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08e_leakage_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08f_cross_validation_leakage_audit.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 08F
+============================================================
+Phase 5 / Phase 6 folds identical: Yes
+Project and connected-group separation: Passed
+Development records: 3127
+Held-out fold 1: 968 records
+Held-out fold 2: 1103 records
+Held-out fold 3: 1056 records
+
+PURE documents: 79
+
+Source risk screening:
+  No direct match - provenance unresolved: 39
+  Original test overlap candidate: 4
+  Single development fold candidate: 36
+
+Documents linked to multiple folds: 0
+Original test overlap candidates: 4
+Approved for Phase 8 training: 0
+Existing model leakage established: No
+
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08f_project_fold_mapping.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08f_document_fold_risk.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08f_cv_leakage_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/08g_prepare_source_aware_policy.py
+-----------------------------------------------------------------------------------------------
+
+(.venv-transformers) dhrubo_roy@dhruboxR-IDG-3-15ARH7:~/Unofficial Thesis/promise_pure_analysis_phase_7$ python -m py_compile scripts/08g_prepare_source_aware_policy.py
+
+python scripts/08g_prepare_source_aware_policy.py
+
+PHASE 7 EXPERIMENT 08G
+=======================================================
+Documents: 79
+Held-out folds: 3
+Policy rows: 237
+
+Screening status:
+BLOCKED_HELDOUT_SOURCE: 36
+BLOCKED_TEST_SOURCE: 12
+BLOCKED_UNRESOLVED: 117
+REVIEW_REQUIRED: 72
+
+Approved for training: 0
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/08g_source_aware_fold_policy.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/08g_policy_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/09_prepare_annotation_assessment.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 09
+=======================================================
+Requirements: 11
+Distinct source files: 4
+Original/previous AI agreements: 0
+Original/previous AI disagreements: 11
+Researcher assessments completed: 0
+Independent expert reviews completed: 0
+Original labels modified: No
+
+CSV: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/09_annotation_assessment.csv
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/09_annotation_assessment_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/09b_record_ai_assessment.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 09B
+==================================================
+Records assessed: 11
+Potential inconsistencies: 11
+Confirmed annotation errors: 0
+Human reviews completed: 0
+Original dataset modified: No
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/09b_ai_contextual_assessment.csv
+Saved: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/09b_ai_assessment_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/10a_prepare_fuzzy_review_batches.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 10A
+=======================================================
+Review pairs: 120
+Batch size: 10
+Batches created: 12
+Completed decisions: 0
+Independent expert reviews: 0
+Original datasets modified: No
+
+Batch directory: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/fuzzy_review_batches
+Decision template: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/10a_fuzzy_review_decisions.csv
+Report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/10a_review_batch_summary.json
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/10c_analyze_fuzzy_review.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 10C
+============================================================
+Total assessed: 120
+
+Decision counts:
+  Same requirement: 46
+  Partial overlap: 36
+  Different requirement: 34
+  Uncertain: 4
+
+Similarity-group results:
+SimilarityGroup  PopulationCandidates  ReviewedPairs  SameRequirement  PartialOverlap  DifferentRequirement  Uncertain  SameRatePercent  AnyOverlapRatePercent
+      0.90-1.00                   106             30               23               7                     0          0            76.67           100.0
+      0.80-0.90                   151             30               19               8                     1          2            63.33            90.0
+      0.60-0.80                   286             20                4              14                     2          0            20.00            90.0
+      0.40-0.60                   789             20                0               7                    13          0             0.00            35.0
+      0.00-0.40                  5932             20                0               0                    18          2             0.00             0.0
+
+Cases flagged for source inspection: 4
+
+Verified precision/recall: Not available
+Source documents approved for training: 0
+Original datasets modified: No
+
+Outputs:
+/home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/10c_similarity_group_results.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/10c_confidence_distribution.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/10c_flagged_matches.csv
+/home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/10c_fuzzy_review_summary.json
+/home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/10c_fuzzy_review_report.md
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/11a_inspect_uncertain_sources.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 11A
+=======================================================
+Cases inspected: 4
+Cases with matching text: 4
+Review decisions changed: 0
+Original datasets modified: No
+
+Context report: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/11a_source_context.txt
+Review template: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/11a_source_context_review.csv
+
+-----------------------------------------------------------------------------------------------
+        RUN - python scripts/11b_resolve_uncertain_matches.py
+-----------------------------------------------------------------------------------------------
+
+PHASE 7 EXPERIMENT 11B
+=======================================================
+Uncertain cases reviewed: 4
+Reclassified as Different requirement: 4
+Remaining uncertain: 0
+
+Updated assessment counts:
+Same requirement: 46
+Partial overlap: 36
+Different requirement: 38
+Uncertain: 0
+
+Original datasets modified: No
+Backup: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/11b_decisions_before_source_verification.csv
+Audit: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/tables/11b_source_verification_audit.csv
+Summary: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/reports/11b_source_verification_summary.json
+

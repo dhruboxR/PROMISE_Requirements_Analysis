@@ -1,0 +1,12 @@
+{
+  "experiment": "03",
+  "name": "PURE Source Context Extraction",
+  "created_utc": "2026-11-09T22:45:25.645486+00:00",
+  "priority_records": 11,
+  "records_with_source_occurrences": 11,
+  "total_candidate_occurrences": 11,
+  "ambiguous_record_ids": [],
+  "unmatched_record_ids": [],
+  "independent_review_completed": false,
+  "dataset_labels_modified": false
+}

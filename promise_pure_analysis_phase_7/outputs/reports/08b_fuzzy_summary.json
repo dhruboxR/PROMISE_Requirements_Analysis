@@ -1,0 +1,22 @@
+{
+  "experiment": "08B",
+  "created_utc": "2026-11-09T23:03:36.936494+00:00",
+  "pure_total_candidates": 8462,
+  "promise_records": 3677,
+  "previously_matched_candidates": 1198,
+  "unmatched_candidates_searched": 7264,
+  "top_k": 3,
+  "review_threshold": 0.8,
+  "candidate_pairs_saved": 21792,
+  "candidates_with_best_similarity_at_least_0_80": 257,
+  "candidates_with_best_similarity_at_least_0_90": 106,
+  "mean_best_similarity": 0.3361,
+  "priority_pair_counts": {
+    "Lower similarity - unverified": 21516,
+    "High - manual review": 276
+  },
+  "human_matches_verified": 0,
+  "new_requirements_confirmed": 0,
+  "training_dataset_created": false,
+  "original_datasets_modified": false
+}

@@ -1,0 +1,15 @@
+{
+  "experiment": "08G",
+  "pure_documents": 79,
+  "heldout_folds": 3,
+  "screening_rows": 237,
+  "screening_status_counts": {
+    "REVIEW_REQUIRED": 72,
+    "BLOCKED_HELDOUT_SOURCE": 36,
+    "BLOCKED_UNRESOLVED": 117,
+    "BLOCKED_TEST_SOURCE": 12
+  },
+  "approved_for_training": 0,
+  "policy_is_provisional": true,
+  "original_datasets_modified": false
+}

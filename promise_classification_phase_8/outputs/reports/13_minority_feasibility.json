@@ -1,0 +1,24 @@
+{
+  "experiment": "Phase 8 Experiment 13",
+  "title": "Minority-Class Data Feasibility Analysis",
+  "development_records": 3127,
+  "project_count": 69,
+  "connected_group_count": 66,
+  "class_count": 12,
+  "outer_folds": [
+    1,
+    2,
+    3
+  ],
+  "group_separation_passed": true,
+  "model_retraining": false,
+  "original_test_accessed": false,
+  "original_datasets_modified": false,
+  "effective_diversity_definition": "Inverse Simpson concentration of class counts",
+  "analysis_limitations": [
+    "Project and group counts do not establish model learnability.",
+    "Groups may combine multiple projects.",
+    "Class concentration is descriptive, not causal.",
+    "These development folds have been explored previously."
+  ]
+}

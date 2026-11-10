@@ -1,0 +1,11 @@
+{
+  "experiment": "10A",
+  "created_utc": "2026-11-09T23:22:43.299048+00:00",
+  "review_pairs": 120,
+  "batch_size": 10,
+  "batches": 12,
+  "review_decisions_completed": 0,
+  "review_method": "Pending AI-assisted contextual review",
+  "independent_expert_review": false,
+  "original_datasets_modified": false
+}

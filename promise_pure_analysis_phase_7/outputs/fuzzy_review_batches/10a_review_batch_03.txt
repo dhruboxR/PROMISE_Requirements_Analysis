@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 03
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-021
+
+CandidateID: PURE-CAND-002137
+Document: 2001 - hats.pdf
+PROMISE+ RecordID: 1384
+PROMISE+ ProjectID: 57
+Similarity: 0.932665
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+At a minimum, the system shall provide eight colors (red, yellow, white, black, green, blue, orange, and violet) for displayed nodes. [SRSreq 26] The HATS-GUI shall allow the user to select the shapes for types of displayed nodes in a displayed graph.
+
+### PROMISE+ requirement
+
+The HATS-GUI shall allow the user to select the colors for types of displayed nodes in a displayed graph. At a minimum, the system shall provide eight colors (red, yellow, white, black, green, blue, orange, and violet) for displayed nodes.
+
+---
+
+## FUZZY-022
+
+CandidateID: PURE-CAND-006830
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2497
+PROMISE+ ProjectID: 70
+Similarity: 0.927565
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+IS-070-003 The DUAP data elements shall include roadway event ConOps § 4.3.1 See List in APPENDIX F - H information data fields corresponding to the SAE J2354 SAE J2354 EventInformation structure as enumerated in APPENDIX F - SAE J2354 Elements for traffic data EventInformation Elements. elements to be included.
+
+### PROMISE+ requirement
+
+The DUAP data elements shall include roadway event information data fields corresponding to the SAE J2354 structure as enumerated in APPENDIX F - SAE J2354 EventInformation Elements. 
+
+---
+
+## FUZZY-023
+
+CandidateID: PURE-CAND-006845
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2546
+PROMISE+ ProjectID: 70
+Similarity: 0.925517
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+IS-140 The DUAP System shall be able to collect work zone H (lane closure) data.
+
+### PROMISE+ requirement
+
+The DUAP System shall be able to collect work zone (lane closure) data. 
+
+---
+
+## FUZZY-024
+
+CandidateID: PURE-CAND-000031
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1060
+PROMISE+ ProjectID: 49
+Similarity: 0.914642
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+The interfaces must be made customizable or user-configurable to the extent 4. possible. (e.g., the displayed columns in the table, move, resize, modify the appearance).
+
+### PROMISE+ requirement
+
+The interfaces must be made customizable or user-configurable to the extent possible. (e.g., the displayed columns in the table, move, resize, modify the appearance). Such configurations must be saved in the user profile.
+
+---
+
+## FUZZY-025
+
+CandidateID: PURE-CAND-005911
+Document: 2006 - stewards.pdf
+PROMISE+ RecordID: 2079
+PROMISE+ ProjectID: 66
+Similarity: 0.909613
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+FR-2.2: View watershed descriptive data Summary descriptions of research watersheds, stations, and instruments that are useful in describing the research activities should be accessible.
+
+### PROMISE+ requirement
+
+View watershed descriptive data and Summary descriptions of research watersheds, stations, and instruments that are useful in describing the research activities should be accessible. This information would not be considered ‘formal’ metadata. 
+
+---
+
+## FUZZY-026
+
+CandidateID: PURE-CAND-006882
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2514
+PROMISE+ ProjectID: 70
+Similarity: 0.907892
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+CS-100-010 The DUAP Computational Services shall be able to ConOps § 4.3.4 L derive pavement surface conditions from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive pavement surface conditions from probe vehicle data. 
+
+---
+
+## FUZZY-027
+
+CandidateID: PURE-CAND-006731
+Document: 2007 - ertms.pdf
+PROMISE+ RecordID: 2240
+PROMISE+ ProjectID: 68
+Similarity: 0.902861
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+4.5.2.5a A special indication shall be shown on the DMI. (M)
+
+### PROMISE+ requirement
+
+A special indication shall be shown on the DMI. 
+
+---
+
+## FUZZY-028
+
+CandidateID: PURE-CAND-006900
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2437
+PROMISE+ ProjectID: 70
+Similarity: 0.902386
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+OS-010-025 The DUAP Output Services shall be able to publish ConOps § 5.3 L roadway traffic information in Traffic Management Data MHI Dictionary (TMDD) format.
+
+### PROMISE+ requirement
+
+The DUAP Output Services shall be able to publish roadway traffic information in Traffic Management Data Dictionary (TMDD) format
+
+---
+
+## FUZZY-029
+
+CandidateID: PURE-CAND-007828
+Document: 2009 - library.pdf
+PROMISE+ RecordID: 3157
+PROMISE+ ProjectID: 80
+Similarity: 0.900463
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+OE-5: System Administration shall be accessible with screen-reading software, screen- magnification software, and other software programs designed to increase accessibility.
+
+### PROMISE+ requirement
+
+Management Processes shall be accessible with screen-reading software, screen-magnification software, and other software programs designed to increase accessibility.
+
+---
+
+## FUZZY-030
+
+CandidateID: PURE-CAND-006883
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2492
+PROMISE+ ProjectID: 70
+Similarity: 0.900416
+Similarity group: 0.90-1.00
+
+### PURE passage
+
+CS-100-020 The DUAP Computational Services shall be able to ConOps § 4.3.4 L derive bridge surface conditions from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive bridge surface conditions from probe vehicle data.
+

@@ -1,0 +1,12 @@
+AuditID,RecordID,ProjectID,OriginalLabel,AISuggestedLabel,SourceDocument,SourceLocation,SourceRequirementID,SourceSection
+AUDIT-005,3569,86,LF,F,2010 - fishing.pdf,"PDF page 9, extracted line 51",,
+AUDIT-009,3144,80,SC,F,2009 - library.doc,DOC extracted line 549,PINES-031,Management Tools: Financial Records
+AUDIT-010,3138,80,SC,F,2009 - library.doc,DOC extracted line 495,PINES-024,Management Tools: Patron Records
+AUDIT-012,3570,86,LF,SE,2010 - fishing.pdf,"PDF page 9, extracted line 52",,
+AUDIT-015,3578,86,LF,F,2010 - fishing.pdf,"PDF page 10, extracted line 34",,
+AUDIT-021,1182,52,PO,PE,1995 - gemini.pdf,"PDF page 34, extracted line 25",,
+AUDIT-026,3157,80,SC,US,2009 - library.pdf,"PDF page 5, extracted line 47",,
+AUDIT-027,1195,52,PO,PE,1995 - gemini.pdf,"PDF page 32, extracted line 22",,
+AUDIT-028,3133,80,SC,F,2009 - library.doc,DOC extracted line 392,PINES-012,Management Tools: Demographics
+AUDIT-031,3601,86,LF,F,2010 - fishing.pdf,"PDF page 5, extracted line 45",,
+AUDIT-034,3130,80,SC,F,2009 - library.doc,DOC extracted line 418,PINES-015,Management Tools: Inventory Control

@@ -1,0 +1,1903 @@
+PHASE 7 EXPERIMENT 11A
+Original PURE Source-Context Inspection
+=================================================================
+
+Automatic extraction only.
+No match decisions have been changed.
+
+=================================================================
+REVIEW ID: FUZZY-035
+DOCUMENT: 1999 - multi-mahjong.html
+TEXT SOURCE: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/extracted_text/1999 - multi-mahjong__html.txt
+
+SEARCH TERM: choose to pick up
+Matches displayed: 1
+
+--- Match 1 ---
+ations of: the current
+discard, the tiles in a user's hand, and the player whose turn it is,
+would allow the user to Chow/Pung/Kong/Mahjong under the Chinese rules
+of Mahjong, the MultiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must inform the user if another player goes Mahjong. The wind of the rou
+
+SEARCH TERM: choose to discard
+Matches displayed: 1
+
+--- Match 1 ---
+ltiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must inform the user if another player goes Mahjong. The wind of the round is also updated (if required).
+
+
+
+
+4.3.9
+The MultiMahjongClient must inform the user if the hand has ended in a draw.
+
+
+
+
+
+
+
+Level 2 Requirements:
+
+
+
+
+
+
+
+4.3.10
+The MultiMahjongCl
+
+SEARCH TERM: join information
+Matches displayed: 1
+
+--- Match 1 ---
+4.2.6
+When a user selects the option to join an
+existing game, the MultiMahjongClient will retrieve a list of any games
+that still require players from the MultiMahjongServer.
+
+
+
+
+4.2.7
+When a user wishes to join a multi player game, they must:
+
+
+
+
+4.2.7.1
+Enter their name.
+
+
+
+
+4.2.7.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.7.3
+Choose which of the available games they wish to join.
+
+
+
+
+
+
+
+
+4.2.8
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+
+
+
+4.2.9
+In a multi player game, each MultiMahjongClient must retrieve the following data from the MultiMahjongServer:
+
+
+
+
+4.2.9.1
+Whether it must support a CO.
+
+
+
+
+4.2.9.2
+The score limit for a hand.
+
+
+
+
+4.2.9.3
+All players' names, icons and seating positions.
+
+
+
+
+4.2.9.4
+The tiles of the human and CO (optional) player supported on the MultiMahjongClient.
+
+
+
+
+
+
+
+
+
+
+
+Level 2 Requirements:
+
+
+
+
+
+
+
+4.2.10
+The list of un-
+
+SEARCH TERM: pick up
+Matches displayed: 3
+
+--- Match 1 ---
+ns a game will be
+able to upload their own JPEG or GIF image that they wish to have
+displayed above their name, if they do not wish to use a preset icon.
+
+
+
+
+
+
+
+4.3 Playing the Game
+
+
+Level 1 Requirements:
+
+
+
+
+
+
+
+4.3.1
+The MultiMahjongClient must only allow
+players to make moves according to the Chinese rules of Mahjong as
+described in the rulebook, "How to Play Mah Jong".
+
+
+
+
+4.3.2
+The MultiMahjongClient will inform the user whose turn it is to pick up a tile.
+
+
+
+
+4.3.3
+The MultiMahjongClient will retrieve other
+players' changes in the game situation from the MultiMahjongServer. The
+user's screen is then updated to display these changes. The following
+game changes are displayed:
+
+
+
+
+4.3.3.1
+Another player picks up a tile from the wall.
+
+
+
+
+4.3.3.2
+Another player exposes/reveals a set of tiles.
+
+
+
+
+4.3.3.3
+Another player discards a tile.
+
+
+
+
+
+
+
+
+4.3.4
+If the configurations of: the current
+disca
+
+
+--- Match 2 ---
+ther player discards a tile.
+
+
+
+
+
+
+
+
+4.3.4
+If the configurations of: the current
+discard, the tiles in a user's hand, and the player whose turn it is,
+would allow the user to Chow/Pung/Kong/Mahjong under the Chinese rules
+of Mahjong, the MultiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must
+
+
+--- Match 3 ---
+the current
+discard, the tiles in a user's hand, and the player whose turn it is,
+would allow the user to Chow/Pung/Kong/Mahjong under the Chinese rules
+of Mahjong, the MultiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must inform the user if another player goes Mahjong. The wind of the rou
+
+SEARCH TERM: join
+Matches displayed: 3
+
+--- Match 1 ---
+d change game settings.
+
+
+
+
+4.1.10
+The MultiMahjongServer will be able to save preferences to a file and read from that file at start-up.
+
+
+
+
+
+
+
+Note that all requirements hereafter are concerned with the MultiMahjongClient program.
+
+
+4.2 Beginning the Game
+
+
+Level 1 Requirements:
+
+
+
+
+
+
+
+4.2.1
+When the user begins the MultiMahjongClient
+program, they will be able to choose to create a new multi player game,
+to create a new single player game, to join an existing multi player
+game, or to quit the program. These options will be available at any
+stage while the program is running as long as there is no game currently
+being played by the user (see Section 4.4 for more details about quitting).
+
+
+
+
+4.2.2
+When a user creates a new multi player game, they must:
+
+
+
+
+4.2.2.1
+Enter their name.
+
+
+
+
+4.2.2.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.2.3
+Decide the number of human and computer
+oppo
+
+
+--- Match 2 ---
+2
+When a user creates a new multi player game, they must:
+
+
+
+
+4.2.2.1
+Enter their name.
+
+
+
+
+4.2.2.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.2.3
+Decide the number of human and computer
+opponents they want. As any game of Mahjong requires 4 players, the
+MultiMahjongClient will limit the user to choosing 4 players in total.
+
+
+
+
+4.2.2.4
+Set the score limit for winning a hand of Mahjong.
+
+
+
+
+4.2.2.5
+When all the necessary human players have joined the game, the user may choose to begin the game.
+
+
+
+
+
+
+
+
+4.2.3
+The MultiMahjongClient must send this game
+initialisation information to the MultiMahjongServer so that the
+MultiMahjongServer can create a new game.
+
+
+
+
+4.2.4
+The processing for any Computer Opponents (CO) (see Section 4.5
+for more detail) will be done by the MultiMahjongClient program. In a
+single player game, the MultiMahjongClient will need to process for 3
+COs. In a multi play
+
+
+--- Match 3 ---
+upport 1 CO. In a multi player game with 3
+human players, only 1 of the 3 MultiMahjongClients will support a CO.
+Obviously, in a multi player game with 4 human players, no CO is
+required.
+
+
+
+
+4.2.5
+When a user creates a new single player game, they must:
+
+
+
+
+4.2.5.1
+Enter their name.
+
+
+
+
+4.2.5.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.5.3
+Set the score limit for winning a hand of Mahjong.
+
+
+
+
+
+
+
+
+4.2.6
+When a user selects the option to join an
+existing game, the MultiMahjongClient will retrieve a list of any games
+that still require players from the MultiMahjongServer.
+
+
+
+
+4.2.7
+When a user wishes to join a multi player game, they must:
+
+
+
+
+4.2.7.1
+Enter their name.
+
+
+
+
+4.2.7.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.7.3
+Choose which of the available games they wish to join.
+
+
+
+
+
+
+
+
+4.2.8
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+=================================================================
+REVIEW ID: FUZZY-042
+DOCUMENT: 1999 - multi-mahjong.html
+TEXT SOURCE: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/extracted_text/1999 - multi-mahjong__html.txt
+
+SEARCH TERM: choose to discard
+Matches displayed: 1
+
+--- Match 1 ---
+ltiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must inform the user if another player goes Mahjong. The wind of the round is also updated (if required).
+
+
+
+
+4.3.9
+The MultiMahjongClient must inform the user if the hand has ended in a draw.
+
+
+
+
+
+
+
+Level 2 Requirements:
+
+
+
+
+
+
+
+4.3.10
+The MultiMahjongCl
+
+SEARCH TERM: choose to pick up
+Matches displayed: 1
+
+--- Match 1 ---
+ations of: the current
+discard, the tiles in a user's hand, and the player whose turn it is,
+would allow the user to Chow/Pung/Kong/Mahjong under the Chinese rules
+of Mahjong, the MultiMahjongClient will inform the user that they can do
+so. If they choose to take this action, then the MultiMahjongClient
+must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.5
+User's will be able to pick up a tile from
+the wall if it is their turn. If they choose to pick up, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.6
+User's will be able to discard a tile if
+they have picked one up. When they choose to discard, the
+MultiMahjongClient must send this information to the MultiMahjongServer.
+
+
+
+
+4.3.7
+The MultiMahjongClient must inform the user if another player is fishing.
+
+
+
+
+4.3.8
+The MultiMahjongClient must inform the user if another player goes Mahjong. The wind of the rou
+
+SEARCH TERM: join information
+Matches displayed: 1
+
+--- Match 1 ---
+4.2.6
+When a user selects the option to join an
+existing game, the MultiMahjongClient will retrieve a list of any games
+that still require players from the MultiMahjongServer.
+
+
+
+
+4.2.7
+When a user wishes to join a multi player game, they must:
+
+
+
+
+4.2.7.1
+Enter their name.
+
+
+
+
+4.2.7.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.7.3
+Choose which of the available games they wish to join.
+
+
+
+
+
+
+
+
+4.2.8
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+
+
+
+4.2.9
+In a multi player game, each MultiMahjongClient must retrieve the following data from the MultiMahjongServer:
+
+
+
+
+4.2.9.1
+Whether it must support a CO.
+
+
+
+
+4.2.9.2
+The score limit for a hand.
+
+
+
+
+4.2.9.3
+All players' names, icons and seating positions.
+
+
+
+
+4.2.9.4
+The tiles of the human and CO (optional) player supported on the MultiMahjongClient.
+
+
+
+
+
+
+
+
+
+
+
+Level 2 Requirements:
+
+
+
+
+
+
+
+4.2.10
+The list of un-
+
+SEARCH TERM: discard
+Matches displayed: 3
+
+--- Match 1 ---
+cided in SDD*
+
+"updated score" command = *content to be decided in SDD*
+
+
+
+
+
+
+name:
+game data
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+process player action (input and output)
+
+handle game (input and output)
+
+determine computer opponent action (input and output)
+
+game info (input and output)
+
+
+
+description:
+
+game data = [tile position | current round |
+
+
+first
+Wind of the Round | current Wind of the Round |
+
+current player]
+
+tile position = [The Wall | Discard | Dead Tile | Exposed Set |
+
+Revealed Kong]
+
+Exposed Set = [Exposed Kong | Exposed Pung | Exposed Chow]
+
+current round = *1 digit number*
+
+first Wind of the Round = *content to be decided in SDD, will be
+
+
+player
+ID*
+
+current Wind of the Round = *content to be decided in SDD,
+
+
+will
+be player ID*
+
+current player = *content to be decided in SDD, will be player ID*
+
+
+
+
+
+
+name:
+game action
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+process player action (ou
+
+
+--- Match 2 ---
+digit number*
+
+first Wind of the Round = *content to be decided in SDD, will be
+
+
+player
+ID*
+
+current Wind of the Round = *content to be decided in SDD,
+
+
+will
+be player ID*
+
+current player = *content to be decided in SDD, will be player ID*
+
+
+
+
+
+
+name:
+game action
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+process player action (output)
+
+handle game (input and output)
+
+determine computer opponent action (input and output)
+
+
+
+description:
+
+game action = [discarded tile | picked up tile | exposed tile]
+
+discarded tile = *tile class (tile class to be decided in SDD)*
+
+picked up tile = *tile class (tile class to be decided in SDD)*
+
+revealed tile = *tile class (tile class to be decided in SDD)*
+
+
+
+
+
+
+name:
+graphic data
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+update screen (input)
+
+graphics (output)
+
+
+
+description:
+
+graphic data = *colour image file*
+
+
+
+
+
+
+name:
+graphic request
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+g
+
+
+--- Match 3 ---
+to be decided in SDD, will be
+
+
+player
+ID*
+
+current Wind of the Round = *content to be decided in SDD,
+
+
+will
+be player ID*
+
+current player = *content to be decided in SDD, will be player ID*
+
+
+
+
+
+
+name:
+game action
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+process player action (output)
+
+handle game (input and output)
+
+determine computer opponent action (input and output)
+
+
+
+description:
+
+game action = [discarded tile | picked up tile | exposed tile]
+
+discarded tile = *tile class (tile class to be decided in SDD)*
+
+picked up tile = *tile class (tile class to be decided in SDD)*
+
+revealed tile = *tile class (tile class to be decided in SDD)*
+
+
+
+
+
+
+name:
+graphic data
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+update screen (input)
+
+graphics (output)
+
+
+
+description:
+
+graphic data = *colour image file*
+
+
+
+
+
+
+name:
+graphic request
+
+
+
+
+aliases:
+
+
+
+
+
+where/how used:
+graphics (input)
+
+update screen (output)
+
+
+
+descri
+
+SEARCH TERM: join
+Matches displayed: 3
+
+--- Match 1 ---
+d change game settings.
+
+
+
+
+4.1.10
+The MultiMahjongServer will be able to save preferences to a file and read from that file at start-up.
+
+
+
+
+
+
+
+Note that all requirements hereafter are concerned with the MultiMahjongClient program.
+
+
+4.2 Beginning the Game
+
+
+Level 1 Requirements:
+
+
+
+
+
+
+
+4.2.1
+When the user begins the MultiMahjongClient
+program, they will be able to choose to create a new multi player game,
+to create a new single player game, to join an existing multi player
+game, or to quit the program. These options will be available at any
+stage while the program is running as long as there is no game currently
+being played by the user (see Section 4.4 for more details about quitting).
+
+
+
+
+4.2.2
+When a user creates a new multi player game, they must:
+
+
+
+
+4.2.2.1
+Enter their name.
+
+
+
+
+4.2.2.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.2.3
+Decide the number of human and computer
+oppo
+
+
+--- Match 2 ---
+2
+When a user creates a new multi player game, they must:
+
+
+
+
+4.2.2.1
+Enter their name.
+
+
+
+
+4.2.2.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.2.3
+Decide the number of human and computer
+opponents they want. As any game of Mahjong requires 4 players, the
+MultiMahjongClient will limit the user to choosing 4 players in total.
+
+
+
+
+4.2.2.4
+Set the score limit for winning a hand of Mahjong.
+
+
+
+
+4.2.2.5
+When all the necessary human players have joined the game, the user may choose to begin the game.
+
+
+
+
+
+
+
+
+4.2.3
+The MultiMahjongClient must send this game
+initialisation information to the MultiMahjongServer so that the
+MultiMahjongServer can create a new game.
+
+
+
+
+4.2.4
+The processing for any Computer Opponents (CO) (see Section 4.5
+for more detail) will be done by the MultiMahjongClient program. In a
+single player game, the MultiMahjongClient will need to process for 3
+COs. In a multi play
+
+
+--- Match 3 ---
+upport 1 CO. In a multi player game with 3
+human players, only 1 of the 3 MultiMahjongClients will support a CO.
+Obviously, in a multi player game with 4 human players, no CO is
+required.
+
+
+
+
+4.2.5
+When a user creates a new single player game, they must:
+
+
+
+
+4.2.5.1
+Enter their name.
+
+
+
+
+4.2.5.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.5.3
+Set the score limit for winning a hand of Mahjong.
+
+
+
+
+
+
+
+
+4.2.6
+When a user selects the option to join an
+existing game, the MultiMahjongClient will retrieve a list of any games
+that still require players from the MultiMahjongServer.
+
+
+
+
+4.2.7
+When a user wishes to join a multi player game, they must:
+
+
+
+
+4.2.7.1
+Enter their name.
+
+
+
+
+4.2.7.2
+Choose an icon from a predetermined list.
+
+
+
+
+4.2.7.3
+Choose which of the available games they wish to join.
+
+
+
+
+
+
+
+
+4.2.8
+The MultiMahjongClient must send this join information to the MultiMahjongServer.
+
+=================================================================
+REVIEW ID: FUZZY-115
+DOCUMENT: 2004 - jse.doc
+TEXT SOURCE: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/extracted_text/2004 - jse__doc.txt
+
+SEARCH TERM: This should not have any contents
+Matches displayed: 3
+
+--- Match 1 ---
+|16S | |End of block |M |MMID |
+| | | |- MMI Details | | |
+
+
+-----| End of Sequence B MMI Details
+
+Field Descriptions
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+➢ 150 – ISIN Request.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of General
+block and it should have a value of GENL.
+
+5. Function of the message (M): This field identifies the function of
+the message. The valid value is:
+
+
+➢ NEWM – For new message.
+
+
+6. Preparation date and time (O): This field gives the preparation date
+and time of the message.
+
+7. Type of instruction indicator (M): This field identifies the
+instruction indicator. The valid valu
+
+
+--- Match 2 ---
+eld Description |
+|5. |13E |Date / Time Indicator |M |8!n4!n |
+|6. |21 |Related Reference |M |16x |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 901 – NOK Message.
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+4. Narrative (M): This field identifies the error code and the
+corresponding tag name. The format is:
+
+
+➢ 4!n/3c – Sub-field1 indicates the error code and sub-
+field 2 indicates the tag name.
+(This can be repeatable 5times)(The error codes are still to be
+defined between the IOR and the NNA)
+
+5. Date and Time (M): This field gives the preparation date and time of
+the message.
+
+6. Related Reference (M): This field identifies the Transaction
+ref
+
+
+--- Match 3 ---
+tails |M |//4!n/4!n/4!n/4!n/4!n |
+|7. |16S | |End of Block |M |GENL |
+| | | |- General | | |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 902 – Rejection Message.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of the
+General block and it should have a value of GENL.
+
+5. Related Reference (M): This field identifies the transaction
+reference of the original message.
+
+6. Error Details (M): This field identifies the validation error
+details. The error code will be of the format 4!n and maximum of 5 error
+codes can be accommodated in the message. (The error codes are still to
+be defined between
+
+SEARCH TERM: should not have any contents
+Matches displayed: 3
+
+--- Match 1 ---
+| |End of block |M |MMID |
+| | | |- MMI Details | | |
+
+
+-----| End of Sequence B MMI Details
+
+Field Descriptions
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+➢ 150 – ISIN Request.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of General
+block and it should have a value of GENL.
+
+5. Function of the message (M): This field identifies the function of
+the message. The valid value is:
+
+
+➢ NEWM – For new message.
+
+
+6. Preparation date and time (O): This field gives the preparation date
+and time of the message.
+
+7. Type of instruction indicator (M): This field identifies the
+instruction indicator. The valid valu
+
+
+--- Match 2 ---
+escription |
+|5. |13E |Date / Time Indicator |M |8!n4!n |
+|6. |21 |Related Reference |M |16x |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 901 – NOK Message.
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+4. Narrative (M): This field identifies the error code and the
+corresponding tag name. The format is:
+
+
+➢ 4!n/3c – Sub-field1 indicates the error code and sub-
+field 2 indicates the tag name.
+(This can be repeatable 5times)(The error codes are still to be
+defined between the IOR and the NNA)
+
+5. Date and Time (M): This field gives the preparation date and time of
+the message.
+
+6. Related Reference (M): This field identifies the Transaction
+ref
+
+
+--- Match 3 ---
+|M |//4!n/4!n/4!n/4!n/4!n |
+|7. |16S | |End of Block |M |GENL |
+| | | |- General | | |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 902 – Rejection Message.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of the
+General block and it should have a value of GENL.
+
+5. Related Reference (M): This field identifies the transaction
+reference of the original message.
+
+6. Error Details (M): This field identifies the validation error
+details. The error code will be of the format 4!n and maximum of 5 error
+codes can be accommodated in the message. (The error codes are still to
+be defined between
+
+SEARCH TERM: any contents
+Matches displayed: 3
+
+--- Match 1 ---
+|M |MMID |
+| | | |- MMI Details | | |
+
+
+-----| End of Sequence B MMI Details
+
+Field Descriptions
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+➢ 150 – ISIN Request.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of General
+block and it should have a value of GENL.
+
+5. Function of the message (M): This field identifies the function of
+the message. The valid value is:
+
+
+➢ NEWM – For new message.
+
+
+6. Preparation date and time (O): This field gives the preparation date
+and time of the message.
+
+7. Type of instruction indicator (M): This field identifies the
+instruction indicator. The valid valu
+
+
+--- Match 2 ---
+|13E |Date / Time Indicator |M |8!n4!n |
+|6. |21 |Related Reference |M |16x |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 901 – NOK Message.
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+4. Narrative (M): This field identifies the error code and the
+corresponding tag name. The format is:
+
+
+➢ 4!n/3c – Sub-field1 indicates the error code and sub-
+field 2 indicates the tag name.
+(This can be repeatable 5times)(The error codes are still to be
+defined between the IOR and the NNA)
+
+5. Date and Time (M): This field gives the preparation date and time of
+the message.
+
+6. Related Reference (M): This field identifies the Transaction
+ref
+
+
+--- Match 3 ---
+!n/4!n/4!n |
+|7. |16S | |End of Block |M |GENL |
+| | | |- General | | |
+
+Field Description
+
+1. Transaction reference (M): This field identifies the transaction
+reference of the message.
+
+2. Sub-message Type (M): This field identifies the sub-message type
+involved in the proprietary message. The valid value is:
+
+
+➢ 902 – Rejection Message.
+
+
+3. Proprietary Message (M): This field identifies that this is a
+proprietary message. This should not have any contents.
+
+
+4. Start of GENL block (M): This field identifies the start of the
+General block and it should have a value of GENL.
+
+5. Related Reference (M): This field identifies the transaction
+reference of the original message.
+
+6. Error Details (M): This field identifies the validation error
+details. The error code will be of the format 4!n and maximum of 5 error
+codes can be accommodated in the message. (The error codes are still to
+be defined between
+
+=================================================================
+REVIEW ID: FUZZY-119
+DOCUMENT: 2005 - clarus low.pdf
+TEXT SOURCE: /home/dhrubo_roy/Unofficial Thesis/promise_pure_analysis_phase_7/outputs/extracted_text/2005 - clarus low__pdf.txt
+
+SEARCH TERM: P-025
+Matches displayed: 3
+
+--- Match 1 ---
+s shall include
+metadata that meets the
+requested metadata query
+filtering specifications.
+
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 51
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Allocation Comment Criticality
+- EMS
+I-023F2 EMS shall respond to queries Task Force
+returning no results with a
+message stating that no results
+matching that query are
+available.
+P-025 The Clarus system shall MHI QEDS, Related to F-501. H
+respond to a request for EMS
+information within five
+minutes.
+P-025F1 The EMS shall respond to a
+request for metadata within
+five minutes.
+
+
+
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 52
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+
+
+4.7 Qualified Environmental Data (QEDC)
+The requirements in this section specify the storage of
+
+
+--- Match 2 ---
+© 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 51
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Allocation Comment Criticality
+- EMS
+I-023F2 EMS shall respond to queries Task Force
+returning no results with a
+message stating that no results
+matching that query are
+available.
+P-025 The Clarus system shall MHI QEDS, Related to F-501. H
+respond to a request for EMS
+information within five
+minutes.
+P-025F1 The EMS shall respond to a
+request for metadata within
+five minutes.
+
+
+
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 52
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+
+
+4.7 Qualified Environmental Data (QEDC)
+The requirements in this section specify the storage of qualified environmental data. The QEDC receives environmental data
+from the Collector Services (CS), stores qualified env
+
+
+--- Match 3 ---
+The Clarus system shall be ConOps §3.2 (Fig. QChS, H
+able to publish new data 7) QEDS
+within twenty minutes of
+data receipt.
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 64
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Allocation - Comment Criticality
+QEDS
+P-024J1 QEDS shall disseminate
+subscription responses
+within twenty minutes of
+new data becoming
+available.
+P-025 The Clarus system shall MHI QEDS, Related to F-501. H
+respond to a request for EMS
+information within one
+minute.
+P-025J1 QEDS shall respond to an
+environmental data request
+within one minute.
+P-031 The Clarus system shall be MHI QEDS Estimated that half of the concurrent users H
+able to handle three may be requesting data at any one time.
+hundred simultaneous
+requests for environmental
+data.
+P-031J1 QEDS shall be able to
+respond to three hundre
+
+SEARCH TERM: F-501
+Matches displayed: 3
+
+--- Match 1 ---
+rough their native
+interfaces.
+I-013D1 CS shall be able to accept data At such time as this requirement may be
+from an RWIS database in its implemented RWIS databases will be
+native output format. treated as a collector.
+I-014 The Clarus system shall be able to ConOps CS Deprecated. F-221 covers this. L
+communicate with an individual §3.4.2
+ESS through its native interface.
+I-016 The Clarus system shall transfer Inferred from CS, EMS, Related to F-501, F-222. H
+data as efficiently as possible. ConOps §3.2 QEDS, SS
+I-016D1 CS shall transfer data
+concurrently.
+I-016D2 CS shall be able to request
+collector environmental data on
+demand.
+I-016D3 CS shall be able to accept
+environmental data pushed from
+collectors.
+
+
+
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 43
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Alloc
+
+
+--- Match 2 ---
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 49
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Allocation Comment Criticality
+- EMS
+F-401 The Clarus system shall be OCS EMS Subject to data sharing agreements. H
+able to provide sensor
+equipment metadata in
+response to a request.
+F-401F1 EMS shall be able to provide
+sensor equipment metadata in
+response to a request.
+F-501 The Clarus system shall MHI QEDS, H
+minimize the time for data EMS
+dissemination.
+F-501F1 EMS shall respond to queries Related to I-016, F-222.
+for metadata within five
+minutes.
+F-905 The Clarus system shall log MHI CS, QEDS, H
+data transactions. EMS,
+QChS,
+CAS, SS,
+DOG
+F-905F1 EMS shall log metadata
+transactions.
+H-120 The Clarus system shall ConOps §3.3 CAS, Roll up of H-121, H-122, H-123, H-
+acquire, process, and EMC, 201, which have been dep
+
+
+--- Match 3 ---
+Weather System Design
+Detailed System Requirements Specification
+
+ID Requirement Source Allocation Comment Criticality
+- EMS
+F-401 The Clarus system shall be OCS EMS Subject to data sharing agreements. H
+able to provide sensor
+equipment metadata in
+response to a request.
+F-401F1 EMS shall be able to provide
+sensor equipment metadata in
+response to a request.
+F-501 The Clarus system shall MHI QEDS, H
+minimize the time for data EMS
+dissemination.
+F-501F1 EMS shall respond to queries Related to I-016, F-222.
+for metadata within five
+minutes.
+F-905 The Clarus system shall log MHI CS, QEDS, H
+data transactions. EMS,
+QChS,
+CAS, SS,
+DOG
+F-905F1 EMS shall log metadata
+transactions.
+H-120 The Clarus system shall ConOps §3.3 CAS, Roll up of H-121, H-122, H-123, H-
+acquire, process, and EMC, 201, which have been deprecated.
+disseminate environmental EMS,
+metadata. CAUI
+H- The EMS shall accept source
+12
+
+SEARCH TERM: QEDS
+Matches displayed: 3
+
+--- Match 1 ---
+.............. 46
+
+4.6 Environmental Metadata Services (EMS).................................................................................. 49
+
+4.7 Manual Entry User Interface (MEUI)........................................................................................ 53
+
+4.8 Qualified Environmental Data (QEDC)..................................................................................... 53
+
+4.9 Qualified Environmental Data Services (QEDS)....................................................................... 56
+
+4.10 Quality Checking Services (QChS)............................................................................................. 66
+
+4.11 Schedule Service (SS)................................................................................................................... 73
+
+
+
+
+04037-rq301srs0200 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page ii
+Clarus
+
+
+--- Match 2 ---
+ll rights reserved.
+Page 6
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+development process. The categories in this document are: Configuration
+& Administration Service (CAS), Configuration & Administration User
+Interface (CAUI), Collector Services (CS), Watchdog (DOG),
+Environmental Metadata Cache (EMC), Environmental Metadata Services
+(EMS), Qualified Environmental Data (QEDC), Qualified Environmental
+Data Services (QEDS), Quality Checking Services (QChS), Schedule
+Service (SS), and program requirements.
+
+
+
+
+04037-rq301srs0200 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 7
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+
+2 GENERAL DESCRIPTION
+This section provides an overview of the entire system and describes the general
+factors that affect the system and its requirements. This section does not state
+specific requirements
+
+
+--- Match 3 ---
+01srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 26
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+
+
+Table 4 – Allocation Format
+Allocation Name of Allocation Module
+
+CAS Configuration and Administration Service
+CAUI Configuration and Administration User Interface
+CS Collector Services
+DOG Watchdog
+EMC Environmental Metadata Cache
+EMS Environmental Metadata Services
+QEDC Qualified Environmental Data
+QEDS Qualified Environmental Data Services
+QChS Quality Checking Services
+SS Schedule Service
+
+
+
+
+04037-rq301srs0100 Copyright © 2005 Mixon/Hill, Inc.
+All rights reserved.
+Page 27
+Clarus Weather System Design
+Detailed System Requirements Specification
+
+
+4.1 Configuration & Administration Service (CAS)
+The requirements in this section specify the service to configure and administer the system. The CAS supports the Clarus
+system and program, manages in

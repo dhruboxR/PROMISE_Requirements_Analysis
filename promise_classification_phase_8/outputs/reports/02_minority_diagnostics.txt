@@ -1,0 +1,106 @@
+PHASE 8 EXPERIMENT 02
+MINORITY-CLASS ERROR DIAGNOSTICS
+=================================================================
+
+CLASS: O
+--------------------------------------------------
+           Model  Precision   Recall       F1  Support
+BaselineTempered   0.254098 0.227941 0.240310    136.0
+   HardHierarchy   0.164609 0.294118 0.211082    136.0
+   SoftHierarchy   0.206452 0.235294 0.219931    136.0
+
+BaselineTempered: Most common wrong predictions
+PredictedClass  Count
+             F     66
+            MN      9
+            PO      8
+            PE      7
+            US      5
+
+HardHierarchy: Most common wrong predictions
+PredictedClass  Count
+             F     34
+            MN     13
+            PO     10
+            PE      9
+            US      7
+
+SoftHierarchy: Most common wrong predictions
+PredictedClass  Count
+             F     56
+            MN     10
+            PE      8
+            PO      8
+            US      6
+
+CLASS: SC
+--------------------------------------------------
+           Model  Precision   Recall       F1  Support
+BaselineTempered   0.051282 0.023256 0.032000     86.0
+   HardHierarchy   0.030303 0.023256 0.026316     86.0
+   SoftHierarchy   0.046512 0.023256 0.031008     86.0
+
+BaselineTempered: Most common wrong predictions
+PredictedClass  Count
+             F     58
+            PE      8
+             O      6
+            MN      5
+            SE      3
+
+HardHierarchy: Most common wrong predictions
+PredictedClass  Count
+             F     42
+            PE     11
+             O     10
+            MN      6
+            SE      6
+
+SoftHierarchy: Most common wrong predictions
+PredictedClass  Count
+             F     54
+            PE      9
+             O      6
+            MN      5
+            SE      4
+
+CLASS: PO
+--------------------------------------------------
+           Model  Precision   Recall       F1  Support
+BaselineTempered   0.125000 0.030303 0.048780     66.0
+   HardHierarchy   0.107143 0.045455 0.063830     66.0
+   SoftHierarchy   0.166667 0.045455 0.071429     66.0
+
+BaselineTempered: Most common wrong predictions
+PredictedClass  Count
+             F     37
+             O     14
+            PE     10
+            SC      2
+             A      1
+
+HardHierarchy: Most common wrong predictions
+PredictedClass  Count
+             O     26
+             F     15
+            PE     14
+            SE      2
+            SC      2
+
+SoftHierarchy: Most common wrong predictions
+PredictedClass  Count
+             F     31
+             O     17
+            PE     10
+            SC      2
+             A      1
+
+HardHierarchy vs BaselineTempered
+Corrected baseline errors: 81
+Introduced new errors: 353
+Net corrected records: -272
+
+SoftHierarchy vs BaselineTempered
+Corrected baseline errors: 63
+Introduced new errors: 131
+Net corrected records: -68

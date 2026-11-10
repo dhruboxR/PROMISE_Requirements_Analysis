@@ -1,0 +1,49 @@
+DocumentName,PROMISEProjectID,Partition,UniqueDirectCandidates,UniqueDirectPROMISERecords,HighFuzzyCandidates,EvidenceType,VerificationStatus
+0000 - cctns.pdf,49,Train,23,20,47,Direct and fuzzy,Pending
+0000 - gamma j.pdf,50,Train,12,36,0,Direct,Pending
+0000 - inventory.pdf,51,Train,6,7,0,Direct,Pending
+1995 - gemini.pdf,52,Validation,12,12,3,Direct and fuzzy,Pending
+1998 - themas.pdf,53,Train,12,11,2,Direct and fuzzy,Pending
+1999 - multi-mahjong.html,54,Train,8,8,1,Direct and fuzzy,Pending
+2001 - ctc network.pdf,55,Train,27,27,0,Direct,Pending
+2001 - esa.pdf,56,Train,2,2,0,Direct,Pending
+2001 - hats.pdf,57,Test,58,81,6,Direct and fuzzy,Pending
+2002 - evla back.pdf,43,Train,1,1,0,Direct,Pending
+2002 - evla back.pdf,58,Train,34,63,2,Direct and fuzzy,Pending
+2002 - evla back.pdf,59,Train,13,15,0,Direct,Pending
+2002 - evla corr.pdf,43,Train,1,1,0,Direct,Pending
+2002 - evla corr.pdf,58,Train,17,20,0,Direct,Pending
+2002 - evla corr.pdf,59,Train,24,36,0,Direct,Pending
+2003 - tachonet.pdf,60,Validation,29,29,2,Direct and fuzzy,Pending
+2005 - nenios.html,61,Validation,50,50,0,Direct,Pending
+2005 - phin.pdf,62,Train,33,66,4,Direct and fuzzy,Pending
+2005 - pontis.pdf,63,Train,61,140,4,Direct and fuzzy,Pending
+2005 - triangle.pdf,64,Train,12,7,0,Direct,Pending
+2005 - znix.pdf,65,Train,24,17,0,Direct,Pending
+2006 - stewards.pdf,66,Test,15,15,1,Direct and fuzzy,Pending
+2007 - e-store.doc,34,Train,1,1,0,Direct,Pending
+2007 - e-store.doc,46,Train,78,76,1,Direct and fuzzy,Pending
+2007 - e-store.doc,67,Train,112,109,2,Direct and fuzzy,Pending
+2007 - ertms.pdf,68,Train,161,163,11,Direct and fuzzy,Pending
+2007 - get real 0.2.pdf,69,Train,4,4,0,Direct,Pending
+2007 - mdot.pdf,70,Train,5,5,11,Direct and fuzzy,Pending
+2007 - nde.pdf,71,Train,62,104,3,Direct and fuzzy,Pending
+2007 - puget sound.pdf,72,Train,67,51,0,Direct,Pending
+2007 - water use.pdf,73,Test,8,8,0,Direct,Pending
+2008 - caiso.pdf,74,Train,1,5,1,Direct and fuzzy,Pending
+2008 - virtual ed.doc,76,Train,40,34,0,Direct,Pending
+2009 - gaia.pdf,78,Validation,5,6,2,Direct and fuzzy,Pending
+2009 - inventory 2.0.pdf,79,Validation,18,17,0,Direct,Pending
+2009 - library.doc,80,Train,18,18,1,Direct and fuzzy,Pending
+2009 - library.pdf,80,Train,2,2,1,Direct and fuzzy,Pending
+2009 - peazip.pdf,81,Train,2,2,0,Direct,Pending
+2009 - peazip.pdf,90,Train,1,1,0,Direct,Pending
+2009 - peppol.pdf,82,Train,122,210,1,Direct and fuzzy,Pending
+2009 - video search.pdf,83,Validation,3,5,0,Direct,Pending
+2009 - warc III.pdf,84,Train,27,27,1,Direct and fuzzy,Pending
+2010 - blit draft.pdf,85,Train,54,54,0,Direct,Pending
+2010 - fishing.pdf,86,Train,30,31,0,Direct,Pending
+2010 - home 1.3.pdf,88,Validation,3,10,0,Direct,Pending
+2010 - mashboot.pdf,89,Test,1,1,0,Direct,Pending
+2010 - split merge.pdf,81,Train,1,1,0,Direct,Pending
+2010 - split merge.pdf,90,Train,7,5,0,Direct,Pending

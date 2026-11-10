@@ -1,0 +1,34 @@
+{
+  "experiment": "08E",
+  "created_utc": "2026-11-09T23:10:15.549972+00:00",
+  "split_record_counts": {
+    "Train": 2574,
+    "Validation": 553,
+    "Test": 550
+  },
+  "split_project_counts": {
+    "Train": 50,
+    "Validation": 19,
+    "Test": 19
+  },
+  "split_text_columns_used": {
+    "Train": "NormalizedText",
+    "Validation": "NormalizedText",
+    "Test": "NormalizedText"
+  },
+  "cross_split_text_keys_detected": 0,
+  "pure_documents_checked": 79,
+  "candidate_project_links": 48,
+  "risk_status_counts": {
+    "Train-project overlap candidate": 24,
+    "Validation-project overlap candidate": 7,
+    "No direct evidence - provenance unresolved": 39,
+    "Test-project overlap candidate": 4,
+    "Ambiguous project mapping": 5
+  },
+  "ambiguous_source_documents": 5,
+  "documents_approved_for_training": 0,
+  "manual_source_verification_completed": false,
+  "phase4_cv_fold_audit_completed": false,
+  "original_datasets_modified": false
+}

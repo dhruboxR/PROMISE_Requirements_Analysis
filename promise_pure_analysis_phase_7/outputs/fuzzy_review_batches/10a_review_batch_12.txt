@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 12
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-111
+
+CandidateID: PURE-CAND-004729
+Document: 2005 - clarus high.doc
+PROMISE+ RecordID: 1733
+PROMISE+ ProjectID: 62
+Similarity: 0.245144
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+The average data age grows as a result of the aggregated times required to move through the various layers and eventually to the Service Provider Customers.
+
+### PROMISE+ requirement
+
+Health event data should be aggregated into a centralized data store (i.e., data warehouse) designed specifically to support analysis of events over time.
+
+---
+
+## FUZZY-112
+
+CandidateID: PURE-CAND-002645
+Document: 2001 - npac.doc
+PROMISE+ RecordID: 2892
+PROMISE+ ProjectID: 75
+Similarity: 0.244957
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+NPAC SMS shall provide an Old Subscription Retention tunable parameter which is defined as the length of time that old Subscription Versions shall be retained and accessible through a query request.
+
+### PROMISE+ requirement
+
+The format for service information description is defined
+
+---
+
+## FUZZY-113
+
+CandidateID: PURE-CAND-003789
+Document: 2003 - pnnl.pdf
+PROMISE+ RecordID: 2240
+PROMISE+ ProjectID: 68
+Similarity: 0.243246
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+3.5.1.38 Only one indicator shall be active at a given time for a specific diagnostic and no indicators shall flash when active.
+
+### PROMISE+ requirement
+
+A special indication shall be shown on the DMI. 
+
+---
+
+## FUZZY-114
+
+CandidateID: PURE-CAND-005083
+Document: 2005 - clarus low.pdf
+PROMISE+ RecordID: 2596
+PROMISE+ ProjectID: 71
+Similarity: 0.240825
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+H- QChS shall process 301H1 environmental data from across North America.
+
+### PROMISE+ requirement
+
+                The System shall be capable of receiving Ancillary Data Products from the Environmental Satellite Processing Center (ESPC).  
+
+---
+
+## FUZZY-115
+
+CandidateID: PURE-CAND-004166
+Document: 2004 - jse.doc
+PROMISE+ RecordID: 2902
+PROMISE+ ProjectID: 75
+Similarity: 0.237757
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+This should not have any contents.
+
+### PROMISE+ requirement
+
+Web servers have already replicated necessary content. 
+
+---
+
+## FUZZY-116
+
+CandidateID: PURE-CAND-005653
+Document: 2006 - eirene sys 15.pdf
+PROMISE+ RecordID: 2318
+PROMISE+ ProjectID: 68
+Similarity: 0.236534
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+5.7.4 The aerial and any other equipment mounted external to the train shall be capable of withstanding extremes of temperature from -40°C to +70°C. (M)
+
+### PROMISE+ requirement
+
+The ETCS trainborne equipment shall be capable of receiving information from the national train control systems by means of the STM. 
+
+---
+
+## FUZZY-117
+
+CandidateID: PURE-CAND-006189
+Document: 2007 - eirene fun 7.pdf
+PROMISE+ RecordID: 2255
+PROMISE+ ProjectID: 68
+Similarity: 0.233278
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+5.2.2.42 The Cab radio shall be capable of being used as a standard telephone, such that the driver is able to call any valid number subject to pre-defined call restrictions.
+
+### PROMISE+ requirement
+
+The driver shall enter the driver ID 
+
+---
+
+## FUZZY-118
+
+CandidateID: PURE-CAND-006181
+Document: 2007 - eirene fun 7.pdf
+PROMISE+ RecordID: 674
+PROMISE+ ProjectID: 24
+Similarity: 0.200606
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+5.2.2.34 In each cab, the call shall be connected to the loudspeaker whilst the handset is on- hook. (M)
+
+### PROMISE+ requirement
+
+The application should be connected to the Internet.
+
+---
+
+## FUZZY-119
+
+CandidateID: PURE-CAND-005034
+Document: 2005 - clarus low.pdf
+PROMISE+ RecordID: 2512
+PROMISE+ ProjectID: 70
+Similarity: 0.188571
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+P-025 The Clarus system shall MHI QEDS, Related to F-501.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect Clarus weather data as enumerated in APPENDIX D -Weather Data Elements from Clarus.
+
+---
+
+## FUZZY-120
+
+CandidateID: PURE-CAND-001470
+Document: 1999 - tcs.pdf
+PROMISE+ RecordID: 2943
+PROMISE+ ProjectID: 76
+Similarity: 0.152463
+Similarity group: 0.00-0.40
+
+### PURE passage
+
+The TCS shall comply with para 5.3 of MIL-STD 882C, "System Safety Program Requirements", dated 19 January 1993 w/Notice 1 dated 19 January 1996.
+
+### PROMISE+ requirement
+
+System may require users to download program updates to become compatible and compliant with system.
+

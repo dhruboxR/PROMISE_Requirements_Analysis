@@ -1,0 +1,30 @@
+PHASE 8 EXPERIMENT 04
+SPECIALIST THRESHOLD DIAGNOSTICS
+=================================================================
+
+Exploratory analysis only.
+No threshold is approved for final evaluation.
+
+Target  Threshold  Precision   Recall       F1  TP  FP
+     O        0.1   0.255639 0.500000 0.338308  68 198
+     O        0.2   0.340000 0.375000 0.356643  51  99
+     O        0.3   0.430000 0.316176 0.364407  43  57
+     O        0.4   0.534247 0.286765 0.373206  39  34
+     O        0.5   0.584906 0.227941 0.328042  31  22
+    SC        0.1   0.117188 0.174419 0.140187  15 113
+    SC        0.2   0.120000 0.069767 0.088235   6  44
+    SC        0.3   0.083333 0.034884 0.049180   3  33
+    SC        0.4   0.130435 0.034884 0.055046   3  20
+    SC        0.5   0.166667 0.034884 0.057692   3  15
+    PO        0.1   0.238806 0.242424 0.240602  16  51
+    PO        0.2   0.347826 0.121212 0.179775   8  15
+    PO        0.3   0.312500 0.075758 0.121951   5  11
+    PO        0.4   0.333333 0.030303 0.055556   2   4
+    PO        0.5   0.000000 0.000000 0.000000   0   3
+
+Probabilities are pooled from three different
+outer-fold models and are not necessarily calibrated
+on the same scale.
+
+Next step: training-only nested threshold selection.
+Original test accessed: No.

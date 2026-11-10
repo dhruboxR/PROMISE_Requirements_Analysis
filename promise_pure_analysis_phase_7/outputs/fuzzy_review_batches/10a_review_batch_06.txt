@@ -1,0 +1,198 @@
+# Fuzzy Review Batch 06
+
+Assess whether each PURE passage and PROMISE+ passage express the same requirement.
+
+Decisions: Same requirement | Partial overlap | Different requirement | Uncertain
+
+Record a confidence level and a brief reason. Do not treat similarity as proof.
+
+---
+
+## FUZZY-051
+
+CandidateID: PURE-CAND-006767
+Document: 2007 - ertms.pdf
+PROMISE+ RecordID: 2296
+PROMISE+ ProjectID: 68
+Similarity: 0.835695
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+4.9.5.4 The driver shall be able to confirm the train integrity to the RBC manually.
+
+### PROMISE+ requirement
+
+The driver shall be able to confirm the train integrity to the RBC manually. The confirmation requires the train to be stationary. 
+
+---
+
+## FUZZY-052
+
+CandidateID: PURE-CAND-006869
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2536
+PROMISE+ ProjectID: 70
+Similarity: 0.83435
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 5.3 CS-010-040 The DUAP Computational Services shall be able to ConOps § 4.3.4 L derive traffic distribution (occupancy) from probe vehicle ConOps § 5.3 data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive traffic distribution (occupancy) from probe vehicle data. 
+
+---
+
+## FUZZY-053
+
+CandidateID: PURE-CAND-000111
+Document: 0000 - gamma j.pdf
+PROMISE+ RecordID: 2086
+PROMISE+ ProjectID: 66
+Similarity: 0.82979
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+2.4 Operating Environment OE-1: Web Store shall operate with the following internet browsers: Microsoft Internet Explorer version 6 and 7, Netscape Communicator Version 4 and 5.
+
+### PROMISE+ requirement
+
+The System shall operate with the following Web browsers: Microsoft Internet Explorer versions 5.0 and 6.0, Netscape Communicator version 4.7, Netscape versions 6 and 7, and FireFox. 
+
+---
+
+## FUZZY-054
+
+CandidateID: PURE-CAND-000033
+Document: 0000 - cctns.pdf
+PROMISE+ RecordID: 1071
+PROMISE+ ProjectID: 49
+Similarity: 0.824083
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+The System user interface must be suitable for users with special needs; that is, 5. compatible with specialist software that may be used and with appropriate interface guidelines
+
+### PROMISE+ requirement
+
+The System user interface must be suitable for users with special needs; that is, compatible with specialist software that may be used and with appropriate interface guidelines 6. The System must provide End User and Administrator functions which are easy to use and intuitive throughout.
+
+---
+
+## FUZZY-055
+
+CandidateID: PURE-CAND-006837
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2504
+PROMISE+ ProjectID: 70
+Similarity: 0.822944
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+IS-070-060 The DUAP Input Services shall be able to collect ConOps § 2.3.2.2 The specific format of the L roadway traffic data from the Traffic Monitoring System interface is to be determined for Highways (TMS/H) using the TMS/H interface. in the design of the prototype.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect roadway traffic data from the Traffic Monitoring System for Highways (TMS/H) using the TMS/H interface. 
+
+---
+
+## FUZZY-056
+
+CandidateID: PURE-CAND-006839
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2506
+PROMISE+ ProjectID: 70
+Similarity: 0.820141
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+IS-070-080 The DUAP Input Services shall be able to collect traffic ConOps § 2.3.2.6 The specific format of the D data from the Detroit TMC system using the Detroit interface is to be determined TMC interface. in the design of the prototype.
+
+### PROMISE+ requirement
+
+The DUAP Input Services shall be able to collect traffic data from the Detroit TMC system using the Detroit TMC interface
+
+---
+
+## FUZZY-057
+
+CandidateID: PURE-CAND-003517
+Document: 2002 - evla corr.pdf
+PROMISE+ RecordID: 1562
+PROMISE+ ProjectID: 59
+Similarity: 0.814424
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ID Description 3.1.3.1 Hardware communications – The CMIB daughter board shall communicate with the correlator carrier boards via either the PCI or ISA busses.
+
+### PROMISE+ requirement
+
+Hardware communications – The CMIB daughter board shall communicate with the correlator carrier boards via either the PCI or ISA busses. Alternative communication paths may be through a serial or parallel connection as required.
+
+---
+
+## FUZZY-058
+
+CandidateID: PURE-CAND-008392
+Document: 2010 - home 1.3.pdf
+PROMISE+ RecordID: 3615
+PROMISE+ ProjectID: 88
+Similarity: 0.80823
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present). 5.4 Security Requirements 5.4.1 Upon installation, a DigitalHome user account shall be established.
+
+### PROMISE+ requirement
+
+Although there are no specific safety requirements, high system reliability is important to insure there are no system failures in carrying out user requests. Such failures might affect the safety of home dwellers (e.g., security breaches, inadequate lighting in dark spaces, inappropriate temperature and humidity for people who are in ill-health, or powering certain appliances when young children are present).
+
+---
+
+## FUZZY-059
+
+CandidateID: PURE-CAND-006872
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2539
+PROMISE+ ProjectID: 70
+Similarity: 0.805822
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 5.3 CS-010-060 The DUAP Computational Services shall be able to ConOps § 4.3.4 H derive travel time from probe vehicle data.
+
+### PROMISE+ requirement
+
+The DUAP Computational Services shall be able to derive travel time from probe vehicle data.
+
+---
+
+## FUZZY-060
+
+CandidateID: PURE-CAND-006899
+Document: 2007 - mdot.pdf
+PROMISE+ RecordID: 2452
+PROMISE+ ProjectID: 70
+Similarity: 0.802778
+Similarity group: 0.80-0.90
+
+### PURE passage
+
+ConOps § 4.3.5 H ConOps § 5.1 ConOps § 5.2 OS-010-010 The DUAP Output Services shall be able to publish ConOps § 4.3.5 See APPENDIX E - for listing H traveler data in SAE J2354 format as enumerated in ConOps § 5.1 of traveler data using the SAE Appendix E.
+
+### PROMISE+ requirement
+
+The DUAP Output Services shall be able to publish traveler data in SAE J2354 format as enumerated in Appendix E
+

@@ -1,0 +1,14 @@
+{
+  "F": "Functional: system behavior or capability",
+  "A": "Availability: required service availability",
+  "L": "Legal: legal or regulatory constraints",
+  "LF": "Look and Feel: visual appearance or presentation",
+  "MN": "Maintainability: ease of maintenance or modification",
+  "O": "Operational: operating environment or procedures",
+  "PE": "Performance: timing, throughput, or resource performance",
+  "SC": "Scalability: capacity to accommodate increasing load",
+  "SE": "Security: protection and authorized access",
+  "US": "Usability: accessibility and ease of use",
+  "FT": "Fault Tolerance: continued operation despite failures",
+  "PO": "Portability: operation across platforms or environments"
+}

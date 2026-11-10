@@ -1,0 +1,25 @@
+{
+  "experiment": "Phase 8 Experiment 23B",
+  "comparison": [
+    "HybridTempered",
+    "Mixed75_25CE"
+  ],
+  "inner_comparisons": 9,
+  "hybrid_semantic_weight": 1.0,
+  "hybrid_logistic_C": 10.0,
+  "hybrid_max_iter": 2000,
+  "hybrid_weighting": "sqrt-balanced normalized",
+  "missing_training_class_rule": "Weight only classes present in training",
+  "tfidf_fit_on_inner_training_only": true,
+  "outer_validation_evaluated": false,
+  "original_test_accessed": false,
+  "original_labels_modified": false,
+  "exploratory": true,
+  "limitations": [
+    "The inner splits have been repeatedly examined.",
+    "The nine comparisons are not independent.",
+    "The hybrid and mixed models use different architectures.",
+    "Missing classes cannot be learned by either model.",
+    "Saved mixed-model predictions are unavailable for example-level paired analysis."
+  ]
+}
